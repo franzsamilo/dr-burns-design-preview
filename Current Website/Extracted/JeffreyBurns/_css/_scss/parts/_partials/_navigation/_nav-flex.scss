@@ -1,0 +1,62 @@
+html {
+  .flex-nav {
+    visibility: visible;
+    display: flex;
+
+    & > ul {
+      display: flex;
+      width: 100%;
+      height: 100%;
+
+      & > li {
+        flex: 1 1 100%;
+        display: flex;
+        text-align: center;
+        list-style: none;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        & > a {
+          position: static;
+          text-decoration: none;
+          padding: 0 10px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+          }
+        }
+
+        @media (min-width: 991px) {
+          //changes flex basis from 100% to auto. auto looks weird at smaller screen sizes.
+          flex: 1 1 auto;
+        }
+      }
+    }
+
+    ul {
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    li {
+      position: relative;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+html.no-flexboxlegacy {
+  .flex-nav > ul > li {
+    flex-basis: 100%;
+  }
+}

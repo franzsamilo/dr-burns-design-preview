@@ -1,0 +1,118 @@
+$mobile_buttons: #333;
+
+$nav_color: #fff;
+$nav_2_bg: get-color('blue');
+$nav_3_bg: #55a4ab;
+
+@include media-breakpoint-down(xs) {
+  #pageWrap #actionNav {
+    display: none; // Keeps menu from displaying before action-menu moves the nav.
+  }
+  /* --- Mobile Menu Styles --- */
+  header#header {
+    height: 41px;
+  }
+  #mobileMenu {
+    background-color: get-color('blue');
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    .action-links a, & > button {
+      font-size: 30px;
+      color: $mobile_buttons !important;
+      border: none;
+      background: none;
+      float: left;
+      display: block;
+      padding: 5px 10px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    & > a:hover {
+      text-decoration: none;
+    }
+
+    a.practice-link {
+      color: $mobile_buttons;
+      display: block;
+      float: none;
+      font-size: 16px;
+      line-height: 34px;
+      text-align: center;
+    }
+    .cta-buttons a{
+      font-size: 30px;
+      color: $mobile_buttons !important;
+      float: right;
+      padding: 5px 0 5px 10px;
+      text-decoration: none;
+      &:after{
+        content: " | ";
+        position: relative;
+      }
+      svg{
+        fill: #333;
+        height: 30px;
+        width: 30px;
+        position: relative;
+        top: 4px;
+        margin-top: -4px;
+      }
+
+    }
+  }
+
+
+  /* Mobile Nav Styling */
+  .action-panel {
+    &__nav {
+      visibility: visible !important;
+      height: auto !important;
+      padding: 0;
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      li {
+        display: block;
+        float: none;
+        width: 100%;
+
+        a {
+          font-size: 2rem;
+          color: $nav_color;
+          white-space: normal;
+        }
+      }
+
+      ul {
+        &.children {
+          box-shadow: none;
+          background: $nav_2_bg;
+          display: none;
+
+          .children {
+            background: $nav_3_bg;
+          }
+
+          li {
+            a {
+              font-size: 2rem;
+              color: $nav_color;
+            }
+          }
+        }
+
+        &.show-touch-menu {
+          position: static !important;
+          display: block;
+        }
+      }
+    }
+  }
+}

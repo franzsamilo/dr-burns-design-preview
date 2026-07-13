@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DreamSmile by Dr. Jeffrey Burns | Full-Arch Dental Implants</title>
+<meta name="description" content="Permanent teeth in one day with The Burns Protocol. One surgical team, one location, in-house lab. Full-arch dental implants in the Shenandoah Valley.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f4f8f8;
+    --sand:#f3efe6;
+    --ink:#232f38;
+    --graphite:#3e3e3e;
+    --ink-soft:#5a6873;
+    --teal:#74bdc2;
+    --teal-deep:#1b6b71;
+    --teal-deeper:#14555a;
+    --charcoal:#2b353d;
+    --line:#e2ebeb;
+    --radius:18px;
+    --radius-sm:12px;
+    --shadow:0 24px 60px -28px rgba(27,107,113,.28);
+    --shadow-soft:0 18px 44px -30px rgba(35,47,56,.35);
+    --ease:cubic-bezier(.16,1,.3,1);
+    --maxw:1240px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Montserrat',sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{font-family:'Newsreader',serif;font-weight:500;line-height:1.08;letter-spacing:-.01em;color:var(--ink)}
+  h2{font-size:clamp(2rem,4vw,3.1rem)}
+  h3{font-size:clamp(1.3rem,2vw,1.65rem)}
+  p{color:var(--graphite);max-width:64ch}
+  a{color:inherit;text-decoration:none}
+  img,video{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  .eyebrow{font-family:'Montserrat';font-size:.72rem;font-weight:600;letter-spacing:.19em;text-transform:uppercase;color:var(--teal-deep)}
+  section{padding:clamp(64px,9vw,120px) 0}
+
+  /* buttons: pill system */
+  .btn{display:inline-flex;align-items:center;gap:.55rem;font-family:'Montserrat';font-weight:600;font-size:.95rem;
+    padding:15px 30px;border-radius:999px;border:1px solid transparent;cursor:pointer;transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s var(--ease);white-space:nowrap}
+  .btn-primary{background:var(--teal-deep);color:#fff;box-shadow:var(--shadow)}
+  .btn-primary:hover{background:var(--teal-deeper);transform:translateY(-2px)}
+  .btn-primary:active{transform:translateY(0)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--teal-deep);color:var(--teal-deep)}
+  .btn-light{background:#fff;color:var(--teal-deep)}
+  .btn-light:hover{transform:translateY(-2px)}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:'Newsreader';font-size:1.28rem;font-weight:600;letter-spacing:-.01em}
+  .brand img{height:34px;width:auto}
+  .brand b{color:var(--teal-deep);font-weight:600}
+  nav.menu{display:flex;align-items:center;gap:30px}
+  nav.menu a{font-size:.9rem;font-weight:500;color:var(--ink-soft);transition:color .2s}
+  nav.menu a:hover{color:var(--teal-deep)}
+  .nav-cta{display:flex;align-items:center;gap:16px}
+  .nav-phone{font-weight:600;font-size:.9rem;color:var(--ink)}
+  .burger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px}
+  .burger span{width:24px;height:2px;background:var(--ink);border-radius:2px}
+
+  /* hero */
+  .hero{background:linear-gradient(180deg,#fff 0%,var(--bg-soft) 100%);padding-top:clamp(40px,6vw,72px)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,68px);align-items:center}
+  .hero h1{font-size:clamp(2.6rem,5.4vw,4.4rem);margin:20px 0 22px}
+  .hero h1 em{font-style:italic;color:var(--teal-deep);font-weight:500}
+  .hero .lede{font-size:1.14rem;max-width:34ch;color:var(--ink-soft)}
+  .hero-actions{display:flex;gap:14px;margin:32px 0 34px;flex-wrap:wrap}
+  .stat-row{display:flex;gap:26px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:24px}
+  .stat b{display:block;font-family:'Newsreader';font-size:1.5rem;color:var(--ink);font-weight:600;line-height:1.1}
+  .stat span{font-size:.82rem;color:var(--ink-soft)}
+  .hero-media{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/4.4}
+  .hero-media img{width:100%;height:100%;object-fit:cover}
+  .hero-tag{position:absolute;left:18px;bottom:18px;right:18px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-radius:var(--radius-sm);padding:14px 18px;display:flex;align-items:center;gap:13px}
+  .hero-tag .play{width:42px;height:42px;border-radius:999px;background:var(--teal-deep);display:grid;place-items:center;flex:none}
+  .hero-tag .play svg{width:16px;height:16px;fill:#fff;margin-left:2px}
+  .hero-tag small{display:block;font-size:.72rem;color:var(--ink-soft);font-weight:500}
+  .hero-tag strong{font-size:.92rem;color:var(--ink);font-weight:600}
+
+  /* proof bar */
+  .proofbar{background:var(--charcoal);color:#fff;padding:34px 0}
+  .proofbar .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:22px}
+  .pb{flex:1 1 150px;text-align:center}
+  .pb b{display:block;font-family:'Newsreader';font-size:clamp(1.55rem,2.8vw,2.1rem);color:#fff;font-weight:600;line-height:1;margin-bottom:5px}
+  .pb span{font-size:.8rem;color:rgba(255,255,255,.72);letter-spacing:.01em}
+
+  /* comparison */
+  .cmp{background:var(--bg-soft)}
+  .cmp-table{margin-top:40px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-soft);background:#fff;border:1px solid var(--line)}
+  .cmp-row{display:grid;grid-template-columns:1.35fr 1fr 1fr}
+  .cmp-row>div{padding:17px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;font-size:.93rem}
+  .cmp-row:last-child>div{border-bottom:none}
+  .cmp-head>div{font-family:'Montserrat';font-weight:700;font-size:.9rem;letter-spacing:.02em}
+  .cmp-head .win{background:var(--teal-deep);color:#fff}
+  .cmp-head .alt{background:#eef2f2;color:var(--ink-soft)}
+  .cmp-row .win{background:rgba(116,189,194,.10);color:var(--ink);font-weight:600}
+  .cmp-row .lbl{color:var(--ink-soft);font-weight:600}
+  .cmp svg{flex:none;width:19px;height:19px;stroke-width:2.2;fill:none}
+  .cmp .yes{stroke:var(--teal-deep)}
+  .cmp .no{stroke:#c0552f}
+
+  /* quiz band */
+  .band-teal{background:var(--teal-deep);color:#fff}
+  .band-teal h2,.band-teal h3{color:#fff}
+  .band-teal p{color:rgba(255,255,255,.82)}
+  .quiz-in{display:flex;align-items:center;justify-content:space-between;gap:36px;flex-wrap:wrap}
+  .quiz-in .txt{max-width:60ch}
+  .quiz-in h2{font-size:clamp(1.7rem,3vw,2.4rem)}
+
+  /* before/after */
+  .ba-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px}
+  .ba-card{position:relative;border-radius:var(--radius-sm);overflow:hidden;background:#000;aspect-ratio:9/16;box-shadow:var(--shadow-soft)}
+  .ba-card video{width:100%;height:100%;object-fit:cover}
+  .ba-card .name{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.72));color:#fff;font-weight:600;font-size:.88rem}
+
+  /* value */
+  .value-head{max-width:60ch;margin-bottom:14px}
+  .value-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 48px;margin-top:34px}
+  .value-item{display:flex;gap:18px;padding:24px 0;border-top:1px solid var(--line)}
+  .value-item .ic{flex:none;width:46px;height:46px;border-radius:12px;background:var(--bg-soft);display:grid;place-items:center}
+  .value-item .ic svg{width:24px;height:24px;stroke:var(--teal-deep);fill:none;stroke-width:1.7}
+  .value-item h3{font-size:1.12rem;font-family:'Montserrat';font-weight:600;margin-bottom:5px}
+  .value-item p{font-size:.94rem}
+
+  /* preview / smile */
+  .preview{background:var(--bg-soft)}
+  .preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .steps-mini{display:flex;flex-direction:column;gap:2px;margin:26px 0 30px}
+  .step-mini{display:flex;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line)}
+  .step-mini .n{font-family:'Newsreader';font-size:1.1rem;color:var(--teal-deep);font-weight:600;min-width:26px}
+  .preview-media{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:3/3.4;background:#eef4f4}
+  .preview-media video{width:100%;height:100%;object-fit:cover}
+  .badge-soon{display:inline-block;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-deep);background:#fff;border:1px solid var(--line);padding:5px 12px;border-radius:999px;margin-bottom:16px}
+
+  /* ebook + doctor split */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .split.flip .split-media{order:2}
+  .split-media{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+  .split-media.plain{box-shadow:var(--shadow-soft)}
+  .ebook-wrap{background:var(--sand);border-radius:var(--radius);padding:40px;display:grid;place-items:center}
+  .ebook-wrap img{max-height:420px;width:auto;filter:drop-shadow(0 30px 40px rgba(35,47,56,.25))}
+  ul.ticks{list-style:none;margin:22px 0 30px;display:flex;flex-direction:column;gap:13px}
+  ul.ticks li{display:flex;gap:12px;font-size:.98rem;color:var(--ink)}
+  ul.ticks svg{flex:none;width:22px;height:22px;stroke:var(--teal-deep);fill:none;stroke-width:2;margin-top:1px}
+
+  /* process */
+  .proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px;counter-reset:step}
+  .proc-step{position:relative;padding-top:30px;border-top:2px solid var(--teal)}
+  .proc-step .num{font-family:'Newsreader';font-size:2.6rem;color:var(--teal-deep);font-weight:500;line-height:1;margin-bottom:14px}
+  .proc-step h3{font-size:1.15rem;font-family:'Montserrat';font-weight:600;margin-bottom:8px}
+  .proc-step p{font-size:.92rem}
+
+  /* testimonials */
+  .test{background:var(--charcoal);color:#fff}
+  .test h2,.test h3{color:#fff}
+  .test p{color:rgba(255,255,255,.7)}
+  .test-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px}
+  .test-card{border-radius:var(--radius-sm);overflow:hidden;position:relative;aspect-ratio:9/13;background:#111;box-shadow:0 30px 50px -30px rgba(0,0,0,.6)}
+  .test-card img{width:100%;height:100%;object-fit:cover;opacity:.94}
+  .test-card .ov{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px 16px;background:linear-gradient(transparent 40%,rgba(0,0,0,.78))}
+  .test-card .pl{position:absolute;top:14px;right:14px;width:38px;height:38px;border-radius:999px;background:rgba(255,255,255,.16);backdrop-filter:blur(6px);display:grid;place-items:center;border:1px solid rgba(255,255,255,.3)}
+  .test-card .pl svg{width:13px;height:13px;fill:#fff;margin-left:2px}
+  .test-card b{color:#fff;font-size:.98rem;font-weight:600}
+  .test-card small{color:rgba(255,255,255,.72);font-size:.78rem}
+
+  /* pricing */
+  .price-in{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .price-points{display:flex;flex-direction:column}
+  .price-point{display:flex;gap:16px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+  .price-point:first-child{border-top:1px solid var(--line)}
+  .price-point svg{flex:none;width:26px;height:26px;stroke:var(--teal-deep);fill:none;stroke-width:1.8}
+  .price-point b{font-family:'Montserrat';font-weight:600;font-size:1.05rem}
+
+  /* qa */
+  .qa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .qa-card{border-radius:var(--radius-sm);overflow:hidden;background:var(--bg-soft);border:1px solid var(--line);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+  .qa-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft)}
+  .qa-thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:#dfeaea}
+  .qa-thumb img{width:100%;height:100%;object-fit:cover}
+  .qa-thumb .pl{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:999px;background:rgba(27,107,113,.92);display:grid;place-items:center}
+  .qa-thumb .pl svg{width:17px;height:17px;fill:#fff;margin-left:3px}
+  .qa-card .q{padding:18px 20px;font-family:'Newsreader';font-size:1.12rem;font-weight:500;color:var(--ink)}
+
+  /* spa */
+  .spa{background:var(--sand)}
+
+  /* final cta */
+  .final{position:relative;background:var(--teal-deep);color:#fff;overflow:hidden}
+  .final .wrap{position:relative;z-index:2;text-align:center}
+  .final h2{color:#fff;font-size:clamp(2rem,4.4vw,3.4rem);max-width:18ch;margin:0 auto 20px}
+  .final p{color:rgba(255,255,255,.85);margin:0 auto 32px;max-width:52ch}
+  .final-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .final-bg{position:absolute;inset:0;z-index:1;opacity:.16;background-size:cover;background-position:center}
+
+  /* footer */
+  footer.ft{background:var(--charcoal);color:#fff;padding:70px 0 34px}
+  .ft-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.12)}
+  .ft-brand img{height:38px;margin-bottom:16px}
+  .ft-brand p{color:rgba(255,255,255,.6);font-size:.9rem;max-width:34ch}
+  .ft-social{display:flex;gap:12px;margin-top:20px}
+  .ft-social a{display:grid;place-items:center;width:38px;height:38px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);transition:background .2s,border-color .2s}
+  .ft-social a:hover{background:var(--teal-deep);border-color:var(--teal-deep)}
+  .ft-social svg{width:17px;height:17px;fill:#fff}
+  .ft-col h4{font-family:'Montserrat';font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:16px;font-weight:600}
+  .ft-col a{display:block;color:rgba(255,255,255,.82);font-size:.92rem;padding:6px 0;transition:color .2s}
+  .ft-col a:hover{color:var(--teal)}
+  .ft-contact div{color:rgba(255,255,255,.82);font-size:.92rem;margin-bottom:10px}
+  .ft-contact b{color:#fff}
+  .ft-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:24px;font-size:.82rem;color:rgba(255,255,255,.5)}
+  .ft-bottom a{color:rgba(255,255,255,.5)}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* responsive */
+  @media(max-width:960px){
+    .hero-grid,.preview-grid,.split,.price-in{grid-template-columns:1fr;gap:36px}
+    .split.flip .split-media{order:0}
+    .value-grid{grid-template-columns:1fr;gap:0}
+    .proc-grid{grid-template-columns:1fr 1fr}
+    .ba-grid{grid-template-columns:1fr 1fr}
+    .test-grid{grid-template-columns:1fr 1fr}
+    .qa-grid{grid-template-columns:1fr 1fr}
+    .ft-top{grid-template-columns:1fr 1fr}
+    nav.menu,.nav-phone{display:none}
+    .burger{display:flex}
+    .hero-media{aspect-ratio:4/3.4}
+  }
+  @media(max-width:600px){
+    .proc-grid,.ba-grid,.test-grid,.qa-grid,.ft-top{grid-template-columns:1fr}
+    .cmp-row{grid-template-columns:1fr}
+    .hero-actions .btn,.final-actions .btn{flex:1 1 auto;justify-content:center}
+    .wrap{padding:0 20px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+    .btn:hover,.qa-card:hover{transform:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top"><img src="assets/img/logo.png" alt="Jeffrey S. Burns DDS">Dream<b>Smile</b></a>
+    <nav class="menu">
+      <a href="#value">Why Us</a>
+      <a href="#compare">Compare</a>
+      <a href="#doctor">Meet Dr. Burns</a>
+      <a href="#process">The Protocol</a>
+      <a href="#stories">Patient Stories</a>
+      <a href="#questions">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <span class="nav-phone">540-740-8937</span>
+      <a class="btn btn-primary" href="#consult">Free Consultation</a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">The Burns Protocol &middot; DreamSmile&trade;</span>
+      <h1>A DreamSmile&trade; <em>you'll never have to hide.</em></h1>
+      <p class="lede">Permanent teeth in one day. Designed, placed, and hand-finished by one surgical team, under one roof.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#consult">Schedule My Free Consultation</a>
+        <a class="btn btn-ghost" href="tel:5407408937">Call 540-740-8937</a>
+      </div>
+      <div class="stat-row">
+        <div class="stat"><b>One&nbsp;day</b><span>New teeth, start to finish</span></div>
+        <div class="stat"><b>One&nbsp;team</b><span>Surgeon, sedation, lab in house</span></div>
+        <div class="stat"><b>One&nbsp;place</b><span>No outside referrals</span></div>
+      </div>
+    </div>
+    <div class="hero-media reveal">
+      <img src="assets/poster/hero.jpg" alt="Dr. Jeffrey Burns hand-finishing a full-arch DreamSmile bridge at his in-house lab bench">
+      <div class="hero-tag">
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        <div><small>Watch the film</small><strong>The Power of Full Arch</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF BAR -->
+<section class="proofbar">
+  <div class="wrap">
+    <div class="pb reveal"><b>98%+</b><span>Implant success rate</span></div>
+    <div class="pb reveal"><b>30+ yrs</b><span>Clinical experience</span></div>
+    <div class="pb reveal"><b>Same day</b><span>Teeth in one visit</span></div>
+    <div class="pb reveal"><b>Lifetime</b><span>DreamSmile&trade; warranty</span></div>
+    <div class="pb reveal"><b>Personal</b><span>Dr. Burns&rsquo; cell number</span></div>
+  </div>
+</section>
+
+<!-- QUALIFICATION -->
+<section class="band-teal" id="consult">
+  <div class="wrap quiz-in">
+    <div class="txt reveal">
+      <h2>Find out if you are a candidate for a DreamSmile</h2>
+      <p>Answer a few quick questions to see if you qualify, and get details on pricing and flexible financing options.</p>
+    </div>
+    <a class="btn btn-light reveal" href="https://schedule.jeffrey-burns.implant-services.com">Take the 60-second quiz</a>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section id="results">
+  <div class="wrap">
+    <div class="reveal" style="max-width:60ch">
+      <h2>Real people. Real DreamSmiles.</h2>
+      <p style="margin-top:14px">Every one of these is a patient of Dr. Burns, filmed the day their new smile went in.</p>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-card reveal"><video src="assets/video/joe-vile.mp4" poster="assets/poster/joe-vile.jpg" muted loop autoplay playsinline></video><div class="name">Joe Vile</div></div>
+      <div class="ba-card reveal"><video src="assets/video/tammy.mp4" poster="assets/poster/tammy.jpg" muted loop autoplay playsinline></video><div class="name">Tammy Climer</div></div>
+      <div class="ba-card reveal"><video src="assets/video/danny.mp4" poster="assets/poster/danny.jpg" muted loop autoplay playsinline></video><div class="name">Danny Spain</div></div>
+      <div class="ba-card reveal"><video src="assets/video/diane.mp4" poster="assets/poster/diane.jpg" muted loop autoplay playsinline></video><div class="name">Diane Collis</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE PROP -->
+<section id="value" style="background:var(--bg-soft)">
+  <div class="wrap">
+    <div class="value-head reveal">
+      <h2>We make it easy to get a permanent new smile.</h2>
+      <p style="margin-top:14px">Get permanent teeth in one day, from a team that keeps every step under one roof, with your comfort and safety first.</p>
+    </div>
+    <div class="value-grid">
+      <div class="value-item reveal">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.686-7-11a7 7 0 1114 0c0 5.314-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <div><h3>Everything in one location</h3><p>Consultation, surgery, and new teeth in one place. No running around town.</p></div>
+      </div>
+      <div class="value-item reveal">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M17 20v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"/><circle cx="10" cy="8" r="3.2"/><path d="M21 20v-2a4 4 0 00-3-3.87"/></svg></span>
+        <div><h3>Your whole team is in house</h3><p>Oral surgeon, anesthesiologist, and dental lab on staff. No outside referrals.</p></div>
+      </div>
+      <div class="value-item reveal">
+        <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <div><h3>New teeth in a single visit</h3><p>The Burns Protocol takes you from surgery to a fixed smile the same day.</p></div>
+      </div>
+      <div class="value-item reveal">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h4l2 5 4-12 2 7h6"/></svg></span>
+        <div><h3>Sleep through it</h3><p>Go to sleep and wake up done, with IV sedation and an anesthesiologist on staff.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="cmp" id="compare">
+  <div class="wrap">
+    <div class="reveal" style="max-width:60ch">
+      <span class="eyebrow">DreamSmile&trade; vs the rest</span>
+      <h2 style="margin-top:12px">Why a DreamSmile&trade; beats traditional dental implants.</h2>
+    </div>
+    <div class="cmp-table reveal">
+      <div class="cmp-row cmp-head">
+        <div></div><div class="win">DreamSmile&trade;</div><div class="alt">Traditional Dental Implants</div>
+      </div>
+      <div class="cmp-row">
+        <div class="lbl">Where it happens</div>
+        <div class="win"><svg class="yes" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Surgeon, sedation &amp; lab under one roof</div>
+        <div><svg class="no" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Multiple offices and outside referrals</div>
+      </div>
+      <div class="cmp-row">
+        <div class="lbl">Pricing</div>
+        <div class="win"><svg class="yes" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Clear, upfront pricing</div>
+        <div><svg class="no" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Surprise additional costs and uncertainty</div>
+      </div>
+      <div class="cmp-row">
+        <div class="lbl">Warranty</div>
+        <div class="win"><svg class="yes" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>DreamSmile&trade; Lifetime Warranty</div>
+        <div><svg class="no" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Hidden fees and limited or no warranty</div>
+      </div>
+      <div class="cmp-row">
+        <div class="lbl">Timeline</div>
+        <div class="win"><svg class="yes" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>New teeth the same day</div>
+        <div><svg class="no" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Weeks or months in temporaries</div>
+      </div>
+      <div class="cmp-row">
+        <div class="lbl">Track record</div>
+        <div class="win"><svg class="yes" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>30+ years, 98%+ success rate</div>
+        <div><svg class="no" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Varies widely by provider</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SMILE PREVIEW -->
+<section class="preview" id="preview">
+  <div class="wrap preview-grid">
+    <div class="reveal">
+      <span class="badge-soon">Preview your smile</span>
+      <h2>See your DreamSmile before you ever sit in the chair.</h2>
+      <div class="steps-mini">
+        <div class="step-mini"><span class="n">1</span><span>Upload your photo</span></div>
+        <div class="step-mini"><span class="n">2</span><span>See your new smile in under a minute</span></div>
+        <div class="step-mini"><span class="n">3</span><span>Share it with the people you love</span></div>
+      </div>
+      <p>Walk in knowing exactly what is possible. No guesswork, no hesitation.</p>
+      <a class="btn btn-primary" href="#consult" style="margin-top:24px">Get started</a>
+    </div>
+    <div class="preview-media reveal">
+      <img src="assets/poster/qa-protocol.png" alt="Preview of a DreamSmile result">
+    </div>
+  </div>
+</section>
+
+<!-- LEAD MAGNET -->
+<section id="guide">
+  <div class="wrap split">
+    <div class="ebook-wrap reveal"><img src="assets/img/ebook.png" alt="The Ultimate Guide to Dental Implants ebook by Dr. Jeffrey Burns"></div>
+    <div class="reveal">
+      <h2>Want to learn more about your implant options?</h2>
+      <p style="margin-top:14px">Grab our free Ultimate Guide to Dental Implants to learn:</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>The difference between implants, bridges, and dentures</li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Why full-arch is the gold standard</li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>What treatment really costs, and how people afford it</li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>How to claim your free consultation</li>
+      </ul>
+      <a class="btn btn-primary" href="https://jeffrey-burns.implant-services.com/get-e-book">Read the guide</a>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTOR -->
+<section id="doctor" style="background:var(--bg-soft)">
+  <div class="wrap split flip">
+    <div class="split-media reveal"><img src="assets/img/dr-burns-smile.jpg" alt="Dr. Jeffrey Burns"></div>
+    <div class="reveal">
+      <span class="eyebrow">Meet Dr. Burns</span>
+      <h2 style="margin:12px 0 16px">The experience you want. The care you deserve.</h2>
+      <p>Dr. Jeffrey Burns has built his career restoring full-arch smiles with The Burns Protocol. Known for a calm, no-pressure approach, he takes time to listen, explain, and treat you like a person, not a case number. He even gives every patient his personal cell number. He is backed by an in-house surgical team, including oral surgeon Dr. James Whitney.</p>
+      <a class="btn btn-ghost" href="#doctor" style="margin-top:26px">Read his full story</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="reveal" style="max-width:60ch">
+      <span class="eyebrow">The Burns Protocol</span>
+      <h2 style="margin-top:12px">Here is how your DreamSmile happens.</h2>
+      <p style="margin-top:14px">From your first call to your final smile, every step is handled by one team in one place.</p>
+    </div>
+    <div class="proc-grid">
+      <div class="proc-step reveal"><div class="num">1</div><h3>Free consultation</h3><p>You talk, we listen. No pressure and no sales pitch.</p></div>
+      <div class="proc-step reveal"><div class="num">2</div><h3>Your custom plan</h3><p>A smile designed for your face, to look as natural as it functions.</p></div>
+      <div class="proc-step reveal"><div class="num">3</div><h3>New smile day</h3><p>Most patients leave with fixed teeth the same day as surgery.</p></div>
+      <div class="proc-step reveal"><div class="num">4</div><h3>Refinement and support</h3><p>We fine-tune your smile and support you every step after.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="test" id="stories">
+  <div class="wrap">
+    <div class="reveal" style="max-width:60ch">
+      <span class="eyebrow" style="color:var(--teal)">Patient stories</span>
+      <h2 style="margin-top:12px">Hear from people who have been where you are.</h2>
+    </div>
+    <div class="test-grid">
+      <div class="test-card reveal"><img src="assets/poster/joe-vile.jpg" alt="Joe Vile"><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><div class="ov"><b>Joe Vile</b><small>Full-arch DreamSmile</small></div></div>
+      <div class="test-card reveal"><img src="assets/poster/tammy.jpg" alt="Tammy Climer"><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><div class="ov"><b>Tammy Climer</b><small>Full-arch DreamSmile</small></div></div>
+      <div class="test-card reveal"><img src="assets/poster/danny.jpg" alt="Danny Spain"><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><div class="ov"><b>Danny Spain</b><small>Full-arch DreamSmile</small></div></div>
+      <div class="test-card reveal"><img src="assets/poster/diane.jpg" alt="Diane Collis"><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><div class="ov"><b>Diane Collis</b><small>Full-arch DreamSmile</small></div></div>
+    </div>
+    <p style="margin-top:26px;font-size:.9rem">Mike, Ron, Kelly, and Angela filmed full stories in the 2026 shoot. Their videos drop into this wall once extracted.</p>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="wrap price-in">
+    <div class="reveal">
+      <h2 style="margin-bottom:16px">We tell you the truth, especially about cost.</h2>
+      <p>You will not find bait-and-switch pricing here. Everything is clear, upfront, and built to make your life easier.</p>
+      <a class="btn btn-primary" href="#consult" style="margin-top:26px">Get my treatment plan</a>
+    </div>
+    <div class="price-points reveal">
+      <div class="price-point"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><b>No hidden fees</b></div>
+      <div class="price-point"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><b>Flexible financing available</b></div>
+      <div class="price-point"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><b>Help with pre-approval</b></div>
+      <div class="price-point"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><b>Backed by the DreamSmile&trade; Lifetime Warranty</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- Q&A -->
+<section id="questions" style="background:var(--bg-soft)">
+  <div class="wrap">
+    <div class="reveal" style="max-width:60ch">
+      <h2>Hear straight from Dr. Burns.</h2>
+      <p style="margin-top:14px">Honest answers to the questions patients ask most, in about a minute each.</p>
+    </div>
+    <div class="qa-grid">
+      <a class="qa-card reveal" href="#"><div class="qa-thumb"><img src="assets/poster/qa-pain.png" alt=""><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div><div class="q">Are dental implants painful?</div></a>
+      <a class="qa-card reveal" href="#"><div class="qa-thumb"><img src="assets/poster/qa-cost.png" alt=""><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div><div class="q">How much do implants cost?</div></a>
+      <a class="qa-card reveal" href="#"><div class="qa-thumb"><img src="assets/poster/qa-what.png" alt=""><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div><div class="q">What is a dental implant?</div></a>
+      <a class="qa-card reveal" href="#"><div class="qa-thumb"><img src="assets/poster/qa-old.png" alt=""><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div><div class="q">Am I too old for implants?</div></a>
+      <a class="qa-card reveal" href="#"><div class="qa-thumb"><img src="assets/poster/qa-zygo.png" alt=""><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div><div class="q">What are zygomatic implants?</div></a>
+      <a class="qa-card reveal" href="#"><div class="qa-thumb"><img src="assets/poster/qa-protocol.png" alt=""><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div><div class="q">What is The Burns Protocol?</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- SPA 122 -->
+<section class="spa" id="spa">
+  <div class="wrap split">
+    <div class="split-media plain reveal"><img src="assets/img/team.jpg" alt="The Dr. Jeffrey Burns and SPA 122 team"></div>
+    <div class="reveal">
+      <h2 style="margin-bottom:16px">More than a dental office. Meet SPA 122.</h2>
+      <p>Our MedSpa is right next door. Some spa services are available during your dental treatment, so your visit is as comfortable as your results are beautiful.</p>
+      <a class="btn btn-ghost" href="#spa" style="margin-top:26px">Explore SPA 122</a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="final-bg" style="background-image:url('assets/img/bts.jpg')"></div>
+  <div class="wrap">
+    <h2>You deserve to feel heard. And to love your smile again.</h2>
+    <p>Take the first step today. No pressure. Just a simple conversation to explore what is possible, and whether it is right for you.</p>
+    <div class="final-actions">
+      <a class="btn btn-light" href="#consult">Schedule My Free Consultation</a>
+      <a class="btn btn-ghost" href="tel:5407408937" style="color:#fff;border-color:rgba(255,255,255,.4)">Call 540-740-8937</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <img src="assets/img/logo-white.png" alt="Jeffrey S. Burns DDS">
+        <p>Full-arch dental implants and DreamSmile&trade;, serving Harrisonburg, Winchester, and the Shenandoah Valley.</p>
+        <div class="ft-social">
+          <a href="https://www.facebook.com/JeffreySBurnsDDS/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0022 12z"/></svg></a>
+          <a href="https://www.instagram.com/jeffreys.burnsdds/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3 0 4.1.1 1 0 1.7.2 2.3.5.6.2 1.1.5 1.6 1s.8 1 1 1.6c.3.6.5 1.3.5 2.3.1 1.1.1 1.4.1 4.1s0 3-.1 4.1c0 1-.2 1.7-.5 2.3-.2.6-.5 1.1-1 1.6s-1 .8-1.6 1c-.6.3-1.3.5-2.3.5-1.1.1-1.4.1-4.1.1s-3 0-4.1-.1c-1 0-1.7-.2-2.3-.5-.6-.2-1.1-.5-1.6-1s-.8-1-1-1.6c-.3-.6-.5-1.3-.5-2.3C2 15 2 14.7 2 12s0-3 .1-4.1c0-1 .2-1.7.5-2.3.2-.6.5-1.1 1-1.6s1-.8 1.6-1c.6-.3 1.3-.5 2.3-.5C9 2 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM17.8 7a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4z"/></svg></a>
+          <a href="https://www.tiktok.com/@jeffrey.burns.dds" aria-label="TikTok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M16.6 5.8a4.3 4.3 0 01-1-2.8h-3v11.3a2.5 2.5 0 11-2.5-2.5c.2 0 .5 0 .7.1V6.8a5.7 5.7 0 00-.7 0 5.6 5.6 0 105.6 5.6V8.7a7.2 7.2 0 004.2 1.3V7a4.3 4.3 0 01-3.3-1.2z"/></svg></a>
+        </div>
+      </div>
+      <div class="ft-col">
+        <h4>Practice</h4>
+        <a href="#doctor">Meet Dr. Burns</a>
+        <a href="#process">The Burns Protocol</a>
+        <a href="#pricing">Pricing &amp; Financing</a>
+        <a href="#spa">SPA 122 MedSpa</a>
+      </div>
+      <div class="ft-col">
+        <h4>Explore</h4>
+        <a href="#stories">Patient Stories</a>
+        <a href="#questions">FAQ</a>
+        <a href="#guide">Free Guide</a>
+        <a href="#consult">Schedule</a>
+      </div>
+      <div class="ft-col ft-contact">
+        <h4>Visit</h4>
+        <div><b>540-740-8937</b></div>
+        <div>9626 South Congress St<br>New Market, VA</div>
+        <div><a href="https://schedule.jeffrey-burns.implant-services.com" style="color:var(--teal)">Book a consultation</a></div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>&copy; 2026 Jeffrey S. Burns D.D.S. &nbsp;/&nbsp; DreamSmile</span>
+      <span><a href="#">Privacy Policy</a> &nbsp; <a href="#">Accessibility</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // scroll reveal
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if(reduce || !('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){en.target.classList.add('in'); io.unobserve(en.target);} });
+    },{threshold:.14, rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(e){io.observe(e)});
+  })();
+  // mobile menu (simple anchor jump, nav collapses to burger visually)
+  document.querySelector('.burger').addEventListener('click',function(){
+    var m=document.querySelector('nav.menu');
+    m.style.display = (m.style.display==='flex')?'none':'flex';
+    m.style.position='absolute';m.style.flexDirection='column';m.style.top='72px';m.style.right='20px';
+    m.style.background='#fff';m.style.padding='18px 22px';m.style.borderRadius='14px';m.style.boxShadow='var(--shadow-soft)';m.style.gap='14px';
+  });
+</script>
+
+<!-- VISUAL EDITOR - local only, never commit to GitHub -->
+<script>if(location.search.includes('edit')){const s=document.createElement('script');s.src='editor.js';document.body.appendChild(s);}</script>
+</body>
+</html>

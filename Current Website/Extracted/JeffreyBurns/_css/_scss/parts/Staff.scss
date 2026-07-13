@@ -1,0 +1,29 @@
+@import "../_config/config";
+
+.part-staff {
+  padding-top: 513px;
+  @include media-breakpoint-down(md) {
+       padding-top: 27%;
+     }
+  @include media-breakpoint-down(xs) {
+    padding-top: 49.7%;
+  }
+  .component-section-bg {
+    bottom: initial;
+    padding-bottom: 49.7%;
+    .component-section-bg .page-section-bg{
+      background-size: contain;
+      background-color: gray;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .container{
+    @include media('>=1230px') {
+      width: 1200px;
+    }
+  }
+  .content-block-text{
+    background-color: rgba(255,255,255, 0.95);
+  }
+}

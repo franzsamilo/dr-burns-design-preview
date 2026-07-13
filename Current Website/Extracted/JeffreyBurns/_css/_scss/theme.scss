@@ -1,0 +1,27 @@
+@import "_config/config";
+@import "_partials/_utilities/colors";
+@import "_partials/_utilities/fonts";
+@import "_partials/_utilities/spacing";
+@import "_partials/*";
+
+.sr-hidden, .page-content-wrap, .side-wrap, .pbhs-grid-row {
+  visibility: hidden;
+}
+
+#banner, #banner *,
+#actionNav * {
+  visibility: inherit !important;
+}
+
+#actionNav {
+  @media (max-width: 767px) {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+
+.ie9 {
+  .sr-hidden, .page-content-wrap, .side-wrap, #actionNav, #banner, #banner *, .pbhs-grid-row {
+    visibility: visible;
+  }
+}

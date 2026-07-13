@@ -1,0 +1,19 @@
+.part-navigation-inline {
+  ul.d-block {
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin-left: 4px;
+      margin-right: 4px;
+
+      a {
+        color: inherit;
+
+        &:hover, &:focus {
+          color: inherit;
+        }
+      }
+    }
+  }
+}

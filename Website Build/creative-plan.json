@@ -1,0 +1,497 @@
+{
+  "home": {
+    "hero": "assets/img/dr-burns-smile.jpg",
+    "faces": [
+      "assets/img/mike-2026.jpg",
+      "assets/img/kelly-2026.jpg",
+      "assets/img/ron-2026.jpg",
+      "assets/img/angela-2026.jpg"
+    ],
+    "story": "assets/img/angela-2026b.jpg",
+    "protocol": "assets/video/quiet-difference.mp4",
+    "bio": "assets/img/dr-burns.jpg",
+    "testimonialVideos": [
+      "assets/video/mike-30s.mp4",
+      "assets/video/kelly-30s.mp4",
+      "assets/video/angela-30s.mp4"
+    ],
+    "sectionImgs": [
+      "assets/img/team-2026-full.jpg",
+      "assets/video/web-banner.mp4",
+      "assets/img/ebook.png",
+      "assets/img/office-exterior.jpg",
+      "assets/video/qa-dreamsmile.mp4"
+    ],
+    "posters": {
+      "assets/video/quiet-difference.mp4": "assets/poster/quiet-difference.jpg",
+      "assets/video/mike-30s.mp4": "assets/poster/mike-30s.jpg",
+      "assets/video/kelly-30s.mp4": "assets/poster/kelly-30s.jpg",
+      "assets/video/angela-30s.mp4": "assets/poster/angela-30s.jpg",
+      "assets/video/web-banner.mp4": "assets/poster/web-banner.jpg",
+      "assets/video/qa-dreamsmile.mp4": "assets/poster/qa-dreamsmile.jpg"
+    }
+  },
+  "dental-implants": {
+    "hero": "assets/img/burns-consult.jpg",
+    "faces": [
+      "assets/img/danny-2026.jpg",
+      "assets/img/angela-2026b.jpg",
+      "assets/img/review3.jpg",
+      "assets/img/ron-2026.jpg"
+    ],
+    "story": "assets/img/mike-2026.jpg",
+    "protocol": "assets/img/burns-protocol-craft-1.jpg",
+    "bio": "assets/img/dr-burns-smile.jpg",
+    "testimonialVideos": [
+      "assets/video/testimonial-3.mp4",
+      "assets/video/mike-30s.mp4",
+      "assets/video/testimonial-jill-bush.mp4"
+    ],
+    "sectionImgs": [
+      "assets/video/dental-implants.mp4",
+      "assets/img/ebook.png",
+      "assets/img/topic-implant-model.jpg",
+      "assets/video/qa-what.mp4",
+      "assets/video/qa-advantages.mp4"
+    ],
+    "posters": {
+      "assets/video/testimonial-3.mp4": "assets/poster/testimonial-3.jpg",
+      "assets/video/mike-30s.mp4": "assets/poster/mike-30s.jpg",
+      "assets/video/testimonial-jill-bush.mp4": "assets/poster/testimonial-jill-bush.jpg",
+      "assets/video/dental-implants.mp4": "assets/poster/dental-implants.jpg",
+      "assets/video/qa-what.mp4": "assets/poster/qa-what.jpg",
+      "assets/video/qa-advantages.mp4": "assets/poster/qa-advantages.jpg"
+    }
+  },
+  "replacing-missing-teeth": {
+    "hero": "assets/img/danny-2026.jpg",
+    "faces": [
+      "assets/img/mike-2026.jpg",
+      "assets/img/review5.jpg",
+      "assets/img/kelly-2026b.jpg",
+      "assets/img/review4.jpg"
+    ],
+    "story": "assets/img/review3.jpg",
+    "protocol": "assets/img/burns-protocol-craft-2.jpg",
+    "bio": "assets/img/dr-burns.jpg",
+    "testimonialVideos": [
+      "assets/video/testimonial-3.mp4",
+      "assets/video/testimonial-5.mp4",
+      "assets/video/testimonial-ttg-5.mp4"
+    ],
+    "sectionImgs": [
+      "assets/img/topic-bridge-consult.jpg",
+      "assets/video/where-is-implant.mp4",
+      "assets/video/qa-candidate.mp4",
+      "assets/img/topic-implant-explainer.jpg"
+    ],
+    "posters": {
+      "assets/video/testimonial-3.mp4": "assets/poster/testimonial-3.jpg",
+      "assets/video/testimonial-5.mp4": "assets/poster/testimonial-5.jpg",
+      "assets/video/testimonial-ttg-5.mp4": "assets/poster/testimonial-ttg-5.jpg",
+      "assets/video/where-is-implant.mp4": "assets/poster/where-is-implant.jpg",
+      "assets/video/qa-candidate.mp4": "assets/poster/qa-candidate.jpg"
+    }
+  },
+  "missing-all-teeth": {
+    "hero": "assets/img/ron-2026.jpg",
+    "faces": [
+      "assets/img/review1.jpg",
+      "assets/img/angela-2026.jpg",
+      "assets/img/review3.jpg",
+      "assets/img/kelly-2026.jpg"
+    ],
+    "story": "assets/img/bts-patient.jpg",
+    "protocol": "assets/video/qa-protocol.mp4",
+    "bio": "assets/img/dr-burns-smile.jpg",
+    "testimonialVideos": [
+      "assets/video/ron-30s.mp4",
+      "assets/video/testimonial-1.mp4",
+      "assets/video/ba-fran.mp4"
+    ],
+    "sectionImgs": [
+      "assets/img/topic-full-arch-senior.jpg",
+      "assets/video/qa-old.mp4",
+      "assets/video/qa-zygo.mp4",
+      "assets/img/topic-dentures-chair.jpg"
+    ],
+    "posters": {
+      "assets/video/qa-protocol.mp4": "assets/poster/qa-protocol.jpg",
+      "assets/video/ron-30s.mp4": "assets/poster/ron-30s.jpg",
+      "assets/video/testimonial-1.mp4": "assets/poster/testimonial-1.jpg",
+      "assets/video/ba-fran.mp4": "assets/poster/ba-fran.jpg",
+      "assets/video/qa-old.mp4": "assets/poster/qa-old.jpg",
+      "assets/video/qa-zygo.mp4": "assets/poster/qa-zygo.jpg"
+    }
+  },
+  "implant-placement": {
+    "hero": "assets/img/burns-protocol-craft-1.jpg",
+    "faces": [
+      "assets/img/danny-2026.jpg",
+      "assets/img/review2.jpg",
+      "assets/img/bts-patient.jpg",
+      "assets/img/angela-2026b.jpg"
+    ],
+    "story": "assets/img/kelly-2026.jpg",
+    "protocol": "assets/img/burns-protocol-craft-2.jpg",
+    "bio": "assets/img/dr-burns.jpg",
+    "testimonialVideos": [
+      "assets/video/kelly-30s.mp4",
+      "assets/video/danny-30s.mp4",
+      "assets/video/testimonial-4.mp4"
+    ],
+    "sectionImgs": [
+      "assets/video/qa-xray.mp4",
+      "assets/img/topic-implant-xray.jpg",
+      "assets/video/qa-wrong-spot.mp4",
+      "assets/img/topic-implant-model.jpg"
+    ],
+    "posters": {
+      "assets/video/kelly-30s.mp4": "assets/poster/kelly-30s.jpg",
+      "assets/video/danny-30s.mp4": "assets/poster/danny-30s.jpg",
+      "assets/video/testimonial-4.mp4": "assets/poster/testimonial-4.jpg",
+      "assets/video/qa-xray.mp4": "assets/poster/qa-xray.jpg",
+      "assets/video/qa-wrong-spot.mp4": "assets/poster/qa-wrong-spot.jpg"
+    }
+  },
+  "after-placement": {
+    "hero": "assets/img/kelly-2026b.jpg",
+    "faces": [
+      "assets/img/bts-patient.jpg",
+      "assets/img/review2.jpg",
+      "assets/img/mike-2026.jpg",
+      "assets/img/angela-2026.jpg"
+    ],
+    "story": "assets/img/review4.jpg",
+    "protocol": "assets/img/burns-protocol-craft-1.jpg",
+    "bio": "assets/img/dr-burns-smile.jpg",
+    "testimonialVideos": [
+      "assets/video/angela-30s.mp4",
+      "assets/video/angela-15s.mp4"
+    ],
+    "sectionImgs": [
+      "assets/video/qa-heal-time.mp4",
+      "assets/video/qa-day-after.mp4",
+      "assets/video/qa-food.mp4",
+      "assets/video/qa-pain.mp4",
+      "assets/img/topic-rootcanal-senior.jpg"
+    ],
+    "posters": {
+      "assets/video/angela-30s.mp4": "assets/poster/angela-30s.jpg",
+      "assets/video/angela-15s.mp4": "assets/poster/angela-15s.jpg",
+      "assets/video/qa-heal-time.mp4": "assets/poster/qa-heal-time.jpg",
+      "assets/video/qa-day-after.mp4": "assets/poster/qa-day-after.jpg",
+      "assets/video/qa-food.mp4": "assets/poster/qa-food.jpg",
+      "assets/video/qa-pain.mp4": "assets/poster/qa-pain.jpg"
+    }
+  },
+  "bone-grafting": {
+    "hero": "assets/img/burns-team-coat.jpg",
+    "faces": [
+      "assets/img/review3.jpg",
+      "assets/img/danny-2026.jpg",
+      "assets/img/kelly-2026b.jpg",
+      "assets/img/angela-2026.jpg"
+    ],
+    "story": "assets/img/review5.jpg",
+    "protocol": "assets/img/burns-protocol-craft-2.jpg",
+    "bio": "assets/img/dr-burns.jpg",
+    "testimonialVideos": [
+      "assets/video/testimonial-6.mp4",
+      "assets/video/testimonial-ttg-4.mp4",
+      "assets/video/testimonial-jill-bush.mp4"
+    ],
+    "sectionImgs": [
+      "assets/video/qa-bone.mp4",
+      "assets/video/qa-zygo.mp4",
+      "assets/img/topic-implant-xray.jpg",
+      "assets/img/topic-gum-disease.jpg",
+      "assets/video/qa-reason-fail.mp4"
+    ],
+    "posters": {
+      "assets/video/testimonial-6.mp4": "assets/poster/testimonial-6.jpg",
+      "assets/video/testimonial-ttg-4.mp4": "assets/poster/testimonial-ttg-4.jpg",
+      "assets/video/testimonial-jill-bush.mp4": "assets/poster/testimonial-jill-bush.jpg",
+      "assets/video/qa-bone.mp4": "assets/poster/qa-bone.jpg",
+      "assets/video/qa-zygo.mp4": "assets/poster/qa-zygo.jpg",
+      "assets/video/qa-reason-fail.mp4": "assets/poster/qa-reason-fail.jpg"
+    }
+  },
+  "cost": {
+    "hero": "assets/img/hero-burns.jpg",
+    "faces": [
+      "assets/img/mike-2026.jpg",
+      "assets/img/angela-2026b.jpg",
+      "assets/img/review5.jpg",
+      "assets/img/ron-2026.jpg"
+    ],
+    "story": "assets/poster/testimonial-ttg-4.jpg",
+    "protocol": "assets/video/quiet-difference.mp4",
+    "bio": "assets/img/dr-burns-smile.jpg",
+    "testimonialVideos": [
+      "assets/video/testimonial-ttg-4.mp4",
+      "assets/video/mike-30s.mp4",
+      "assets/video/testimonial-5.mp4"
+    ],
+    "sectionImgs": [
+      "assets/video/qa-cost.mp4",
+      "assets/img/ebook.png",
+      "assets/video/qa-questions.mp4",
+      "assets/img/lounge-fireplace.jpg"
+    ],
+    "posters": {
+      "assets/video/quiet-difference.mp4": "assets/poster/quiet-difference.jpg",
+      "assets/video/testimonial-ttg-4.mp4": "assets/poster/testimonial-ttg-4.jpg",
+      "assets/video/mike-30s.mp4": "assets/poster/mike-30s.jpg",
+      "assets/video/testimonial-5.mp4": "assets/poster/testimonial-5.jpg",
+      "assets/video/qa-cost.mp4": "assets/poster/qa-cost.jpg",
+      "assets/video/qa-questions.mp4": "assets/poster/qa-questions.jpg"
+    }
+  },
+  "faqs": {
+    "hero": "assets/img/bts-shoot.jpg",
+    "faces": [
+      "assets/img/kelly-2026.jpg",
+      "assets/img/review2.jpg",
+      "assets/img/danny-2026.jpg",
+      "assets/img/review1.jpg"
+    ],
+    "story": "assets/poster/testimonial-ttg-a.jpg",
+    "protocol": "assets/video/qa-protocol.mp4",
+    "bio": "assets/img/dr-burns.jpg",
+    "testimonialVideos": [
+      "assets/video/testimonial-2.mp4",
+      "assets/video/testimonial-4.mp4",
+      "assets/video/testimonial-ttg-a.mp4"
+    ],
+    "sectionImgs": [
+      "assets/video/qa-what.mp4",
+      "assets/video/qa-how-long.mp4",
+      "assets/video/qa-pain.mp4",
+      "assets/video/qa-bone.mp4",
+      "assets/video/qa-candidate.mp4",
+      "assets/video/qa-success-rate.mp4"
+    ],
+    "posters": {
+      "assets/video/qa-protocol.mp4": "assets/poster/qa-protocol.jpg",
+      "assets/video/testimonial-2.mp4": "assets/poster/testimonial-2.jpg",
+      "assets/video/testimonial-4.mp4": "assets/poster/testimonial-4.jpg",
+      "assets/video/testimonial-ttg-a.mp4": "assets/poster/testimonial-ttg-a.jpg",
+      "assets/video/qa-what.mp4": "assets/poster/qa-what.jpg",
+      "assets/video/qa-how-long.mp4": "assets/poster/qa-how-long.jpg",
+      "assets/video/qa-pain.mp4": "assets/poster/qa-pain.jpg",
+      "assets/video/qa-bone.mp4": "assets/poster/qa-bone.jpg",
+      "assets/video/qa-candidate.mp4": "assets/poster/qa-candidate.jpg",
+      "assets/video/qa-success-rate.mp4": "assets/poster/qa-success-rate.jpg"
+    }
+  },
+  "teeth-in-a-day": {
+    "hero": "assets/img/mike-2026.jpg",
+    "faces": [
+      "assets/img/kelly-2026.jpg",
+      "assets/img/angela-2026b.jpg",
+      "assets/img/review1.jpg",
+      "assets/img/ron-2026.jpg"
+    ],
+    "story": "assets/img/danny-2026.jpg",
+    "protocol": "assets/img/burns-protocol-craft-1.jpg",
+    "bio": "assets/img/dr-burns-smile.jpg",
+    "testimonialVideos": [
+      "assets/video/danny-15s.mp4",
+      "assets/video/danny.mp4",
+      "assets/video/tammy.mp4"
+    ],
+    "sectionImgs": [
+      "assets/video/qa-one-day.mp4",
+      "assets/video/qa-customize.mp4",
+      "assets/img/topic-senior-implant-trust.jpg"
+    ],
+    "posters": {
+      "assets/video/danny-15s.mp4": "assets/poster/danny-15s.jpg",
+      "assets/video/danny.mp4": "assets/poster/danny.jpg",
+      "assets/video/tammy.mp4": "assets/poster/tammy.jpg",
+      "assets/video/qa-one-day.mp4": "assets/poster/qa-one-day.jpg",
+      "assets/video/qa-customize.mp4": "assets/poster/qa-customize.jpg"
+    }
+  },
+  "full-mouth": {
+    "hero": "assets/img/angela-2026.jpg",
+    "faces": [
+      "assets/img/mike-2026.jpg",
+      "assets/img/ron-2026.jpg",
+      "assets/img/kelly-2026.jpg",
+      "assets/img/review5.jpg"
+    ],
+    "story": "assets/poster/joe-vile.jpg",
+    "protocol": "assets/img/burns-protocol-craft-2.jpg",
+    "bio": "assets/img/dr-burns.jpg",
+    "testimonialVideos": [
+      "assets/video/angela-30s.mp4",
+      "assets/video/testimonial-ttg-4.mp4",
+      "assets/video/joe-vile.mp4"
+    ],
+    "sectionImgs": [
+      "assets/video/qa-success-rate.mp4",
+      "assets/video/qa-dreamsmile.mp4",
+      "assets/img/topic-full-arch-senior.jpg",
+      "assets/video/ba-diane-teeth.mp4"
+    ],
+    "posters": {
+      "assets/video/angela-30s.mp4": "assets/poster/angela-30s.jpg",
+      "assets/video/testimonial-ttg-4.mp4": "assets/poster/testimonial-ttg-4.jpg",
+      "assets/video/joe-vile.mp4": "assets/poster/joe-vile.jpg",
+      "assets/video/qa-success-rate.mp4": "assets/poster/qa-success-rate.jpg",
+      "assets/video/qa-dreamsmile.mp4": "assets/poster/qa-dreamsmile.jpg",
+      "assets/video/ba-diane-teeth.mp4": "assets/poster/ba-diane-teeth.jpg"
+    }
+  },
+  "implant-dentures": {
+    "hero": "assets/img/review1.jpg",
+    "faces": [
+      "assets/img/review3.jpg",
+      "assets/img/angela-2026b.jpg",
+      "assets/img/review4.jpg",
+      "assets/img/kelly-2026b.jpg"
+    ],
+    "story": "assets/poster/ba-fran.jpg",
+    "protocol": "assets/img/burns-protocol-craft-1.jpg",
+    "bio": "assets/img/dr-burns-smile.jpg",
+    "testimonialVideos": [
+      "assets/video/ron-15s.mp4",
+      "assets/video/testimonial-1.mp4",
+      "assets/video/ba-fran.mp4"
+    ],
+    "sectionImgs": [
+      "assets/video/qa-denture-stain.mp4",
+      "assets/video/qa-clean-bridge.mp4",
+      "assets/img/topic-dentures-chair.jpg",
+      "assets/video/qa-old.mp4"
+    ],
+    "posters": {
+      "assets/video/ron-15s.mp4": "assets/poster/ron-15s.jpg",
+      "assets/video/testimonial-1.mp4": "assets/poster/testimonial-1.jpg",
+      "assets/video/ba-fran.mp4": "assets/poster/ba-fran.jpg",
+      "assets/video/qa-denture-stain.mp4": "assets/poster/qa-denture-stain.jpg",
+      "assets/video/qa-clean-bridge.mp4": "assets/poster/qa-clean-bridge.jpg",
+      "assets/video/qa-old.mp4": "assets/poster/qa-old.jpg"
+    }
+  },
+  "burns-protocol": {
+    "hero": "assets/img/burns-protocol-craft-2.jpg",
+    "faces": [
+      "assets/img/mike-2026.jpg",
+      "assets/img/kelly-2026.jpg",
+      "assets/img/danny-2026.jpg",
+      "assets/img/angela-2026.jpg"
+    ],
+    "story": "assets/img/ron-2026.jpg",
+    "protocol": "assets/img/burns-protocol-craft-1.jpg",
+    "bio": "assets/img/dr-burns.jpg",
+    "testimonialVideos": [
+      "assets/video/ron-vert.mp4",
+      "assets/video/kelly-15s.mp4",
+      "assets/video/testimonial-ttg-b.mp4"
+    ],
+    "sectionImgs": [
+      "assets/video/qa-protocol.mp4",
+      "assets/img/dreamsmile-logo.png",
+      "assets/video/lecture-clip.mp4",
+      "assets/video/about-dr-burns.mp4"
+    ],
+    "posters": {
+      "assets/video/ron-vert.mp4": "assets/poster/ron-vert.jpg",
+      "assets/video/kelly-15s.mp4": "assets/poster/kelly-15s.jpg",
+      "assets/video/testimonial-ttg-b.mp4": "assets/poster/testimonial-ttg-b.jpg",
+      "assets/video/qa-protocol.mp4": "assets/poster/qa-protocol.jpg",
+      "assets/video/lecture-clip.mp4": "assets/poster/lecture-clip.jpg",
+      "assets/video/about-dr-burns.mp4": "assets/poster/about-dr-burns.jpg"
+    }
+  },
+  "confident": {
+    "hero": "assets/img/kelly-2026.jpg",
+    "faces": [
+      "assets/img/danny-2026.jpg",
+      "assets/img/angela-2026b.jpg",
+      "assets/img/mike-2026.jpg",
+      "assets/img/review5.jpg"
+    ],
+    "story": "assets/img/review2.jpg",
+    "protocol": "assets/video/quiet-difference.mp4",
+    "bio": "assets/img/dr-burns-smile.jpg",
+    "testimonialVideos": [
+      "assets/video/testimonial-2.mp4",
+      "assets/video/kelly-30s.mp4",
+      "assets/video/testimonial-ttg-5.mp4"
+    ],
+    "sectionImgs": [
+      "assets/video/dreamsmile-commercial.mp4",
+      "assets/video/flowers-from-patient.mp4",
+      "assets/img/topic-crowns-patient.jpg"
+    ],
+    "posters": {
+      "assets/video/quiet-difference.mp4": "assets/poster/quiet-difference.jpg",
+      "assets/video/testimonial-2.mp4": "assets/poster/testimonial-2.jpg",
+      "assets/video/kelly-30s.mp4": "assets/poster/kelly-30s.jpg",
+      "assets/video/testimonial-ttg-5.mp4": "assets/poster/testimonial-ttg-5.jpg",
+      "assets/video/dreamsmile-commercial.mp4": "assets/poster/dreamsmile-commercial.jpg",
+      "assets/video/flowers-from-patient.mp4": "assets/poster/flowers-from-patient.jpg"
+    }
+  },
+  "wall-of-fame": {
+    "hero": "assets/video/power-of-full-arch.mp4",
+    "faces": [
+      "assets/img/mike-2026.jpg",
+      "assets/img/kelly-2026.jpg",
+      "assets/img/ron-2026.jpg",
+      "assets/img/danny-2026.jpg"
+    ],
+    "story": "assets/poster/ba-carol.jpg",
+    "protocol": "assets/img/burns-protocol-craft-2.jpg",
+    "bio": "assets/img/dr-burns.jpg",
+    "testimonialVideos": [
+      "assets/video/danny.mp4",
+      "assets/video/diane.mp4",
+      "assets/video/joe-vile.mp4",
+      "assets/video/tammy.mp4",
+      "assets/video/ba-carol.mp4",
+      "assets/video/ba-fran.mp4",
+      "assets/video/testimonial-jill-bush.mp4"
+    ],
+    "sectionImgs": [
+      "assets/video/ba-diane-teeth.mp4",
+      "assets/video/ba-joe-teeth.mp4",
+      "assets/video/joe-vile-implant.mp4",
+      "assets/video/where-is-implant.mp4",
+      "assets/img/angela-2026b.jpg",
+      "assets/img/review2.jpg"
+    ],
+    "posters": {
+      "assets/video/power-of-full-arch.mp4": "assets/poster/power-of-full-arch.jpg",
+      "assets/video/danny.mp4": "assets/poster/danny.jpg",
+      "assets/video/diane.mp4": "assets/poster/diane.jpg",
+      "assets/video/joe-vile.mp4": "assets/poster/joe-vile.jpg",
+      "assets/video/tammy.mp4": "assets/poster/tammy.jpg",
+      "assets/video/ba-carol.mp4": "assets/poster/ba-carol.jpg",
+      "assets/video/ba-fran.mp4": "assets/poster/ba-fran.jpg",
+      "assets/video/testimonial-jill-bush.mp4": "assets/poster/testimonial-jill-bush.jpg",
+      "assets/video/ba-diane-teeth.mp4": "assets/poster/ba-diane-teeth.jpg",
+      "assets/video/ba-joe-teeth.mp4": "assets/poster/ba-joe-teeth.jpg",
+      "assets/video/joe-vile-implant.mp4": "assets/poster/joe-vile-implant.jpg",
+      "assets/video/where-is-implant.mp4": "assets/poster/where-is-implant.jpg"
+    }
+  },
+  "auditNotes": {
+    "heroPool": "All 15 heroes are unique. hero-burns.jpg appears on exactly one page (cost hero, the only real front-desk/consult welcome image left after burns-consult.jpg took the dental-implants hub hero); it is a soft 951px still, flagged in ASSET-GAPS for reshoot.",
+    "implantPlacementHero": "The pool has no real surgical or guided-surgery photo (the only x-ray/diagnostic images are licensed stock marked section-tile-only). burns-protocol-craft-1.jpg (Dr. Burns' hands finishing a prosthetic, 4K) is the closest real clinical-precision visual and heroes implant-placement; the CBCT/3D-imaging need is covered in-section by qa-xray.mp4 and topic-implant-xray.jpg.",
+    "boneGraftingHero": "No real 3D-scan, graft, or sinus-lift photo exists (already an ASSET-GAPS item). burns-team-coat.jpg (Dr. Burns in white coat with clinical team) carries the surgical-authority hero; clinical topical coverage comes from qa-bone.mp4, qa-zygo.mp4, topic-implant-xray.jpg and topic-gum-disease.jpg in sections.",
+    "wallOfFameHero": "No single still shows multiple patients together. power-of-full-arch.mp4 (the brand film featuring Mike, Kelly, Angela, Ron and Danny with before photos) is used as the gallery hero with its poster frame; the 4-face row plus B/A reel supplies the many-faces grid.",
+    "implantDenturesHero": "Constraint asked for older-patient full-arch joy. The only senior q5 still (ron-2026.jpg) already heroes missing-all-teeth, so review1.jpg (older woman, gentle smile, q3, implant topic) keeps heroes unique; her matching film testimonial-1.mp4 plays on the same page.",
+    "burnsProtocolHero": "Doctor-at-work is explicitly allowed here; burns-protocol-craft-2.jpg (Dr. Burns at his lab bench, 4K signature craftsmanship frame) heroes the page. The doctor-with-patient warmth option (burns-consult.jpg) was weighed but it is the strongest topical hero for the dental-implants hub, and the protocol page is about the method itself.",
+    "bioSlots": "Only two verified solo Dr. Burns photos exist (dr-burns.jpg, dr-burns-smile.jpg; two other Drive files labeled Dr. Burns are mislabeled per ASSET-GAPS). Bio slots alternate between the two across the 15 pages, and dr-burns-smile.jpg doubles as the home hero. 2-3 more verified portraits remain a photoshoot gap.",
+    "protocolSlots": "Only two real clinical-precision stills exist (burns-protocol-craft-1/2.jpg). Each covers about six pages across hero and protocol slots, relieved by quiet-difference.mp4 and qa-protocol.mp4 (3 pages each). More bench/loupes photography would remove this repetition.",
+    "storyPosters": "Story slots on cost, faqs, full-mouth, implant-dentures and wall-of-fame use video poster frames (testimonial-ttg-4, testimonial-ttg-a, joe-vile, ba-fran, ba-carol) because those patients exist only as video assets. Each poster's matching film plays on the same page so the story quote stays attached to its subject. tammy.jpg was avoided in story slots (baked-in TikTok caption per ASSET-GAPS).",
+    "videoSpread": "No video appears on more than 3 pages (verified programmatically, all videos, not just testimonials). All six zip testimonial films are placed topically: t1 older woman on the edentulous/overdenture pages, t2 mother-daughter on faqs and confident, t3 grey-haired man on the hub and single-tooth page, t4 on procedure/recovery/faqs, t5-t6 on replacing/cost/bone-grafting. TTG health-turnaround (ttg-4) anchors bone-grafting, cost and full-mouth; MN reveals (ba-carol, ba-fran) anchor the denture and gallery pages.",
+    "facesRotation": "Face rows are 4 real patients each, rotated so no adjacent sibling pages share the same set (max overlap 2 faces), and a page's hero or story subject image never repeats inside its own row. Ron appears across 8 pages in different photos because he is the only senior male patient with 2026-quality stills; the five legacy face-crops (q2) were left out of rows in favor of q3-q5 faces.",
+    "stockUsage": "Licensed stock images appear only in sectionImgs tiles (per library restriction: never hero, story, faces, or proof). Logos exempt from uniqueness; dreamsmile-logo.png used on burns-protocol for the Created-by-DreamSmile-Founder section."
+  }
+}

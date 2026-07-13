@@ -1,0 +1,53 @@
+/* Begin Element Alignment Module */
+
+ul.unstyled, ol.unstyled { padding-left: 0; }
+
+/* --- Wp Alignment Classes --- */
+.alignleft, .alignright, .aligncenter, .alignnone {
+	margin-bottom: 30px;
+}
+
+.alignleft, .alignright {
+	width: 50%;
+}
+
+.alignleft {
+	margin-right: 30px;
+	float: left;
+}
+
+.alignright {
+	margin-left: 30px;
+	float: right;
+}
+
+.aligncenter {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	clear: both;
+}
+
+.alignnone {
+	width: auto;
+	float: none;
+}
+
+img.alignleft, img.alignright, img.aligncenter,
+.alignleft.flash-replaced, .alignright.flash-replaced, img.aligncenter {
+	display: block;
+	width: auto;
+	margin-bottom: 15px;
+}
+
+@include media-breakpoint-down(xs) {
+	.alignleft, .alignright, .aligncenter {
+		width: auto;
+		margin-left: 0;
+		margin-right: 0;
+		float: none;
+	}
+}
+
+/* End Element Alignment Module */

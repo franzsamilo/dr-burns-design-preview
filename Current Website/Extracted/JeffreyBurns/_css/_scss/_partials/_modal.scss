@@ -1,0 +1,21 @@
+.modal--simple .modal-content {
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+	background-clip: border-box;
+	border: none;
+}
+
+.modal--simple .modal-header {
+	border: none;
+}
+
+.modal--simple .modal-footer {
+	border: none;
+}
+
+.modal--simple .modal-title {
+	text-align: center;
+}
+
+.modal--simple .close { position: absolute; top: 6px; right: 14px; font-size: 36px; }

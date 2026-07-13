@@ -1,0 +1,28 @@
+/*!
+Key: whiteonblack
+Name: White Text on Black
+Button Styles: color:#FFF;background:#000;border-color:#FFF
+*/
+
+$primary_bg: #000;
+$primary_font: #FFF;
+$primary_reverse_font: #000;
+$primary_reverse_bg: #FFF;
+
+
+$offset_bg_1: #090909;
+$offset_reverse_bg_1: #DDD;
+$offset_bg_2: #121212;
+$offset_bg_3: #1B1B1B;
+$offset_bg_4: #242424;
+$offset_bg_5: #2D2D2D;
+
+@import "_accessibility_templates/standard";
+
+.client-logo img, .contact-box img {
+  filter: brightness(20);
+}
+
+.part-sets-us-apart button.flickity-prev-next-button img {
+  filter: brightness(0);
+}

@@ -1,0 +1,155 @@
+$color_main: #fff;
+$bg_main: rgba(62,62,62,0.9);
+$bg_hover: #75bdc2;
+
+.sf-active {
+  margin: 0;
+  clear: both;
+  .container{
+    @include media('>=1400px') {
+      width: 1350px;
+    }
+
+  }
+  .sf-menu {
+    li {
+      z-index: 20;
+      height: inherit;
+      line-height: 16px;
+      white-space: normal;
+      background: transparent;
+
+
+    }
+
+    a {
+      /* --- global link styles --- */
+      font-size: 14px;
+      text-align: center;
+      letter-spacing: get-letter-spacing(50);
+    }
+
+    a,
+    li:hover a,
+    li.sfHover a {
+      color: $color_main;
+      border-left: none;
+      border-top: none;
+    }
+
+    /* --- Level One Only Styles --- */
+    & > li {
+      & > a {
+        color:  #dcdcdc;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+
+      &.first {
+        & > a {
+          color: #60a7ac;
+          font-weight: 600;
+        }
+      }
+
+
+      & > a.sf-with-ul:after {
+        /* --- Disable first level superfish arrows --- */
+        border: none !important;
+      }
+    }
+
+    /* --- Child Menu Styles --- */
+    ul {
+      background: $bg_main;
+      padding-top: 17px;
+      padding-bottom: 37px;
+      &:before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
+        top: 0;
+        height: 165px;
+        left: 0;
+        right: 0;
+        z-index: 3;
+      }
+      li {
+        /* --- Level 2 Menu Styles --- */
+        //text-align: left;
+
+        white-space: nowrap;
+        z-index: 4;
+
+        &.sfHover {
+          background: $bg_main;
+        }
+
+        a {
+          padding: 0.9em 3.5em 0.9em 1.5em;
+          text-align: left;
+
+        }
+
+        &.sfHover {
+          background: $bg_hover;
+        }
+      }
+
+      ul {
+        /* --- Level 3 Menu Styles --- */
+        li {
+
+
+
+          &.sfHover {
+
+          }
+        }
+      }
+    }
+  }
+
+  /* --- Swap menu position for last dropdown --- */
+  li.last {
+    ul {
+      left: auto;
+      right: 0;
+
+      ul {
+        right: 100%;
+      }
+    }
+  }
+
+  .last ul li a,
+  li.last ul .sfHover a {
+    text-align: right;
+    padding: 0.8em 1.5em 0.8em 3.5em;
+  }
+}
+
+
+.sticky {
+  .part-banner {
+    margin-top: 50px;
+  }
+  .part-navigation {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 0;
+    z-index: 99;
+
+    .logged-in & {
+      @include media-breakpoint-up(md) {
+        top: 32px;
+      }
+    }
+
+    .nav-wrap {
+      width: 100vw;
+    }
+
+  }
+}

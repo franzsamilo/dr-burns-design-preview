@@ -1,0 +1,101 @@
+{
+  "_source": "Extracted from the practice theme at /tmp/burns-zip/JeffreyBurns/_css/theme.css (authoritative named palette: .c-blue #74bdc2, .c-gray #3e3e3e, .c-default #979797, .c-white #fff, .c-black #000; fonts .ff-default Montserrat, .ff-Amiri Amiri) and reconciled against the harness-green reference page implant-tooth.html for the full working palette (caresmiles.com feel). Practice theme.css only names 5 colors; the extended teal/dark/tan hexes below come from the proven reference page, not the practice theme.",
+  "_rules": "Light theme always. White/off-white/light-grey base + teal #74bdc2 accent + #3e3e3e deepest text neutral. No pure #000 on text, nav, or headings (media wells only). No em dashes, no AI buzzwords. Never the word 'specialist' (use 'Meet the Doctor'). Never change a slug (keep trailing slash). DreamSmile branding + logo ONLY on pages the PAGE-TEMPLATE-MAP flags DreamSmile = Yes. Real practice assets only, no stock/AI faces.",
+
+  "colors": {
+    "teal": "#74bdc2",
+    "ink": "#3e3e3e",
+    "white": "#ffffff",
+    "grey": "#979797",
+    "black": "#000000",
+    "offWhite": "#eef3f5",
+    "tealDeep": "#226d7a",
+    "cyan": "#22b8d1"
+  },
+
+  "allowedHex": [
+    "#ffffff",
+    "#eef3f5",
+    "#e4eef1",
+    "#dfeaea",
+    "#e4f5fa",
+    "#e2ebee",
+    "#dcefef",
+    "#cfe8e9",
+    "#b0e0e9",
+    "#74bdc2",
+    "#226d7a",
+    "#22b8d1",
+    "#1a565f",
+    "#164851",
+    "#3e3e3e",
+    "#12252c",
+    "#4d5a62",
+    "#7f99a3",
+    "#979797",
+    "#183a44",
+    "#10242b",
+    "#0f2126",
+    "#0d1519",
+    "#c6b48d",
+    "#b09b6f",
+    "#f5b942",
+    "#000000"
+  ],
+
+  "hexRoles": {
+    "#ffffff": "cards, nav bar, page white",
+    "#eef3f5": "page background (off-white base) --bg",
+    "#e4eef1": "secondary section background --bg2",
+    "#dfeaea": "image/figure placeholder well",
+    "#e4f5fa": "pale teal card/quiz background --pale",
+    "#e2ebee": "hairline borders --line",
+    "#dcefef": "journey-capsule gradient top",
+    "#cfe8e9": "journey-capsule gradient bottom",
+    "#b0e0e9": "pale teal borders + dark-section accent numerals --pale2",
+    "#74bdc2": "brand teal accent, nav CTA button --teal-brand",
+    "#226d7a": "primary teal (buttons, headings, links) --teal (caresmiles feel)",
+    "#22b8d1": "cyan eyebrows / small accents --cyan",
+    "#1a565f": "teal button hover",
+    "#164851": "deep teal accent",
+    "#3e3e3e": "deepest text neutral / graphite body default (brief spec) --graphite",
+    "#12252c": "darkest ink for h1/h2 headings --ink",
+    "#4d5a62": "body/paragraph text on light --body",
+    "#7f99a3": "muted slate captions --slate",
+    "#979797": "practice theme default grey (.c-default)",
+    "#183a44": "dark feature-section gradient (story/protocol/bio)",
+    "#10242b": "dark feature-section gradient",
+    "#0f2126": "dark feature-section gradient",
+    "#0d1519": "deepest dark neutral",
+    "#c6b48d": "tan / gold secondary CTA + warranty accent --tan",
+    "#b09b6f": "deep tan hover / accent --tan-deep",
+    "#f5b942": "review star amber",
+    "#000000": "MEDIA WELLS ONLY (before/after cards, testimonial cards, video posters). Never on text, nav, or page background."
+  },
+
+  "fonts": {
+    "heading": "'Amiri', Georgia, serif",
+    "body": "'Montserrat', Arial, sans-serif",
+    "_headingUsage": "h1/h2 display = Amiri serif (italic accent word per Figma). h3/h4 subheads = Montserrat 800. Larger readable type for 55+ readers.",
+    "_googleImport": "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap"
+  },
+
+  "logo": {
+    "dreamsmile": "assets/img/dreamsmile-logo.png",
+    "jburns": "assets/img/logo.png",
+    "jburnsWhite": "assets/img/logo-white.png",
+    "_note": "jburns (logo.png) is the primary J. Burns practice mark, use site-wide. jburnsWhite (logo-white.png) is the reverse for dark backgrounds and footer. dreamsmile-logo.png is the DreamSmile program mark, use ONLY where PAGE-TEMPLATE-MAP flags DreamSmile = Yes. Use the real file at full resolution, never a screenshot or AI substitute."
+  },
+
+  "trademark": "DreamSmile is a trademark: render it 'DreamSmile™'. Keep the ™ small and superscript so it reads as a mark, not a headline element. Show DreamSmile branding only on implant / DreamSmile-flagged pages (per PAGE-TEMPLATE-MAP), never site-wide. If the ™ looks oversized or clunky at any size, shrink it; if it still looks bad, remove it and flag it. J. Burns practice logo carries no trademark symbol.",
+
+  "cta": {
+    "primary": "Schedule my free consultation",
+    "phone": "540-740-8937",
+    "_phoneRule": "Tel-linked (tel:540-740-8937) beside the primary CTA, above the fold, on every page.",
+    "lowThreshold": [
+      "Find out if you're a candidate for dental implants",
+      "Get our pricing and information guide"
+    ]
+  }
+}

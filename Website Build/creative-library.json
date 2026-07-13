@@ -1,0 +1,2515 @@
+[
+  {
+    "path": "assets/img/logo.png",
+    "kind": "img",
+    "description": "J. Burns practice wordmark in teal and grey, primary site logo.",
+    "roles": [
+      "logo"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 4,
+    "people": "none"
+  },
+  {
+    "path": "assets/img/logo-white.png",
+    "kind": "img",
+    "description": "J. Burns wordmark in white for dark backgrounds and footer.",
+    "roles": [
+      "logo"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 4,
+    "people": "none"
+  },
+  {
+    "path": "assets/img/dreamsmile-logo.png",
+    "kind": "img",
+    "description": "DreamSmile by Jeffrey S. Burns DDS wide wordmark, the full-arch program mark.",
+    "roles": [
+      "logo"
+    ],
+    "topics": [
+      "implants",
+      "practice"
+    ],
+    "quality": 4,
+    "people": "none"
+  },
+  {
+    "path": "assets/img/dreamsmile-logo-square.png",
+    "kind": "img",
+    "description": "DreamSmile square logo variant, centered swoosh mark.",
+    "roles": [
+      "logo"
+    ],
+    "topics": [
+      "implants",
+      "practice"
+    ],
+    "quality": 3,
+    "people": "none"
+  },
+  {
+    "path": "assets/img/map.jpg",
+    "kind": "img",
+    "description": "Branded static location map for the New Market, Virginia office.",
+    "roles": [
+      "office"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 2,
+    "people": "none"
+  },
+  {
+    "path": "assets/img/ebook.png",
+    "kind": "img",
+    "description": "Ultimate Guide to Dental Implants ebook mockup, polished lead-magnet render.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "cost"
+    ],
+    "quality": 4,
+    "people": "none"
+  },
+  {
+    "path": "assets/img/dr-burns.jpg",
+    "kind": "img",
+    "description": "Dr. Jeffrey Burns verified headshot in black Under Armour polo, lobby background (571x800, soft at full-bleed).",
+    "roles": [
+      "bio",
+      "story"
+    ],
+    "topics": [
+      "practice",
+      "confidence"
+    ],
+    "quality": 3,
+    "people": "Dr. Jeffrey Burns"
+  },
+  {
+    "path": "assets/img/dr-burns-smile.jpg",
+    "kind": "img",
+    "description": "Dr. Jeffrey Burns laughing warmly in black scrubs by a bright window, extracted 4K frame from the DreamSmile commercial (2160x2050, small DreamSmile watermark top right).",
+    "roles": [
+      "hero",
+      "bio",
+      "story"
+    ],
+    "topics": [
+      "confidence",
+      "practice",
+      "implants"
+    ],
+    "quality": 5,
+    "people": "Dr. Jeffrey Burns"
+  },
+  {
+    "path": "assets/img/burns-consult.jpg",
+    "kind": "img",
+    "description": "Dr. Jeffrey Burns in conversation with a patient across his consultation desk, warm light.",
+    "roles": [
+      "hero",
+      "story",
+      "clinical"
+    ],
+    "topics": [
+      "implants",
+      "practice",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns + patient"
+  },
+  {
+    "path": "assets/img/burns-team-coat.jpg",
+    "kind": "img",
+    "description": "Dr. Jeffrey Burns in a white coat with five team members, clinical authority group shot.",
+    "roles": [
+      "bio",
+      "section"
+    ],
+    "topics": [
+      "practice",
+      "surgery"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns + 5 staff"
+  },
+  {
+    "path": "assets/img/burns-protocol-craft-1.jpg",
+    "kind": "img",
+    "description": "Dr. Burns hand-finishing a dental prosthetic at his bench, close 4K frame, caption-free, the signature Burns Protocol craftsmanship visual.",
+    "roles": [
+      "hero",
+      "protocol",
+      "clinical"
+    ],
+    "topics": [
+      "implants",
+      "dentures",
+      "surgery"
+    ],
+    "quality": 5,
+    "people": "Dr. Jeffrey Burns (hands)"
+  },
+  {
+    "path": "assets/img/burns-protocol-craft-2.jpg",
+    "kind": "img",
+    "description": "Dr. Burns seated at his lab bench under a work lamp shaping a restoration, wide 4K frame, caption-free.",
+    "roles": [
+      "hero",
+      "protocol",
+      "clinical",
+      "story"
+    ],
+    "topics": [
+      "implants",
+      "dentures",
+      "surgery"
+    ],
+    "quality": 5,
+    "people": "Dr. Jeffrey Burns"
+  },
+  {
+    "path": "assets/img/dr-whitney.jpg",
+    "kind": "img",
+    "description": "Dr. James Whitney professional portrait, navy sweater and tie, botanical backdrop (1368x1903).",
+    "roles": [
+      "bio"
+    ],
+    "topics": [
+      "surgery",
+      "practice"
+    ],
+    "quality": 4,
+    "people": "Dr. James Whitney"
+  },
+  {
+    "path": "assets/img/whitney-team.jpg",
+    "kind": "img",
+    "description": "Dr. James Whitney in white coat with four team members by the lobby water feature.",
+    "roles": [
+      "bio",
+      "section"
+    ],
+    "topics": [
+      "surgery",
+      "practice"
+    ],
+    "quality": 3,
+    "people": "Dr. James Whitney + 4 staff"
+  },
+  {
+    "path": "assets/img/burns-family.jpg",
+    "kind": "img",
+    "description": "Dr. Burns with his wife and children at a family wedding, personal photo for the About story only.",
+    "roles": [
+      "bio",
+      "story"
+    ],
+    "topics": [
+      "practice",
+      "kids"
+    ],
+    "quality": 3,
+    "people": "Burns family"
+  },
+  {
+    "path": "assets/img/team-2026-full.jpg",
+    "kind": "img",
+    "description": "2026 full team photo, Dr. Burns seated center with 13 team members in the lobby, chandeliers and water feature (2400px, highest-res version).",
+    "roles": [
+      "hero",
+      "bio",
+      "section"
+    ],
+    "topics": [
+      "practice",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Dr. Jeffrey Burns + full team"
+  },
+  {
+    "path": "assets/img/team-2026.jpg",
+    "kind": "img",
+    "description": "2026 full team photo, 1800px crop of the same lobby group shot (use team-2026-full.jpg for large placements).",
+    "roles": [
+      "section",
+      "bio"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns + full team"
+  },
+  {
+    "path": "assets/img/team.jpg",
+    "kind": "img",
+    "description": "Earlier 9-person team photo with Dr. Burns center in black polo, lobby water feature.",
+    "roles": [
+      "section",
+      "bio"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns + 8 staff"
+  },
+  {
+    "path": "assets/img/team-lobby.jpg",
+    "kind": "img",
+    "description": "Full-team color photo in the warm lobby, rod chandelier and glass water feature (2000px source of the older team era).",
+    "roles": [
+      "section",
+      "bio"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns + 8 staff"
+  },
+  {
+    "path": "assets/img/bts-shoot.jpg",
+    "kind": "img",
+    "description": "Behind-the-scenes of the 2026 testimonial shoot, patient Ron seated on the lit set in the practice lounge (4K).",
+    "roles": [
+      "story",
+      "section",
+      "office"
+    ],
+    "topics": [
+      "practice",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Ron (2026 patient)"
+  },
+  {
+    "path": "assets/img/bts.jpg",
+    "kind": "img",
+    "description": "Behind-the-scenes video-shoot frame, smaller crop of the 2026 set.",
+    "roles": [
+      "story",
+      "section"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 3,
+    "people": "Ron (2026 patient)"
+  },
+  {
+    "path": "assets/img/office-exterior.jpg",
+    "kind": "img",
+    "description": "Practice building exterior in daylight, brick with arched columned entry at 9626 New Market, cropped clean from Meet Dr. Burns footage (1440x1400).",
+    "roles": [
+      "office",
+      "hero",
+      "section"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 4,
+    "people": "none"
+  },
+  {
+    "path": "assets/img/office.jpg",
+    "kind": "img",
+    "description": "Practice exterior, older soft video still (950x471), superseded by office-exterior.jpg.",
+    "roles": [
+      "office"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 2,
+    "people": "none"
+  },
+  {
+    "path": "assets/img/operatory.jpg",
+    "kind": "img",
+    "description": "Treatment room with dental chair and a large window looking out to the hills.",
+    "roles": [
+      "office",
+      "clinical"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 3,
+    "people": "none"
+  },
+  {
+    "path": "assets/img/clinic-op.jpg",
+    "kind": "img",
+    "description": "Operatory with mountain view through the window, square crop.",
+    "roles": [
+      "office",
+      "clinical"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 3,
+    "people": "none"
+  },
+  {
+    "path": "assets/img/clinic-lounge.jpg",
+    "kind": "img",
+    "description": "Waiting lounge with lit fireplace, square crop.",
+    "roles": [
+      "office"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 2,
+    "people": "none"
+  },
+  {
+    "path": "assets/img/lounge-fireplace.jpg",
+    "kind": "img",
+    "description": "Practice lounge with fireplace, no people (1800px).",
+    "roles": [
+      "office"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 3,
+    "people": "none"
+  },
+  {
+    "path": "assets/img/hero-burns.jpg",
+    "kind": "img",
+    "description": "Dr. Burns greeting a smiling patient at the reception desk, warm welcome still (951px, soft).",
+    "roles": [
+      "story",
+      "section"
+    ],
+    "topics": [
+      "practice",
+      "confidence"
+    ],
+    "quality": 3,
+    "people": "Dr. Jeffrey Burns + patient"
+  },
+  {
+    "path": "assets/img/mike-2026.jpg",
+    "kind": "img",
+    "description": "Mike, seated portrait from the 2026 patient testimonial shoot, cap and plaid shirt.",
+    "roles": [
+      "faces",
+      "story"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Mike (2026 patient)"
+  },
+  {
+    "path": "assets/img/kelly-2026.jpg",
+    "kind": "img",
+    "description": "Kelly, close portrait from the 2026 patient testimonial shoot.",
+    "roles": [
+      "faces",
+      "story"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Kelly (2026 patient)"
+  },
+  {
+    "path": "assets/img/kelly-2026b.jpg",
+    "kind": "img",
+    "description": "Kelly, wider seated portrait from the 2026 patient testimonial shoot.",
+    "roles": [
+      "faces",
+      "story"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Kelly (2026 patient)"
+  },
+  {
+    "path": "assets/img/angela-2026.jpg",
+    "kind": "img",
+    "description": "Angela, seated portrait from the 2026 patient testimonial shoot.",
+    "roles": [
+      "faces",
+      "story"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Angela (2026 patient)"
+  },
+  {
+    "path": "assets/img/angela-2026b.jpg",
+    "kind": "img",
+    "description": "Angela in a green sweater, close portrait from the 2026 patient shoot.",
+    "roles": [
+      "faces",
+      "story"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Angela (2026 patient)"
+  },
+  {
+    "path": "assets/img/ron-2026.jpg",
+    "kind": "img",
+    "description": "Ron, older man with white hair, close portrait from the 2026 patient shoot.",
+    "roles": [
+      "faces",
+      "story"
+    ],
+    "topics": [
+      "implants",
+      "dentures",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Ron (2026 patient)"
+  },
+  {
+    "path": "assets/img/danny-2026.jpg",
+    "kind": "img",
+    "description": "Danny, younger bearded man smiling in the dental chair, 2026 patient shoot.",
+    "roles": [
+      "faces",
+      "story"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Danny Spain (2026 patient)"
+  },
+  {
+    "path": "assets/img/bts-patient.jpg",
+    "kind": "img",
+    "description": "Older male patient seated in the interview chair under warm light, 2026 shoot.",
+    "roles": [
+      "faces",
+      "story"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "2026 patient (Ron)"
+  },
+  {
+    "path": "assets/img/review1.jpg",
+    "kind": "img",
+    "description": "Older woman with a gentle smile, still from a filmed patient interview.",
+    "roles": [
+      "faces"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 3,
+    "people": "patient (testimonial-1)"
+  },
+  {
+    "path": "assets/img/review2.jpg",
+    "kind": "img",
+    "description": "Young woman smiling on a leather couch, still from a patient interview.",
+    "roles": [
+      "faces"
+    ],
+    "topics": [
+      "confidence"
+    ],
+    "quality": 3,
+    "people": "patient (testimonial-2)"
+  },
+  {
+    "path": "assets/img/review3.jpg",
+    "kind": "img",
+    "description": "Grey-haired man in glasses and green shirt mid-laugh, patient interview still.",
+    "roles": [
+      "faces"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 3,
+    "people": "patient (testimonial-3)"
+  },
+  {
+    "path": "assets/img/review4.jpg",
+    "kind": "img",
+    "description": "Dark-haired woman in glasses, patient interview still.",
+    "roles": [
+      "faces"
+    ],
+    "topics": [
+      "confidence"
+    ],
+    "quality": 3,
+    "people": "patient (testimonial-4)"
+  },
+  {
+    "path": "assets/img/review5.jpg",
+    "kind": "img",
+    "description": "Bearded man in a ball cap smiling, patient interview still.",
+    "roles": [
+      "faces"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 3,
+    "people": "patient (testimonial-5)"
+  },
+  {
+    "path": "assets/img/face-1.jpg",
+    "kind": "img",
+    "description": "Small testimonial avatar crop #1 from legacy review footage (267x400, thumb use only).",
+    "roles": [
+      "faces"
+    ],
+    "topics": [
+      "confidence"
+    ],
+    "quality": 2,
+    "people": "legacy patient"
+  },
+  {
+    "path": "assets/img/face-5.jpg",
+    "kind": "img",
+    "description": "Small testimonial avatar crop #5 from legacy review footage (267x400, thumb use only).",
+    "roles": [
+      "faces"
+    ],
+    "topics": [
+      "confidence"
+    ],
+    "quality": 2,
+    "people": "legacy patient"
+  },
+  {
+    "path": "assets/img/face-9.jpg",
+    "kind": "img",
+    "description": "Small testimonial avatar crop #9 from legacy review footage (267x400, thumb use only).",
+    "roles": [
+      "faces"
+    ],
+    "topics": [
+      "confidence"
+    ],
+    "quality": 2,
+    "people": "legacy patient"
+  },
+  {
+    "path": "assets/img/face-10.jpg",
+    "kind": "img",
+    "description": "Small testimonial avatar crop #10 from legacy review footage (267x400, thumb use only).",
+    "roles": [
+      "faces"
+    ],
+    "topics": [
+      "confidence"
+    ],
+    "quality": 2,
+    "people": "legacy patient"
+  },
+  {
+    "path": "assets/img/face-11.jpg",
+    "kind": "img",
+    "description": "Small testimonial avatar crop #11 from legacy review footage (267x400, thumb use only).",
+    "roles": [
+      "faces"
+    ],
+    "topics": [
+      "confidence"
+    ],
+    "quality": 2,
+    "people": "legacy patient"
+  },
+  {
+    "path": "assets/img/staff-2026-gray-01.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot on warm-gray studio sweep, black Burns-branded scrubs. Primary team-grid version.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "staff member, short auburn hair, sleeveless top (name unconfirmed)"
+  },
+  {
+    "path": "assets/img/staff-2026-blue-01.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot against the icy-blue crystalline water-feature wall. Bio-page variant.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "staff member, short auburn hair, sleeveless top (name unconfirmed)"
+  },
+  {
+    "path": "assets/img/staff-2026-gray-02.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot on warm-gray studio sweep, black Burns-branded scrubs. Primary team-grid version.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "Megan (blonde)"
+  },
+  {
+    "path": "assets/img/staff-2026-blue-02.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot against the icy-blue crystalline water-feature wall. Bio-page variant.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "Megan (blonde)"
+  },
+  {
+    "path": "assets/img/staff-2026-gray-03.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot on warm-gray studio sweep, black Burns-branded scrubs. Primary team-grid version.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "Laurie (short dark hair)"
+  },
+  {
+    "path": "assets/img/staff-2026-blue-03.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot against the icy-blue crystalline water-feature wall. Bio-page variant.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "Laurie (short dark hair)"
+  },
+  {
+    "path": "assets/img/staff-2026-gray-04.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot on warm-gray studio sweep, black Burns-branded scrubs. Primary team-grid version.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "staff member, young, wavy caramel hair"
+  },
+  {
+    "path": "assets/img/staff-2026-blue-04.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot against the icy-blue crystalline water-feature wall. Bio-page variant.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "staff member, blonde, Burns jacket"
+  },
+  {
+    "path": "assets/img/staff-2026-gray-05.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot on warm-gray studio sweep, black Burns-branded scrubs. Primary team-grid version.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "staff member, blonde, Burns jacket"
+  },
+  {
+    "path": "assets/img/staff-2026-blue-05.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot against the icy-blue crystalline water-feature wall. Bio-page variant.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "staff member, long straight light-brown hair"
+  },
+  {
+    "path": "assets/img/staff-2026-gray-06.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot on warm-gray studio sweep, black Burns-branded scrubs. Primary team-grid version.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "staff member, long straight light-brown hair"
+  },
+  {
+    "path": "assets/img/staff-2026-blue-06.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot against the icy-blue crystalline water-feature wall. Bio-page variant.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "Tara (glasses)"
+  },
+  {
+    "path": "assets/img/staff-2026-gray-07.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot on warm-gray studio sweep, black Burns-branded scrubs. Primary team-grid version.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "Tara (glasses)"
+  },
+  {
+    "path": "assets/img/staff-2026-blue-07.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot against the icy-blue crystalline water-feature wall. Bio-page variant.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "staff member, young, wavy caramel hair"
+  },
+  {
+    "path": "assets/img/staff-2026-gray-08.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot on warm-gray studio sweep, black Burns-branded scrubs. Primary team-grid version.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "Katie"
+  },
+  {
+    "path": "assets/img/staff-2026-blue-08.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot against the icy-blue crystalline water-feature wall. Bio-page variant.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "Katie"
+  },
+  {
+    "path": "assets/img/staff-2026-gray-09.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot on warm-gray studio sweep, black Burns-branded scrubs. Primary team-grid version.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "staff member, young blonde, cross and green pendant"
+  },
+  {
+    "path": "assets/img/staff-2026-blue-09.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot against the icy-blue crystalline water-feature wall. Bio-page variant.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "staff member, young blonde, cross and green pendant"
+  },
+  {
+    "path": "assets/img/staff-2026-gray-10.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot on warm-gray studio sweep, black Burns-branded scrubs. Primary team-grid version.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "staff member, young, curled blonde hair"
+  },
+  {
+    "path": "assets/img/staff-2026-blue-10.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot against the icy-blue crystalline water-feature wall. Bio-page variant.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "staff member, young, curled blonde hair"
+  },
+  {
+    "path": "assets/img/staff-2026-gray-11.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot on warm-gray studio sweep, black Burns-branded scrubs. Primary team-grid version.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "Ginger (bangs, auburn hair)"
+  },
+  {
+    "path": "assets/img/staff-2026-blue-11.jpg",
+    "kind": "img",
+    "description": "2026 pro staff headshot against the icy-blue crystalline water-feature wall. Bio-page variant.",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "Ginger (bangs, auburn hair)"
+  },
+  {
+    "path": "assets/img/staff-sara.jpg",
+    "kind": "img",
+    "description": "Sara, professional staff headshot against green botanical wallpaper (1659x2080, only high-res legacy headshot).",
+    "roles": [
+      "bio",
+      "faces"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 4,
+    "people": "Sara"
+  },
+  {
+    "path": "assets/img/topic-crowns-patient.jpg",
+    "kind": "img",
+    "description": "Hygienist with laughing bald senior patient, warm genuine candid (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-cosmetic-smile.jpg",
+    "kind": "img",
+    "description": "Clean close crop of a bright cosmetic smile (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "cosmetic"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-bonding.jpg",
+    "kind": "img",
+    "description": "Blonde woman with tooth-shaped mirror, cosmetic dentistry tile (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "cosmetic"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-bridge-consult.jpg",
+    "kind": "img",
+    "description": "Assistant showing a jaw model to a male patient, consult scene (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "dentures"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-crowns-mirror.jpg",
+    "kind": "img",
+    "description": "Young man laughing with hand mirror after treatment (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "cosmetic",
+      "confidence"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-filling-procedure.jpg",
+    "kind": "img",
+    "description": "Overhead view of a filling procedure, patient in safety glasses (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "recovery"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-implant-xray.jpg",
+    "kind": "img",
+    "description": "Dentist reviewing a panoramic x-ray, diagnostic scene (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "bone",
+      "surgery"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-dentures-chair.jpg",
+    "kind": "img",
+    "description": "Young blonde patient relaxed in the dental chair (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "dentures",
+      "recovery"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-gum-disease.jpg",
+    "kind": "img",
+    "description": "Close-up of inflamed gums, symptom visual (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "bone",
+      "recovery"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-full-arch-senior.jpg",
+    "kind": "img",
+    "description": "Bearded senior laughing at his smile in a hand mirror, full-arch outcome mood (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "dentures",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-senior-implant-trust.jpg",
+    "kind": "img",
+    "description": "Silver-haired woman smiling with dentist behind her, warm senior trust shot (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-implant-model.jpg",
+    "kind": "img",
+    "description": "Dental implant model on a pedestal, clean anatomy product shot (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "bone"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-filling-mirror.jpg",
+    "kind": "img",
+    "description": "Woman in pink admiring her smile in a mirror, assistant behind (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "cosmetic",
+      "recovery"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-rootcanal-senior.jpg",
+    "kind": "img",
+    "description": "White-haired woman laughing in a green dental chair (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "recovery",
+      "confidence"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-whitening-smile.jpg",
+    "kind": "img",
+    "description": "Big bright smile framed by mint gloves, whitening tile (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "cosmetic"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-whitening-patient.jpg",
+    "kind": "img",
+    "description": "Patient smiling with senior dentist in pearls, upscale whitening scene (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "cosmetic"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-extraction.jpg",
+    "kind": "img",
+    "description": "Extracted molar held up with forceps, extraction-topic visual (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "surgery",
+      "recovery"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-implant-explainer.jpg",
+    "kind": "img",
+    "description": "Clinician showing an implant model to a senior patient (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "bone"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-veneers-shade.jpg",
+    "kind": "img",
+    "description": "Mirror smile with a veneer shade guide held to the teeth (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "cosmetic"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/img/topic-whitening-mirror.jpg",
+    "kind": "img",
+    "description": "Woman checking whitening result in mirror as dentist points (licensed stock). Section/tile use only, not hero or proof.",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "cosmetic"
+    ],
+    "quality": 3,
+    "people": "stock model"
+  },
+  {
+    "path": "assets/video/testimonial-1.mp4",
+    "kind": "video",
+    "description": "Older woman in a teal top shares her experience with Dr. Burns, warmly lit interview (78s, landscape).",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "patient (review1)",
+    "poster": "assets/poster/testimonial-1.jpg"
+  },
+  {
+    "path": "assets/video/testimonial-2.mp4",
+    "kind": "video",
+    "description": "Teenage patient and her mother talk together on a couch about their care (84s, landscape).",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "confidence",
+      "kids"
+    ],
+    "quality": 3,
+    "people": "patient + mother",
+    "poster": "assets/poster/testimonial-2.jpg"
+  },
+  {
+    "path": "assets/video/testimonial-3.mp4",
+    "kind": "video",
+    "description": "Grey-haired man in glasses and green shirt describes his treatment (74s, landscape).",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "patient (review3)",
+    "poster": "assets/poster/testimonial-3.jpg"
+  },
+  {
+    "path": "assets/video/testimonial-4.mp4",
+    "kind": "video",
+    "description": "Woman in glasses and black top recounts her dental experience (62s, landscape).",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "patient (review4)",
+    "poster": "assets/poster/testimonial-4.jpg"
+  },
+  {
+    "path": "assets/video/testimonial-5.mp4",
+    "kind": "video",
+    "description": "Smiling bearded man in a blue shirt shares his results (61s, landscape).",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "patient (review5)",
+    "poster": "assets/poster/testimonial-5.jpg"
+  },
+  {
+    "path": "assets/video/testimonial-6.mp4",
+    "kind": "video",
+    "description": "Bearded man in a ball cap talks about his treatment at the practice (59s, landscape).",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "patient",
+    "poster": "assets/poster/testimonial-6.jpg"
+  },
+  {
+    "path": "assets/video/about-dr-burns.mp4",
+    "kind": "video",
+    "description": "Dr. Jeffrey Burns introduces himself and his approach to dentistry (108s, landscape).",
+    "roles": [
+      "story",
+      "section"
+    ],
+    "topics": [
+      "practice",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/about-dr-burns.jpg"
+  },
+  {
+    "path": "assets/video/dental-implants.mp4",
+    "kind": "video",
+    "description": "Dr. Burns explains dental implant treatment with digital-scan footage (131s, landscape).",
+    "roles": [
+      "section",
+      "story"
+    ],
+    "topics": [
+      "implants",
+      "surgery"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/dental-implants.jpg"
+  },
+  {
+    "path": "assets/video/crowns-and-bridges.mp4",
+    "kind": "video",
+    "description": "Dr. Burns describes crown and bridge treatment on camera (124s, landscape).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "dentures",
+      "cosmetic"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/crowns-and-bridges.jpg"
+  },
+  {
+    "path": "assets/video/practice-overview.mp4",
+    "kind": "video",
+    "description": "Dr. Burns gives an overview of the practice and the care his team provides (94s, landscape).",
+    "roles": [
+      "section",
+      "story"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/practice-overview.jpg"
+  },
+  {
+    "path": "assets/video/office-tour.mp4",
+    "kind": "video",
+    "description": "Walkthrough of the practice from brick exterior to reception lounge and treatment rooms (69s, landscape).",
+    "roles": [
+      "office",
+      "section"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 4,
+    "people": "none",
+    "poster": "assets/poster/office-tour.jpg"
+  },
+  {
+    "path": "assets/video/web-banner.mp4",
+    "kind": "video",
+    "description": "Short montage of the practice for a homepage banner, opens on the reception desk (54s, landscape).",
+    "roles": [
+      "hero"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 4,
+    "people": "team",
+    "poster": "assets/poster/web-banner.jpg"
+  },
+  {
+    "path": "assets/video/danny.mp4",
+    "kind": "video",
+    "description": "Danny Spain before/after TikTok cut, real transformation reveal (21s, vertical).",
+    "roles": [
+      "testimonial-video",
+      "gallery"
+    ],
+    "topics": [
+      "implants",
+      "gallery",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "Danny Spain",
+    "poster": "assets/poster/danny.jpg"
+  },
+  {
+    "path": "assets/video/diane.mp4",
+    "kind": "video",
+    "description": "Diane Collis before/after cut, real transformation reveal (11s, vertical).",
+    "roles": [
+      "testimonial-video",
+      "gallery"
+    ],
+    "topics": [
+      "implants",
+      "gallery"
+    ],
+    "quality": 4,
+    "people": "Diane Collis",
+    "poster": "assets/poster/diane.jpg"
+  },
+  {
+    "path": "assets/video/joe-vile.mp4",
+    "kind": "video",
+    "description": "Joe Vile before/after cut, real transformation reveal (18s, vertical).",
+    "roles": [
+      "testimonial-video",
+      "gallery"
+    ],
+    "topics": [
+      "implants",
+      "gallery"
+    ],
+    "quality": 4,
+    "people": "Joe Vile",
+    "poster": "assets/poster/joe-vile.jpg"
+  },
+  {
+    "path": "assets/video/tammy.mp4",
+    "kind": "video",
+    "description": "Tammy Climer before/after cut, real transformation reveal (21s, vertical).",
+    "roles": [
+      "testimonial-video",
+      "gallery"
+    ],
+    "topics": [
+      "implants",
+      "gallery"
+    ],
+    "quality": 4,
+    "people": "Tammy Climer",
+    "poster": "assets/poster/tammy.jpg"
+  },
+  {
+    "path": "assets/video/ba-carol.mp4",
+    "kind": "video",
+    "description": "Carol Sliver before/after reveal, MN edit (vertical).",
+    "roles": [
+      "testimonial-video",
+      "gallery"
+    ],
+    "topics": [
+      "implants",
+      "gallery",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "Carol Sliver",
+    "poster": "assets/poster/ba-carol.jpg"
+  },
+  {
+    "path": "assets/video/ba-diane-teeth.mp4",
+    "kind": "video",
+    "description": "Diane Collis teeth-only close-up before/after, clinical result detail (vertical).",
+    "roles": [
+      "gallery",
+      "clinical"
+    ],
+    "topics": [
+      "implants",
+      "gallery"
+    ],
+    "quality": 4,
+    "people": "Diane Collis (teeth only)",
+    "poster": "assets/poster/ba-diane-teeth.jpg"
+  },
+  {
+    "path": "assets/video/ba-fran.mp4",
+    "kind": "video",
+    "description": "Fran Seiverd before/after reveal, MN edit (vertical).",
+    "roles": [
+      "testimonial-video",
+      "gallery"
+    ],
+    "topics": [
+      "implants",
+      "gallery",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "Fran Seiverd",
+    "poster": "assets/poster/ba-fran.jpg"
+  },
+  {
+    "path": "assets/video/ba-joe-teeth.mp4",
+    "kind": "video",
+    "description": "Joe Vile teeth-only close-up before/after, clinical result detail (vertical).",
+    "roles": [
+      "gallery",
+      "clinical"
+    ],
+    "topics": [
+      "implants",
+      "gallery"
+    ],
+    "quality": 4,
+    "people": "Joe Vile (teeth only)",
+    "poster": "assets/poster/ba-joe-teeth.jpg"
+  },
+  {
+    "path": "assets/video/dynamic-duo.mp4",
+    "kind": "video",
+    "description": "Burns Dynamic Duo, playful Dr. Burns and Dr. Josephine Burns team clip (vertical).",
+    "roles": [
+      "story",
+      "section"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 3,
+    "people": "Dr. Jeffrey Burns + Dr. Josephine Burns",
+    "poster": "assets/poster/dynamic-duo.jpg"
+  },
+  {
+    "path": "assets/video/flowers-from-patient.mp4",
+    "kind": "video",
+    "description": "A patient brings flowers to the team, human gratitude moment (vertical).",
+    "roles": [
+      "story"
+    ],
+    "topics": [
+      "practice",
+      "confidence"
+    ],
+    "quality": 3,
+    "people": "patient + staff",
+    "poster": "assets/poster/flowers-from-patient.jpg"
+  },
+  {
+    "path": "assets/video/lecture-clip.mp4",
+    "kind": "video",
+    "description": "Dr. Burns lecturing to colleagues, authority clip from 10-25-25 (vertical).",
+    "roles": [
+      "story",
+      "bio"
+    ],
+    "topics": [
+      "practice",
+      "surgery"
+    ],
+    "quality": 3,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/lecture-clip.jpg"
+  },
+  {
+    "path": "assets/video/mike-15s.mp4",
+    "kind": "video",
+    "description": "Mike 2026 testimonial, 15-second broadcast cut (landscape, pro edit).",
+    "roles": [
+      "testimonial-video",
+      "hero"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Mike (2026 patient)",
+    "poster": "assets/poster/mike-15s.jpg"
+  },
+  {
+    "path": "assets/video/mike-30s.mp4",
+    "kind": "video",
+    "description": "Mike 2026 testimonial, 30-second broadcast cut (landscape, pro edit).",
+    "roles": [
+      "testimonial-video",
+      "hero"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Mike (2026 patient)",
+    "poster": "assets/poster/mike-30s.jpg"
+  },
+  {
+    "path": "assets/video/mike-vert.mp4",
+    "kind": "video",
+    "description": "Mike 2026 testimonial, 30-second vertical cut for mobile placements.",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Mike (2026 patient)",
+    "poster": "assets/poster/mike-vert.jpg"
+  },
+  {
+    "path": "assets/video/danny-15s.mp4",
+    "kind": "video",
+    "description": "Danny Spain 2026 testimonial, 15-second broadcast cut (landscape, pro edit).",
+    "roles": [
+      "testimonial-video",
+      "hero"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Danny Spain (2026 patient)",
+    "poster": "assets/poster/danny-15s.jpg"
+  },
+  {
+    "path": "assets/video/danny-30s.mp4",
+    "kind": "video",
+    "description": "Danny Spain 2026 testimonial, 30-second broadcast cut (landscape, pro edit).",
+    "roles": [
+      "testimonial-video",
+      "hero"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Danny Spain (2026 patient)",
+    "poster": "assets/poster/danny-30s.jpg"
+  },
+  {
+    "path": "assets/video/danny-vert.mp4",
+    "kind": "video",
+    "description": "Danny Spain 2026 testimonial, 30-second vertical cut for mobile placements.",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Danny Spain (2026 patient)",
+    "poster": "assets/poster/danny-vert.jpg"
+  },
+  {
+    "path": "assets/video/kelly-15s.mp4",
+    "kind": "video",
+    "description": "Kelly 2026 testimonial, 15-second broadcast cut (landscape, pro edit).",
+    "roles": [
+      "testimonial-video",
+      "hero"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Kelly (2026 patient)",
+    "poster": "assets/poster/kelly-15s.jpg"
+  },
+  {
+    "path": "assets/video/kelly-30s.mp4",
+    "kind": "video",
+    "description": "Kelly 2026 testimonial, 30-second broadcast cut (landscape, pro edit).",
+    "roles": [
+      "testimonial-video",
+      "hero"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Kelly (2026 patient)",
+    "poster": "assets/poster/kelly-30s.jpg"
+  },
+  {
+    "path": "assets/video/kelly-vert.mp4",
+    "kind": "video",
+    "description": "Kelly 2026 testimonial, 30-second vertical cut for mobile placements.",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Kelly (2026 patient)",
+    "poster": "assets/poster/kelly-vert.jpg"
+  },
+  {
+    "path": "assets/video/angela-15s.mp4",
+    "kind": "video",
+    "description": "Angela 2026 testimonial, 15-second broadcast cut (landscape, pro edit).",
+    "roles": [
+      "testimonial-video",
+      "hero"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Angela (2026 patient)",
+    "poster": "assets/poster/angela-15s.jpg"
+  },
+  {
+    "path": "assets/video/angela-30s.mp4",
+    "kind": "video",
+    "description": "Angela 2026 testimonial, 30-second broadcast cut (landscape, pro edit).",
+    "roles": [
+      "testimonial-video",
+      "hero"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Angela (2026 patient)",
+    "poster": "assets/poster/angela-30s.jpg"
+  },
+  {
+    "path": "assets/video/angela-vert.mp4",
+    "kind": "video",
+    "description": "Angela 2026 testimonial, 30-second vertical cut for mobile placements.",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Angela (2026 patient)",
+    "poster": "assets/poster/angela-vert.jpg"
+  },
+  {
+    "path": "assets/video/ron-15s.mp4",
+    "kind": "video",
+    "description": "Ron 2026 testimonial, 15-second broadcast cut (landscape, pro edit).",
+    "roles": [
+      "testimonial-video",
+      "hero"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Ron (2026 patient)",
+    "poster": "assets/poster/ron-15s.jpg"
+  },
+  {
+    "path": "assets/video/ron-30s.mp4",
+    "kind": "video",
+    "description": "Ron 2026 testimonial, 30-second broadcast cut (landscape, pro edit).",
+    "roles": [
+      "testimonial-video",
+      "hero"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Ron (2026 patient)",
+    "poster": "assets/poster/ron-30s.jpg"
+  },
+  {
+    "path": "assets/video/ron-vert.mp4",
+    "kind": "video",
+    "description": "Ron 2026 testimonial, 30-second vertical cut for mobile placements.",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Ron (2026 patient)",
+    "poster": "assets/poster/ron-vert.jpg"
+  },
+  {
+    "path": "assets/video/qa-cost.mp4",
+    "kind": "video",
+    "description": "Financing options available, Dr. Burns explains payment plans. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "cost"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-cost.jpg"
+  },
+  {
+    "path": "assets/video/qa-old.mp4",
+    "kind": "video",
+    "description": "Am I too old for implants, Dr. Burns answers the age objection. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-old.jpg"
+  },
+  {
+    "path": "assets/video/qa-pain.mp4",
+    "kind": "video",
+    "description": "Post-surgery discomfort medications, what to expect for pain relief. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "recovery",
+      "surgery"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-pain.jpg"
+  },
+  {
+    "path": "assets/video/qa-protocol.mp4",
+    "kind": "video",
+    "description": "What is The Burns Protocol, the signature full-arch method explained. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "surgery"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-protocol.jpg"
+  },
+  {
+    "path": "assets/video/qa-what.mp4",
+    "kind": "video",
+    "description": "What are dental implants, foundational explainer. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-what.jpg"
+  },
+  {
+    "path": "assets/video/qa-zygo.mp4",
+    "kind": "video",
+    "description": "What are zygomatic implants, advanced option for severe bone loss. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "bone"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-zygo.jpg"
+  },
+  {
+    "path": "assets/video/qa-advantages.mp4",
+    "kind": "video",
+    "description": "Advantages of dental implants over alternatives. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-advantages.jpg"
+  },
+  {
+    "path": "assets/video/qa-candidate.mp4",
+    "kind": "video",
+    "description": "Am I a candidate for dental implants, eligibility explainer. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-candidate.jpg"
+  },
+  {
+    "path": "assets/video/qa-customize.mp4",
+    "kind": "video",
+    "description": "Can I customize my DreamSmile, personalization of the final smile. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "cosmetic"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-customize.jpg"
+  },
+  {
+    "path": "assets/video/qa-denture-stain.mp4",
+    "kind": "video",
+    "description": "Will my implant denture stain, material and care answer. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "dentures"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-denture-stain.jpg"
+  },
+  {
+    "path": "assets/video/qa-clean-bridge.mp4",
+    "kind": "video",
+    "description": "How to clean an implant-supported bridge, home-care how-to. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "dentures",
+      "recovery"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-clean-bridge.jpg"
+  },
+  {
+    "path": "assets/video/qa-how-long.mp4",
+    "kind": "video",
+    "description": "How long do implants last, longevity answer. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-how-long.jpg"
+  },
+  {
+    "path": "assets/video/qa-heal-time.mp4",
+    "kind": "video",
+    "description": "How long does it take for implants to heal, recovery timeline. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "recovery",
+      "implants"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-heal-time.jpg"
+  },
+  {
+    "path": "assets/video/qa-bone.mp4",
+    "kind": "video",
+    "description": "Not enough bone for implants, grafting and zygomatic options. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "bone",
+      "implants"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-bone.jpg"
+  },
+  {
+    "path": "assets/video/qa-questions.mp4",
+    "kind": "video",
+    "description": "What questions should I ask before getting implants. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "cost"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-questions.jpg"
+  },
+  {
+    "path": "assets/video/qa-success-rate.mp4",
+    "kind": "video",
+    "description": "Success rate for dental implants, with real before/after proof. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-success-rate.jpg"
+  },
+  {
+    "path": "assets/video/qa-day-after.mp4",
+    "kind": "video",
+    "description": "What to expect the day after surgery, recovery explainer. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "recovery",
+      "surgery"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-day-after.jpg"
+  },
+  {
+    "path": "assets/video/qa-food.mp4",
+    "kind": "video",
+    "description": "What happens if you do not follow the food protocol after surgery. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "recovery"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-food.jpg"
+  },
+  {
+    "path": "assets/video/qa-implants-fail.mp4",
+    "kind": "video",
+    "description": "What happens if implants start to fail, troubleshooting answer. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "bone"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-implants-fail.jpg"
+  },
+  {
+    "path": "assets/video/qa-reason-fail.mp4",
+    "kind": "video",
+    "description": "The number-one reason implants fail, prevention explainer. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "bone"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-reason-fail.jpg"
+  },
+  {
+    "path": "assets/video/qa-wrong-spot.mp4",
+    "kind": "video",
+    "description": "What happens if implants were placed in the wrong spot. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "surgery"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-wrong-spot.jpg"
+  },
+  {
+    "path": "assets/video/qa-one-day.mp4",
+    "kind": "video",
+    "description": "Permanent teeth in one day, same-day full-arch explainer with chairside footage. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "surgery"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-one-day.jpg"
+  },
+  {
+    "path": "assets/video/qa-xray.mp4",
+    "kind": "video",
+    "description": "What type of x-ray is needed before implant placement, CBCT explainer. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "bone",
+      "surgery"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-xray.jpg"
+  },
+  {
+    "path": "assets/video/qa-dreamsmile.mp4",
+    "kind": "video",
+    "description": "What is a DreamSmile, the outcome brand explained. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-dreamsmile.jpg"
+  },
+  {
+    "path": "assets/video/qa-where-dreamsmile.mp4",
+    "kind": "video",
+    "description": "Where do I get my DreamSmile, location and next-step CTA. Dr. Burns to camera (vertical short).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "practice"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/qa-where-dreamsmile.jpg"
+  },
+  {
+    "path": "assets/video/meet-dr-burns.mp4",
+    "kind": "video",
+    "description": "Meet Dr. Burns, personal story from welding roots to 30+ years in dentistry, includes office exterior footage (49s, vertical).",
+    "roles": [
+      "bio",
+      "story"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 5,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/meet-dr-burns.jpg"
+  },
+  {
+    "path": "assets/video/meet-dr-josephine-1.mp4",
+    "kind": "video",
+    "description": "Meet Dr. Josephine Burns, part 1 introduction (vertical).",
+    "roles": [
+      "bio",
+      "story"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 4,
+    "people": "Dr. Josephine Burns",
+    "poster": "assets/poster/meet-dr-josephine-1.jpg"
+  },
+  {
+    "path": "assets/video/meet-dr-josephine-2.mp4",
+    "kind": "video",
+    "description": "Meet Dr. Josephine Burns, part 2 (vertical).",
+    "roles": [
+      "bio",
+      "story"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 4,
+    "people": "Dr. Josephine Burns",
+    "poster": "assets/poster/meet-dr-josephine-2.jpg"
+  },
+  {
+    "path": "assets/video/dreamsmile-commercial.mp4",
+    "kind": "video",
+    "description": "DreamSmile commercial, patients and Dr. Burns on trust and restored smiles (59s, vertical 4K source).",
+    "roles": [
+      "hero",
+      "story"
+    ],
+    "topics": [
+      "implants",
+      "confidence",
+      "practice"
+    ],
+    "quality": 5,
+    "people": "Dr. Jeffrey Burns + patients",
+    "poster": "assets/poster/dreamsmile-commercial.jpg"
+  },
+  {
+    "path": "assets/video/power-of-full-arch.mp4",
+    "kind": "video",
+    "description": "The Power of Full Arch brand film, 4K landscape: craftsmanship, real patients with before photos, team care (114s). Strongest homepage/DreamSmile film.",
+    "roles": [
+      "hero",
+      "story",
+      "protocol"
+    ],
+    "topics": [
+      "implants",
+      "confidence",
+      "practice"
+    ],
+    "quality": 5,
+    "people": "Dr. Jeffrey Burns + Mike, Kelly, Angela, Ron, Danny",
+    "poster": "assets/poster/power-of-full-arch.jpg"
+  },
+  {
+    "path": "assets/video/quiet-difference.mp4",
+    "kind": "video",
+    "description": "The Quiet Difference film, 4K landscape: Dr. Burns listens, craftsmanship close-ups, awards (94s). Authority/story film.",
+    "roles": [
+      "story",
+      "protocol",
+      "bio"
+    ],
+    "topics": [
+      "implants",
+      "practice",
+      "confidence"
+    ],
+    "quality": 5,
+    "people": "Dr. Jeffrey Burns + patients",
+    "poster": "assets/poster/quiet-difference.jpg"
+  },
+  {
+    "path": "assets/video/implant-night-ad.mp4",
+    "kind": "video",
+    "description": "Implant Night event advertisement, DreamSmile promo (vertical).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "cost"
+    ],
+    "quality": 3,
+    "people": "Dr. Jeffrey Burns + team",
+    "poster": "assets/poster/implant-night-ad.jpg"
+  },
+  {
+    "path": "assets/video/implant-night.mp4",
+    "kind": "video",
+    "description": "Implant Night event video (vertical).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "cost"
+    ],
+    "quality": 3,
+    "people": "Dr. Jeffrey Burns + team",
+    "poster": "assets/poster/implant-night.jpg"
+  },
+  {
+    "path": "assets/video/cta-still-thinking.mp4",
+    "kind": "video",
+    "description": "Still thinking about dental implants, retargeting CTA short (vertical).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "cost"
+    ],
+    "quality": 3,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/cta-still-thinking.jpg"
+  },
+  {
+    "path": "assets/video/cta-implants-for-me.mp4",
+    "kind": "video",
+    "description": "Are dental implants for me, call-to-action short with before/after reveal (vertical).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns + patient",
+    "poster": "assets/poster/cta-implants-for-me.jpg"
+  },
+  {
+    "path": "assets/video/office-stand-out.mp4",
+    "kind": "video",
+    "description": "What makes our office stand out, Dr. Burns on the team and reputation (54s, vertical).",
+    "roles": [
+      "story",
+      "office"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 4,
+    "people": "Dr. Jeffrey Burns",
+    "poster": "assets/poster/office-stand-out.jpg"
+  },
+  {
+    "path": "assets/video/office-new-faces.mp4",
+    "kind": "video",
+    "description": "Have you seen someone new around the office, team teaser (vertical).",
+    "roles": [
+      "section"
+    ],
+    "topics": [
+      "practice"
+    ],
+    "quality": 2,
+    "people": "staff",
+    "poster": "assets/poster/office-new-faces.jpg"
+  },
+  {
+    "path": "assets/video/joe-vile-implant.mp4",
+    "kind": "video",
+    "description": "Joe Vile, where is the implant, curiosity short with real patient result (vertical).",
+    "roles": [
+      "gallery",
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "gallery"
+    ],
+    "quality": 4,
+    "people": "Joe Vile",
+    "poster": "assets/poster/joe-vile-implant.jpg"
+  },
+  {
+    "path": "assets/video/where-is-implant.mp4",
+    "kind": "video",
+    "description": "Where is the implant, curiosity short showing a seamless single-implant result (vertical).",
+    "roles": [
+      "gallery",
+      "section"
+    ],
+    "topics": [
+      "implants",
+      "gallery"
+    ],
+    "quality": 4,
+    "people": "patient",
+    "poster": "assets/poster/where-is-implant.jpg"
+  },
+  {
+    "path": "assets/video/testimonial-jill-bush.mp4",
+    "kind": "video",
+    "description": "Jill Bush patient testimonial, finished TTG edit (vertical).",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "Jill Bush",
+    "poster": "assets/poster/testimonial-jill-bush.jpg"
+  },
+  {
+    "path": "assets/video/testimonial-ttg-4.mp4",
+    "kind": "video",
+    "description": "Patient Testimonial #4, \"My health was declining\", strong health-turnaround story (vertical 4K source).",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "patient",
+    "poster": "assets/poster/testimonial-ttg-4.jpg"
+  },
+  {
+    "path": "assets/video/testimonial-ttg-5.mp4",
+    "kind": "video",
+    "description": "Patient Testimonial 5, \"My smile was fading, but not anymore\" (vertical).",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "patient",
+    "poster": "assets/poster/testimonial-ttg-5.jpg"
+  },
+  {
+    "path": "assets/video/testimonial-ttg-a.mp4",
+    "kind": "video",
+    "description": "Patient testimonial, emotional interview cut (vertical 4K source).",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "patient",
+    "poster": "assets/poster/testimonial-ttg-a.jpg"
+  },
+  {
+    "path": "assets/video/testimonial-ttg-b.mp4",
+    "kind": "video",
+    "description": "Patient testimonial, second interview cut (vertical 4K source).",
+    "roles": [
+      "testimonial-video"
+    ],
+    "topics": [
+      "implants",
+      "confidence"
+    ],
+    "quality": 4,
+    "people": "patient",
+    "poster": "assets/poster/testimonial-ttg-b.jpg"
+  }
+]

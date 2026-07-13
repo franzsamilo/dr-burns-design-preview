@@ -1,0 +1,41 @@
+@import "../_config/config";
+
+
+.part-featured-pages {
+  background-image: url(get-part-background-image('gray-bk-repeat.png')) !important;
+  .featured-page {
+    flex-basis: 20%;
+    flex-grow: 1;
+    margin: 0 15px;
+  }
+
+  .featured-page__title {
+    font-size: 1.5em;
+  }
+
+  .featured-page__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .featured-page__link {
+    color: inherit;
+  }
+
+  .featured-page__icon {
+    font-size: 3em;
+    text-align: center;
+
+    i {
+      font-size: 1em;
+    }
+
+    svg {
+      fill: currentColor;
+      font-size: 1em;
+      width: 1em;
+      height: 1em;
+    }
+  }
+
+}

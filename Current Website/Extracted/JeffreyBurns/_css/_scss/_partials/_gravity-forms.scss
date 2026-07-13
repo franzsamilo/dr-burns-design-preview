@@ -1,0 +1,80 @@
+/* Begin Gravity Forms Module */
+.gform_wrapper {
+	max-width: 100%;
+}
+
+.gform_wrapper li.gfield_error,
+.gform_wrapper .validation_error {
+	background-color: #f2dede !important;
+}
+
+.full-width-errors .gform_wrapper li.gfield.gfield_error,
+.full-width-errors .gform_wrapper .validation_error,
+.gform_wrapper .full-width-errors li.gfield.gfield_error,
+.gform_wrapper .full-width-errors .validation_error {
+	margin-left: -15px !important;
+	margin-right: -15px !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.gform_title {
+	width: auto !important;
+}
+
+input.form-control,
+textarea.form-control {
+	padding-left: 8px !important;
+	padding-right: 8px !important;
+}
+
+.gform_wrapper {
+  .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+    float: none;
+  }
+}
+
+/* Nicer Validation */
+
+#html {
+  .gform_wrapper div.validation_error {
+    color: #721c24;
+    background-color: #f8d7da !important;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+    font-weight: 400;
+    border: 2px solid #f5c6cb;
+  }
+
+  .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) {
+    max-width: none !important;
+  }
+
+  .gform_wrapper li.gfield.gfield_error,
+  .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+    padding: 0;
+    background-color: #f8d7da !important;
+    border-radius: 4px;
+    border: 2px solid #f5c6cb;
+  }
+
+  .gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container,
+  .gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+    margin-top: 0;
+  }
+
+  .gform_wrapper li.gfield_error input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]),
+  .gform_wrapper li.gfield_error textarea {
+    border: 1px solid #ccc;
+  }
+
+  .gform_wrapper .validation_message {
+    padding: 0 0.5rem;
+    margin: 0.5rem 0;
+    font-weight: 400;
+  }
+}
+
+
+/* End Gravity Forms Module */

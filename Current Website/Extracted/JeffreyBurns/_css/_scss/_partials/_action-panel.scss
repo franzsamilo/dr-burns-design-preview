@@ -1,0 +1,88 @@
+$closeTransition: transform 150ms $fluentExit;
+@include media-breakpoint-up(sm) {
+  .action-panel {
+    display: none;
+  }
+}
+@include media-breakpoint-down(xs) {
+  .action-panel {
+    $root: &;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 85vw;
+    transform: translateX(-150%);
+    -ms-transform: translateX(-150%);
+    will-change: transform;
+    backface-visibility: hidden;
+    transition: $closeTransition;
+    z-index: 101;
+    &--menu {
+      background: #222;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      #{$root}__wrap {
+        background: inherit;
+      }
+    }
+    &--nav {
+      background-image: url(get-background-image('gray-bk-repeat.png'));
+      overflow-y: auto;
+      overflow-x: hidden;
+      #{$root}__wrap {
+        background: inherit;
+      }
+    }
+    &__button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 15vmin;
+      width: 15vmin;
+      font-size: 7vmin;
+      padding: 0;
+      text-align: center;
+      background: #333;
+      border: none;
+      color: #fff;
+      will-change: transform;
+      backface-visibility: hidden;
+      transition: $closeTransition;
+      &--close {
+        transform: translateX(-100vw);
+        -ms-transform: translateX(-100vw);
+      }
+    }
+    &__wrap {
+      padding: 15px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      height: 100%;
+      position: relative;
+    }
+  }
+
+
+  $openTransition: transform 300ms $fluentEnter;
+
+  .action-menu-open {
+    .action-panel__button {
+      transition: $openTransition;
+      transform: translateX(100%);
+      -ms-transform: translateX(100%);
+    }
+    .action-panel--menu {
+      transition: $openTransition;
+      transform: translateX(0);
+      -ms-transform: translateX(0);
+    }
+  }
+
+  .action-menu-nav-open {
+    .action-panel--nav {
+      transition: $openTransition;
+      transform: translateX(0);
+      -ms-transform: translateX(0);
+    }
+  }
+}

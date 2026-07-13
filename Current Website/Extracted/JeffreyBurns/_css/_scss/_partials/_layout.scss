@@ -1,0 +1,209 @@
+.pbhs-website-part {
+  position: relative;
+}
+
+.container .container {
+  width: 100%;
+}
+
+.container.layout--full {
+  width: 100%;
+}
+
+/* --- Content Section Styles --- */
+.content-wrap {
+}
+
+/* --- Page Content Styles (Specific to the main content area of the page editable by users) --- */
+.page-content-wrap {
+  min-height: 500px;
+}
+
+.page-content-wrap li {
+  text-align: justify;
+}
+
+.page-content-wrap .container {
+  width: auto;
+}
+
+.page-template-default,
+.page-template-one-column,
+.page-template-form,
+.page-template-bootstrap-element-styles,
+.error404,
+.blog,
+.single,
+.archive,
+.search {
+  .page-content-wrap {
+    h1 {
+      & + * {
+        margin-top: 3rem;
+      }
+
+      & + h2 {
+        margin-top: 1rem;
+      }
+    }
+
+    h2 {
+      & + * {
+        margin-top: 2.5rem;
+      }
+    }
+
+    h3, h4, h5, h6 {
+      & + * {
+        margin-top: 1rem;
+      }
+    }
+
+    p {
+      & + * {
+        margin-top: 3rem;
+      }
+
+      & + h2,
+      & + h3,
+      & + h4,
+      & + h5,
+      & + h6 {
+        margin-top: 3.5rem;
+      }
+    }
+
+    .module,
+    .highlight,
+    .well {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+
+    article, .hentry, form, ul {
+      & + * {
+        margin-top: 3rem;
+      }
+    }
+
+    [data-align="right"],
+    [data-align="left"],
+    .alignright,
+    .alignleft {
+      & + * {
+        margin-top: 1rem;
+      }
+    }
+
+    .map-form {
+      margin: 0;
+    }
+  }
+}
+
+$sidebarWidth: 250px;
+
+.part-type-content {
+  margin-top: 3px;
+  .page-content-wrap {
+    flex: 1 1 100%;
+    padding-left: 40px;
+    padding-right: 0;
+    padding-bottom: 90px;
+    z-index: 4;
+    @include media-breakpoint-down(md) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .side-wrap {
+    flex: 0 0 $sidebarWidth;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    z-index: 3;
+    &:before{
+      content: '';
+      position: absolute;
+      left: calc( (100vw - 1170px) / -2);
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background-image: url(get-background-image('gray-bk-repeat.png'));
+      z-index: -2;
+      @include media-breakpoint-down(md) {
+        left: calc( (100vw - 970px) / -2);
+      }
+      @include media-breakpoint-down(sm) {
+        left: 0;
+      }
+    }
+    .component-slot{
+      margin-right: 35px;
+      @include media-breakpoint-down(sm) {
+        margin-right: 0;
+      }
+      .component-modal-form-button .btn {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 20px;
+        }
+      }
+      .component-custom-linked-image{
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+    }
+  }
+}
+
+.part-content, .part-content-form, .part-content-archive, .part-content-blog, .part-content-post {
+  .page-content-wrap {
+    @include media-breakpoint-up(md) {
+      max-width: calc(100% - #{$sidebarWidth});
+    }
+  }
+}
+
+.part-content-search, .part-content-404{
+  .page-content-wrap {
+    padding-top: 50px;
+  }
+}
+
+/* --- Sidebar Styles --- */
+.side-wrap {
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* removes admin bar from mobile sizes */
+
+@include media-breakpoint-down(sm) {
+  #html {
+    margin-top: 0 !important;
+  }
+  #wpadminbar {
+    display: none !important;
+  }
+  .admin-bar .sidr {
+    top: 0 !important;
+  }
+}
+
+.diamond-lines {
+  background-image: url(get-background-image('diamond-lines.png'));
+  width: 233px;
+  height: 18px;
+  margin: 10px auto 15px auto;
+  max-width: 95%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

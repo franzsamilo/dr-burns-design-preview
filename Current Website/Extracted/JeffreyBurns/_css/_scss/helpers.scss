@@ -1,0 +1,186 @@
+@import "_config/config";
+/* --- Alt Text Colors --- */
+.inherit-text-color,
+.inherit-text-color-hover:hover,
+.cascade-text-color h1, .cascade-text-color .h1,
+.cascade-text-color h2, .cascade-text-color .h2,
+.cascade-text-color h3, .cascade-text-color .h3,
+.cascade-text-color h4, .cascade-text-color .h4,
+.cascade-text-color h5, .cascade-text-color .h5,
+.cascade-text-color h6, .cascade-text-color .h6,
+.cascade-text-color li,
+.cascade-text-color a,
+.cascade-text-color blockquote,
+.cascade-text-color button {
+  color: inherit;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* --- Eliminate Top Margin for first child elements within columns--- */
+.margin-top-none-col-first-child [class*="col-"] > :first-child {
+  margin-top: 0;
+}
+
+/* --- Disable Float for col-{size}-12 classes (vertical margin fix) --- */
+
+@include media-breakpoint-up(lg) {
+  .col-lg-12 {
+    float: none !important;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .col-md-12 {
+    float: none !important;
+  }
+}
+
+@include media-breakpoint-only(sm) {
+  .col-sm-12 {
+    float: none !important;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .col-xs-12 {
+    float: none !important;
+  }
+}
+
+/* --- Spacers --- */
+
+@include responsive-utility-max {
+  @at-root {
+    .margin#{&} {
+      margin: 30px !important;
+    }
+
+    .margin-vert#{&} {
+      margin-top: 30px !important;
+      margin-bottom: 30px !important;
+    }
+
+    .margin-horz#{&} {
+      margin-left: 30px !important;
+      margin-right: 30px !important;
+    }
+
+    .margin-half#{&} {
+      margin: 15px !important;
+    }
+
+    .margin-vert-half#{&} {
+      margin-top: 15px !important;
+      margin-bottom: 15px !important;
+    }
+
+    .margin-horz-half#{&} {
+      margin-left: 15px !important;
+      margin-right: 15px !important;
+    }
+
+    .margin-none#{&} {
+      margin: 0 !important;
+    }
+
+    .margin-horz-none#{&} {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    .margin-vert-none#{&} {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+@include responsive-utility-max {
+  @at-root {
+    .padding#{&} {
+      padding: 30px !important;
+    }
+
+    .padding-vert#{&} {
+      padding-top: 30px !important;
+      padding-bottom: 30px !important;
+    }
+
+    .padding-horz#{&} {
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+    }
+
+    .padding-half#{&} {
+      padding: 15px !important;
+    }
+
+    .padding-vert-half#{&} {
+      padding-top: 15px !important;
+      padding-bottom: 15px !important;
+    }
+
+    .padding-horz-half#{&} {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+
+    .padding-none#{&} {
+      padding: 0 !important;
+    }
+
+    .padding-horz-none#{&} {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .padding-vert-none#{&} {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+}
+
+@include responsive-utility-max {
+  @at-root {
+    .full-width#{&} {
+      width: 100% !important;
+    }
+  }
+}
+
+@include responsive-utility-max {
+  @at-root {
+    .full-height#{&} {
+      height: 100% !important;
+    }
+  }
+}
+
+@include responsive-utility-max {
+  @at-root {
+    .block#{&} {
+      display: block !important;
+    }
+
+    .inline-block#{&} {
+      display: inline-block !important;
+    }
+
+    .inline#{&} {
+      display: inline !important;
+    }
+  }
+}
+
+@include responsive-utility-max {
+  @at-root {
+    .block-center#{&} {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+}

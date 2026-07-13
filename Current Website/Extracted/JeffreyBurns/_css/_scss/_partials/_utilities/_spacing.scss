@@ -1,0 +1,40 @@
+$spacing: (
+        0: 0,
+        half: 0.5rem,
+        1: 1rem,
+        2: 2rem,
+        3: 3rem,
+        4: 4rem
+);
+
+.pl {
+  @include map-to-classes($spacing, 'padding-left');
+}
+
+.pr {
+  @include map-to-classes($spacing, 'padding-right');
+}
+
+.pt {
+  @include map-to-classes($spacing, 'padding-top');
+}
+
+.pb {
+  @include map-to-classes($spacing, 'padding-bottom');
+}
+
+.ml {
+  @include map-to-classes($spacing, 'margin-left');
+}
+
+.mr {
+  @include map-to-classes($spacing, 'margin-right');
+}
+
+.mt {
+  @include map-to-classes($spacing, 'margin-top');
+}
+
+.mb {
+  @include map-to-classes($spacing, 'margin-bottom');
+}

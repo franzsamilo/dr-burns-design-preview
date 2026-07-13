@@ -1,0 +1,219 @@
+<title>Client Knowledge Base — Burns & Stacy</title>
+<style>
+:root{
+  --bg:#eef2f6; --surface:#ffffff; --surface-2:#f5f8fb; --ink:#141b26; --muted:#5b6b7c; --faint:#8fa0b2;
+  --line:#dde5ee; --accent:#226d7a; --accent-soft:#e2eef0; --shadow:0 10px 30px -18px rgba(20,27,38,.4);
+  --radius:13px;
+}
+:root[data-client="stacy"]{ --accent:#1667E8; --accent-soft:#e3ecfd; }
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0d141c;--surface:#151f2a;--surface-2:#111a23;--ink:#e8eef5;--muted:#9fb0c2;--faint:#61748a;
+    --line:#243342;--accent:#5bb4bd;--accent-soft:#173038;--shadow:0 12px 34px -18px rgba(0,0,0,.7)}
+  :root[data-client="stacy"]{--accent:#5b93f2;--accent-soft:#15254a}
+}
+:root[data-theme="dark"]{--bg:#0d141c;--surface:#151f2a;--surface-2:#111a23;--ink:#e8eef5;--muted:#9fb0c2;--faint:#61748a;
+  --line:#243342;--accent:#5bb4bd;--accent-soft:#173038;--shadow:0 12px 34px -18px rgba(0,0,0,.7)}
+:root[data-theme="dark"][data-client="stacy"]{--accent:#5b93f2;--accent-soft:#15254a}
+:root[data-theme="light"]{--bg:#eef2f6;--surface:#fff;--surface-2:#f5f8fb;--ink:#141b26;--muted:#5b6b7c;--faint:#8fa0b2;
+  --line:#dde5ee;--accent:#226d7a;--accent-soft:#e2eef0;--shadow:0 10px 30px -18px rgba(20,27,38,.4)}
+:root[data-theme="light"][data-client="stacy"]{--accent:#1667E8;--accent-soft:#e3ecfd}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;line-height:1.5}
+h1,h2,h3{margin:0;letter-spacing:-.02em}
+.top{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line);
+  padding:14px 22px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brandmark{font-weight:800;font-size:1.05rem;display:flex;align-items:center;gap:9px}
+.brandmark .dot{width:11px;height:11px;border-radius:3px;background:var(--accent)}
+.tabs{display:flex;gap:6px;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:4px}
+.tab{border:none;background:none;color:var(--muted);font-weight:700;font-size:.9rem;padding:7px 18px;border-radius:999px;cursor:pointer}
+.tab.on{background:var(--accent);color:#fff}
+.tools{margin-left:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.search{background:var(--surface-2);border:1px solid var(--line);border-radius:9px;padding:8px 12px;color:var(--ink);
+  font-size:.88rem;width:210px}
+.search:focus{outline:2px solid var(--accent);outline-offset:-1px}
+.btn{border:1px solid var(--line);background:var(--surface-2);color:var(--muted);font-weight:600;font-size:.82rem;
+  padding:8px 13px;border-radius:9px;cursor:pointer}
+.btn:hover{color:var(--ink);border-color:var(--accent)}
+.btn-a{background:var(--accent);color:#fff;border-color:var(--accent)}
+.meta{padding:14px 22px 4px;display:flex;gap:22px;flex-wrap:wrap;align-items:baseline}
+.meta h2{font-size:1.35rem}
+.meta .sub{color:var(--muted);font-size:.9rem}
+.stat{color:var(--muted);font-size:.82rem;font-variant-numeric:tabular-nums}
+.stat b{color:var(--ink)}
+.hint{padding:2px 22px 12px;color:var(--faint);font-size:.8rem}
+.board{display:flex;gap:16px;padding:6px 22px 60px;overflow-x:auto;align-items:flex-start;min-height:60vh}
+.col{flex:0 0 300px;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius);
+  display:flex;flex-direction:column;max-height:calc(100vh - 190px)}
+.col.drop{outline:2px dashed var(--accent);outline-offset:-3px}
+.col-h{display:flex;align-items:center;gap:8px;padding:12px 14px;border-bottom:1px solid var(--line);position:sticky;top:0;
+  background:var(--surface-2);border-radius:var(--radius) var(--radius) 0 0;z-index:2}
+.col-h .ttl{font-weight:800;font-size:.9rem;flex:1;cursor:text;outline:none}
+.col-h .n{font-size:.72rem;font-weight:700;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:2px 9px;font-variant-numeric:tabular-nums}
+.col-h .x{color:var(--faint);cursor:pointer;font-size:1.05rem;line-height:1;border:none;background:none;padding:2px 4px}
+.col-h .x:hover{color:#c0503a}
+.cards{padding:10px;display:flex;flex-direction:column;gap:9px;overflow-y:auto}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 12px;cursor:grab;
+  box-shadow:var(--shadow);transition:transform .08s,border-color .15s}
+.card:active{cursor:grabbing}
+.card.drag{opacity:.4}
+.card.hide{display:none}
+.card .r1{display:flex;align-items:center;gap:8px}
+.ic{width:22px;height:22px;border-radius:6px;display:grid;place-items:center;flex:none;font-size:.72rem;font-weight:800;color:#fff}
+.ic.doc{background:#3f79c9}.ic.page{background:#2c9c74}.ic.data{background:#8a6cd6}.ic.pdf{background:#c0503a}
+.ic.img{background:#d08a2f}.ic.video{background:#c2497a}.ic.archive{background:#6b7787}.ic.folder{background:var(--accent)}.ic.file{background:#8fa0b2}
+.card .nm{font-weight:700;font-size:.85rem;line-height:1.25;word-break:break-word}
+.card .badge{margin-left:auto;font-size:.68rem;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.card .ds{color:var(--muted);font-size:.78rem;margin-top:6px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card .rel{color:var(--faint);font-size:.68rem;margin-top:6px;font-family:ui-monospace,Menlo,monospace;word-break:break-all;display:none}
+.card.open .ds{-webkit-line-clamp:unset}
+.card.open .rel{display:block}
+.addcol{flex:0 0 220px;border:2px dashed var(--line);border-radius:var(--radius);color:var(--muted);
+  padding:16px;text-align:center;cursor:pointer;font-weight:600;font-size:.85rem;align-self:flex-start;background:none}
+.addcol:hover{border-color:var(--accent);color:var(--accent)}
+.theme-btn{border:1px solid var(--line);background:var(--surface-2);color:var(--muted);border-radius:999px;
+  width:34px;height:34px;cursor:pointer;font-size:.95rem}
+@media (max-width:640px){.col{flex-basis:82vw}.search{width:130px}}
+</style>
+
+<div class="top">
+  <div class="brandmark"><span class="dot"></span>Client Knowledge Base</div>
+  <div class="tabs" id="tabs">
+    <button class="tab on" data-c="burns">Dr. Burns</button>
+    <button class="tab" data-c="stacy">Stacy / FASE</button>
+  </div>
+  <div class="tools">
+    <input class="search" id="search" placeholder="Filter files...">
+    <button class="btn" id="reset">Reset layout</button>
+    <button class="theme-btn" id="theme" title="Toggle theme">◐</button>
+  </div>
+</div>
+
+<div class="meta">
+  <div><h2 id="cl">...</h2><div class="sub" id="clsub"></div></div>
+  <div class="stat"><b id="s-items">0</b> items</div>
+  <div class="stat"><b id="s-docs">0</b> docs / pages</div>
+  <div class="stat"><b id="s-size">0</b> on disk</div>
+  <div class="stat"><b id="s-cols">0</b> groups</div>
+</div>
+<div class="hint">Drag any card into another group to reorganize. Rename a group by clicking its title. Your arrangement is saved in this browser. Click a card to reveal its full path and description.</div>
+
+<div class="board" id="board"></div>
+
+<script>
+const DATA = {"burns": {"label": "Dr. Jeffrey Burns", "sub": "Dental implant website rebuild", "items": [{"name": "Build Prompt - Landing Page Standard v1.md", "kind": "doc", "cat": "Build Specs", "desc": "Burns Site Build Prompt — Landing Page Standard (v1)", "size": "10KB", "count": null, "rel": "Jeffrey Burns/Build Prompt - Landing Page Standard v1.md"}, {"name": "Build Prompt - Landing Page Standard v2.md", "kind": "doc", "cat": "Build Specs", "desc": "Website Transformation Prompt — Dr. Burns / Dream Smile (v2)", "size": "7KB", "count": null, "rel": "Jeffrey Burns/Build Prompt - Landing Page Standard v2.md"}, {"name": "Design Direction Analysis.md", "kind": "doc", "cat": "Strategy", "desc": "Design Direction Analysis", "size": "12KB", "count": null, "rel": "Jeffrey Burns/Design Direction Analysis.md"}, {"name": "Design Direction Brief - Multi-Agent Synthesis.md", "kind": "doc", "cat": "Strategy", "desc": "Design Direction Brief - Multi-Agent Synthesis", "size": "12KB", "count": null, "rel": "Jeffrey Burns/Design Direction Brief - Multi-Agent Synthesis.md"}, {"name": "Design Direction Validation Harness.md", "kind": "doc", "cat": "Validation", "desc": "Design Direction Validation Harness", "size": "17KB", "count": null, "rel": "Jeffrey Burns/Design Direction Validation Harness.md"}, {"name": "Figma Template Reference.md", "kind": "doc", "cat": "Build Specs", "desc": "Figma Template Reference — Captured Section Maps", "size": "5KB", "count": null, "rel": "Jeffrey Burns/Figma Template Reference.md"}, {"name": "Gmail and Drive Findings.md", "kind": "doc", "cat": "Research & Feedback", "desc": "Gmail and Drive Findings", "size": "15KB", "count": null, "rel": "Jeffrey Burns/Gmail and Drive Findings.md"}, {"name": "Jeffrey Burns.md", "kind": "doc", "cat": "Strategy", "desc": "Jeffrey Burns", "size": "2KB", "count": null, "rel": "Jeffrey Burns/Jeffrey Burns.md"}, {"name": "Links - Master Directory.md", "kind": "doc", "cat": "Research & Feedback", "desc": "Links - Master Directory", "size": "4KB", "count": null, "rel": "Jeffrey Burns/Links - Master Directory.md"}, {"name": "Master Synthesis - Analysis + Spencer Jul 10 + Build State.md", "kind": "doc", "cat": "Strategy", "desc": "Master Synthesis — Analysis + Spencer's Jul 10 Feedback + Current Build State", "size": "12KB", "count": null, "rel": "Jeffrey Burns/Master Synthesis - Analysis + Spencer Jul 10 + Build State.md"}, {"name": "Media Library.md", "kind": "doc", "cat": "Research & Feedback", "desc": "Media Library", "size": "2KB", "count": null, "rel": "Jeffrey Burns/Media Library.md"}, {"name": "Project Documentation Summary.md", "kind": "doc", "cat": "Strategy", "desc": "Project Documentation Summary", "size": "12KB", "count": null, "rel": "Jeffrey Burns/Project Documentation Summary.md"}, {"name": "Spencer Feedback - 2026-07-10 Meeting.md", "kind": "doc", "cat": "Research & Feedback", "desc": "Spencer Walker Feedback — Dr. Burns Website (Jul 10 Meeting with Jed)", "size": "5KB", "count": null, "rel": "Jeffrey Burns/Spencer Feedback - 2026-07-10 Meeting.md"}, {"name": "Website Link Crawl.md", "kind": "doc", "cat": "Research & Feedback", "desc": "Website Link Crawl", "size": "122KB", "count": null, "rel": "Jeffrey Burns/Website Link Crawl.md"}, {"name": "Wireframes.md", "kind": "doc", "cat": "Research & Feedback", "desc": "Wireframes", "size": "371B", "count": null, "rel": "Jeffrey Burns/Wireframes.md"}, {"name": "caresmiles-reference.json", "kind": "data", "cat": "Validation", "desc": "Reference template for Burn's dental implant website", "size": "7KB", "count": null, "rel": "Jeffrey Burns/caresmiles-reference.json"}, {"name": "design_direction_validation_harness.csv", "kind": "data", "cat": "Validation", "desc": "", "size": "1KB", "count": null, "rel": "Jeffrey Burns/design_direction_validation_harness.csv"}, {"name": "design_direction_validation_harness.json", "kind": "data", "cat": "Validation", "desc": "", "size": "24KB", "count": null, "rel": "Jeffrey Burns/design_direction_validation_harness.json"}, {"name": "about-us.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Our Team | Meet Dr. Jeffrey Burns &amp; Staff | New Market, VA Dentist", "size": "34KB", "count": null, "rel": "Jeffrey Burns/Website Build/about-us.html"}, {"name": "before-after.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Jeffrey Burns DDS, Before and After Redesign", "size": "3MB", "count": null, "rel": "Jeffrey Burns/Website Build/before-after.html"}, {"name": "bone-grafting-for-implants.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Bone Grafting for Dental Implants | New Market, VA | Jeffrey S. Burns DDS", "size": "32KB", "count": null, "rel": "Jeffrey Burns/Website Build/bone-grafting-for-implants.html"}, {"name": "child-dentistry.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Child Dentistry Near Luray, VA | Jeffrey S. Burns DDS", "size": "32KB", "count": null, "rel": "Jeffrey Burns/Website Build/child-dentistry.html"}, {"name": "clear-braces.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Clear Braces Near Woodstock, VA | Clear Aligners for Adults | Jeffrey S. Burns DDS", "size": "34KB", "count": null, "rel": "Jeffrey Burns/Website Build/clear-braces.html"}, {"name": "contact-us.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Contact Jeffrey S. Burns DDS | New Market, VA Dentist | 540-740-8937", "size": "34KB", "count": null, "rel": "Jeffrey Burns/Website Build/contact-us.html"}, {"name": "cosmetic-dentistry.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Cosmetic Dentistry in New Market, VA | Veneers, Whitening &amp; Clear Braces | Jeffrey S. Burns DDS", "size": "36KB", "count": null, "rel": "Jeffrey Burns/Website Build/cosmetic-dentistry.html"}, {"name": "dental-bridges.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Dental Bridges Near Luray, VA | Traditional &amp; Implant-Supported | Jeffrey S. Burns DDS", "size": "33KB", "count": null, "rel": "Jeffrey Burns/Website Build/dental-bridges.html"}, {"name": "dental-crowns.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Dental Crowns Near Harrisonburg, VA | Jeffrey S. Burns DDS", "size": "33KB", "count": null, "rel": "Jeffrey Burns/Website Build/dental-crowns.html"}, {"name": "dental-fillings.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Dental Fillings Near Broadway, VA | Jeffrey S. Burns DDS", "size": "32KB", "count": null, "rel": "Jeffrey Burns/Website Build/dental-fillings.html"}, {"name": "dental-implants-cost-basics.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "The Truth About Dental Implant Cost | Dr. Jeffrey Burns, New Market, VA", "size": "38KB", "count": null, "rel": "Jeffrey Burns/Website Build/dental-implants-cost-basics.html"}, {"name": "dentures.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Dentures Near Winchester, VA | Full &amp; Partial | Jeffrey S. Burns DDS", "size": "32KB", "count": null, "rel": "Jeffrey Burns/Website Build/dentures.html"}, {"name": "full-mouth-dental-implants.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Full Mouth Dental Implants Near New Market, VA | DreamSmile by Dr. Jeffrey Burns", "size": "34KB", "count": null, "rel": "Jeffrey Burns/Website Build/full-mouth-dental-implants.html"}, {"name": "implant-retained-dentures.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Implant-Supported Dentures Near Harrisonburg, VA | Jeffrey S. Burns DDS", "size": "33KB", "count": null, "rel": "Jeffrey Burns/Website Build/implant-retained-dentures.html"}, {"name": "implant-tooth.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Dental Implants Near New Market, VA | DreamSmile by Dr. Jeffrey Burns", "size": "33KB", "count": null, "rel": "Jeffrey Burns/Website Build/implant-tooth.html"}, {"name": "index-control.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "DreamSmile by Dr. Jeffrey Burns | Full-Arch Dental Implants", "size": "43KB", "count": null, "rel": "Jeffrey Burns/Website Build/index-control.html"}, {"name": "index.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "DreamSmile by Dr. Jeffrey Burns | Full-Arch Dental Implants | Shenandoah Valley", "size": "40KB", "count": null, "rel": "Jeffrey Burns/Website Build/index.html"}, {"name": "patient-information.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Patient Information | Jeffrey S. Burns DDS | New Market, VA", "size": "35KB", "count": null, "rel": "Jeffrey Burns/Website Build/patient-information.html"}, {"name": "porcelain-veneers.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Porcelain Veneers Near Elkton, VA | AACD Award-Winning Dentist | Jeffrey S. Burns DDS", "size": "34KB", "count": null, "rel": "Jeffrey Burns/Website Build/porcelain-veneers.html"}, {"name": "restorative-dentistry.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "General Dentistry Near New Market, VA | Jeffrey S. Burns DDS", "size": "31KB", "count": null, "rel": "Jeffrey Burns/Website Build/restorative-dentistry.html"}, {"name": "root-canal.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Root Canal Therapy Near Woodstock, VA | Jeffrey S. Burns DDS", "size": "33KB", "count": null, "rel": "Jeffrey Burns/Website Build/root-canal.html"}, {"name": "spencer-review.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Dr. Jeffrey Burns Website, Page Review", "size": "7MB", "count": null, "rel": "Jeffrey Burns/Website Build/spencer-review.html"}, {"name": "teeth-whitening.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Teeth Whitening Near Luray, VA | Professional In-Office Whitening | Jeffrey S. Burns DDS", "size": "34KB", "count": null, "rel": "Jeffrey Burns/Website Build/teeth-whitening.html"}, {"name": "tooth-extractions.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Tooth Extractions Near Harrisonburg, VA | Jeffrey S. Burns DDS", "size": "32KB", "count": null, "rel": "Jeffrey Burns/Website Build/tooth-extractions.html"}, {"name": "wisdom-teeth-removal.html", "kind": "page", "cat": "Website Build (live pages)", "desc": "Wisdom Teeth Removal Near Winchester, VA | Jeffrey S. Burns DDS", "size": "33KB", "count": null, "rel": "Jeffrey Burns/Website Build/wisdom-teeth-removal.html"}, {"name": "harness.mjs", "kind": "file", "cat": "Website Build (live pages)", "desc": "", "size": "25KB", "count": null, "rel": "Jeffrey Burns/Website Build/harness.mjs"}, {"name": "ASSET-GAPS.md", "kind": "doc", "cat": "Website Build (live pages)", "desc": "ASSET GAPS — for Spencer's Friday call with Dr. Burns", "size": "9KB", "count": null, "rel": "Jeffrey Burns/Website Build/ASSET-GAPS.md"}, {"name": "spencer-review.html", "kind": "page", "cat": "Deliverables", "desc": "Dr. Jeffrey Burns Website, Page Review", "size": "7MB", "count": null, "rel": "Jeffrey Burns/Website Build/spencer-review.html"}, {"name": "before-after.html", "kind": "page", "cat": "Deliverables", "desc": "Jeffrey Burns DDS, Before and After Redesign", "size": "3MB", "count": null, "rel": "Jeffrey Burns/Website Build/before-after.html"}, {"name": "Current Website", "kind": "folder", "cat": "Current Site (downloaded)", "desc": "", "size": "983MB", "count": 191, "rel": "Jeffrey Burns/Current Website"}, {"name": "Homepage Redesign Experiment - DreamSmile Direction", "kind": "folder", "cat": "Old Redesign Experiment", "desc": "", "size": "603KB", "count": 17, "rel": "Jeffrey Burns/Homepage Redesign Experiment - DreamSmile Direction"}, {"name": "Media", "kind": "folder", "cat": "Media Library (21GB)", "desc": "", "size": "22GB", "count": 403, "rel": "Jeffrey Burns/Media"}, {"name": "Media Analysis", "kind": "folder", "cat": "Media Library (21GB)", "desc": "", "size": "38MB", "count": 171, "rel": "Jeffrey Burns/Media Analysis"}, {"name": "Wireframes", "kind": "folder", "cat": "Build Specs", "desc": "", "size": "974KB", "count": 2, "rel": "Jeffrey Burns/Wireframes"}, {"name": "Raw Tables", "kind": "folder", "cat": "Validation", "desc": "", "size": "166KB", "count": 4, "rel": "Jeffrey Burns/Raw Tables"}]}, "stacy": {"label": "Stacy Farley — FASE", "sub": "Full-Arch Sales Expert, partner + content engine", "items": [{"name": "Active Ads Compilation — Full-Arch Case Acceptance — 2026-07-09.md", "kind": "doc", "cat": "Ad Campaigns", "desc": "Active Ads Compilation — Full-Arch Case Acceptance", "size": "82KB", "count": null, "rel": "Stacy - FASE/Active Ads Compilation — Full-Arch Case Acceptance — 2026-07-09.md"}, {"name": "Ad Links Index — Full-Arch Case Acceptance — 2026-07-10.md", "kind": "doc", "cat": "Ad Campaigns", "desc": "Ad Links Index — Full-Arch Case Acceptance", "size": "15KB", "count": null, "rel": "Stacy - FASE/Ad Links Index — Full-Arch Case Acceptance — 2026-07-10.md"}, {"name": "Affiliate Portal — Custom Fields (Filled).md", "kind": "doc", "cat": "Strategy", "desc": "Affiliate Portal — Custom Fields (Filled) — FASE", "size": "4KB", "count": null, "rel": "Stacy - FASE/Affiliate Portal — Custom Fields (Filled).md"}, {"name": "Candis Wall Coach Announcement.md", "kind": "doc", "cat": "Strategy", "desc": "Candis Wall — Coach Announcement Campaign", "size": "19KB", "count": null, "rel": "Stacy - FASE/Candis Wall Coach Announcement.md"}, {"name": "Candis Welcome Poster.html", "kind": "page", "cat": "Strategy", "desc": "", "size": "9KB", "count": null, "rel": "Stacy - FASE/Candis Welcome Poster.html"}, {"name": "Candis Welcome Poster.png", "kind": "img", "cat": "Strategy", "desc": "", "size": "3MB", "count": null, "rel": "Stacy - FASE/Candis Welcome Poster.png"}, {"name": "Cleanup Prompt — Stacy's Claude Knowledge Base.md", "kind": "doc", "cat": "Strategy", "desc": "Cleanup Prompt — Stacy's Claude Knowledge Base", "size": "3KB", "count": null, "rel": "Stacy - FASE/Cleanup Prompt — Stacy's Claude Knowledge Base.md"}, {"name": "Competitor Research — Full-Arch Case Acceptance — 2026-07-09.md", "kind": "doc", "cat": "Ad Campaigns", "desc": "Competitor Research — Full-Arch Case Acceptance", "size": "13KB", "count": null, "rel": "Stacy - FASE/Competitor Research — Full-Arch Case Acceptance — 2026-07-09.md"}, {"name": "Confirm With Stacy — KB Numbers (Session Checklist).md", "kind": "doc", "cat": "Strategy", "desc": "Confirm With Stacy — KB Numbers (Session Checklist)", "size": "3KB", "count": null, "rel": "Stacy - FASE/Confirm With Stacy — KB Numbers (Session Checklist).md"}, {"name": "Developer Onboarding — Stacy (FASE).md", "kind": "doc", "cat": "Onboarding & Partners", "desc": "Developer Onboarding — Stacy (FASE)", "size": "15KB", "count": null, "rel": "Stacy - FASE/Developer Onboarding — Stacy (FASE).md"}, {"name": "Digital Marketing Strategy — FASE.md", "kind": "doc", "cat": "Strategy", "desc": "Digital Marketing Strategy — Full Arch Sales Experts (FASE)", "size": "34KB", "count": null, "rel": "Stacy - FASE/Digital Marketing Strategy — FASE.md"}, {"name": "FASE - Case Studies.pdf", "kind": "pdf", "cat": "Case Studies & Proof", "desc": "", "size": "436KB", "count": null, "rel": "Stacy - FASE/FASE - Case Studies.pdf"}, {"name": "FASE 30-Day Content Calendar.md", "kind": "doc", "cat": "Content & Storybank", "desc": "FASE 30-Day Content Calendar", "size": "35KB", "count": null, "rel": "Stacy - FASE/FASE 30-Day Content Calendar.md"}, {"name": "FASE Authority Campaign.md", "kind": "doc", "cat": "Ad Campaigns", "desc": "FASE Authority Campaign", "size": "19KB", "count": null, "rel": "Stacy - FASE/FASE Authority Campaign.md"}, {"name": "FASE Brand Kit.md", "kind": "doc", "cat": "Brand", "desc": "FASE Brand Kit", "size": "10KB", "count": null, "rel": "Stacy - FASE/FASE Brand Kit.md"}, {"name": "FASE Full Transcript (Raw).md", "kind": "doc", "cat": "Research & Transcripts", "desc": "ok now this is the transcript for her course", "size": "616KB", "count": null, "rel": "Stacy - FASE/FASE Full Transcript (Raw).md"}, {"name": "FASE Social Media Posts.md", "kind": "doc", "cat": "Content & Storybank", "desc": "FASE Social Media Posts", "size": "15KB", "count": null, "rel": "Stacy - FASE/FASE Social Media Posts.md"}, {"name": "FASE — What We Built (Case Study Report).html", "kind": "page", "cat": "Case Studies & Proof", "desc": "What We Built for FASE: Creative Engine Report | Full Arch Sales Experts", "size": "29KB", "count": null, "rel": "Stacy - FASE/FASE — What We Built (Case Study Report).html"}, {"name": "FASE-logo-black.png", "kind": "img", "cat": "Brand", "desc": "", "size": "37KB", "count": null, "rel": "Stacy - FASE/FASE-logo-black.png"}, {"name": "FASE-logo-white.png", "kind": "img", "cat": "Brand", "desc": "", "size": "74KB", "count": null, "rel": "Stacy - FASE/FASE-logo-white.png"}, {"name": "Interview Guide — Cris Hosts Stacy (June 2, 2026).md", "kind": "doc", "cat": "Research & Transcripts", "desc": "Interview Guide — Cris Hosts Stacy Farley", "size": "6KB", "count": null, "rel": "Stacy - FASE/Interview Guide — Cris Hosts Stacy (June 2, 2026).md"}, {"name": "Meeting Notes — FASE Marketing Meeting July 2.md", "kind": "doc", "cat": "Research & Transcripts", "desc": "Meeting Notes — FASE Marketing Meeting, July 2, 2026", "size": "5KB", "count": null, "rel": "Stacy - FASE/Meeting Notes — FASE Marketing Meeting July 2.md"}, {"name": "Meeting Prep — FASE Marketing Meeting July 3.md", "kind": "doc", "cat": "Research & Transcripts", "desc": "Meeting Prep — FASE Marketing Meeting, July 3", "size": "8KB", "count": null, "rel": "Stacy - FASE/Meeting Prep — FASE Marketing Meeting July 3.md"}, {"name": "NLCA Member Onboarding — Guide for Stacy.md", "kind": "doc", "cat": "Onboarding & Partners", "desc": "NLCA Member Onboarding — Guide for Stacy", "size": "16KB", "count": null, "rel": "Stacy - FASE/NLCA Member Onboarding — Guide for Stacy.md"}, {"name": "NLCA Onboarding Video — Outline + Questions for Stacy.md", "kind": "doc", "cat": "Onboarding & Partners", "desc": "NLCA Onboarding Video — Outline + Questions for Stacy", "size": "6KB", "count": null, "rel": "Stacy - FASE/NLCA Onboarding Video — Outline + Questions for Stacy.md"}, {"name": "Open Loops — FASE WhatsApp (as of July 2).md", "kind": "doc", "cat": "Research & Transcripts", "desc": "Open Loops — FASE WhatsApp (as of July 2, 2026)", "size": "6KB", "count": null, "rel": "Stacy - FASE/Open Loops — FASE WhatsApp (as of July 2).md"}, {"name": "Partner Recruitment Funnel — Strategy (Onboarding Steps 1-11).md", "kind": "doc", "cat": "Onboarding & Partners", "desc": "FASE Partner Recruitment Funnel — Strategy", "size": "6KB", "count": null, "rel": "Stacy - FASE/Partner Recruitment Funnel — Strategy (Onboarding Steps 1-11).md"}, {"name": "Stacy Ad Angles — Counter-Positioned vs Full-Arch Competitors — 2026-07-10.md", "kind": "doc", "cat": "Ad Campaigns", "desc": "Stacy Ad Angles — Counter-Positioned vs Full-Arch Competitors", "size": "13KB", "count": null, "rel": "Stacy - FASE/Stacy Ad Angles — Counter-Positioned vs Full-Arch Competitors — 2026-07-10.md"}, {"name": "Stand Alone.pdf", "kind": "pdf", "cat": "Case Studies & Proof", "desc": "", "size": "9MB", "count": null, "rel": "Stacy - FASE/Stand Alone.pdf"}, {"name": "Storybank — Build Prompt.md", "kind": "doc", "cat": "Content & Storybank", "desc": "Story Bank — Build Prompt", "size": "8KB", "count": null, "rel": "Stacy - FASE/Storybank — Build Prompt.md"}, {"name": "Storybank — For Stacy's VA (Send This).md", "kind": "doc", "cat": "Content & Storybank", "desc": "Stacy Story Bank — SOP", "size": "6KB", "count": null, "rel": "Stacy - FASE/Storybank — For Stacy's VA (Send This).md"}, {"name": "Storybank — Project Brief.md", "kind": "doc", "cat": "Content & Storybank", "desc": "Story Bank — Project Brief", "size": "5KB", "count": null, "rel": "Stacy - FASE/Storybank — Project Brief.md"}, {"name": "Storybank — VA Instructions.md", "kind": "doc", "cat": "Content & Storybank", "desc": "Story Bank — VA Instructions", "size": "16KB", "count": null, "rel": "Stacy - FASE/Storybank — VA Instructions.md"}, {"name": "What Stacy Teaches — NLCA Transcript Analysis.md", "kind": "doc", "cat": "Onboarding & Partners", "desc": "What Stacy Teaches in NLCA — Transcript Analysis", "size": "6KB", "count": null, "rel": "Stacy - FASE/What Stacy Teaches — NLCA Transcript Analysis.md"}, {"name": "Zoom Product Audit — Full Archive by Product (2026-07-07).md", "kind": "doc", "cat": "Research & Transcripts", "desc": "Zoom Product Audit — Full Archive by Product", "size": "14KB", "count": null, "rel": "Stacy - FASE/Zoom Product Audit — Full Archive by Product (2026-07-07).md"}, {"name": "Zoom Transcript Pull — Analysis vs Knowledge Base (2026-07-02).md", "kind": "doc", "cat": "Research & Transcripts", "desc": "Zoom Transcript Pull — Analysis vs Knowledge Base", "size": "7KB", "count": null, "rel": "Stacy - FASE/Zoom Transcript Pull — Analysis vs Knowledge Base (2026-07-02).md"}, {"name": "Affiliate Creatives", "kind": "folder", "cat": "Ad Campaigns", "desc": "", "size": "33MB", "count": 88, "rel": "Stacy - FASE/Affiliate Creatives"}, {"name": "Book", "kind": "folder", "cat": "Content & Storybank", "desc": "", "size": "229KB", "count": 16, "rel": "Stacy - FASE/Book"}, {"name": "Bootcamp", "kind": "folder", "cat": "Funnels & Sites", "desc": "", "size": "3MB", "count": 35, "rel": "Stacy - FASE/Bootcamp"}, {"name": "FAGA", "kind": "folder", "cat": "Funnels & Sites", "desc": "", "size": "8MB", "count": 143, "rel": "Stacy - FASE/FAGA"}, {"name": "Internal-Ops", "kind": "folder", "cat": "Sales & Internal Ops", "desc": "", "size": "230KB", "count": 6, "rel": "Stacy - FASE/Internal-Ops"}, {"name": "NLCA", "kind": "folder", "cat": "Onboarding & Partners", "desc": "", "size": "412KB", "count": 9, "rel": "Stacy - FASE/NLCA"}, {"name": "Newsletters", "kind": "folder", "cat": "Content & Storybank", "desc": "", "size": "107MB", "count": 261, "rel": "Stacy - FASE/Newsletters"}, {"name": "Onboarding Hub", "kind": "folder", "cat": "Onboarding & Partners", "desc": "", "size": "182MB", "count": 223, "rel": "Stacy - FASE/Onboarding Hub"}, {"name": "Partnership Calls", "kind": "folder", "cat": "Research & Transcripts", "desc": "", "size": "1KB", "count": 1, "rel": "Stacy - FASE/Partnership Calls"}, {"name": "Podcast", "kind": "folder", "cat": "Content & Storybank", "desc": "", "size": "65KB", "count": 78, "rel": "Stacy - FASE/Podcast"}, {"name": "References", "kind": "folder", "cat": "Case Studies & Proof", "desc": "", "size": "1MB", "count": 10, "rel": "Stacy - FASE/References"}, {"name": "Sales-Ops", "kind": "folder", "cat": "Sales & Internal Ops", "desc": "", "size": "3MB", "count": 74, "rel": "Stacy - FASE/Sales-Ops"}, {"name": "Social Content", "kind": "folder", "cat": "Content & Storybank", "desc": "", "size": "162MB", "count": 502, "rel": "Stacy - FASE/Social Content"}, {"name": "Stacy Claude Pack", "kind": "folder", "cat": "Sales & Internal Ops", "desc": "", "size": "20KB", "count": 6, "rel": "Stacy - FASE/Stacy Claude Pack"}, {"name": "Testimonials", "kind": "folder", "cat": "Case Studies & Proof", "desc": "", "size": "104MB", "count": 18, "rel": "Stacy - FASE/Testimonials"}, {"name": "Unclear", "kind": "folder", "cat": "Sales & Internal Ops", "desc": "", "size": "154KB", "count": 8, "rel": "Stacy - FASE/Unclear"}, {"name": "Value Engines", "kind": "folder", "cat": "Strategy", "desc": "", "size": "20KB", "count": 1, "rel": "Stacy - FASE/Value Engines"}, {"name": "Website", "kind": "folder", "cat": "Funnels & Sites", "desc": "", "size": "12MB", "count": 13, "rel": "Stacy - FASE/Website"}, {"name": "campaigns fase", "kind": "folder", "cat": "Funnels & Sites", "desc": "", "size": "2MB", "count": 77, "rel": "Stacy - FASE/campaigns fase"}, {"name": "cvj", "kind": "folder", "cat": "Strategy", "desc": "", "size": "98KB", "count": 3, "rel": "Stacy - FASE/cvj"}, {"name": "report-assets", "kind": "folder", "cat": "Case Studies & Proof", "desc": "", "size": "1MB", "count": 20, "rel": "Stacy - FASE/report-assets"}, {"name": "zoom-chats", "kind": "folder", "cat": "Research & Transcripts", "desc": "", "size": "2KB", "count": 2, "rel": "Stacy - FASE/zoom-chats"}]}};
+const KIND_LABEL = {doc:'M',page:'H',data:'J',pdf:'P',img:'I',video:'V',archive:'Z',folder:'D',file:'F'};
+let client = 'burns';
+const $ = s => document.querySelector(s);
+const board = $('#board');
+
+function keyFor(c){ return 'kb-layout-'+c+'-v1'; }
+function orderKey(c){ return 'kb-order-'+c+'-v1'; }
+
+// Build initial model {cols:[{id,title}], place:{itemId:colId}, order:[itemId per col...]}
+function defaultModel(c){
+  const items = DATA[c].items;
+  const cats = [];
+  items.forEach(it=>{ if(!cats.includes(it.cat)) cats.push(it.cat); });
+  const cols = cats.map((t,i)=>({id:'c'+i, title:t}));
+  const place = {}; const order = {};
+  cols.forEach(col=>order[col.id]=[]);
+  items.forEach((it,idx)=>{ const col = cols.find(c2=>c2.title===it.cat); place[idx]=col.id; order[col.id].push(idx); });
+  return {cols, place, order};
+}
+function loadModel(c){
+  try{ const s = localStorage.getItem(keyFor(c)); if(s){ return JSON.parse(s); } }catch(e){}
+  return defaultModel(c);
+}
+function saveModel(c,m){ try{ localStorage.setItem(keyFor(c), JSON.stringify(m)); }catch(e){} }
+
+let model;
+function render(){
+  const root = document.documentElement;
+  root.setAttribute('data-client', client);
+  model = loadModel(client);
+  $('#cl').textContent = DATA[client].label;
+  $('#clsub').textContent = DATA[client].sub;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on', t.dataset.c===client));
+  board.innerHTML='';
+  const items = DATA[client].items;
+  model.cols.forEach(col=>{
+    const el = document.createElement('div'); el.className='col'; el.dataset.col=col.id;
+    const ids = model.order[col.id]||[];
+    el.innerHTML = `<div class="col-h"><span class="ttl" contenteditable="true" spellcheck="false">${esc(col.title)}</span><span class="n">${ids.length}</span><button class="x" title="Delete group">&times;</button></div><div class="cards"></div>`;
+    const cards = el.querySelector('.cards');
+    ids.forEach(id=>cards.appendChild(cardEl(items[id], id)));
+    board.appendChild(el);
+    wireCol(el, col);
+  });
+  const add = document.createElement('button'); add.className='addcol'; add.textContent='+ New group';
+  add.onclick=()=>{ const id='c'+Date.now(); model.cols.push({id,title:'New group'}); model.order[id]=[]; persist(); };
+  board.appendChild(add);
+  stats();
+  applyFilter();
+}
+function esc(s){ return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function cardEl(it, id){
+  const c = document.createElement('div'); c.className='card'; c.draggable=true; c.dataset.id=id;
+  const badge = it.count!=null ? (it.size+' · '+it.count+' files') : (it.size||'');
+  c.innerHTML = `<div class="r1"><span class="ic ${it.kind}">${KIND_LABEL[it.kind]||''}</span><span class="nm">${esc(it.name)}</span><span class="badge">${esc(badge)}</span></div>${it.desc?`<div class="ds">${esc(it.desc)}</div>`:''}<div class="rel">${esc(it.rel)}</div>`;
+  c.addEventListener('click', e=>{ if(!dragging) c.classList.toggle('open'); });
+  c.addEventListener('dragstart', e=>{ dragging=c; c.classList.add('drag'); e.dataTransfer.effectAllowed='move'; e.dataTransfer.setData('text/plain', id); });
+  c.addEventListener('dragend', ()=>{ c.classList.remove('drag'); dragging=null; document.querySelectorAll('.col.drop').forEach(x=>x.classList.remove('drop')); });
+  return c;
+}
+let dragging=null;
+function wireCol(el, col){
+  const cards = el.querySelector('.cards');
+  el.addEventListener('dragover', e=>{ e.preventDefault(); el.classList.add('drop');
+    const after = afterEl(cards, e.clientY);
+    if(dragging){ if(after==null) cards.appendChild(dragging); else cards.insertBefore(dragging, after); } });
+  el.addEventListener('dragleave', e=>{ if(!el.contains(e.relatedTarget)) el.classList.remove('drop'); });
+  el.addEventListener('drop', e=>{ e.preventDefault(); el.classList.remove('drop'); commit(); });
+  const ttl = el.querySelector('.ttl');
+  ttl.addEventListener('blur', ()=>{ col.title = ttl.textContent.trim()||'Untitled'; persist(false); });
+  ttl.addEventListener('keydown', e=>{ if(e.key==='Enter'){ e.preventDefault(); ttl.blur(); } });
+  el.querySelector('.x').addEventListener('click', ()=>{
+    const ids = model.order[col.id]||[];
+    if(ids.length){ alert('Move its '+ids.length+' cards out first, then delete the group.'); return; }
+    model.cols = model.cols.filter(c=>c.id!==col.id); delete model.order[col.id]; persist();
+  });
+}
+function afterEl(container, y){
+  const els=[...container.querySelectorAll('.card:not(.drag)')];
+  return els.reduce((closest,child)=>{ const box=child.getBoundingClientRect(); const off=y-box.top-box.height/2;
+    if(off<0 && off>closest.offset) return {offset:off, el:child}; return closest;
+  },{offset:-Infinity,el:null}).el;
+}
+function commit(){
+  const order={}; const place={};
+  board.querySelectorAll('.col').forEach(colEl=>{ const cid=colEl.dataset.col; order[cid]=[];
+    colEl.querySelectorAll('.card').forEach(cardEl=>{ const id=+cardEl.dataset.id; order[cid].push(id); place[id]=cid; }); });
+  model.order=order; model.place=place; saveModel(client,model);
+  board.querySelectorAll('.col').forEach(colEl=>{ const n=colEl.querySelector('.n'); if(n) n.textContent=(model.order[colEl.dataset.col]||[]).length; });
+  stats();
+}
+function persist(re=true){ saveModel(client,model); if(re) render(); }
+function stats(){
+  const items=DATA[client].items;
+  $('#s-items').textContent=items.length;
+  $('#s-docs').textContent=items.filter(i=>i.kind==='doc'||i.kind==='page').length;
+  $('#s-cols').textContent=model.cols.length;
+  // total size: sum only folder items (represent bulk) + rough; show disk from known
+  $('#s-size').textContent = client==='burns'?'~23 GB':'~630 MB';
+}
+function applyFilter(){
+  const q=$('#search').value.trim().toLowerCase();
+  board.querySelectorAll('.card').forEach(c=>{
+    const it=DATA[client].items[+c.dataset.id];
+    const hay=(it.name+' '+it.desc+' '+it.rel).toLowerCase();
+    c.classList.toggle('hide', q && !hay.includes(q));
+  });
+}
+$('#search').addEventListener('input', applyFilter);
+$('#reset').addEventListener('click', ()=>{ if(confirm('Reset '+DATA[client].label+' to the default grouping?')){ localStorage.removeItem(keyFor(client)); render(); } });
+$('#tabs').addEventListener('click', e=>{ const b=e.target.closest('.tab'); if(b){ client=b.dataset.c; $('#search').value=''; render(); } });
+$('#theme').addEventListener('click', ()=>{ const r=document.documentElement; const cur=r.getAttribute('data-theme');
+  const dark = cur? cur==='dark' : matchMedia('(prefers-color-scheme:dark)').matches; r.setAttribute('data-theme', dark?'light':'dark'); });
+render();
+</script>

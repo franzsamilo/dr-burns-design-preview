@@ -1,0 +1,198 @@
+[class*=primary-][class*=-bg], [class*=secondary-][class*=-bg], [class*=accent-][class*=-bg] {
+  background-color: $primary_bg;
+  color: $primary_reverse_bg;
+}
+
+.page-content-wrap a, footer a {
+  color: $primary_font;
+  &:hover, &:focus {
+    color: $primary_font;
+  }
+}
+
+.side-wrap {
+  background-color: $primary_bg;
+  color: $primary_font;
+  .side-nav-title, .side-nav h2, .side-nav h3 {color: $primary_font;}
+  a {
+    color: $primary_font;
+    &:hover, &:focus {
+      color: $primary_font;
+    }
+  }
+}
+
+
+body[class*=accessibility-] .btn {
+  background-color: $primary_bg;
+  color: $primary_font;
+  &:hover {
+    background-color: $primary_reverse_bg;
+    color: $primary_reverse_font;
+  }
+}
+
+
+.nav-wrap {
+  background-color: $primary_bg;
+}
+
+#nav > li {
+  background-color: $primary_bg;
+  & > a {
+    color: $primary_font;
+  }
+}
+
+#nav > li:hover, #nav > li.sfHover {
+  background-color: $primary_reverse_bg;
+  & > a {
+    color: $primary_reverse_font;
+  }
+}
+
+#nav > li > ul > li {
+  background-color: $primary_reverse_bg;
+  & > a {
+    color: $primary_reverse_font;
+  }
+  &:hover, &.sfHover, &:focus {
+    background-color: $primary_bg;
+    & > a {
+      color: $primary_font;
+    }
+  }
+}
+
+#nav > li > ul > li > ul > li {
+  background-color: $primary_bg;
+  & > a {
+    color: $primary_font;
+  }
+  &:hover, &.sfHover, &:focus {
+    background-color: $primary_reverse_bg;
+    & > a {
+      color: $primary_reverse_font;
+    }
+  }
+}
+
+#nav.sf-arrows ul .sf-with-ul:after {
+  border-left-color: $primary_reverse_font;
+}
+
+#nav.sf-arrows ul li.sfHover .sf-with-ul:after {
+  border-left-color: $primary_font;
+}
+
+.module, .highlight, .well {
+  background-color: $primary_reverse_bg;
+  color: $primary_reverse_font;
+}
+
+.ht-image img {
+  border-color: $primary_bg;
+}
+
+.breadcrumb {
+  background-color: $primary_bg;
+  & * {
+    color: $primary_font;
+  }
+  & a:hover, & a:focus {
+    color: $primary_font;
+  }
+}
+
+
+body, .bg-white, .bg-default, .palette_b-1-bg, #main .container, .sf-menu li, .action-panel--nav, .action-panel__button, #footer{
+  background-color: $primary_bg !important;
+  color: $primary_font !important;
+}
+
+.nav-items-wrapper, .side-nav-title:before, .side-nav:before{
+  background-color: $offset_bg_1 !important;
+  color: $primary_font !important;
+}
+
+.bg-blue, .palette_c-1-bg, .module, .highlight, .well, .sf-menu ul{
+  background-color: $offset_bg_2 !important;
+  color: $primary_font !important;
+}
+
+.palette_a-1-bg, .bg-gray {
+  background-color: $offset_bg_3 !important;
+  color: $primary_font !important;
+
+}
+.bg-black, .sf-menu li:hover, .side-nav li a:hover, .btn, #mobileMenu, #mobileMenu>a, #mobileMenu>button, .featured-page,
+.featured-page-wrapper{
+  background: initial !important;
+  background-color: $offset_bg_4 !important;
+  color: $primary_font !important;
+}
+.btn.btn-primary:hover, .btn:hover, .featured-page:hover{
+  background: initial !important;
+  background-color: $offset_bg_5 !important;
+  color: $primary_font !important;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .pbhs-website-part *{
+  color: $primary_font !important;
+}
+.flex-content, .module, .highlight, .well, #inlineNav, .flex-content .page-content-wrap {
+  border-color: $offset_bg_5 !important;
+}
+.pbhs-website-part .pbhs-edit {
+  color: #fff !important;
+}
+
+.part-content-block-image, .part-doctor, .part-sets-us-apart, .part-staff {
+  .content-block-text {
+    background-color: $primary_bg !important;
+    color: $primary_font !important;
+  }
+}
+
+.part-content-block {
+  background-image: initial !important;
+  background-color: $offset_bg_2 !important;
+}
+
+.btn.btn-outline{
+  background-color: $offset_bg_4 !important;
+  &.btn-palette_a-1{
+    color:$primary_font !important;
+    border-color: $primary_font !important;
+    &:hover{
+      color: $primary_font !important;
+      background-color: $offset_bg_4 !important;
+    }
+  }
+  &.btn-palette_b-1{
+    color: $primary_font !important;
+    border-color: $primary_font !important;
+    &:hover{
+      color: $primary_font !important;
+      background-color: $offset_bg_4 !important;
+      border-color: $primary_font !important;
+    }
+  }
+  &.btn-palette_c-1{
+    color: $primary_font !important;
+    border-color: $primary_font !important;
+    &:hover{
+      color: $primary_font !important;
+      background-color: $offset_bg_4 !important;
+    }
+  }
+}
+
+.tagline .line1, .tagline .line2{
+  background-color: $primary_bg !important;
+  line-height: 1 !important;
+}
+
+.featured-page__icon svg {
+  fill:$primary_font !important;
+}

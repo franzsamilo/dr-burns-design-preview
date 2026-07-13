@@ -1,0 +1,97 @@
+@import "../_config/config";
+
+.part-sets-us-apart {
+  padding-top: 159px;
+  padding-bottom: 240px;
+  @include media-breakpoint-down(md) {
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
+  .component-section-bg {
+    @include media-breakpoint-down(md) {
+      position: relative;
+      width: 100%;
+      height: 350px;
+    }
+
+  }
+
+  .content-block-text {
+    .apart-item{
+      width: 100%;
+    }
+  }
+
+
+  .nav-items-wrapper {
+    position: absolute;
+    bottom: 0;
+    z-index: 28;
+    width: 100%;
+
+    background: rgba(0,0,0,0.22);
+    @include media-breakpoint-down(md) {
+      background: get-color('gray');
+    }
+    .nav-items{
+      max-width: 1920px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .nav-item{
+      color: #c2c2c2;
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.867;
+      padding-right: 48px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      border-top: 3px solid transparent;
+      transition: color 0.3s, border-color 0.3s;
+      @include media-breakpoint-down(md) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .line{
+        white-space: nowrap;
+      }
+      &.is-nav-selected{
+        color: #fff;
+        border-color: get-color('blue');
+      }
+
+    }
+
+
+  }
+
+
+  button.flickity-prev-next-button {
+    position: static;
+    opacity: 1;
+    cursor: pointer;
+    transform: translateY(-5%);
+    &:hover {
+      opacity: 0.6;
+    }
+
+  }
+
+  .carousel-status{
+    font-family: get-font('Amiri');
+    font-style: italic;
+    color: #b7b7b7;
+    font-size: 1.54rem;
+    line-height: 2.222;
+    margin-left: 10px;
+    margin-right: 10px;
+    .cell-num{
+      color: #626262;
+      font-size: 2.58rem;
+      line-height: 1.333;
+    }
+  }
+
+
+
+}

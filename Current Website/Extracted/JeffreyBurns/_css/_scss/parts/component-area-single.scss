@@ -1,0 +1,147 @@
+@import "../_config/config";
+
+.part-component-area-single {
+  overflow: hidden;
+
+  &.topbar {
+    color: #a1a1a1;
+    font-size: 1.4rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    letter-spacing: get-letter-spacing(25);
+
+    .container {
+      @include media('>=1452px') {
+        width: 1392px;
+      }
+      @include media-breakpoint-down(md) {
+        width: 98%;
+      }
+      @include media-breakpoint-down(md) {
+        padding-bottom: 0;
+      }
+
+    }
+
+    .flex-md-wrap {
+      @include media-breakpoint-up(lg) {
+        flex-wrap: nowrap;
+      }
+    }
+
+    .text-right, .text-right *{
+      @include media-breakpoint-down(md) {
+        text-align: center !important;
+      }
+
+    }
+
+    .component-type-clientLogo {
+      @include media-breakpoint-down(md) {
+        width: 100vw;
+      }
+      @include media-breakpoint-down(xs) {
+        width: 100%;
+      }
+
+      .client-logo {
+        @include media-breakpoint-down(md) {
+          text-align: center;
+        }
+      }
+
+      img {
+        width: 158px;
+        height: auto;
+      }
+    }
+
+    .component-flex-space {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+
+    }
+
+    .component-titled-office-info {
+      @include media-breakpoint-up(md) {
+        border-right: 1px solid #e2e2e2;
+        padding-right: 25px;
+      }
+      @include media-breakpoint-down(md) {
+        width: 100vw;
+      }
+
+      * {
+        display: inline-block;
+      }
+
+      & > div:first-of-type {
+        margin-top: 7.5px;
+        margin-bottom: 7.5px;
+        @include media-breakpoint-down(xs) {
+          margin-bottom: 0;
+        }
+
+        &:after {
+          content: ',';
+        }
+      }
+    }
+
+    .component-office-phone {
+      @include media-breakpoint-up(lg) {
+        border-right: 1px solid #e2e2e2;
+        padding-right: 5px;
+      }
+      @include media-breakpoint-down(md) {
+        width: 100vw;
+        margin-top: 0;
+      }
+
+
+      a.component-office-phone-link {
+        color: #a1a1a1 !important;
+        font-size: 1.4rem !important;
+      }
+    }
+
+    .component-titled-social-icons {
+      padding-left: 15px;
+      padding-right: 22px;
+      @include media-breakpoint-down(md) {
+        width: 100vw;
+        padding: 10px 0;
+      }
+      @include media-breakpoint-down(xs) {
+        padding: 20px 0;
+      }
+
+    }
+
+    .component-type-featuredButton {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+
+  &.schedule {
+    padding-top: 38px;
+    padding-bottom: 38px;
+
+    .component-office-phone-line {
+      font-family: get-font('Amiri');
+      color: #ffffff;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 1.333;
+    }
+
+    .btn.btn-outline.btn-palette_b-1:hover {
+      color: #74bdc2 !important;
+      background-color: #fff !important;
+      border-color: #fff !important;
+    }
+  }
+}

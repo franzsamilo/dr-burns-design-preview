@@ -1,0 +1,362 @@
+{
+  "meta": {
+    "project": "Dr. Jeffrey Burns / DreamSmile - new website",
+    "reference_site": "https://www.caresmiles.com/",
+    "reference_model": "Care Dental (Dr. Drew Phillips) full-arch implant funnel, 13-section homepage",
+    "generated": "2026-07-10",
+    "positioning": "Full-arch dental implants. Permanent teeth in one day via The Burns Protocol. In-house surgical team, one location. Rebrand of the caresmiles structure onto Dr. Jeffrey Burns using owned 2026 photo + video assets.",
+    "asset_root": "3. Clients/Jeffrey Burns/Media/",
+    "asset_catalog": "3. Clients/Jeffrey Burns/Media Analysis/MEDIA-CATALOG.md",
+    "voice_rules": ["No em dashes", "English only", "Show not tell", "Lead with DreamSmile + The Burns Protocol + Teeth-in-a-Day"]
+  },
+
+  "brand": {
+    "practice_name": "Jeffrey S. Burns D.D.S.",
+    "product_brand": "DreamSmile",
+    "method_brand": "The Burns Protocol",
+    "cobrand": "SPA 122 MedSpa",
+    "tagline_primary": "Transform Your Smile with Expert Care",
+    "colors": {
+      "_source": "current theme _colors.scss + designOptions.php",
+      "teal": "#74bdc2",
+      "charcoal": "#3e3e3e",
+      "gray": "#979797",
+      "white": "#ffffff",
+      "black": "#000000",
+      "_recommendation": "Keep teal + charcoal anchors. Add ONE warm accent (gold/cream) for a premium implant feel, current palette is too cold and narrow."
+    },
+    "fonts": {
+      "_source": "current theme _fonts.scss",
+      "body": "Montserrat, sans-serif",
+      "headings_current": "Amiri, serif",
+      "_recommendation": "Replace thin Amiri with a higher-contrast modern serif for display (e.g. Fraunces / Canela feel). Keep Montserrat for body/UI. Kill italic square buttons."
+    },
+    "logos": [
+      { "role": "primary_wordmark", "asset": "logo.png", "path": "Media/Website Images - Dr. Jeff Burns/wp-content/uploads/2019/10/logo.png", "note": "J. burns wordmark, teal + charcoal on transparent" },
+      { "role": "dreamsmile_wide", "asset": "DREAM-SMILE-LOGO-1-copy.png", "path": "Media/Website Images - Dr. Jeff Burns/wp-content/uploads/2026/01/DREAM-SMILE-LOGO-1-copy.png", "note": "Main DreamSmile logotype, wide" },
+      { "role": "dreamsmile_square", "asset": "IMG_2251.png", "path": "Media/Website Images - Dr. Jeff Burns/wp-content/uploads/2026/01/IMG_2251.png", "note": "Square/centered, for social + favicon" },
+      { "role": "reverse_white", "asset": "side-logo.png", "path": "Media/Website Images - Dr. Jeff Burns/wp-content/uploads/2019/10/side-logo.png", "note": "White knockout, dark backgrounds only" }
+    ]
+  },
+
+  "contact": {
+    "phone_main": "540-740-8937",
+    "_phone_note": "Caresmiles splits Current Patients vs New Patients lines. Confirm if Burns wants a separate new-patient tracking number.",
+    "address": "9626 South Congress St, New Market, VA",
+    "_address_note": "Zip not in source theme, confirm (New Market VA = 22844).",
+    "service_area": "Serving Harrisonburg, Winchester, and the Shenandoah Valley",
+    "hours": "{{CONFIRM: business hours}}",
+    "social": {
+      "facebook": "{{CONFIRM url}}",
+      "instagram": "{{CONFIRM url}}",
+      "youtube": "{{CONFIRM url - Burns has YT-style long form}}",
+      "tiktok": "{{CONFIRM url - Burns has heavy TikTok library}}"
+    },
+    "funnel_links": {
+      "qualification_survey": "https://schedule.jeffrey-burns.implant-services.com",
+      "ebook_guide": "https://jeffrey-burns.implant-services.com/get-e-book",
+      "_source": "extracted from current theme GHL bolt-ons"
+    }
+  },
+
+  "nav": {
+    "menu": [
+      { "label": "About", "href": "/why-choose-us/" },
+      { "label": "Meet Dr. Burns", "href": "/meet-dr-burns/" },
+      {
+        "label": "Services",
+        "href": "/services/",
+        "dropdown": [
+          { "label": "Full-Arch / Teeth In A Day (DreamSmile)", "href": "/services/full-arch-teeth-in-a-day/" },
+          { "label": "Single Dental Implants", "href": "/services/single-dental-implants/" },
+          { "label": "Implant-Supported Bridges", "href": "/services/implant-supported-bridges/" },
+          { "label": "Implant-Supported Dentures", "href": "/services/implant-supported-dentures/" },
+          { "label": "Zygomatic Implants", "href": "/services/zygomatic-implants/", "_note": "Burns differentiator, caresmiles does not offer this" },
+          { "label": "Bone Grafting", "href": "/services/bone-grafting/" },
+          { "label": "Sinus Lifts", "href": "/services/sinus-lifts/" },
+          { "label": "Veneers", "href": "/services/veneers/" },
+          { "label": "Tooth Extractions", "href": "/services/tooth-extractions/" }
+        ]
+      },
+      {
+        "label": "Resources",
+        "href": "/resources/",
+        "dropdown": [
+          { "label": "Blog", "href": "/blog/" },
+          { "label": "Finance & Insurance", "href": "/finance-insurance/" },
+          { "label": "New Patient Forms", "href": "/new-patient-forms/", "_assets": ["Media/Website Images - Dr. Jeff Burns/wp-content/uploads/2019/05/Registration-Form.pdf", "Media/Website Images - Dr. Jeff Burns/wp-content/uploads/2019/05/Medical_History_Form_16.pdf"] }
+        ]
+      },
+      { "label": "SPA 122 MedSpa", "href": "/spa-122/", "_note": "Burns co-brand, caresmiles has no equivalent. Uses unused SPA 122 video suite." },
+      { "label": "FAQ", "href": "/dental-implant-faqs/" },
+      { "label": "Contact", "href": "/contact/" }
+    ],
+    "cta_button": { "label": "Schedule My Free Consultation", "action": "open_qualification_survey" }
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "order": 1,
+      "type": "hero_video",
+      "maps_to": "caresmiles Section 1 (Hero Banner)",
+      "headline": "Need a New Smile? You're in the Right Place.",
+      "subheadline": "Permanent teeth in one day, designed and placed by one surgical team, in one location.",
+      "value_bullets": [
+        "The Burns Protocol: your full DreamSmile, start to finish, under one roof",
+        "New teeth in one day",
+        "In-house oral surgeon, anesthesiology, 3D imaging, and dental lab",
+        "Honest answers, real results"
+      ],
+      "stat": { "number": "{{CONFIRM: implants placed / arches restored}}", "label": "implants placed", "_note": "Do not fabricate. Caresmiles uses '8,000+ implants placed'. Get Burns's real defensible number." },
+      "cta_primary": { "label": "Schedule My Free Consultation", "action": "open_qualification_survey", "href": "https://schedule.jeffrey-burns.implant-services.com" },
+      "cta_secondary": { "label": "Call Us: 540-740-8937", "action": "tel", "href": "tel:5407408937" },
+      "media": [
+        { "role": "hero_video_desktop", "asset": "The Power of Full Arch, DreamSmile", "path": "Media/Videos and Thumbnails from TTG/The Power of Full Arch, DreamSmile, Dr. Burns, 3840x2160.mp4", "status": "ready", "note": "Landscape 4K brand film, ideal full-bleed hero loop. Add poster + compress + stream." },
+        { "role": "hero_video_fallback", "asset": "Web Banner V6", "path": "theme:_media/exported-videos/Web Banner V6-cvyesk4svu.mp4", "status": "ready" },
+        { "role": "hero_poster", "asset": "Dr Burns pro portrait", "path": "Media/Downloaded ZIPs and Files/2026_Photos.zip => Jeff Burns DDS_Headshot-1.jpg", "status": "in-zip-extract" }
+      ]
+    },
+    {
+      "id": "qualification",
+      "order": 2,
+      "type": "interactive_quiz",
+      "maps_to": "caresmiles Section 2 (Qualification Assessment)",
+      "headline": "Find out if you're a candidate for a DreamSmile",
+      "body": "Answer a few quick questions to see if you qualify, and get details on pricing and flexible financing.",
+      "embed": { "type": "ghl_survey", "src": "https://schedule.jeffrey-burns.implant-services.com", "_note": "Burns already runs this GHL survey. Integrate natively, not as the grafted iframe on the current site." },
+      "media": []
+    },
+    {
+      "id": "before_after",
+      "order": 3,
+      "type": "before_after_gallery",
+      "maps_to": "caresmiles Section 3 (Before & After Gallery)",
+      "headline": "Real patients. Real DreamSmiles.",
+      "items": [
+        { "patient": "Joe Vile", "video": "Media/Videos edited by MN/Joe Vile B&A TikTok.mov", "teeth_only": "Media/Videos edited by MN/Joe Vile Teeth Only B&A TikTok.mov", "status": "ready" },
+        { "patient": "Tammy Climer", "video": "Media/Videos edited by MN/Tammy Climer B&A TikTok.mov", "status": "ready" },
+        { "patient": "Danny Spain", "video": "Media/Videos edited by MN/Danny Spain B&A TikTok.mov", "status": "ready" },
+        { "patient": "Diane Collis", "video": "Media/Videos edited by MN/Diane Collis B&A TikTok.mov", "teeth_only": "Media/Videos edited by MN/Diane Collis B&A Teeth Only TikTok.mov", "status": "ready" },
+        { "patient": "Carol Sliver", "video": "Media/Videos edited by MN/Carol Sliver B&A TikTok.mov", "status": "ready" },
+        { "patient": "Fran Seiverd", "video": "Media/Videos edited by MN/Fran Seiverd B&A TikTok.mov", "status": "ready" }
+      ],
+      "_note": "Caresmiles shows 4 static B&A image pairs. Burns has 6 edited B&A videos, stronger. Use as autoplay-muted loops or B&A slider. Consider stills for grid + video on click."
+    },
+    {
+      "id": "value_prop",
+      "order": 4,
+      "type": "feature_cards",
+      "maps_to": "caresmiles Section 4 (We Make It Easy)",
+      "headline": "We Make It Easy to Get a Permanent New Smile.",
+      "body": "Get permanent teeth in one day, from a team that keeps every step under one roof, with your comfort and safety first.",
+      "cards": [
+        { "title": "Consultation, surgery, and new teeth, all in one location", "icon": "location" },
+        { "title": "No outside referrals. Your oral surgeon, anesthesiologist, and lab are in-house", "icon": "team" },
+        { "title": "New teeth in a single visit with The Burns Protocol", "icon": "clock" },
+        { "title": "Sleep through it. IV sedation with an anesthesiologist and nurse anesthetist on staff", "icon": "sedation" }
+      ],
+      "_source_assets": "Differentiators pulled from the current theme '13 Things That Set Us Apart'. Distilled from 13 to 4, per redesign rec.",
+      "media": [
+        { "role": "support_video", "asset": "What makes our office stand out", "path": "Media/Videos and Thumbnails from TTG/What makes our office stand out Reel, Short-Form Video, 1080 x 1920, Dr. Jeffrey Burns (2).mp4", "status": "ready" }
+      ]
+    },
+    {
+      "id": "smile_preview",
+      "order": 5,
+      "type": "smile_preview_tool",
+      "maps_to": "caresmiles Section 5 (SmileReveal Technology)",
+      "headline": "See Your DreamSmile Before You Ever Sit In The Chair",
+      "subheading": "Preview Your Smile",
+      "steps": ["Upload your photo", "Results in under 60 seconds", "Share it with the people you love"],
+      "body": "Walk in knowing exactly what's possible. No guesswork, no hesitation.",
+      "cta": { "label": "Get Started", "action": "open_smile_preview" },
+      "status": "NEEDS-BUILD",
+      "_note": "Caresmiles uses a proprietary 'SmileReveal' AI tool. Burns has no equivalent tool yet, but the concept already exists in the DreamSmile Journey ('Preview Your Smile' step). DECISION: build/license a smile-simulator, or replace this section with the 'What is a DreamSmile' explainer video below.",
+      "media": [
+        { "role": "fallback_video", "asset": "What is a DreamSmile", "path": "Media/Videos and Thumbnails from TTG/What is a DreamSmile, Short-form video, 1440 x 2560, Dr. Jeffrey Burns (1).mp4", "status": "ready" }
+      ]
+    },
+    {
+      "id": "lead_magnet",
+      "order": 6,
+      "type": "guide_download",
+      "maps_to": "caresmiles Section 6 (Free Dental Implant Guide)",
+      "headline": "Want to learn more about your dental implant options?",
+      "body": "Grab our FREE Ultimate Guide to Dental Implants to learn:",
+      "bullets": [
+        "The difference between implants, bridges, and dentures",
+        "Why full-arch is the gold standard",
+        "What treatment really costs, and how people afford it",
+        "How to claim your FREE consultation"
+      ],
+      "cta": { "label": "Read The Guide", "href": "https://jeffrey-burns.implant-services.com/get-e-book" },
+      "media": [
+        { "role": "ebook_mockup", "asset": "Burns-Ebook-Mockup-5", "path": "Media/Website Images - Dr. Jeff Burns/wp-content/uploads/2025/09/Burns-Ebook-Mockup-5.png", "status": "ready", "note": "Burns already owns this exact lead magnet + funnel. Direct 1:1 map to caresmiles." }
+      ]
+    },
+    {
+      "id": "doctor_intro",
+      "order": 7,
+      "type": "doctor_about",
+      "maps_to": "caresmiles Section 7 (Doctor Introduction)",
+      "headline": "The Experience You Want. The Care You Deserve.",
+      "body": "Dr. Jeffrey Burns has spent his career restoring full-arch smiles with The Burns Protocol. Known for a calm, no-pressure approach, he takes time to listen, explain, and treat you like a person, not a case number. He is backed by an in-house surgical team, including oral surgeon Dr. James Whitney.",
+      "_body_confirm": "Insert Burns's real credential line (years, arches restored, training). Do not fabricate. Confirm Dr. Whitney's role and whether he is also the SPA 122 doctor.",
+      "cta": { "label": "Meet Dr. Burns", "href": "/meet-dr-burns/" },
+      "media": [
+        { "role": "doctor_portrait", "asset": "Jeff Burns DDS Headshot", "path": "Media/Downloaded ZIPs and Files/2026_Photos.zip => Jeff Burns DDS_Headshot-3.jpg", "status": "in-zip-extract", "note": "Use the 2026 pro headshots, not the 2019 frame-grabs." },
+        { "role": "doctor_video", "asset": "Meet Dr. Burns", "path": "Media/Videos and Thumbnails from TTG/Meet Dr. Burns, Short Form Video, 1080 x 1920, Dr. Jeffrey Burns (2).mp4", "status": "ready" },
+        { "role": "second_doctor", "asset": "Meet Dr. Josephine Burns", "path": "Media/Videos and Thumbnails from TTG/Meet Dr. Josephine Burns Part 1, Educational Short-form Video, 1080 x 1920, Dr. Jeffrey Burns (3).mp4", "status": "ready" }
+      ]
+    },
+    {
+      "id": "process",
+      "order": 8,
+      "type": "process_steps",
+      "maps_to": "caresmiles Section 8 (Here's How It All Happens)",
+      "headline": "Here's How Your DreamSmile Happens",
+      "subheading": "The Burns Protocol, from first call to final smile",
+      "steps": [
+        { "n": 1, "title": "Free Consultation", "body": "You talk, we listen. No pressure, no sales pitch.", "media": "Media/Downloaded ZIPs and Files/2026_Photos.zip => BTS 1.jpg" },
+        { "n": 2, "title": "Your Custom Plan", "body": "A smile designed for your face, to look as natural as it functions.", "media": null },
+        { "n": 3, "title": "New Smile Day", "body": "Most patients leave with fixed teeth the same day as surgery.", "media": "Media/Videos and Thumbnails from TTG/What happens if you get permanent teeth in one day, Dr. Jeffrey Burns,  Short-form, 1080 x 1920, Dr. Jeffrey Burns (2).mp4" },
+        { "n": 4, "title": "Refinement & Support", "body": "We fine-tune your smile and support you every step after.", "media": "Media/Videos and Thumbnails from TTG/What to expect after surgery, Thumbnail Design, 2160 x 3840, Dr. Jeffrey Burns (2).png" }
+      ],
+      "cta": { "label": "Learn More About The Burns Protocol", "href": "/services/full-arch-teeth-in-a-day/" },
+      "_note": "Caresmiles uses 4 steps. Burns also has an 8-step 'DreamSmile Journey' graphic (rebuild as clean vector). Keep 4 on homepage, put the full 8-step on the service page."
+    },
+    {
+      "id": "testimonials",
+      "order": 9,
+      "type": "video_testimonials",
+      "maps_to": "caresmiles Section 9 (Testimonials)",
+      "headline": "Hear From People Who've Been Where You Are",
+      "subheading": "Patient Stories",
+      "items": [
+        { "patient": "Mike", "video_vert": "Media/Downloaded ZIPs and Files/2026_VERT_Testimonials (1).zip => 02_01_VERT_MIKE_60_V1.mp4", "video_long": "Media/Downloaded ZIPs and Files/2026_Long form_Testimonials.zip => 02_01_MIKE_Testimonial.mp4", "status": "in-zip-extract" },
+        { "patient": "Ron", "video_vert": "Media/Downloaded ZIPs and Files/2026_VERT_Testimonials (1).zip => 02_05_VERT_RON_60_V1.mp4", "video_long": "Media/Downloaded ZIPs and Files/2026_Long form_Testimonials.zip => 02_05_RON_Testimonial.mp4", "status": "in-zip-extract" },
+        { "patient": "Danny", "video_vert": "Media/Downloaded ZIPs and Files/2026_VERT_Testimonials (1).zip => 02_02_VERT_DANNY_60_V1.mp4", "video_long": "Media/Downloaded ZIPs and Files/2026_Long form_Testimonials.zip => 02_02_DANNY_Testimonial.mp4", "status": "in-zip-extract" },
+        { "patient": "Kelly", "video_vert": "Media/Downloaded ZIPs and Files/2026_VERT_Testimonials (1).zip => 02_03_VERT_KELLY_60_V1.mp4", "video_long": "Media/Downloaded ZIPs and Files/2026_Long form_Testimonials.zip => 02_03_KELLY_Testimonial.mp4", "status": "in-zip-extract" },
+        { "patient": "Angela", "video_vert": "Media/Downloaded ZIPs and Files/2026_VERT_Testimonials (1).zip => 02_04_VERT_ANGELA_60_V1.mp4", "video_long": "Media/Downloaded ZIPs and Files/2026_Long form_Testimonials.zip => 02_04_ANGELA_Testimonial.mp4", "status": "in-zip-extract" },
+        { "patient": "Jill Bush", "video_vert": "Media/Videos and Thumbnails from TTG/(Testimonial) Jill Bush, Short-Form Video, 1080 x 1920, Dr. Jeffrey Burns (1).mp4", "status": "ready" }
+      ],
+      "_note": "Caresmiles shows 5 testimonial videos. Burns has a full 2026 shoot (Mike, Ron, Danny, Kelly, Angela) in every length + Jill Bush. Use 60s VERT for the wall, long-form on a dedicated Patient Stories page.",
+      "_gap": "Rob Rotz, Pamela White, Terri Hoover testimonials are BROKEN downloads, re-request before launch (see MEDIA-CATALOG.md section 5)."
+    },
+    {
+      "id": "pricing_transparency",
+      "order": 10,
+      "type": "trust_pricing",
+      "maps_to": "caresmiles Section 10 (Pricing & Transparency)",
+      "headline": "We Believe in Telling You the Truth, Especially About Cost",
+      "body": "No bait-and-switch pricing. Everything is clear, upfront, and built to make your life easier.",
+      "points": ["No hidden fees", "Flexible financing available", "Help with pre-approval"],
+      "cta": { "label": "Get My Treatment Plan", "action": "open_qualification_survey" },
+      "media": [
+        { "role": "financing_video", "asset": "Financing Options Available", "path": "Media/Videos and Thumbnails from TTG/Financing Options Available, Educational Short-form Video, 1080 x 1920, Dr. Jeffrey Burns (1).mp4", "status": "ready" }
+      ]
+    },
+    {
+      "id": "doctor_qa",
+      "order": 11,
+      "type": "qa_video_grid",
+      "maps_to": "caresmiles Section 11 (Hear straight from Dr. Phillips)",
+      "headline": "Hear Straight From Dr. Burns",
+      "subheading": "Honest answers to your biggest questions.",
+      "items": [
+        { "q": "Are dental implants painful?", "video": "Media/Videos and Thumbnails from TTG/What to expect the day after surgery, Educational Short-form Video, 1080 x 1920, Dr. Jeffrey Burns (2).mp4", "status": "ready" },
+        { "q": "How much do implants cost?", "video": "Media/Videos and Thumbnails from TTG/Financing Options Available, Educational Short-form Video, 1080 x 1920, Dr. Jeffrey Burns (1).mp4", "status": "ready" },
+        { "q": "What is a dental implant?", "video": "Media/Videos and Thumbnails from TTG/What are dental implants, Educational Short-form Video, 1080 x 1920, Dr. Jeffrey Burns (2).mp4", "status": "ready" },
+        { "q": "Am I too old for implants?", "video": "Media/Videos and Thumbnails from TTG/Am I too old for implants, Educational Short-form Video, 1080 x 1920, Dr. Jeffrey Burns (3).mp4", "status": "ready" },
+        { "q": "What are zygomatic implants?", "video": "Media/Videos and Thumbnails from TTG/What are zygomatic implants, Dr. Jeffrey Burns,  Short-form, 1080 x 1920, Dr. Jeffrey Burns (1).mp4", "status": "ready", "_note": "Burns differentiator" },
+        { "q": "What is the #1 reason implants fail?", "video": "Media/Videos and Thumbnails from TTG/What is the #1 reason implants fail, Educational Short-form Video, 1080 x 1920, Dr. Jeffrey Burns (1).mp4", "status": "ready" }
+      ],
+      "_note": "Caresmiles has 4 Q&A videos. Burns has ~23 educational shorts. This section can power a full on-page education/FAQ library, a major SEO + trust advantage. Full list in MEDIA-CATALOG.md section 4a."
+    },
+    {
+      "id": "spa122",
+      "order": 12,
+      "type": "cobrand_band",
+      "maps_to": "NEW (no caresmiles equivalent)",
+      "headline": "More Than a Dental Office. Meet SPA 122.",
+      "body": "Our MedSpa is right next door. Some spa services are available during your dental treatment, so your visit is as comfortable as your results are beautiful.",
+      "cta": { "label": "Explore SPA 122", "href": "/spa-122/" },
+      "status": "OPTIONAL / CONFIRM",
+      "media": [
+        { "role": "spa_overview", "asset": "SPA 122 Overview", "path": "theme:_media/exported-videos/SPA_122_-_Overview_V5-65gz9n2hui.mp4", "status": "ready-unused" },
+        { "role": "spa_services", "asset": "SPA 122 Services", "path": "theme:_media/exported-videos/SPA_122_-_services_V6-nh613cmb9t.mp4", "status": "ready-unused" },
+        { "role": "spa_tour", "asset": "SPA 122 Office Tour", "path": "theme:_media/exported-videos/SPA_122_Office_Tour_V7-ly805g91su.mp4", "status": "ready-unused" }
+      ],
+      "_note": "Burns owns a full SPA 122 video suite that is completely unused on the current site. Decide: full co-brand section + page, or drop. Resolve Dr. Whitney identity first."
+    },
+    {
+      "id": "final_cta",
+      "order": 13,
+      "type": "closing_cta",
+      "maps_to": "caresmiles Section 12 (Final CTA)",
+      "headline": "You Deserve to Feel Heard. And to Love Your Smile Again.",
+      "body": "Take the first step today. No pressure. Just a simple conversation to explore what's possible, and whether it's right for you.",
+      "cta_primary": { "label": "Schedule My Free Consultation", "action": "open_qualification_survey" },
+      "cta_secondary": { "label": "Call Us: 540-740-8937", "href": "tel:5407408937" },
+      "media": [
+        { "role": "office_photos", "asset": "team + office", "paths": ["Media/Website Images - Dr. Jeff Burns/wp-content/uploads/2019/05/DSC01658.jpg", "Media/Downloaded ZIPs and Files/2026_Photos.zip => Jeff Burns DDS_Team Photo.jpg"], "status": "mixed", "_note": "Use the 2026 team photo. Reshoot interior/exterior, current office shots are soft frame-grabs." }
+      ]
+    },
+    {
+      "id": "footer",
+      "order": 14,
+      "type": "footer",
+      "maps_to": "caresmiles Section 13 (Footer)",
+      "columns": [
+        { "heading": "Practice", "links": ["About", "Meet Dr. Burns", "The Burns Protocol", "Pricing & Financing"] },
+        { "heading": "Explore", "links": ["Patient Stories", "FAQs", "Blog", "SPA 122 MedSpa", "Schedule Consultation"] }
+      ],
+      "contact": { "phone": "540-740-8937", "address": "9626 South Congress St, New Market, VA", "email": "{{CONFIRM}}" },
+      "service_area_seo": ["Harrisonburg", "Winchester", "Shenandoah Valley", "New Market", "{{add nearby-cities list from current footer}}"],
+      "social": ["Facebook", "Instagram", "YouTube", "TikTok"],
+      "legal": ["Privacy Policy", "Website Accessibility", "Sitemap"],
+      "copyright": "© 2026 Jeffrey S. Burns D.D.S. / DreamSmile",
+      "logo": "Media/Website Images - Dr. Jeff Burns/wp-content/uploads/2019/10/side-logo.png"
+    }
+  ],
+
+  "pages": [
+    { "path": "/why-choose-us/", "title": "About / Why Choose Us", "source": "caresmiles /why-choose-us/", "content_hook": "In-house surgical team, one location, The Burns Protocol", "assets": ["What makes our office stand out video", "2026 team photo"] },
+    { "path": "/meet-dr-burns/", "title": "Meet Dr. Burns", "source": "caresmiles /meet-the-doctor/", "assets": ["2026 headshots", "Meet Dr. Burns video", "Meet Dr. Josephine Burns Part 1 + 2"] },
+    { "path": "/services/full-arch-teeth-in-a-day/", "title": "Full-Arch / Teeth In A Day (DreamSmile)", "source": "caresmiles /all-on-x/", "priority": "FLAGSHIP", "assets": ["The Power of Full Arch DreamSmile 4K", "8-step DreamSmile Journey (rebuild as vector)", "The Burns Protocol video (BROKEN, re-request)"] },
+    { "path": "/services/single-dental-implants/", "title": "Single Dental Implants", "source": "caresmiles /single-dental-implants/" },
+    { "path": "/services/implant-supported-bridges/", "title": "Implant-Supported Bridges", "source": "caresmiles /implant-supported-bridges/", "assets": ["How do I clean my implant supported bridge video"] },
+    { "path": "/services/implant-supported-dentures/", "title": "Implant-Supported Dentures", "source": "caresmiles /implant-supported-dentures/", "assets": ["Can my implant denture stain video", "Will My Implant Support Denture Stay White"] },
+    { "path": "/services/zygomatic-implants/", "title": "Zygomatic Implants", "source": "NEW (Burns differentiator vs caresmiles zirconia)", "assets": ["What are zygomatic implants video"] },
+    { "path": "/services/bone-grafting/", "title": "Bone Grafting", "source": "caresmiles /bone-grafting/", "assets": ["Not Enough Bone video"] },
+    { "path": "/services/sinus-lifts/", "title": "Sinus Lifts", "source": "caresmiles /sinus-lifts/" },
+    { "path": "/services/veneers/", "title": "Veneers", "source": "caresmiles /veneers/" },
+    { "path": "/services/tooth-extractions/", "title": "Tooth Extractions", "source": "caresmiles /tooth-extractions/" },
+    { "path": "/spa-122/", "title": "SPA 122 MedSpa", "source": "NEW", "assets": ["SPA 122 Overview / Services / Office Tour / Dr Whitney Bio videos (all unused)"] },
+    { "path": "/blog/", "title": "Blog", "source": "caresmiles /blog/", "assets": ["~30 existing 2025-26 SEO blog thumbnails in wp-content/uploads"] },
+    { "path": "/finance-insurance/", "title": "Finance & Insurance", "source": "caresmiles /finance-insurance/", "assets": ["Financing Options Available video"] },
+    { "path": "/new-patient-forms/", "title": "New Patient Forms", "source": "caresmiles /new-patient-forms/", "assets": ["Registration-Form.pdf", "Medical_History_Form_16.pdf"] },
+    { "path": "/dental-implant-faqs/", "title": "FAQ", "source": "caresmiles /dental-implant-faqs/", "assets": ["~23 educational short videos as expandable FAQ answers"] },
+    { "path": "/contact/", "title": "Contact", "source": "caresmiles /contact/" }
+  ],
+
+  "build_notes": {
+    "direct_1to1_maps": ["Free ebook guide (Burns owns identical asset + funnel)", "Qualification survey (Burns runs GHL survey)", "Doctor Q&A videos (Burns has 23 shorts)", "Video testimonials (Burns 2026 shoot covers all lengths)"],
+    "burns_advantages_over_reference": ["6 edited B&A videos vs 4 static pairs", "23-video education library vs 4 Q&A", "Zygomatic implants (unique)", "SPA 122 MedSpa co-brand", "In-house full surgical team story"],
+    "needs_build_or_decision": [
+      "SmileReveal-equivalent smile simulator: build, license, or replace with 'What is a DreamSmile' video",
+      "Confirm real hero stat number (implants placed / arches restored). Do not fabricate.",
+      "Resolve Dr. James Whitney identity + SPA 122 co-brand decision",
+      "Standardize practice name to 'Jeffrey S. Burns D.D.S.'",
+      "Confirm business hours, email, social URLs, second tracking number"
+    ],
+    "assets_to_re_request_before_launch": ["Rob Rotz testimonial", "Pamela White testimonial", "Terri Hoover testimonial", "The Showcase of the Burns Protocol film"],
+    "asset_prep": [
+      "Extract 2026_Photos.zip + testimonial zips (paths use 'zip => file' notation)",
+      "Re-encode/compress + add posters to all hero and section videos, serve via CDN, not raw MP4",
+      "Rebuild the 8-step DreamSmile Journey as clean vector (current AI version has garbled detail)",
+      "Do NOT use: Gemini AI hero, 'Journey' AI infographic, generic stock (baby1, happy-patient), soft 800px frame-grabs"
+    ]
+  }
+}

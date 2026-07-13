@@ -1,0 +1,8 @@
+$fontFamilies: (
+        'default' : #{Montserrat, sans-serif},
+        'Amiri' : #{Amiri, serif}
+);
+
+@function get-font($key) {
+  @return get-map-value($fontFamilies, $key);
+}

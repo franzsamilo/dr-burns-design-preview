@@ -1,0 +1,21 @@
+@import "../_config/config";
+
+.part-content-block-image {
+  padding-top: 159px;
+  padding-bottom: 159px;
+  overflow: hidden;
+  @include media-breakpoint-down(md) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .component-section-bg {
+    @include media-breakpoint-down(md) {
+      position: relative;
+      width: 100%;
+      height: 350px;
+    }
+
+  }
+}
+
+

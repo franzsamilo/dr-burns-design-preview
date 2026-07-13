@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The DreamSmile Rebuild, Before &amp; After | Dr. Jeffrey S. Burns</title>
+<meta name="description" content="Side-by-side comparison of Dr. Jeffrey Burns's current website and the rebuild on Bobby's template. Fifteen pages, archived current site on the left, rebuilt page on the right.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#eef3f5;
+    --bg2:#e4eef1;
+    --card:#ffffff;
+    --ink:#12252c;
+    --body:#4d5a62;
+    --graphite:#3e3e3e;
+    --teal:#226d7a;
+    --teal-brand:#74bdc2;
+    --cyan:#22b8d1;
+    --pale:#e4f5fa;
+    --pale2:#b0e0e9;
+    --slate:#7f99a3;
+    --tan:#c6b48d;
+    --tan-deep:#b09b6f;
+    --line:#e2ebee;
+    --dark1:#10242b;
+    --dark2:#183a44;
+    --radius:22px;
+    --radius-sm:12px;
+    --shadow:0 40px 90px -50px rgba(18,37,44,.45);
+    --shadow-card:0 26px 60px -42px rgba(18,37,44,.42);
+    --ease:cubic-bezier(.16,1,.3,1);
+    --maxw:1500px;
+    --headh:70px;
+    --barh:118px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Montserrat',Arial,sans-serif;color:var(--graphite);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2{font-family:'Amiri',Georgia,serif;color:var(--ink);line-height:1.14;font-weight:700;letter-spacing:-.005em}
+  h3,h4{font-family:'Montserrat',Arial,sans-serif;color:var(--ink);font-weight:800}
+  p{color:var(--body)}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan)}
+
+  /* Header */
+  header.nav{position:sticky;top:0;z-index:80;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);height:var(--headh)}
+  .nav-in{max-width:var(--maxw);margin:0 auto;padding:0 24px;height:var(--headh);display:flex;align-items:center;justify-content:space-between;gap:18px}
+  .brand{display:flex;align-items:center;gap:11px;min-width:0}
+  .brand img{height:34px;width:auto}
+  .brand .bt{font-weight:800;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);line-height:1.2;padding-left:12px;border-left:1px solid var(--line)}
+  .brand .bt small{display:block;font-weight:600;font-size:.62rem;letter-spacing:.14em;color:var(--slate)}
+  .nav-right{display:flex;align-items:center;gap:16px;flex-shrink:0}
+  .nav-right a.findings{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);border-bottom:2px solid var(--pale2);padding-bottom:2px;transition:border-color .2s}
+  .nav-right a.findings:hover{border-color:var(--teal)}
+  .nav-phone{display:inline-flex;align-items:center;gap:8px;background:var(--teal-brand);color:#fff;font-weight:800;font-size:.82rem;letter-spacing:.02em;padding:9px 18px;border-radius:7px;white-space:nowrap;transition:background .2s}
+  .nav-phone:hover{background:var(--teal)}
+  .nav-phone svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:2.2}
+
+  /* Intro */
+  .intro{background:linear-gradient(180deg,#ffffff 0%,var(--bg) 100%);border-bottom:1px solid var(--line)}
+  .intro-in{max-width:var(--maxw);margin:0 auto;padding:34px 24px 30px;display:grid;grid-template-columns:1.35fr .95fr;gap:40px;align-items:center}
+  .intro h1{font-size:clamp(1.9rem,3.4vw,2.9rem);margin:8px 0 12px;max-width:20ch}
+  .intro h1 em{font-style:italic;color:var(--teal)}
+  .intro .lede{font-size:1.03rem;max-width:56ch;color:var(--body)}
+  .chips-meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+  .chips-meta span{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:.76rem;font-weight:700;color:var(--ink)}
+  .chips-meta span i{width:8px;height:8px;border-radius:999px;background:var(--teal-brand);display:inline-block}
+  .note-card{background:var(--pale);border:1px solid var(--pale2);border-radius:var(--radius);padding:22px 24px}
+  .note-card h4{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+  .note-card p{font-size:.9rem;color:var(--graphite);line-height:1.55}
+  .note-card p + p{margin-top:9px}
+  .note-card .live-badge{color:var(--teal);font-weight:800}
+
+  /* Controls bar */
+  .bar{position:sticky;top:var(--headh);z-index:70;background:rgba(238,243,245,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .bar-in{max-width:var(--maxw);margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .stepper{display:flex;align-items:center;gap:8px;flex-shrink:0}
+  .stepper button{width:38px;height:38px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--teal);cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;transition:.2s}
+  .stepper button:hover:not(:disabled){background:var(--teal);color:#fff;border-color:var(--teal)}
+  .stepper button:disabled{opacity:.35;cursor:not-allowed}
+  .stepper .count{font-size:.8rem;font-weight:700;color:var(--slate);min-width:74px;text-align:center}
+  .chips{display:flex;gap:7px;overflow-x:auto;padding:3px 2px;flex:1;scrollbar-width:thin}
+  .chips::-webkit-scrollbar{height:6px}
+  .chips::-webkit-scrollbar-thumb{background:var(--pale2);border-radius:999px}
+  .chip{flex-shrink:0;display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:.76rem;font-weight:700;color:var(--body);cursor:pointer;white-space:nowrap;transition:.2s}
+  .chip .n{font-size:.66rem;color:var(--slate)}
+  .chip:hover{border-color:var(--teal-brand);color:var(--ink)}
+  .chip.active{background:var(--teal);border-color:var(--teal);color:#fff}
+  .chip.active .n{color:rgba(255,255,255,.75)}
+  .device{display:flex;gap:4px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:4px;flex-shrink:0}
+  .device button{border:none;background:none;cursor:pointer;padding:7px 12px;border-radius:7px;font-size:.72rem;font-weight:700;color:var(--body);transition:.2s}
+  .device button.active{background:var(--teal-brand);color:#fff}
+
+  /* Viewer */
+  .viewer{max-width:var(--maxw);margin:0 auto;padding:22px 24px 40px}
+  .pageinfo{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px}
+  .pageinfo .pname{font-family:'Amiri',Georgia,serif;font-size:1.5rem;color:var(--ink);font-weight:700}
+  .pageinfo .slug{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.8rem;color:var(--teal);background:var(--pale);border:1px solid var(--pale2);border-radius:6px;padding:4px 10px}
+  .badge{font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+  .badge.tpl{background:var(--ink);color:#fff}
+  .badge.ds{background:var(--tan);color:#fff}
+  .badge.prio{background:#fff;border:1px solid var(--line);color:var(--slate)}
+
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;transition:max-width .3s var(--ease)}
+  .cols.dev-tablet,.cols.dev-mobile{max-width:none}
+  .panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-card);display:flex;flex-direction:column}
+  .panel-label{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 18px;border-bottom:1px solid var(--line)}
+  .panel-label .lt{display:flex;align-items:center;gap:9px;font-size:.74rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+  .panel.old .panel-label .lt{color:var(--slate)}
+  .panel.new .panel-label .lt{color:var(--teal)}
+  .panel-label .dot{width:9px;height:9px;border-radius:999px}
+  .panel.old .dot{background:var(--slate)}
+  .panel.new .dot{background:var(--teal-brand)}
+  .openbtn{display:inline-flex;align-items:center;gap:6px;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--teal);border:1px solid var(--pale2);border-radius:7px;padding:6px 11px;transition:.2s}
+  .openbtn:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+  .openbtn svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2}
+  .vtoggle{display:inline-flex;border:1px solid var(--pale2);border-radius:8px;overflow:hidden;margin-right:6px}
+  .vtoggle button{font-weight:800;font-size:.63rem;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border:0;border-right:1px solid var(--pale2);background:#fff;color:var(--teal);cursor:pointer;transition:.15s}
+  .vtoggle button:last-child{border-right:0}
+  .vtoggle button.active{background:var(--teal);color:#fff}
+
+  /* fake browser url bar */
+  .urlbar{display:flex;align-items:center;gap:9px;padding:9px 16px;background:#f4f8f9;border-bottom:1px solid var(--line)}
+  .urlbar .lights{display:flex;gap:5px}
+  .urlbar .lights i{width:9px;height:9px;border-radius:999px;background:#d7e2e5;display:inline-block}
+  .urlbar .u{flex:1;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.72rem;color:var(--body);background:#fff;border:1px solid var(--line);border-radius:6px;padding:5px 11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .urlbar .u b{color:var(--ink)}
+
+  .stage{position:relative;background:var(--bg);height:min(78vh,880px);overflow:hidden}
+  .framehost{width:100%;height:100%;overflow:hidden;background:#fff}
+  .stage iframe{border:0;display:block;background:#fff;transform-origin:top left;will-change:transform}
+
+  /* snapshot caption under the left frame */
+  .snapcap{display:flex;align-items:center;gap:8px;padding:9px 18px;border-top:1px solid var(--line);background:#f4f8f9;font-size:.7rem;font-weight:600;color:var(--slate);letter-spacing:.03em}
+  .snapcap svg{width:13px;height:13px;stroke:var(--slate);fill:none;stroke-width:2;flex-shrink:0}
+  .snapcap b{color:var(--teal);font-weight:800}
+
+  /* screenshot layer + error fallback for the old side */
+  .oldshotwrap{position:absolute;inset:0;overflow:auto;background:#f4f8f9;display:none;z-index:2}
+  .oldshot{width:100%;display:block}
+  .oldfallback{position:absolute;inset:0;z-index:3;background:#f4f8f9;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 34px;gap:16px}
+  .oldfallback .ic{width:58px;height:58px;border-radius:16px;background:var(--pale);border:1px solid var(--pale2);display:flex;align-items:center;justify-content:center}
+  .oldfallback .ic svg{width:26px;height:26px;stroke:var(--teal);fill:none;stroke-width:1.8}
+  .oldfallback h4{font-size:1.02rem;color:var(--ink);max-width:30ch}
+  .oldfallback p{font-size:.86rem;color:var(--body);max-width:42ch;line-height:1.55}
+  .oldfallback .visit{display:inline-flex;align-items:center;gap:9px;background:var(--teal);color:#fff;font-weight:800;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;padding:13px 26px;border-radius:8px;margin-top:4px;transition:.2s}
+  .oldfallback .visit:hover{background:#1a565f;transform:translateY(-1px)}
+  .oldfallback .visit svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:2}
+  .oldfallback .fullurl{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.72rem;color:var(--slate);word-break:break-all;max-width:44ch}
+
+  footer{background:linear-gradient(120deg,var(--dark1),var(--dark2));color:#fff;margin-top:20px}
+  .foot-in{max-width:var(--maxw);margin:0 auto;padding:34px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .foot-in img{height:34px}
+  .foot-in .fl{display:flex;flex-direction:column;gap:6px}
+  .foot-in p{color:rgba(255,255,255,.72);font-size:.82rem;max-width:52ch}
+  .foot-in a{color:var(--pale2);font-weight:700}
+  .foot-right{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+  .foot-right .fphone{font-weight:800;font-size:1.05rem;color:#fff}
+
+  @media(max-width:1080px){
+    .intro-in{grid-template-columns:1fr;gap:22px}
+    .cols{grid-template-columns:1fr}
+    .cols.dev-tablet,.cols.dev-mobile{max-width:640px}
+    .panel.old .stage{height:min(52vh,520px)}
+    .brand .bt small{display:none}
+  }
+  @media(max-width:620px){
+    :root{--headh:60px}
+    .brand .bt{display:none}
+    .nav-right a.findings{display:none}
+    .device{display:none}
+    .intro-in{padding:24px 20px}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top" aria-label="Dr. Jeffrey S. Burns, DDS">
+      <img src="../assets/img/logo.png" alt="Dr. Jeffrey S. Burns, DDS">
+      <span class="bt">Rebuild Demo<small>Before &amp; After the DreamSmile build</small></span>
+    </a>
+    <div class="nav-right">
+      <a class="findings" href="../client-knowledge-base.html">View the findings</a>
+      <a class="nav-phone" href="tel:540-740-8937">
+        <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        540-740-8937
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="intro" id="top">
+  <div class="intro-in">
+    <div>
+      <span class="eyebrow">Rebuild Demo</span>
+      <h1>See the DreamSmile rebuild, <em>side by side.</em></h1>
+      <p class="lede">Fifteen pages from Dr. Burns's site, each shown twice. On the left is the current site, loaded from its Wayback Machine snapshot so it renders right here. On the right is the same page rebuilt on Bobby's template, in the DreamSmile palette, ready to click through and scroll.</p>
+      <div class="chips-meta">
+        <span><i></i>15 pages mapped by slug</span>
+        <span><i></i>Home on T1, the rest on T2</span>
+        <span><i></i>DreamSmile branding throughout</span>
+        <span><i></i>Teal, white, and off-white, light theme</span>
+      </div>
+    </div>
+    <div class="note-card">
+      <h4>How to read this page</h4>
+      <p><span class="live-badge">Both sides render live.</span> The right side is the rebuilt page in a real frame. Scroll it, click the buttons, resize with the Desktop and Mobile toggle.</p>
+      <p>The left side is the archived copy of the current site, served by the Wayback Machine. The snapshot date sits under the frame. If the archive is slow, the Open live button opens the real page in a new tab.</p>
+    </div>
+  </div>
+</section>
+
+<div class="bar">
+  <div class="bar-in">
+    <div class="stepper">
+      <button id="prev" aria-label="Previous page">&#8249;</button>
+      <span class="count" id="count">1 / 15</span>
+      <button id="next" aria-label="Next page">&#8250;</button>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="device" id="device">
+      <button data-dev="desktop" class="active">Desktop</button>
+      <button data-dev="tablet">Tablet</button>
+      <button data-dev="mobile">Mobile</button>
+    </div>
+  </div>
+</div>
+
+<div class="viewer">
+  <div class="pageinfo">
+    <span class="pname" id="pname"></span>
+    <span class="slug" id="slug"></span>
+    <span class="badge tpl" id="btpl"></span>
+    <span class="badge ds" id="bds">DreamSmile</span>
+    <span class="badge prio" id="bprio"></span>
+  </div>
+
+  <div class="cols" id="cols">
+    <!-- OLD -->
+    <div class="panel old">
+      <div class="panel-label">
+        <span class="lt"><span class="dot"></span>Current site</span>
+        <a class="openbtn" id="oldopen" href="#" target="_blank" rel="noopener">
+          Open live <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+        </a>
+      </div>
+      <div class="urlbar">
+        <span class="lights"><i></i><i></i><i></i></span>
+        <span class="u" id="oldurl"></span>
+      </div>
+      <div class="stage">
+        <div class="framehost" id="oldhost">
+          <iframe id="oldframe" title="Archived copy of the current page" loading="lazy"></iframe>
+        </div>
+        <div class="oldshotwrap" id="oldshotwrap">
+          <img class="oldshot" id="oldshot" alt="Screenshot of the current live page">
+        </div>
+        <div class="oldfallback" id="oldfallback">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/><path d="M8 21h8"/><path d="M12 18v3"/></svg></span>
+          <h4>This snapshot didn't load</h4>
+          <p>The Wayback Machine can be slow at times. Open the current page in a new tab, or step to another page and come back.</p>
+          <a class="visit" id="oldvisit" href="#" target="_blank" rel="noopener">
+            Open the current page <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+          </a>
+          <span class="fullurl" id="oldfull"></span>
+        </div>
+      </div>
+      <div class="snapcap" id="snapcap">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <span id="snapcaptext"></span>
+      </div>
+    </div>
+
+    <!-- NEW -->
+    <div class="panel new">
+      <div class="panel-label">
+        <span class="lt"><span class="dot"></span>Rebuilt on Bobby's template</span>
+        <div class="vtoggle" id="newvariant" style="display:none">
+          <button type="button" data-v="0" class="active">DreamSmile</button>
+          <button type="button" data-v="1">caresmiles</button>
+        </div>
+        <a class="openbtn" id="newopen" href="#" target="_blank" rel="noopener">
+          Open full <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+        </a>
+      </div>
+      <div class="urlbar">
+        <span class="lights"><i></i><i></i><i></i></span>
+        <span class="u" id="newurl"></span>
+      </div>
+      <div class="stage">
+        <div class="framehost" id="framehost">
+          <iframe id="newframe" title="Rebuilt page" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <div class="fl">
+      <img src="../assets/img/logo-white.png" alt="Dr. Jeffrey S. Burns, DDS">
+      <p>The DreamSmile rebuild demo, prepared for Dr. Jeffrey S. Burns. Structure follows the Figma templates, feel follows the reference build. <a href="../client-knowledge-base.html">Read the findings</a>.</p>
+    </div>
+    <div class="foot-right">
+      <a class="fphone" href="tel:540-740-8937">540-740-8937</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const HOST = "https://www.jeffreyburns.com";
+  // wb: pinned Wayback snapshot (if_ modifier strips the archive toolbar so the page fills the frame).
+  // Every snapshot below was verified to return 200 and to send no frame-ancestors restriction.
+  const PAGES = [
+    {name:"Home",                          short:"Home",                    slug:"/",                                                                          tpl:"T1", prio:"P0", newp:"../index.html", newLabel:"DreamSmile", newAlt:"../home-caresmiles/index.html", newAltLabel:"caresmiles",
+     wb:"https://web.archive.org/web/20250712200700if_/https://www.jeffreyburns.com/"},
+    {name:"Dental Implants",               short:"Implants Overview",       slug:"/restorative-dentistry/dental-implants/",                                    tpl:"T2", prio:"P1", newp:"../restorative-dentistry/dental-implants/index.html",
+     wb:"https://web.archive.org/web/20250808005703if_/https://www.jeffreyburns.com/restorative-dentistry/dental-implants/"},
+    {name:"Replacing Missing Teeth",       short:"Replacing Teeth",         slug:"/restorative-dentistry/dental-implants/replacing-missing-teeth/",             tpl:"T2", prio:"P1", newp:"../restorative-dentistry/dental-implants/replacing-missing-teeth/index.html",
+     wb:"https://web.archive.org/web/20250808015534if_/https://www.jeffreyburns.com/restorative-dentistry/dental-implants/replacing-missing-teeth/"},
+    {name:"Missing All Upper or Lower Teeth", short:"Missing All Teeth",     slug:"/restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/",    tpl:"T2", prio:"P1", newp:"../restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html",
+     wb:"https://web.archive.org/web/20250808015633if_/https://www.jeffreyburns.com/restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/"},
+    {name:"Overview of Implant Placement", short:"Implant Placement",       slug:"/restorative-dentistry/dental-implants/overview-of-implant-placement/",       tpl:"T2", prio:"P1", newp:"../restorative-dentistry/dental-implants/overview-of-implant-placement/index.html",
+     wb:"https://web.archive.org/web/20250808004944if_/https://www.jeffreyburns.com/restorative-dentistry/dental-implants/overview-of-implant-placement/"},
+    {name:"After Implant Placement",       short:"After Placement",         slug:"/restorative-dentistry/dental-implants/after-implant-placement/",             tpl:"T2", prio:"P1", newp:"../restorative-dentistry/dental-implants/after-implant-placement/index.html",
+     wb:"https://web.archive.org/web/20250808012035if_/http://www.jeffreyburns.com/restorative-dentistry/dental-implants/after-implant-placement/"},
+    {name:"Bone Grafting for Implants",    short:"Bone Grafting",           slug:"/restorative-dentistry/dental-implants/bone-grafting-for-implants/",          tpl:"T2", prio:"P1", newp:"../restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html",
+     wb:"https://web.archive.org/web/20250808013333if_/https://www.jeffreyburns.com/restorative-dentistry/dental-implants/bone-grafting-for-implants/"},
+    {name:"Cost of Dental Implants",       short:"Implant Cost",            slug:"/restorative-dentistry/dental-implants/cost-of-dental-implants/",             tpl:"T2", prio:"P1", newp:"../restorative-dentistry/dental-implants/cost-of-dental-implants/index.html",
+     wb:"https://web.archive.org/web/20260710131149if_/https://www.jeffreyburns.com/restorative-dentistry/dental-implants/cost-of-dental-implants/"},
+    {name:"Dental Implants FAQs",          short:"Implant FAQs",            slug:"/restorative-dentistry/dental-implants/dental-implants-faqs/",                tpl:"T2", prio:"P1", newp:"../restorative-dentistry/dental-implants/dental-implants-faqs/index.html",
+     wb:"https://web.archive.org/web/20250808020151if_/https://www.jeffreyburns.com/restorative-dentistry/dental-implants/dental-implants-faqs/"},
+    {name:"Teeth in a Day",                short:"Teeth in a Day",          slug:"/restorative-dentistry/dental-implants/teeth-in-a-day/",                      tpl:"T2", prio:"P1", newp:"../restorative-dentistry/dental-implants/teeth-in-a-day/index.html",
+     wb:"https://web.archive.org/web/20250808020704if_/https://www.jeffreyburns.com/restorative-dentistry/dental-implants/teeth-in-a-day/"},
+    {name:"Full Mouth Reconstruction",     short:"Full Mouth Recon",        slug:"/restorative-dentistry/full-mouth-reconstruction/",                           tpl:"T2", prio:"P2", newp:"../restorative-dentistry/full-mouth-reconstruction/index.html",
+     wb:"https://web.archive.org/web/20260710131145if_/https://www.jeffreyburns.com/restorative-dentistry/full-mouth-reconstruction/"},
+    {name:"Implant-Retained Dentures",     short:"Implant Dentures",        slug:"/restorative-dentistry/dentures/implant-retained-dentures/",                  tpl:"T2", prio:"P2", newp:"../restorative-dentistry/dentures/implant-retained-dentures/index.html",
+     wb:"https://web.archive.org/web/20250808013713if_/https://www.jeffreyburns.com/restorative-dentistry/dentures/implant-retained-dentures/"},
+    {name:"The Burns Protocol",            short:"Burns Protocol",          slug:"/theburnsprotocol/",                                                          tpl:"T2", prio:"P1", newp:"../theburnsprotocol/index.html",
+     wb:"https://web.archive.org/web/20260710131143if_/https://www.jeffreyburns.com/theburnsprotocol/"},
+    {name:"Confident DreamSmile",          short:"Confident DreamSmile",    slug:"/confidentdreamsmile/",                                                       tpl:"T2", prio:"P1", newp:"../confidentdreamsmile/index.html",
+     wb:"https://web.archive.org/web/20260710131145if_/https://www.jeffreyburns.com/confidentdreamsmile/"},
+    {name:"DreamSmile Wall of Fame",       short:"Wall of Fame",            slug:"/dreamsmilewalloffame/",                                                      tpl:"T2", prio:"P2", newp:"../dreamsmilewalloffame/index.html",
+     wb:"https://web.archive.org/web/20260710131302if_/https://www.jeffreyburns.com/dreamsmilewalloffame/"}
+  ];
+
+  const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  function wbTimestamp(url){
+    const m = url.match(/\/web\/(\d{14})/);
+    return m ? m[1] : null;
+  }
+  function wbDate(url){
+    const ts = wbTimestamp(url);
+    if(!ts) return "latest available capture";
+    const y = ts.slice(0,4), mo = parseInt(ts.slice(4,6),10)-1, d = parseInt(ts.slice(6,8),10);
+    return MONTHS[mo] + " " + d + ", " + y;
+  }
+
+  function shotKey(slug){
+    const s = slug.replace(/^\/+|\/+$/g,"");
+    return s ? s.replace(/\//g,"__") : "home";
+  }
+
+  const el = id => document.getElementById(id);
+  const chipsEl = el("chips");
+  let idx = 0;
+  let curPage = null, curVariants = [];
+  function setVariant(j){
+    const src = curVariants[j] || curVariants[0];
+    const frame = el("newframe");
+    frame.setAttribute("data-src", src);
+    frame.src = src;
+    el("newopen").href = src;
+    const p = curPage;
+    const vlabel = (p && p.newAlt) ? (j===1 ? (p.newAltLabel||"") : (p.newLabel||"")) : "";
+    el("newurl").innerHTML = "rebuild<b>" + (p ? p.slug : "/") + "</b>" + (vlabel ? ' <span style="color:var(--teal)">&middot; ' + vlabel + ' version</span>' : "");
+  }
+  let loadToken = 0;
+  let fallbackTimer = null;
+
+  // build chips
+  PAGES.forEach((p,i)=>{
+    const c = document.createElement("button");
+    c.className = "chip";
+    c.innerHTML = '<span class="n">'+String(i+1).padStart(2,"0")+'</span>'+p.short;
+    c.addEventListener("click",()=>select(i));
+    chipsEl.appendChild(c);
+  });
+
+  function select(i){
+    idx = (i + PAGES.length) % PAGES.length;
+    const p = PAGES[idx];
+    const liveUrl = HOST + p.slug;
+    const token = ++loadToken;
+
+    // info row
+    el("pname").textContent = p.name;
+    el("slug").textContent  = p.slug;
+    el("btpl").textContent  = p.tpl === "T1" ? "T1 Main" : "T2 Subpage";
+    el("bprio").textContent = "Priority " + p.prio;
+
+    // url bars
+    el("oldurl").innerHTML = "www.jeffreyburns.com<b>" + p.slug + "</b>";
+    el("newurl").innerHTML = "rebuild<b>" + p.slug + "</b>";
+
+    // old links
+    el("oldopen").href = liveUrl;
+    el("oldvisit").href = liveUrl;
+    el("oldfull").textContent = liveUrl;
+
+    // snapshot caption
+    el("snapcaptext").innerHTML = "Wayback Machine snapshot, <b>" + wbDate(p.wb) + "</b>";
+
+    // old frame: load the archived copy, fall back to the open-live card if it never loads
+    const oldframe = el("oldframe");
+    const fb = el("oldfallback");
+    fb.style.display = "none";
+    if(fallbackTimer) clearTimeout(fallbackTimer);
+    if(oldframe.getAttribute("data-src") !== p.wb){
+      oldframe.setAttribute("data-src", p.wb);
+      oldframe.onload = function(){ if(token === loadToken){ clearTimeout(fallbackTimer); fb.style.display = "none"; fitFrames(); } };
+      oldframe.onerror = function(){ if(token === loadToken){ fb.style.display = "flex"; } };
+      oldframe.src = p.wb;
+      fallbackTimer = setTimeout(function(){ if(token === loadToken){ fb.style.display = "flex"; } }, 25000);
+    }
+
+    // local screenshot auto-swap: if a capture exists in shots/, it covers the frame
+    const shot = el("oldshot");
+    const shotwrap = el("oldshotwrap");
+    const key = shotKey(p.slug);
+    shotwrap.style.display = "none";
+    shot.dataset.tried = "";
+    shot.onerror = function(){
+      if(token !== loadToken) return;
+      if(shot.dataset.tried !== "jpg"){ shot.dataset.tried = "jpg"; shot.src = "shots/"+key+".jpg"; return; }
+      shotwrap.style.display = "none";
+    };
+    shot.onload = function(){
+      if(token !== loadToken) return;
+      if(shot.naturalWidth>2){ shotwrap.style.display = "block"; }
+    };
+    shot.src = "shots/"+key+".png";
+
+    // new frame + variant toggle (the Home row carries two rebuild designs: DreamSmile + caresmiles)
+    curPage = p;
+    curVariants = p.newAlt ? [p.newp, p.newAlt] : [p.newp];
+    setVariant(0);
+    const vt = el("newvariant");
+    if(p.newAlt){
+      vt.style.display = "inline-flex";
+      vt.children[0].textContent = p.newLabel || "Version A";
+      vt.children[1].textContent = p.newAltLabel || "Version B";
+      [...vt.children].forEach((b,j)=>b.classList.toggle("active", j===0));
+    } else {
+      vt.style.display = "none";
+    }
+
+    // chips + count
+    [...chipsEl.children].forEach((c,j)=>c.classList.toggle("active", j===idx));
+    const active = chipsEl.children[idx];
+    if(active) active.scrollIntoView({block:"nearest",inline:"center",behavior:"smooth"});
+    el("count").textContent = (idx+1) + " / " + PAGES.length;
+    el("prev").disabled = idx===0;
+    el("next").disabled = idx===PAGES.length-1;
+    requestAnimationFrame(fitFrames);
+  }
+
+  el("prev").addEventListener("click",()=>select(idx-1));
+  el("next").addEventListener("click",()=>select(idx+1));
+
+  // device toggle -> changes the logical render width; frames render at that width and scale to fit the panel
+  const cols = el("cols");
+  const LOGICAL = {desktop:1440, tablet:834, mobile:390};
+  let dev = "desktop";
+  el("device").addEventListener("click",e=>{
+    const b = e.target.closest("button"); if(!b) return;
+    [...el("device").children].forEach(x=>x.classList.toggle("active", x===b));
+    cols.classList.remove("dev-tablet","dev-mobile");
+    if(b.dataset.dev==="tablet") cols.classList.add("dev-tablet");
+    if(b.dataset.dev==="mobile") cols.classList.add("dev-mobile");
+    dev = b.dataset.dev || "desktop";
+    fitFrames();
+  });
+  // render each iframe at desktop logical width, then scale it down to fill its panel so the
+  // real desktop layout shows (not the responsive mobile fallback the narrow panel would trigger)
+  function fitFrames(){
+    const logical = LOGICAL[dev] || 1440;
+    document.querySelectorAll(".stage").forEach(stage=>{
+      const f = stage.querySelector("iframe"); if(!f) return;
+      const sw = stage.clientWidth, sh = stage.clientHeight;
+      if(!sw || !sh) return;
+      let scale = sw / logical; if(scale > 1) scale = 1;
+      f.style.width = logical + "px";
+      f.style.height = Math.ceil(sh / scale) + "px";
+      f.style.transform = "scale(" + scale + ")";
+      f.style.marginLeft = ((sw - logical * scale) / 2) + "px";
+    });
+  }
+  window.addEventListener("resize", fitFrames);
+  el("newframe").addEventListener("load", fitFrames);
+
+  // homepage variant toggle: swap the embedded rebuild between the DreamSmile and caresmiles designs
+  el("newvariant").addEventListener("click", e=>{
+    const b = e.target.closest("button"); if(!b) return;
+    const j = +b.dataset.v || 0;
+    [...el("newvariant").children].forEach((x,k)=>x.classList.toggle("active", k===j));
+    setVariant(j);
+  });
+
+  // keyboard nav
+  document.addEventListener("keydown",e=>{
+    if(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA") return;
+    if(e.key==="ArrowLeft") select(idx-1);
+    if(e.key==="ArrowRight") select(idx+1);
+  });
+
+  select(0);
+</script>
+<!-- VISUAL EDITOR: local only, never commit to GitHub -->
+<script>if(location.search.includes('edit')){const s=document.createElement('script');s.src='../editor.js';document.body.appendChild(s);}</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+//table fallback when flexbox is unavailable
+
+html.no-flexbox .sf-active .table-nav {
+  display: table;
+  table-layout: fixed;
+  visibility: visible;
+
+  & > ul {
+    display: table-row;
+    float: none;
+    height: 100%;
+
+    & > li {
+      display: table-cell;
+      text-align: center;
+      float: none;
+      vertical-align: middle;
+    }
+
+    & > a {
+      display: block;
+      position: static;
+    }
+  }
+
+  & > ul > li > a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  & > ul > li > a {
+    text-decoration: none;
+    position: static;
+  }
+}

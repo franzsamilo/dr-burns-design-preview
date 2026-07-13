@@ -1,0 +1,12 @@
+@import "../_config/config";
+
+.part-topbar-tablet {
+    display: none;
+
+  @include media('>=768px', '<1200px') {
+    display: block;
+  }
+  a{
+    padding: 10px 20px;
+  }
+}

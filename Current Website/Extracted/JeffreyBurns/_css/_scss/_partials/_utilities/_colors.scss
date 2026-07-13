@@ -1,0 +1,7 @@
+.c {
+  @include map-to-classes($themeColors, 'color');
+}
+
+.bg {
+  @include map-to-classes($themeColors, 'background-color');
+}

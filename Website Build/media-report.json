@@ -1,0 +1,39 @@
+{
+  "score": 100,
+  "tally": {
+    "PASS": 5
+  },
+  "checked": 19,
+  "findings": [
+    {
+      "status": "PASS",
+      "slot": "#top",
+      "asset": "assets/img/hero-burns.jpg",
+      "msg": "confirmed Dr. Burns (doctor-scene)"
+    },
+    {
+      "status": "PASS",
+      "slot": "#top",
+      "asset": "assets/img/hero-burns.jpg",
+      "msg": "hero shows confirmed Dr. Burns"
+    },
+    {
+      "status": "PASS",
+      "slot": "#results",
+      "asset": "assets/poster/t-hands.png",
+      "msg": "confirmed Dr. Burns (team-branded)"
+    },
+    {
+      "status": "PASS",
+      "slot": "#doctor",
+      "asset": "assets/img/dr-burns.jpg",
+      "msg": "confirmed Dr. Burns (doctor-portrait)"
+    },
+    {
+      "status": "PASS",
+      "slot": "#clinic",
+      "asset": "assets/img/team.jpg",
+      "msg": "confirmed Dr. Burns (team)"
+    }
+  ]
+}

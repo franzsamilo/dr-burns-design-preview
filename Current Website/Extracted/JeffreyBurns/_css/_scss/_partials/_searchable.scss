@@ -1,0 +1,71 @@
+.searchable-form {
+  $textColor: #fff;
+  $reverseTextColor: #222;
+  $borderColor: #fff;
+  $backgroundColor: get-color('blue');
+  $reverseBackgroundColor: #fff;
+  & {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+
+  &__input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $borderColor;
+    margin-bottom: 0;
+    padding: 2px;
+    font-size: 2.5rem;
+    color: $textColor;
+    outline: 0;
+    border-radius: 0;
+    &::placeholder {
+      color: $textColor;
+    }
+  }
+
+  &__results {
+    padding: 0;
+    list-style: none;
+    background: $backgroundColor;
+    max-height: 33vh;
+    overflow: auto;
+    display: none;
+    margin:0;
+    &.has-results {
+      display: block;
+      border: 1px solid $borderColor;
+      border-top: none;
+    }
+    & li {
+      border-bottom: 1px solid $borderColor;
+      padding: 15px 15px;
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+    a {
+      display: block;
+      font-size: 16px;
+      border: none;
+      color: $textColor;
+      &:hover, &:focus {
+        color: $textColor;
+      }
+    }
+  }
+  button {
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    right: 0;
+    bottom: 0;
+    line-height: 0;
+    border: none;
+    font-size: 1.8rem;
+    color: #fff;
+    background: $backgroundColor;
+  }
+}
+

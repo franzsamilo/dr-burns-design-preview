@@ -1,0 +1,11 @@
+id,verdict,score,claim,evidence_count,risk_count
+color_light_grey_teal,PASS_WITH_GREY_NUANCE,84,Use bright white/light-grey/teal with #3e3e3e as deepest brand neutral; avoid black-led design.,6,1
+older_reader_legibility,PASS,87,Design for older patients with larger text and high contrast.,8,0
+compact_scroll,PASS,87,Reduce vertical gaps/section bloat; use compact bullet layouts so persuasion happens faster.,5,0
+outcome_not_clinical_imagery,PASS,87,"Use full-face smiling patients, Dr. Burns smiling, diagrams/illustrations; avoid drills/scary clinical images.",5,0
+dreamsmile_brand,PASS_WITH_NAMING_NUANCE,84,Make DreamSmile™ the hero product and use exact naming/logo consistently.,8,1
+proof_substantiated,PASS,81,"Lead with substantiated proof: 30+ years, 98%+, personal cell, teaches dentists, warranty, same-day teeth.",8,2
+direct_response_pages,PASS_WITH_SCOPE_NUANCE,81,Every major page should behave like a landing page with phone/CTA/proof.,8,2
+comparison_table,PASS,87,DreamSmile™ vs Traditional Dental Implants comparison should be compact and make DreamSmile visually win.,6,0
+journey_rebuild,PASS,87,"Rebuild the patient journey: larger title, shorter margin, fewer CTAs, compact steps.",8,0
+asset_led_real_media,PASS,78,"Use actual DreamSmile/TIE/patient media assets, not generic placeholders.",8,4

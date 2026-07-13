@@ -1,0 +1,18 @@
+@import "../_config/config";
+@import "_partials/_navigation/nav-table";
+@import "_partials/_navigation/nav-flex";
+@import "_partials/_navigation/_nav-main.scss";
+@import "_partials/_navigation/nav-arrows";
+@import "_partials/_navigation/nav-side";
+@import "_partials/_navigation/nav-mobile";
+
+.part-navigation {
+  .menu {
+    height: 50px;
+    margin: 0 auto;
+
+    & > ul {
+      margin: 0;
+    }
+  }
+}

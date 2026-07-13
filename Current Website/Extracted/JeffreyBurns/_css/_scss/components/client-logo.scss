@@ -1,0 +1,12 @@
+.component-client-logo {
+  .practice-name a {
+    color: inherit;
+  }
+  .client-logo {
+    & img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+    }
+  }
+}

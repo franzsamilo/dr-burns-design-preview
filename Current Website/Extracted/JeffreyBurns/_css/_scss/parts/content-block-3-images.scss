@@ -1,0 +1,33 @@
+@import "../_config/config";
+
+.part-content-block-3-images {
+  overflow: hidden;
+.content-wrapper{
+  & > div{
+    width: 50%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+  .content-block-image-wrapper{
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .content-block-text-wrapper{
+    img {
+      width: 50%;
+      height: 25vw;
+      object-fit: cover;
+      @include media-breakpoint-down(sm) {
+        height: 50vw;
+      }
+    }
+  }
+}
+}

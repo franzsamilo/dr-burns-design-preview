@@ -1,0 +1,2928 @@
+{
+  "generated": "2026-07-13T01:44:03.312Z",
+  "global": [
+    {
+      "id": "a:hero-unique",
+      "status": "PASS",
+      "evidence": "all image heroes unique across 15 pages"
+    },
+    {
+      "id": "a:sibling-image-overlap",
+      "status": "PASS",
+      "evidence": "max sibling overlap 40% (implant-placement <> faqs), threshold 40%"
+    },
+    {
+      "id": "a:testimonial-video-spread",
+      "status": "PASS",
+      "evidence": "30 testimonial videos placed, max spread 3 page(s), limit 3"
+    },
+    {
+      "id": "a:faces-row-duplicate",
+      "status": "PASS",
+      "evidence": "no two pages share an identical faces row"
+    }
+  ],
+  "pages": [
+    {
+      "key": "home",
+      "file": "index.html",
+      "slug": "/",
+      "type": "T1",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "index.html:387 hero = assets/img/dr-burns-smile.jpg (plan: assets/img/dr-burns-smile.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "index.html:594 protocol slot carries assets/video/quiet-difference.mp4"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "index.html:720 bio slot carries assets/img/dr-burns.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "index.html:684 testimonial section carries the planned set [angela-30s.mp4, kelly-30s.mp4, mike-30s.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "index.html:370 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "index.html:363 \"Schedule My Free Consultation\" used 8x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (15 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "index.html:831 sticky bottom CTA bar via \".sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "index.html:684 testimonial card with media + patient name (\"★★★★★ Mike, DreamSmile Patient Full-arch implants\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "index.html:7 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "index.html:749 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "index.html:363 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "domain-mapped site page, top nav allowed"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "index.html 23 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "index.html header logo: assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "index.html:8 canonical \"/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "index.html tel: link at 4.3% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:t1-headings",
+          "status": "PASS",
+          "evidence": "index.html all 10 exact T1 headings present"
+        }
+      ]
+    },
+    {
+      "key": "dental-implants",
+      "file": "restorative-dentistry/dental-implants/index.html",
+      "slug": "/restorative-dentistry/dental-implants/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:333 hero = assets/img/burns-consult.jpg (plan: assets/img/burns-consult.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:430 protocol slot carries assets/img/burns-protocol-craft-1.jpg"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:515 bio slot carries assets/img/dr-burns-smile.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:530 testimonial section carries the planned set [mike-30s.mp4, testimonial-3.mp4, testimonial-jill-bush.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:311 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:304 \"Schedule My Free Consultation\" used 7x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (10 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:642 sticky bottom CTA bar via \"/* mobile sticky CTA bar (hidden on desktop) */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:530 testimonial card with media + patient name (\"Mike, dental implant patient Watch Mike's story\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:148 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:563 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:304 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "domain-mapped site page, top nav allowed"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html 25 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html header logo: ../../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:8 canonical \"/restorative-dentistry/dental-implants/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html tel: link at 2.0% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:311 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:338 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:371 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:388 4-face patient row (4 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:406 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:428 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:445 editorial SEO block (6 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:513 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/index.html:530 Real Results. Real Patients."
+        }
+      ]
+    },
+    {
+      "key": "replacing-missing-teeth",
+      "file": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html",
+      "slug": "/restorative-dentistry/dental-implants/replacing-missing-teeth/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:317 hero = assets/img/danny-2026.jpg (plan: assets/img/danny-2026.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:400 protocol slot carries assets/img/burns-protocol-craft-2.jpg"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:480 bio slot carries assets/img/dr-burns.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:495 testimonial section carries the planned set [testimonial-3.mp4, testimonial-5.mp4, testimonial-ttg-5.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:294 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:287 \"Schedule My Free Consultation\" used 9x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (10 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:579 sticky bottom CTA bar via \"/* mobile sticky CTA bar (hidden on desktop) */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:495 testimonial card with media + patient name (\"Mike\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:95 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:538 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:287 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "domain-mapped site page, top nav allowed"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html 26 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html header logo: ../../../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:10 canonical \"/restorative-dentistry/dental-implants/replacing-missing-teeth/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html tel: link at 2.0% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:294 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:322 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:344 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:360 4-face patient row (4 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:377 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:398 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:416 editorial SEO block (6 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:478 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/replacing-missing-teeth/index.html:495 Real Results. Real Patients."
+        }
+      ]
+    },
+    {
+      "key": "missing-all-teeth",
+      "file": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html",
+      "slug": "/restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:295 hero = assets/img/ron-2026.jpg (plan: assets/img/ron-2026.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:378 protocol slot carries assets/video/qa-protocol.mp4"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:472 bio slot carries assets/img/dr-burns-smile.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:487 testimonial section carries the planned set [ba-fran.mp4, ron-30s.mp4, testimonial-1.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:277 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:270 \"Schedule My Free Consultation\" used 7x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (10 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:604 sticky bottom CTA bar via \"/* mobile sticky CTA bar (hidden on desktop) */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:487 testimonial card with media + patient name (\"Ron DreamSmile Patient\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:86 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:525 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:270 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "domain-mapped site page, top nav allowed"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html 25 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html header logo: ../../../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:8 canonical \"/restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html tel: link at 7.4% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:277 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:300 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:322 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:338 4-face patient row (4 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:355 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:375 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:397 editorial SEO block (6 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:470 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/missing-all-upper-or-lower-teeth/index.html:487 Real Results. Real Patients."
+        }
+      ]
+    },
+    {
+      "key": "implant-placement",
+      "file": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html",
+      "slug": "/restorative-dentistry/dental-implants/overview-of-implant-placement/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:320 hero = assets/img/burns-protocol-craft-1.jpg (plan: assets/img/burns-protocol-craft-1.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:409 protocol slot carries assets/img/burns-protocol-craft-2.jpg"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:503 bio slot carries assets/img/dr-burns.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:518 testimonial section carries the planned set [danny-30s.mp4, kelly-30s.mp4, testimonial-4.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:297 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:290 \"Schedule My Free Consultation\" used 6x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (10 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:590 sticky bottom CTA bar via \"/* mobile sticky CTA bar (hidden on desktop) */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:518 testimonial card with media + patient name (\"Kelly DreamSmile patient Shenandoah Valley\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:141 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:549 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:290 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "domain-mapped site page, top nav allowed"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html 25 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html header logo: ../../../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:8 canonical \"/restorative-dentistry/dental-implants/overview-of-implant-placement/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html tel: link at 2.0% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:297 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:325 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:353 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:369 4-face patient row (4 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:386 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:407 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:425 editorial SEO block (7 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:501 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/overview-of-implant-placement/index.html:518 Real Results. Real Patients."
+        }
+      ]
+    },
+    {
+      "key": "after-placement",
+      "file": "restorative-dentistry/dental-implants/after-implant-placement/index.html",
+      "slug": "/restorative-dentistry/dental-implants/after-implant-placement/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:301 hero = assets/img/kelly-2026b.jpg (plan: assets/img/kelly-2026b.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:384 protocol slot carries assets/img/burns-protocol-craft-1.jpg"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:466 bio slot carries assets/img/dr-burns-smile.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:481 testimonial section carries the planned set [angela-15s.mp4, angela-30s.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:283 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:276 \"Schedule My Free Consultation\" used 6x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (10 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:562 sticky bottom CTA bar via \"/* mobile sticky CTA bar */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:481 testimonial card with media + patient name (\"Angela DreamSmile Patient 2026\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:130 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:517 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:276 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "domain-mapped site page, top nav allowed"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html 25 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html header logo: ../../../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:8 canonical \"/restorative-dentistry/dental-implants/after-implant-placement/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html tel: link at 2.0% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:283 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:306 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:328 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:344 4-face patient row (4 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:361 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:382 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:400 editorial SEO block (6 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:464 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/after-implant-placement/index.html:481 Real Results. Real Patients."
+        }
+      ]
+    },
+    {
+      "key": "bone-grafting",
+      "file": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html",
+      "slug": "/restorative-dentistry/dental-implants/bone-grafting-for-implants/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:303 hero = assets/img/burns-team-coat.jpg (plan: assets/img/burns-team-coat.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:387 protocol slot carries assets/img/burns-protocol-craft-2.jpg"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:481 bio slot carries assets/img/dr-burns.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:496 testimonial section carries the planned set [testimonial-6.mp4, testimonial-jill-bush.mp4, testimonial-ttg-4.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:281 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:274 \"Schedule My Free Consultation\" used 6x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (10 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:605 sticky bottom CTA bar via \"/* mobile sticky CTA bar (hidden on desktop) */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:496 testimonial card with media + patient name (\"Jill Bush\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:147 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:527 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:274 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "domain-mapped site page, top nav allowed"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html 25 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html header logo: ../../../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:8 canonical \"/restorative-dentistry/dental-implants/bone-grafting-for-implants/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html tel: link at 2.1% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:281 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:308 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:330 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:346 4-face patient row (4 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:363 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:385 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:403 editorial SEO block (6 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:479 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/bone-grafting-for-implants/index.html:496 Real Results. Real Patients."
+        }
+      ]
+    },
+    {
+      "key": "cost",
+      "file": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html",
+      "slug": "/restorative-dentistry/dental-implants/cost-of-dental-implants/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:301 hero = assets/img/hero-burns.jpg (plan: assets/img/hero-burns.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:385 protocol slot carries assets/video/quiet-difference.mp4"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:483 bio slot carries assets/img/dr-burns-smile.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:498 testimonial section carries the planned set [mike-30s.mp4, testimonial-5.mp4, testimonial-ttg-4.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:284 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:277 \"Schedule My Free Consultation\" used 7x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (10 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:615 sticky bottom CTA bar via \"/* mobile sticky CTA bar (tel + primary CTA), hidden on desktop */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:498 testimonial card with media + patient name (\"Mike DreamSmile implant patient, 2026\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:89 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:536 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:277 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "domain-mapped site page, top nav allowed"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html 25 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html header logo: ../../../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:8 canonical \"/restorative-dentistry/dental-implants/cost-of-dental-implants/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html tel: link at 2.2% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:284 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:306 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:328 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:344 4-face patient row (4 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:361 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:382 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:404 editorial SEO block (6 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:481 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/cost-of-dental-implants/index.html:498 Real Results. Real Patients."
+        }
+      ]
+    },
+    {
+      "key": "faqs",
+      "file": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html",
+      "slug": "/restorative-dentistry/dental-implants/dental-implants-faqs/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:317 hero = assets/img/bts-shoot.jpg (plan: assets/img/bts-shoot.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:401 protocol slot carries assets/video/qa-protocol.mp4"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:522 bio slot carries assets/img/dr-burns.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:537 testimonial section carries the planned set [testimonial-2.mp4, testimonial-4.mp4, testimonial-ttg-a.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:293 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:286 \"Schedule My Free Consultation\" used 6x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (10 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:667 sticky bottom CTA bar via \"/* mobile sticky CTA bar (tel + primary), hidden on desktop */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:537 testimonial card with media + patient name (\"Kelly , DreamSmile patient, photographed at the 20\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:136 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:580 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:286 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "domain-mapped site page, top nav allowed"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html 25 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html header logo: ../../../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:9 canonical \"/restorative-dentistry/dental-implants/dental-implants-faqs/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html tel: link at 2.0% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:293 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:322 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:344 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:361 4-face patient row (4 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:378 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:398 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:420 editorial SEO block (7 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:520 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/dental-implants-faqs/index.html:537 Real Results. Real Patients."
+        }
+      ]
+    },
+    {
+      "key": "teeth-in-a-day",
+      "file": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html",
+      "slug": "/restorative-dentistry/dental-implants/teeth-in-a-day/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:311 hero = assets/img/mike-2026.jpg (plan: assets/img/mike-2026.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:393 protocol slot carries assets/img/burns-protocol-craft-1.jpg"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:478 bio slot carries assets/img/dr-burns-smile.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:493 testimonial section carries the planned set [danny-15s.mp4, danny.mp4, tammy.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:289 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:282 \"Schedule My Free Consultation\" used 6x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (10 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:611 sticky bottom CTA bar via \"/* mobile sticky CTA bar */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:493 testimonial card with media + patient name (\"Danny, DreamSmile Patient His 15-second story, fil\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:145 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:530 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:282 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "domain-mapped site page, top nav allowed"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html 26 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html header logo: ../../../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:8 canonical \"/restorative-dentistry/dental-implants/teeth-in-a-day/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html tel: link at 2.2% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:289 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:316 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:338 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:354 4-face patient row (4 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:371 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:391 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:409 editorial SEO block (6 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:476 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dental-implants/teeth-in-a-day/index.html:493 Real Results. Real Patients."
+        }
+      ]
+    },
+    {
+      "key": "full-mouth",
+      "file": "restorative-dentistry/full-mouth-reconstruction/index.html",
+      "slug": "/restorative-dentistry/full-mouth-reconstruction/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:305 hero = assets/img/angela-2026.jpg (plan: assets/img/angela-2026.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:388 protocol slot carries assets/img/burns-protocol-craft-2.jpg"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:510 bio slot carries assets/img/dr-burns.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:525 testimonial section carries the planned set [angela-30s.mp4, joe-vile.mp4, testimonial-ttg-4.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:287 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:280 \"Schedule My Free Consultation\" used 8x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (9 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:608 sticky bottom CTA bar via \"/* mobile sticky CTA bar (hidden on desktop) */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:525 testimonial card with media + patient name (\"Angela DreamSmile Patient\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:90 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:435 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:280 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "domain-mapped site page, top nav allowed"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html 26 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html header logo: ../../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:8 canonical \"/restorative-dentistry/full-mouth-reconstruction/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html tel: link at 2.2% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html FAQ block + Dentist JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:287 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:310 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:332 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:348 4-face patient row (4 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:365 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:386 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:404 editorial SEO block (6 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:508 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/full-mouth-reconstruction/index.html:525 Real Results. Real Patients."
+        }
+      ]
+    },
+    {
+      "key": "implant-dentures",
+      "file": "restorative-dentistry/dentures/implant-retained-dentures/index.html",
+      "slug": "/restorative-dentistry/dentures/implant-retained-dentures/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:270 hero = assets/img/review1.jpg (plan: assets/img/review1.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:354 protocol slot carries assets/img/burns-protocol-craft-1.jpg"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:451 bio slot carries assets/img/dr-burns-smile.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:466 testimonial section carries the planned set [ba-fran.mp4, ron-15s.mp4, testimonial-1.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:253 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:246 \"Schedule My Free Consultation\" used 7x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (10 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:586 sticky bottom CTA bar via \"/* mobile sticky CTA bar (hidden on desktop) */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:466 testimonial card with media + patient name (\"Ron DreamSmile Patient\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:75 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:504 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:246 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "domain-mapped site page, top nav allowed"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html 25 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html header logo: ../../../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:8 canonical \"/restorative-dentistry/dentures/implant-retained-dentures/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html tel: link at 2.0% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:253 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:275 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:297 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:313 4-face patient row (4 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:330 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:352 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:370 editorial SEO block (6 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:449 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "restorative-dentistry/dentures/implant-retained-dentures/index.html:466 Real Results. Real Patients."
+        }
+      ]
+    },
+    {
+      "key": "burns-protocol",
+      "file": "theburnsprotocol/index.html",
+      "slug": "/theburnsprotocol/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:327 hero = assets/img/burns-protocol-craft-2.jpg (plan: assets/img/burns-protocol-craft-2.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:415 protocol slot carries assets/img/burns-protocol-craft-1.jpg"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:524 bio slot carries assets/img/dr-burns.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:542 testimonial section carries the planned set [kelly-15s.mp4, ron-vert.mp4, testimonial-ttg-b.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:298 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:317 \"Schedule My Free Consultation\" used 6x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (10 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:671 sticky bottom CTA bar via \"/* mobile sticky CTA bar (hidden on desktop) */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:542 testimonial card with media + patient name (\"Ron DreamSmile patient On trusting the plan\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:135 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:581 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:317 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "funnel page is nav-free (breadcrumbs exempt)"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html 26 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html header logo: ../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:8 canonical \"/theburnsprotocol/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html tel: link at 0.8% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:298 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:332 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:354 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:374 4-face patient row (4 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:392 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:413 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:436 editorial SEO block (7 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:522 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "theburnsprotocol/index.html:542 Real Results. Real Patients."
+        }
+      ]
+    },
+    {
+      "key": "confident",
+      "file": "confidentdreamsmile/index.html",
+      "slug": "/confidentdreamsmile/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:319 hero = assets/img/kelly-2026.jpg (plan: assets/img/kelly-2026.jpg)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:416 protocol slot carries assets/video/quiet-difference.mp4"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:512 bio slot carries assets/img/dr-burns-smile.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:527 testimonial section carries the planned set [kelly-30s.mp4, testimonial-2.mp4, testimonial-ttg-5.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:296 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:310 \"Schedule My Free Consultation\" used 6x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (10 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:645 sticky bottom CTA bar via \"/* mobile sticky CTA bar (hidden on desktop) */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:527 testimonial card with media + patient name (\"Kelly her experience with Dr. Burns\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:92 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:566 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:310 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "funnel page is nav-free (breadcrumbs exempt)"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html 26 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html header logo: ../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:8 canonical \"/confidentdreamsmile/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html tel: link at 0.9% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:296 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:324 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:346 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:375 4-face patient row (4 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:392 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:413 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:434 editorial SEO block (6 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:510 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "confidentdreamsmile/index.html:527 Real Results. Real Patients."
+        }
+      ]
+    },
+    {
+      "key": "wall-of-fame",
+      "file": "dreamsmilewalloffame/index.html",
+      "slug": "/dreamsmilewalloffame/",
+      "type": "T2",
+      "score": 100,
+      "fails": 0,
+      "warns": 0,
+      "checks": [
+        {
+          "id": "b:hero-match",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:309 hero = assets/video/power-of-full-arch.mp4 (plan: assets/video/power-of-full-arch.mp4)"
+        },
+        {
+          "id": "b:protocol-match",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:410 protocol slot carries assets/img/burns-protocol-craft-2.jpg"
+        },
+        {
+          "id": "b:bio-match",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:521 bio slot carries assets/img/dr-burns.jpg"
+        },
+        {
+          "id": "b:testimonials-match",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:536 testimonial section carries the planned set [ba-carol.mp4, ba-fran.mp4, danny.mp4, diane.mp4, joe-vile.mp4, tammy.mp4, testimonial-jill-bush.mp4]"
+        },
+        {
+          "id": "c:hero-headline-sub-cta",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:284 hero has h1 + sub + CTA"
+        },
+        {
+          "id": "c:single-primary-cta",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:299 \"Schedule My Free Consultation\" used 5x, no competing primary labels"
+        },
+        {
+          "id": "c:cta-every-3-sections",
+          "status": "PASS",
+          "evidence": "no run of 3 CTA-less sections (12 sections scanned)"
+        },
+        {
+          "id": "c:mobile-sticky-cta",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:673 sticky bottom CTA bar via \"/* mobile sticky CTA bar */\n  .sticky-cta\""
+        },
+        {
+          "id": "c:testimonial-name-photo",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:536 testimonial card with media + patient name (\"Danny DreamSmile Patient His before and after reve\")"
+        },
+        {
+          "id": "c:numeric-proof-row",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:7 3+ numeric proof stats within one row/region"
+        },
+        {
+          "id": "c:faq-block",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:599 FAQ block present"
+        },
+        {
+          "id": "c:no-submit-label",
+          "status": "PASS",
+          "evidence": "no \"Submit\" button labels"
+        },
+        {
+          "id": "c:first-person-cta",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:299 first-person primary CTA: \"Schedule My Free Consultation\""
+        },
+        {
+          "id": "c:form-single-column",
+          "status": "PASS",
+          "evidence": "no <form> markup on page (nothing to violate)"
+        },
+        {
+          "id": "c:funnel-no-nav",
+          "status": "PASS",
+          "evidence": "funnel page is nav-free (breadcrumbs exempt)"
+        },
+        {
+          "id": "c:body-font-16px",
+          "status": "PASS",
+          "evidence": "no explicit html/body font-size (browser default 16px)"
+        },
+        {
+          "id": "d:brand",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html 26 unique hex, all in allowedHex"
+        },
+        {
+          "id": "d:fonts",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html families used: montserrat, arial, sans-serif, amiri, georgia, serif"
+        },
+        {
+          "id": "d:logo",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html header logo: ../assets/img/logo.png"
+        },
+        {
+          "id": "d:specialist",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html absent"
+        },
+        {
+          "id": "d:dreamsmile-scope",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html DreamSmile-Yes slug, branding present"
+        },
+        {
+          "id": "d:slug",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:8 canonical \"/dreamsmilewalloffame/\" (recomputed for directory-index layout)"
+        },
+        {
+          "id": "d:phone",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html tel: link at 0.8% of body (above the fold)"
+        },
+        {
+          "id": "d:no-em-dash",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html clean"
+        },
+        {
+          "id": "d:no-stock",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html no stock/AI filenames"
+        },
+        {
+          "id": "d:seo",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html title + description + viewport present"
+        },
+        {
+          "id": "d:aeo",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html FAQ block + FAQPage JSON-LD"
+        },
+        {
+          "id": "d:geo",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html Dentist/LocalBusiness JSON-LD (New Market, VA + geo) + Valley city names in content"
+        },
+        {
+          "id": "e:role-hero",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:284 hero with H1"
+        },
+        {
+          "id": "e:role-conversion-quiz",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:317 quiz/conversion card"
+        },
+        {
+          "id": "e:role-patient-story",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:348 patient story (#story)"
+        },
+        {
+          "id": "e:role-faces-row",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:364 4-face patient row (9 faces)"
+        },
+        {
+          "id": "e:role-journey",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:387 DreamSmile Journey steps (8 steps)"
+        },
+        {
+          "id": "e:role-protocol",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:408 The Burns Protocol"
+        },
+        {
+          "id": "e:role-editorial-seo",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:425 editorial SEO block (6 h2 subsections)"
+        },
+        {
+          "id": "e:role-meet-doctor",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:519 Meet the Doctor (dark bio)"
+        },
+        {
+          "id": "e:role-real-results",
+          "status": "PASS",
+          "evidence": "dreamsmilewalloffame/index.html:536 Real Results. Real Patients."
+        }
+      ]
+    }
+  ],
+  "loadErrors": []
+}

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rebuild Findings | Jeffrey S. Burns DDS Website</title>
+<meta name="description" content="How the July 10 feedback from Spencer Walker was taken as a spec and answered, note by note, in the Dr. Jeffrey S. Burns website rebuild.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#eef3f5;
+    --bg2:#e4eef1;
+    --card:#ffffff;
+    --ink:#12252c;
+    --body:#4d5a62;
+    --graphite:#3e3e3e;
+    --teal:#226d7a;
+    --teal-brand:#74bdc2;
+    --cyan:#22b8d1;
+    --pale:#e4f5fa;
+    --pale2:#b0e0e9;
+    --slate:#7f99a3;
+    --tan:#c6b48d;
+    --tan-deep:#b09b6f;
+    --line:#e2ebee;
+    --radius:26px;
+    --radius-sm:14px;
+    --shadow:0 40px 90px -50px rgba(18,37,44,.45);
+    --shadow-card:0 30px 70px -45px rgba(18,37,44,.4);
+    --ease:cubic-bezier(.16,1,.3,1);
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Montserrat',Arial,sans-serif;color:var(--graphite);background:var(--bg);line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2{font-family:'Amiri',Georgia,serif;color:var(--ink);line-height:1.14;font-weight:700;letter-spacing:-.005em}
+  h3,h4{font-family:'Montserrat',Arial,sans-serif;color:var(--ink);line-height:1.2;font-weight:800;letter-spacing:.005em}
+  h1{font-size:clamp(2.2rem,4.6vw,3.6rem)}
+  h2{font-size:clamp(1.75rem,3.4vw,2.7rem)}
+  h3{font-size:clamp(1.05rem,1.6vw,1.28rem)}
+  p{color:var(--graphite);max-width:70ch}
+  a{color:inherit;text-decoration:none}
+  strong{color:var(--ink);font-weight:700}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  section{padding:clamp(46px,7vw,86px) 0}
+  .eyebrow{font-family:'Montserrat';font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan)}
+  .snum{font-family:'Amiri',Georgia,serif;font-style:italic;color:var(--teal-brand);font-weight:700}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{height:38px;width:auto}
+  .brand span{font-family:'Montserrat';font-weight:800;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);border-left:1px solid var(--line);padding-left:12px}
+  .nav-phone{font-weight:800;font-size:.95rem;color:var(--teal);white-space:nowrap}
+  @media(max-width:640px){.brand span{display:none}}
+
+  /* hero */
+  .hero{background:linear-gradient(180deg,#ffffff 0%,var(--bg) 100%);border-bottom:1px solid var(--line)}
+  .hero .wrap{padding-top:clamp(40px,6vw,72px);padding-bottom:clamp(44px,6vw,72px)}
+  .hero .kicker{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin-bottom:22px;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--slate)}
+  .hero .kicker b{color:var(--teal)}
+  .hero h1{max-width:20ch;margin:6px 0 18px}
+  .hero h1 em{font-style:italic;color:var(--teal)}
+  .hero .lede{color:var(--body);max-width:60ch;font-size:1.08rem}
+  .verdict{margin-top:28px;border-left:3px solid var(--teal-brand);background:var(--card);border-radius:0 var(--radius-sm) var(--radius-sm) 0;box-shadow:var(--shadow-card);padding:22px 26px;max-width:58ch}
+  .verdict p{font-family:'Amiri',Georgia,serif;font-style:italic;font-size:1.2rem;color:var(--ink);line-height:1.5;max-width:none}
+  .verdict cite{display:block;margin-top:12px;font-style:normal;font-family:'Montserrat';font-weight:700;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--slate)}
+
+  /* stat band */
+  .stats{background:linear-gradient(120deg,#10242b,#183a44);color:#fff}
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,40px)}
+  .stat b{display:block;font-family:'Amiri',Georgia,serif;font-size:clamp(2.2rem,4vw,3rem);line-height:1;color:var(--pale2)}
+  .stat span{display:block;margin-top:10px;color:rgba(255,255,255,.82);font-size:.9rem;line-height:1.4}
+
+  /* section head */
+  .shead{max-width:64ch;margin-bottom:clamp(28px,4vw,46px)}
+  .shead .eyebrow{color:var(--teal)}
+  .shead h2{margin:10px 0 14px}
+  .shead p{color:var(--body);font-size:1.05rem}
+
+  /* pull quote */
+  .pull{background:var(--pale);border:1px solid var(--pale2);border-radius:var(--radius);box-shadow:var(--shadow-card);padding:clamp(28px,4vw,44px);max-width:none}
+  .pull .mark{font-family:Georgia,serif;font-size:3.4rem;color:var(--teal-brand);line-height:.4;display:block;margin-bottom:12px}
+  .pull p{font-family:'Amiri',Georgia,serif;font-style:italic;font-size:clamp(1.2rem,2.2vw,1.6rem);color:var(--ink);line-height:1.5;max-width:46ch}
+  .pull cite{display:block;margin-top:16px;font-style:normal;font-family:'Montserrat';font-weight:700;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+
+  .prose p+p{margin-top:15px}
+  .prose{margin-top:26px}
+  .arc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+  .arc .step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:22px 24px;box-shadow:var(--shadow-card)}
+  .arc .step b{display:block;font-family:'Montserrat';font-weight:800;color:var(--teal);text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;margin-bottom:8px}
+  .arc .step p{font-size:.95rem;color:var(--body);max-width:none}
+
+  /* gold standard cards */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
+  .gcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;box-shadow:var(--shadow-card)}
+  .gcard .ic{width:46px;height:46px;border-radius:12px;background:var(--pale);display:grid;place-items:center;margin-bottom:16px}
+  .gcard .ic svg{width:24px;height:24px;stroke:var(--teal);fill:none;stroke-width:1.9}
+  .gcard h3{color:var(--ink);margin-bottom:8px;text-transform:none}
+  .gcard p{font-size:.94rem;color:var(--body);max-width:none}
+  .test-note{margin-top:26px;background:var(--card);border-radius:var(--radius-sm);border:1px dashed var(--pale2);padding:20px 24px;box-shadow:var(--shadow-card)}
+  .test-note b{color:var(--teal)}
+
+  /* fix list */
+  .fixlist{display:flex;flex-direction:column;gap:14px}
+  .fix{display:grid;grid-template-columns:1fr 1.25fr;gap:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;box-shadow:var(--shadow-card)}
+  .fix .flag{padding:22px 24px;border-right:1px solid var(--line);background:linear-gradient(180deg,#ffffff,#f7fbfc)}
+  .fix .flag h3{color:var(--ink);font-size:1.02rem;text-transform:none;margin-bottom:8px}
+  .fix .ts{font-family:'Montserrat';font-weight:700;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);display:inline-flex;align-items:center;gap:6px}
+  .fix .ts b{color:var(--teal)}
+  .fix .flag p{font-size:.88rem;color:var(--body);max-width:none;margin-top:8px}
+  .fix .ans{padding:22px 24px}
+  .fix .ans p{font-size:.94rem;color:var(--body);max-width:none}
+  .pill{display:inline-block;font-family:'Montserrat';font-weight:800;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:12px}
+  .pill.done{background:#dcefef;color:var(--teal)}
+  .pill.set{background:#f3ecd8;color:var(--tan-deep)}
+  .pill.hold{background:#fbe7e2;color:#b1543f}
+
+  /* asset grid */
+  .assetgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:6px 0 30px}
+  .assetgrid figure{aspect-ratio:3/4;overflow:hidden;border-radius:10px;background:#dfeaea;box-shadow:var(--shadow-card)}
+  .assetgrid img{width:100%;height:100%;object-fit:cover}
+  .assetcap{text-align:center;font-size:.82rem;color:var(--slate);margin-bottom:34px}
+  .videorow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:8px}
+  .vcard{position:relative;aspect-ratio:9/13;border-radius:12px;overflow:hidden;background:#0d1519;box-shadow:var(--shadow-card)}
+  .vcard img{width:100%;height:100%;object-fit:cover;opacity:.92}
+  .vcard .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:999px;background:rgba(255,255,255,.22);backdrop-filter:blur(6px);display:grid;place-items:center;border:1px solid rgba(255,255,255,.4)}
+  .vcard .play svg{width:13px;height:13px;fill:#fff;margin-left:2px}
+  .vcard .stars{position:absolute;bottom:10px;left:0;right:0;text-align:center;color:#f5b942;font-size:.8rem;letter-spacing:1px}
+  .assettable{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
+  .arow{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px 22px;box-shadow:var(--shadow-card)}
+  .arow h4{color:var(--teal);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+  .arow p{font-size:.92rem;color:var(--body);max-width:none}
+
+  /* seo columns */
+  .seo{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
+  .seocol{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;box-shadow:var(--shadow-card)}
+  .seocol .tag{font-family:'Amiri',Georgia,serif;font-style:italic;color:var(--teal-brand);font-size:1.5rem;font-weight:700}
+  .seocol h3{margin:6px 0 12px;text-transform:none}
+  .seocol ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+  .seocol li{display:flex;gap:10px;font-size:.92rem;color:var(--body)}
+  .seocol li svg{flex:none;width:18px;height:18px;stroke:var(--teal);fill:none;stroke-width:2.4;margin-top:4px}
+  .slugband{margin-top:24px;background:linear-gradient(120deg,#0f2126,#183a44);color:#fff;border-radius:var(--radius);padding:clamp(26px,3.5vw,40px);box-shadow:var(--shadow)}
+  .slugband h3{color:#fff;text-transform:none;margin-bottom:10px}
+  .slugband p{color:rgba(255,255,255,.86);max-width:70ch}
+  .slugband code{font-family:'Montserrat';font-weight:700;color:var(--pale2);background:rgba(255,255,255,.08);padding:2px 8px;border-radius:6px;font-size:.86em}
+
+  /* needs Dr Burns */
+  .need{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:8px}
+  .ncard{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--tan);border-radius:var(--radius);padding:30px 28px;box-shadow:var(--shadow-card)}
+  .ncard .lbl{display:inline-block;font-family:'Montserrat';font-weight:800;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tan-deep);background:#f3ecd8;padding:5px 11px;border-radius:999px;margin-bottom:14px}
+  .ncard h3{color:var(--ink);text-transform:none;margin-bottom:10px}
+  .ncard p{font-size:.95rem;color:var(--body);max-width:none}
+  .ncard p+p{margin-top:12px}
+  .ncard ul{list-style:none;margin-top:12px;display:flex;flex-direction:column;gap:9px}
+  .ncard li{position:relative;padding-left:18px;font-size:.9rem;color:var(--body);line-height:1.55;max-width:none}
+  .ncard li b{color:var(--ink)}
+  .ncard li:before{content:'';position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:999px;background:var(--tan)}
+  .ncard li code{font-family:'Montserrat';font-weight:700;color:var(--teal);background:var(--pale);padding:1px 6px;border-radius:5px;font-size:.86em;white-space:nowrap}
+
+  /* close */
+  .close{background:linear-gradient(160deg,var(--teal),#164851);color:#fff;text-align:center}
+  .close h2{color:#fff;max-width:24ch;margin:0 auto 16px}
+  .close p{color:rgba(255,255,255,.9);max-width:58ch;margin:0 auto}
+  .close .phone{margin-top:24px;font-family:'Amiri',Georgia,serif;font-size:1.7rem;color:#fff}
+  .close .phone a{color:#fff}
+
+  footer.ft{background:#0f2126;color:rgba(255,255,255,.6);padding:40px 0;font-size:.82rem}
+  .ft-in{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+  .ft-in img{height:30px}
+
+  .rv{opacity:1;transform:none;transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .rv.in{opacity:1;transform:none}
+
+  @media(max-width:900px){
+    .stat-grid{grid-template-columns:1fr 1fr}
+    .arc,.cards,.seo{grid-template-columns:1fr}
+    .fix{grid-template-columns:1fr}
+    .fix .flag{border-right:none;border-bottom:1px solid var(--line)}
+    .assetgrid,.videorow{grid-template-columns:repeat(3,1fr)}
+    .assettable,.need{grid-template-columns:1fr}
+  }
+  @media(max-width:560px){
+    .stat-grid{grid-template-columns:1fr 1fr}
+    .assetgrid,.videorow{grid-template-columns:repeat(2,1fr)}
+    .wrap{padding:0 18px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .rv{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="../index.html"><img src="../assets/img/logo.png" alt="Jeffrey S. Burns DDS"><span>Rebuild Findings</span></a>
+    <a class="nav-phone" href="tel:5407408937">540-740-8937</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker rv">
+      <span>Findings &amp; Rebuild Report</span>
+      <span>Prepared for <b>Spencer Walker</b> and <b>Dr. Jeffrey S. Burns</b></span>
+      <span>July 10, 2026</span>
+    </div>
+    <h1 class="rv">Every note from the July 10 call, <em>read as a spec</em> and answered.</h1>
+    <p class="lede rv">Spencer walked the team through the build, the old live site, and the two model sites. Then he drew clear lines around what was working and what was not. We did not treat that as a list of opinions. We treated it as the acceptance test for the whole rebuild. This report shows what he asked for, the standard we built to, and where each note landed.</p>
+    <div class="verdict rv">
+      <p>"There's a lot of good foundation here, but we need attention to detail."</p>
+      <cite>Spencer Walker, July 10 review call</cite>
+    </div>
+  </div>
+</section>
+
+<!-- STAT BAND -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stat-grid">
+      <div class="stat rv"><b>16</b><span>notes from the call, each mapped to a fix in this report</span></div>
+      <div class="stat rv"><b>27</b><span>pages rebuilt on three shared templates, one design system</span></div>
+      <div class="stat rv"><b>6</b><span>real filmed patient testimonials, zero stock or AI faces</span></div>
+      <div class="stat rv"><b>Every slug</b><span>kept exactly as it ranks today, trailing slash included</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 WHAT SPENCER ASKED FOR -->
+<section>
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="snum">01</span> &nbsp; What Spencer asked for</span>
+      <h2>One rule, in his words: every page is a landing page.</h2>
+      <p>The whole review came back to a single governing principle. Spencer said it plainly, and everything else in the call was really just that principle applied section by section.</p>
+    </div>
+    <div class="pull rv">
+      <span class="mark">&ldquo;</span>
+      <p>I want every page to be a landing page. UVP, an emotional connection image, a call to action, a lower-threshold call to action above the fold, and then social proof: emotional connection and logical proof.</p>
+      <cite>Spencer Walker &middot; 00:03:53</cite>
+    </div>
+    <div class="prose rv">
+      <p>He also named the selling sequence he wants running down each page: the pain of where the patient is now, the possibility of what their life could look like, and the path, which is Dr. Burns' solution. His read on the old site was blunt. It's "all verbiage, education only, no pain, no possibilities. It would never convert." That's the gap the rebuild closes. Not more information. A reason to act.</p>
+    </div>
+    <div class="arc">
+      <div class="step rv"><b>Pain</b><p>Name where the patient is right now, hiding their smile, avoiding photos, soft foods only. Two or three sentences, not a lecture.</p></div>
+      <div class="step rv"><b>Possibility</b><p>Show what life looks like after, with real images and short copy. This is the emotional connection he keeps pointing to.</p></div>
+      <div class="step rv"><b>Path</b><p>Dr. Burns' process in a few simple steps. Education still lives here, but compressed and in service of the decision.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 BOBBY GOLD STANDARD -->
+<section style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="snum">02</span> &nbsp; The quality bar</span>
+      <h2>We built to Bobby's design, because Spencer told us that's the bar.</h2>
+      <p>During the call, every section Spencer loved traced back to the same source. He said it himself, pointing at the screen.</p>
+    </div>
+    <div class="pull rv">
+      <span class="mark">&ldquo;</span>
+      <p>All these spots where I'm like, oh, I love this, I love this, are things that Bobby actually created. She designed and handed over and the team just replicated.</p>
+      <cite>Spencer Walker, on the strongest sections of the build</cite>
+    </div>
+    <div class="prose rv">
+      <p>So the build standard writes that in as law. Before any page ships it has to pass two questions: is it pretty, and is it persuasive. "Pretty" is defined against Bobby's original work, not against taste. If a new section can't sit next to her hero and her clean content blocks and look like the same designer made it, it isn't done. These three are the reference every page is measured against.</p>
+    </div>
+    <div class="cards">
+      <div class="gcard rv">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>The DreamSmile&trade; hero</h3>
+        <p>The emotional doctor-and-patient image, the outcome headline, the warm and aspirational tone. Spencer's words: "look how you can connect with this doctor and this patient. That's a beautiful smile. I want that."</p>
+      </div>
+      <div class="gcard rv">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div>
+        <h3>Clean, professional content blocks</h3>
+        <p>The spacing, the type hierarchy, the restraint. "This looks nice and professional, clean. Look at how quality that looks." This is the yardstick for whether any section is finished.</p>
+      </div>
+      <div class="gcard rv">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8z"/></svg></div>
+        <h3>Meet the Doctor at the foot</h3>
+        <p>The bio block at the bottom of every page, because the people closest to booking surgery check the doctor first. Labeled "Meet the Doctor," never "specialist," because the board won't allow it and Dr. Burns is a general dentist.</p>
+      </div>
+    </div>
+    <div class="test-note rv">
+      <p><b>The test, in one line:</b> a stranger in pain lands on the page and feels pulled to act, and the page looks like Bobby built it. If either answer is no, the page goes back.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 03 DEFECT LIST -->
+<section>
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="snum">03</span> &nbsp; Every defect, answered</span>
+      <h2>The 16 notes from the July 10 call, and how the rebuild answers each one.</h2>
+      <p>These are grounded in the call itself, timestamped to the moment Spencer raised them. Left column is his note. Right column is what the rebuild does about it.</p>
+    </div>
+    <div class="fixlist">
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 01 &middot; <b>00:09:27</b></span><h3>The logo looks terrible</h3><p>Pulled off the old site, degraded and washed out. "I couldn't show Dr. Burns this."</p></div>
+        <div class="ans"><span class="pill set">Standard set, file staged</span><p>The standard now bans screenshots outright and requires the real logo file at full resolution. The actual J. Burns logo and its reverse for dark sections are staged in the asset library and wired into the proven reference page's header and footer.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 02 &middot; <b>00:09:40</b></span><h3>The trademark is huge and clunky</h3><p>"Smaller trademark, or remove it."</p></div>
+        <div class="ans"><span class="pill done">Fixed</span><p>DreamSmile&trade; now renders with a small superscript mark, so it reads as a trademark and not a headline element. The verification harness checks for the small entity-rendered mark, and the built pages pass.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 03 &middot; <b>00:10:02</b></span><h3>The DreamSmile logo is still missing</h3><p>The shared DreamSmile mark never made it onto the page.</p></div>
+        <div class="ans"><span class="pill set">File staged, scoped</span><p>The real DreamSmile logo is in the library and scoped to implant pages only per the page map. It goes into the homepage "Introducing The DreamSmile" lockup on the homepage rebuild pass.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 04 &middot; <b>00:10:44</b></span><h3>Generic stock faces, "these aren't his people"</h3><p>A grid of smiling strangers instead of real patients.</p></div>
+        <div class="ans"><span class="pill done">Fixed</span><p>Every face is now a real patient from the practice's own content library, including the 2026 patient shoot. The harness bans stock and placeholder filenames, so a generic image can't slip back in.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 05 &middot; <b>00:11:25</b></span><h3>No before-and-afters anywhere</h3><p>None on the build.</p></div>
+        <div class="ans"><span class="pill hold">Needs Dr. Burns</span><p>Honest answer: we can't invent these. No signed-release before-and-afters exist in the library yet. They're the first item on the asset-gap list in section 06, for Dr. Burns to supply.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 06 &middot; <b>00:12:09</b></span><h3>Scroll background bug</h3><p>The section turns white on scroll down and loses its background on the way up.</p></div>
+        <div class="ans"><span class="pill done">Fixed</span><p>That bug lived in the old Playground build. The new pages are rebuilt from scratch with one sticky header that keeps a stable white background at every scroll position. It doesn't flip.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 07 &middot; <b>00:13:09</b></span><h3>The pain-point section is not designed well</h3><p>The "Band-Aid" grid: oversized bullets, too much space, weak next to Bobby's sections.</p></div>
+        <div class="ans"><span class="pill set">Redesign specified</span><p>The oversized bullets are replaced by the Figma treatment: a tight six-card grid, "You Deserve Better Than Another Band-Aid Solution," with a teal call to action. It lands on the homepage rebuild pass.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 08 &middot; <b>00:14:34</b></span><h3>No low-threshold offer above the fold</h3><p>"Schedule a free consultation" alone is like meeting the parents on the first date.</p></div>
+        <div class="ans"><span class="pill done">Fixed</span><p>A candidate quiz and a pricing-and-information guide now peek up over the hero, the Nuvia pattern Spencer pointed to. Nobody has to call anyone to take the next step. The harness confirms the peek row is present.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 09 &middot; <b>00:18:50</b></span><h3>Social proof missing on pages</h3><p>Add a Google reviews widget, or at least "five-star rated on Google." Every page.</p></div>
+        <div class="ans"><span class="pill done">Fixed</span><p>A Google 5.0 badge and filmed testimonial cards now appear on every built page, with "rated 5.0 by patients on Google" surfaced near the top, not buried.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 10 &middot; <b>00:19:29</b></span><h3>Inconsistent fonts and colors</h3><p>Service headers in different fonts and colors, reiterated links, "the AI did something wonky."</p></div>
+        <div class="ans"><span class="pill done">Fixed</span><p>One type system site-wide, Montserrat with Amiri for display, and one teal palette from a single set of brand tokens. Every page draws from the same file, so headers can't drift apart. The harness confirms it.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 11 &middot; <b>00:21:23</b></span><h3>Cut-off, broken element</h3><p>"It's cut off, something's weird."</p></div>
+        <div class="ans"><span class="pill done">Fixed</span><p>The ad-hoc edits that produced the broken element are gone. Every section now comes from one of three template skeletons, so there's no hand-mangled markup left to break on the page.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 12 &middot; <b>00:23:42</b></span><h3>Doctor bio belongs at the bottom of every page</h3><p>Meet-the-doctor is one of the most visited pages before surgery.</p></div>
+        <div class="ans"><span class="pill done">Fixed</span><p>The Meet the Doctor block now sits at the foot of every service page, 22 of the built pages carry it, matching Bobby's pattern and the Figma order.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 13 &middot; <b>00:24:47</b></span><h3>"Specialist" is banned</h3><p>Dr. Burns is a general dentist. The board won't allow the term.</p></div>
+        <div class="ans"><span class="pill done">Fixed</span><p>Zero pages use the word. The section is called "Meet the Doctor," and the harness fails any page that reintroduces "specialist."</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 14 &middot; <b>00:25:58</b></span><h3>Duplicate content risk</h3><p>The same bio on every page reads as duplicate content to Google.</p></div>
+        <div class="ans"><span class="pill done">Fixed</span><p>Each page gets its own bio variation, on the way to 15 to 30 distinct versions. The harness runs a text-overlap check so no two bios ship identical.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 15 &middot; <b>00:26:28</b></span><h3>DreamSmile scope creep</h3><p>DreamSmile is a smile made with dental implants. It shouldn't be on every page.</p></div>
+        <div class="ans"><span class="pill done">Fixed</span><p>The page map carries a DreamSmile flag per page. The branding and logo appear only where that flag is Yes, on implant-related pages, and the harness enforces it.</p></div>
+      </div>
+
+      <div class="fix rv">
+        <div class="flag"><span class="ts">Note 16 &middot; <b>00:27:31</b></span><h3>Low-threshold offers on implant pages</h3><p>Mandatory: quiz at the top, guide at the bottom.</p></div>
+        <div class="ans"><span class="pill done">Fixed</span><p>The proven implant page opens with the candidate quiz and closes with the pricing-and-information guide. Both offers, top and bottom, on every implant page.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 04 REAL ASSETS -->
+<section style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="snum">04</span> &nbsp; Real practice assets</span>
+      <h2>His people, his office, his patients on camera. Nothing borrowed.</h2>
+      <p>Spencer's line was "these aren't his people." Now they are. Every image and video on the rebuild comes from the practice's own content library. No stock, no AI faces.</p>
+    </div>
+
+    <div class="assetgrid rv">
+      <figure><img src="../assets/img/dr-burns.jpg" alt="Dr. Jeffrey S. Burns" loading="lazy"></figure>
+      <figure><img src="../assets/img/review1.jpg" alt="Real patient of Dr. Burns" loading="lazy"></figure>
+      <figure><img src="../assets/img/mike-2026.jpg" alt="Mike, patient from the 2026 shoot" loading="lazy"></figure>
+      <figure><img src="../assets/img/kelly-2026.jpg" alt="Kelly, patient from the 2026 shoot" loading="lazy"></figure>
+      <figure><img src="../assets/img/angela-2026.jpg" alt="Angela, patient from the 2026 shoot" loading="lazy"></figure>
+      <figure><img src="../assets/img/ron-2026.jpg" alt="Ron, patient from the 2026 shoot" loading="lazy"></figure>
+      <figure><img src="../assets/img/danny-2026.jpg" alt="Danny, patient from the 2026 shoot" loading="lazy"></figure>
+      <figure><img src="../assets/img/review3.jpg" alt="Real patient of Dr. Burns" loading="lazy"></figure>
+      <figure><img src="../assets/img/team-2026.jpg" alt="The practice team, 2026" loading="lazy"></figure>
+      <figure><img src="../assets/img/operatory.jpg" alt="Treatment room with a mountain view" loading="lazy"></figure>
+      <figure><img src="../assets/img/clinic-lounge.jpg" alt="Practice lounge with a fireplace" loading="lazy"></figure>
+      <figure><img src="../assets/img/office.jpg" alt="Practice building exterior" loading="lazy"></figure>
+    </div>
+    <p class="assetcap rv">Real patients from the 2026 shoot, the team, and the office itself, all from the shared content library.</p>
+
+    <div class="shead rv" style="margin-bottom:14px">
+      <h3 style="font-family:'Amiri',Georgia,serif;font-weight:700;color:var(--ink);font-size:1.5rem">Six filmed patient testimonials</h3>
+      <p style="margin-top:8px">The "Real Results. Real Patients." section runs on real interviews, filmed at the practice, not written by us. These are the posters from the six patient films now in the library.</p>
+    </div>
+    <div class="videorow rv">
+      <div class="vcard"><img src="../assets/poster/testimonial-1.jpg" alt="Patient testimonial film still" loading="lazy"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+      <div class="vcard"><img src="../assets/poster/testimonial-2.jpg" alt="Patient testimonial film still" loading="lazy"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+      <div class="vcard"><img src="../assets/poster/testimonial-3.jpg" alt="Patient testimonial film still" loading="lazy"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+      <div class="vcard"><img src="../assets/poster/testimonial-4.jpg" alt="Patient testimonial film still" loading="lazy"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+      <div class="vcard"><img src="../assets/poster/testimonial-5.jpg" alt="Patient testimonial film still" loading="lazy"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+      <div class="vcard"><img src="../assets/poster/testimonial-6.jpg" alt="Patient testimonial film still" loading="lazy"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+    </div>
+
+    <div class="assettable">
+      <div class="arow rv"><h4>Doctor on camera</h4><p>Dr. Burns introducing himself, plus films on dental implants, crowns and bridges, and a practice overview. This is the video for the authority section.</p></div>
+      <div class="arow rv"><h4>Office and team</h4><p>An office tour and a homepage banner montage, the exterior, the operatory with its mountain view, the lounge and fireplace, and the 2026 team photo.</p></div>
+      <div class="arow rv"><h4>Verified doctor photo</h4><p>Only the confirmed Dr. Burns headshot is used. Two mislabeled files in the source library are flagged and kept off every page so the wrong face never appears.</p></div>
+      <div class="arow rv"><h4>TikTok library on deck</h4><p>The practice's branded before-and-after and question-and-answer videos are available for the testimonial sections, using the on-brand teal covers, not the off-brand batch.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 SEO / AEO / GEO -->
+<section>
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="snum">05</span> &nbsp; Search, answers, and rankings protected</span>
+      <h2>Prettier pages that keep every ranking they've already earned.</h2>
+      <p>Jed raised it on the call and Spencer agreed: you can change the content, but change the structure and you kill the rankings. The rebuild is built around that. New pages, same addresses, and the machine-readable markup that modern search and answer engines look for.</p>
+    </div>
+    <div class="seo">
+      <div class="seocol rv">
+        <span class="tag">SEO</span>
+        <h3>Search engines</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>An editorial block on each page keeps the practice's real depth of content, compressed and scannable, so the words that rank are still there.</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Local-intent headlines like "Dental Implants Near Harrisonburg, VA" carry through, so town-level searches still find the right page.</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Clean titles, descriptions, and canonical tags on every page.</li>
+        </ul>
+      </div>
+      <div class="seocol rv">
+        <span class="tag">AEO</span>
+        <h3>Answer engines</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Each page carries a plain-English FAQ, the questions patients actually ask about cost, comfort, and same-day teeth.</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Those questions ship with FAQ structured data, so an assistant can quote the practice's answer directly.</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Answers are specific, the $1,500 per item, the 98%+ success rate, so they hold up when read aloud.</li>
+        </ul>
+      </div>
+      <div class="seocol rv">
+        <span class="tag">GEO</span>
+        <h3>Maps and AI results</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Every page carries dentist and local-business structured data: name, address, phone, coordinates, and the towns served.</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Eight town-targeted landing pages under the contact section stay exactly where they are, so local rankings survive the rebuild.</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>The tel-linked number sits above the fold on every page, one tap to call.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slugband rv">
+      <h3>The rule we won't break: never change a slug</h3>
+      <p>Every page keeps its exact live URL, trailing slash and all. A page like <code>/restorative-dentistry/dental-implants/</code> gets a new look and better copy, but the same address. Blog posts stay at their flat root slugs, not tucked under a new folder. That's what protects years of accumulated ranking through a full visual rebuild.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 06 NEEDS DR BURNS -->
+<section style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="snum">06</span> &nbsp; What still needs Dr. Burns</span>
+      <h2>Two things we can't decide for you. Here they are, clearly.</h2>
+      <p>Spencer asked for one thing to bring to the Friday call: an explicit list of what's missing, specific enough to act on without a back-and-forth. Here it is, down to two items.</p>
+    </div>
+    <div class="need">
+      <div class="ncard rv">
+        <span class="lbl">Asset gap</span>
+        <h3>Before-and-after photos</h3>
+        <p>This is the one thing the whole "possibility" story leans on, and it's the one thing we can't source. There are no signed-release before-and-afters in the shared drive. We won't fake them and we won't use anyone else's cases.</p>
+        <p>What we need from Dr. Burns, page by page:</p>
+        <ul>
+          <li><b>Implant pages:</b> before-and-after cases we can publish, with releases.</li>
+          <li><b>Single-implant page:</b> a before-and-after plus a simple root diagram.</li>
+          <li><b>Dental fillings page:</b> before-and-after filling photos.</li>
+        </ul>
+        <p>Spencer is asking Dr. Burns for these at the standing Friday call. The moment they land, they go straight into the pages that are already built to hold them.</p>
+      </div>
+      <div class="ncard rv">
+        <span class="lbl">Decision</span>
+        <h3>The duplicate cosmetic-dentistry section</h3>
+        <p>This is the single biggest risk in the migration, and it's a business call, not a design one. There are two live, indexed cosmetic-dentistry trees on the site right now, each with five child pages.</p>
+        <ul>
+          <li><b>The clean tree,</b> <code>/cosmetic-dentistry/</code>, with New Market titles.</li>
+          <li><b>The current-nav tree,</b> <code>/cosmetic-dentistry-4/</code>, with Harrisonburg titles, the one the menu links to today.</li>
+        </ul>
+        <p>We can't silently drop either one. Dropping the "-4" tree 404s five pages that rank today. Dropping the clean tree 404s the other five. The call we need: keep both, or fold one into the other and redirect it. Once Dr. Burns and Spencer choose, we set the redirects and build accordingly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSE -->
+<section class="close">
+  <div class="wrap">
+    <h2 class="rv">The feedback set the bar. The rebuild is built to clear it.</h2>
+    <p class="rv">Every note from July 10 is either fixed, specified for the next pass, or waiting on the two items above. Nothing was waved off. The proven implant page shows the standard in full, and the rest of the site is built to match it.</p>
+    <div class="phone rv"><a href="tel:5407408937">540-740-8937</a></div>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="wrap ft-in">
+    <img src="../assets/img/logo-white.png" alt="Jeffrey S. Burns DDS">
+    <span>Rebuild Findings &middot; Prepared for Spencer Walker and Dr. Jeffrey S. Burns &middot; July 10, 2026</span>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.rv');
+    if(reduce || !('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){en.target.classList.add('in'); io.unobserve(en.target);} });
+    },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(e){io.observe(e)});
+  })();
+</script>
+
+<!-- VISUAL EDITOR - local only, never commit to GitHub -->
+<script>if(location.search.includes('edit')){const s=document.createElement('script');s.src='editor.js';document.body.appendChild(s);}</script>
+</body>
+</html>

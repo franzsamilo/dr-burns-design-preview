@@ -1,0 +1,148 @@
+@import "../_config/config";
+
+.part-content-block {
+
+  overflow: hidden;
+  .content-block-wrapper.in-view{
+    background-image: url(get-part-background-image('gray-bk-repeat.png'));
+  }
+  .third-width, .photo-right.two-third-width {
+    & > div:first-of-type {
+      width: 40%;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+
+    & > div:last-of-type {
+      width: 60%;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+  }
+
+  .photo-right.third-width, .two-third-width {
+    & > div:first-of-type {
+      width: 60%;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+
+    & > div:last-of-type {
+      width: 40%;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+  }
+
+  .half-width {
+    & > div {
+      width: 50%;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+  }
+
+  .full-width {
+    .content-block-text {
+      width: 100%;
+    }
+  }
+
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content-block-text {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 150px;
+    @include media-breakpoint-down(xs) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .content-block-video{
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 2;
+      pointer-events: none;
+      filter: brightness(20);
+      transition: filter 0.3s;
+    }
+    &:hover{
+      &:before{
+        filter: brightness(1);
+      }
+    }
+    button, figure{
+      padding: 0;
+      border: none;
+      width: 100%;
+      height: 100%;
+      background-color: #3B3B3B;
+    }
+  }
+
+  .in-view .content-block-video{
+    &:before{
+      background-image: url(get-part-background-image('play-icon.png'));
+    }
+  }
+
+  &.welcome {
+    .content-block-image{
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+    .content-block-text {
+      h1 {
+        font-family: get-font('default');
+        color: #74bdc2;
+        font-size: 1.6rem;
+        font-weight: 600;
+        font-style: italic;
+        line-height: 0.813;
+        letter-spacing: get-letter-spacing(25);
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+
+
+
+
+  .third-width .content-block-text, .two-third-width .content-block-text {
+    padding-left: 90px;
+    padding-right: 90px;
+    @include media-breakpoint-down(xs) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+
+
+}
+

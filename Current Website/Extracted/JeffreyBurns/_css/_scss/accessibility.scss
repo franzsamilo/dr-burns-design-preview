@@ -1,0 +1,19 @@
+/*!
+Key: blackonwhite
+Name: Black Text on White
+Button Styles: color:#000;background:#FFF;border-color:#000
+*/
+
+$primary_bg: #FFF;
+$primary_font: #000;
+$primary_reverse_font: #FFF;
+$primary_reverse_bg: #000;
+
+$offset_bg_1: #F9F9F9;
+$offset_reverse_bg_1: #222;
+$offset_bg_2: #F3F3F3;
+$offset_bg_3: #EDEDED;
+$offset_bg_4: #E7E7E7;
+$offset_bg_5: #E1E1E1;
+
+@import "_accessibility_templates/standard";

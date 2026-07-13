@@ -1,0 +1,395 @@
+{
+  "generated": "run-time",
+  "target": "full-mouth-dental-implants.html",
+  "score": 97.3,
+  "tally": {
+    "PASS": 47,
+    "FAIL": 1
+  },
+  "checks": [
+    {
+      "group": "A · Structural parity (Figma Subpage skeleton)",
+      "id": "hero",
+      "label": "Hero (light split, local-SEO headline, bullets, photo right)",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 2
+    },
+    {
+      "group": "A · Structural parity (Figma Subpage skeleton)",
+      "id": "quiz_band",
+      "label": "Split conversion band with quiz card",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 2
+    },
+    {
+      "group": "A · Structural parity (Figma Subpage skeleton)",
+      "id": "patient_story",
+      "label": "Dark patient story with quote",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 2
+    },
+    {
+      "group": "A · Structural parity (Figma Subpage skeleton)",
+      "id": "faces_row",
+      "label": "Real patient faces row (4+)",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 2
+    },
+    {
+      "group": "A · Structural parity (Figma Subpage skeleton)",
+      "id": "journey",
+      "label": "DreamSmile Journey capsules (7-8 steps)",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 2
+    },
+    {
+      "group": "A · Structural parity (Figma Subpage skeleton)",
+      "id": "protocol",
+      "label": "Burns Protocol dark section (5+ steps)",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 2
+    },
+    {
+      "group": "A · Structural parity (Figma Subpage skeleton)",
+      "id": "editorial",
+      "label": "Editorial SEO blocks with CTA bars",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 2
+    },
+    {
+      "group": "A · Structural parity (Figma Subpage skeleton)",
+      "id": "doctor_bio",
+      "label": "Meet the Doctor section",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 2
+    },
+    {
+      "group": "A · Structural parity (Figma Subpage skeleton)",
+      "id": "testimonials",
+      "label": "Real Results testimonial cards (3+)",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 2
+    },
+    {
+      "group": "A · Structural parity (Figma Subpage skeleton)",
+      "id": "final_cta",
+      "label": "Final CTA stack",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 2
+    },
+    {
+      "group": "B · DreamSmile brief",
+      "id": "teal_token",
+      "label": "Brand teal #74bdc2 present",
+      "status": "PASS",
+      "detail": "found",
+      "weight": 2
+    },
+    {
+      "group": "B · DreamSmile brief",
+      "id": "grey_token",
+      "label": "Deepest-neutral grey #3e3e3e (brief spec)",
+      "status": "PASS",
+      "detail": "found",
+      "weight": 1
+    },
+    {
+      "group": "B · DreamSmile brief",
+      "id": "no_black_led",
+      "label": "No black-led design (no #000 text/page bg)",
+      "status": "PASS",
+      "detail": "dark neutrals only (media wells #000 are OK)",
+      "weight": 1
+    },
+    {
+      "group": "B · DreamSmile brief",
+      "id": "dreamsmile_naming",
+      "label": "DreamSmile™ naming (one word + ™)",
+      "status": "PASS",
+      "detail": "trademark form present",
+      "weight": 2
+    },
+    {
+      "group": "B · DreamSmile brief",
+      "id": "phone",
+      "label": "Phone 540-740-8937 + tel: link",
+      "status": "PASS",
+      "detail": "header/footer + click-to-call",
+      "weight": 2
+    },
+    {
+      "group": "B · DreamSmile brief",
+      "id": "proof_30+ ye",
+      "label": "Proof: 30+ years experience",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 1
+    },
+    {
+      "group": "B · DreamSmile brief",
+      "id": "proof_Person",
+      "label": "Proof: Personal cell",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 1
+    },
+    {
+      "group": "B · DreamSmile brief",
+      "id": "proof_98%+ s",
+      "label": "Proof: 98%+ success rate",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 1
+    },
+    {
+      "group": "B · DreamSmile brief",
+      "id": "proof_Same D",
+      "label": "Proof: Same Day Teeth",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 1
+    },
+    {
+      "group": "B · DreamSmile brief",
+      "id": "proof_Lifeti",
+      "label": "Proof: Lifetime / warranty",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 1
+    },
+    {
+      "group": "C · Content / compliance",
+      "id": "no_em_dash",
+      "label": "No em dashes (house rule)",
+      "status": "PASS",
+      "detail": "clean",
+      "weight": 1
+    },
+    {
+      "group": "C · Content / compliance",
+      "id": "assets_resolve",
+      "label": "Local assets resolve (19/19)",
+      "status": "PASS",
+      "detail": "all present",
+      "weight": 2
+    },
+    {
+      "group": "C · Content / compliance",
+      "id": "primary_cta",
+      "label": "Primary CTA \"Schedule My Free Consultation\"",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 1
+    },
+    {
+      "group": "C · Content / compliance",
+      "id": "address",
+      "label": "Practice address (New Market, VA)",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 1
+    },
+    {
+      "group": "C · Content / compliance",
+      "id": "social",
+      "label": "Social links (FB/IG/TikTok)",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 1
+    },
+    {
+      "group": "C · Content / compliance",
+      "id": "responsive",
+      "label": "Responsive + reduced-motion handling",
+      "status": "PASS",
+      "detail": "breakpoints + a11y motion",
+      "weight": 1
+    },
+    {
+      "group": "C · Content / compliance",
+      "id": "seo_meta",
+      "label": "Title + meta description",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 1
+    },
+    {
+      "group": "D · caresmiles design fidelity",
+      "id": "fonts",
+      "label": "Brand kit fonts: Montserrat + Amiri",
+      "status": "PASS",
+      "detail": "brand fonts loaded, no competitor fonts",
+      "weight": 2
+    },
+    {
+      "group": "D · caresmiles design fidelity",
+      "id": "serif_heads",
+      "label": "Brand serif headings (Amiri)",
+      "status": "PASS",
+      "detail": "serif display headings per brand kit",
+      "weight": 2
+    },
+    {
+      "group": "D · caresmiles design fidelity",
+      "id": "tan_cta",
+      "label": "Tan/beige CTA buttons",
+      "status": "PASS",
+      "detail": "tan button system present",
+      "weight": 2
+    },
+    {
+      "group": "D · caresmiles design fidelity",
+      "id": "pale_bg",
+      "label": "Pale grey-blue page background",
+      "status": "PASS",
+      "detail": "not flat white",
+      "weight": 1
+    },
+    {
+      "group": "D · caresmiles design fidelity",
+      "id": "fullbleed_hero",
+      "label": "Figma light split hero (photo right)",
+      "status": "PASS",
+      "detail": "hero matches template composition",
+      "weight": 1
+    },
+    {
+      "group": "D · caresmiles design fidelity",
+      "id": "quiz_overlap",
+      "label": "Lead-capture panel overlapping hero",
+      "status": "PASS",
+      "detail": "peek panel present",
+      "weight": 1
+    },
+    {
+      "group": "D · caresmiles design fidelity",
+      "id": "palette",
+      "label": "caresmiles teal #226d7a + cyan #22b8d1",
+      "status": "PASS",
+      "detail": "template palette present",
+      "weight": 1
+    },
+    {
+      "group": "D · caresmiles design fidelity",
+      "id": "floating_cards",
+      "label": "White rounded floating cards",
+      "status": "PASS",
+      "detail": "card system present",
+      "weight": 1
+    },
+    {
+      "group": "E · Spencer Jul 10 (landing-page standard)",
+      "id": "uvp_above_fold",
+      "label": "H1 is a benefit-led UVP, not a category label",
+      "status": "PASS",
+      "detail": "h1: \"New teeth in one day. A smile that's yours for life.\"",
+      "weight": 2
+    },
+    {
+      "group": "E · Spencer Jul 10 (landing-page standard)",
+      "id": "low_threshold_peek",
+      "label": "Low-threshold offer (quiz/guide) peeks above the fold",
+      "status": "PASS",
+      "detail": "quiz band overlaps hero (Nuvia peekaboo pattern)",
+      "weight": 2
+    },
+    {
+      "group": "E · Spencer Jul 10 (landing-page standard)",
+      "id": "primary_cta_phone",
+      "label": "Hero has consultation CTA + tel: phone link",
+      "status": "PASS",
+      "detail": "both above the fold",
+      "weight": 2
+    },
+    {
+      "group": "E · Spencer Jul 10 (landing-page standard)",
+      "id": "emotional_image",
+      "label": "Hero image from approved asset manifest",
+      "status": "PASS",
+      "detail": "assets/img/ron-2026.jpg",
+      "weight": 2
+    },
+    {
+      "group": "E · Spencer Jul 10 (landing-page standard)",
+      "id": "social_proof_present",
+      "label": "Social proof on page (Google rating / reviews / testimonial video)",
+      "status": "PASS",
+      "detail": "present",
+      "weight": 2
+    },
+    {
+      "group": "E · Spencer Jul 10 (landing-page standard)",
+      "id": "doctor_bio_bottom",
+      "label": "Meet the Doctor bio block near page bottom",
+      "status": "PASS",
+      "detail": "found at 80% of page",
+      "weight": 2
+    },
+    {
+      "group": "E · Spencer Jul 10 (landing-page standard)",
+      "id": "bio_unique",
+      "label": "Doctor bio ≥60% unique vs other pages",
+      "status": "PASS",
+      "detail": "unique vs 24 sibling page(s)",
+      "weight": 1
+    },
+    {
+      "group": "E · Spencer Jul 10 (landing-page standard)",
+      "id": "no_specialist",
+      "label": "No \"specialist\" claim about Dr. Burns himself (board rule, general dentist)",
+      "status": "PASS",
+      "detail": "clean (references to other specialists he trained with are fine)",
+      "weight": 2
+    },
+    {
+      "group": "E · Spencer Jul 10 (landing-page standard)",
+      "id": "dreamsmile_scope",
+      "label": "DreamSmile™ only on implant/DreamSmile pages",
+      "status": "PASS",
+      "detail": "implant page, 24 mention(s) OK",
+      "weight": 1
+    },
+    {
+      "group": "E · Spencer Jul 10 (landing-page standard)",
+      "id": "tm_superscript",
+      "label": "™ rendered small (entity/superscript, not image)",
+      "status": "PASS",
+      "detail": "entity-rendered superscript glyph",
+      "weight": 1
+    },
+    {
+      "group": "E · Spencer Jul 10 (landing-page standard)",
+      "id": "no_stock_faces",
+      "label": "No generic stock faces (\"these aren't his people\")",
+      "status": "PASS",
+      "detail": "clean",
+      "weight": 2
+    },
+    {
+      "group": "E · Spencer Jul 10 (landing-page standard)",
+      "id": "slug_preserved",
+      "label": "Page slug matches live jeffreyburns.com URL",
+      "status": "FAIL",
+      "detail": "/full-mouth-dental-implants/ NOT in live URL list — new address kills SEO",
+      "weight": 2
+    },
+    {
+      "group": "E · Spencer Jul 10 (landing-page standard)",
+      "id": "asset_gaps_logged",
+      "label": "Missing assets logged in ASSET-GAPS.md",
+      "status": "PASS",
+      "detail": "no asset gaps on this page",
+      "weight": 1
+    }
+  ]
+}

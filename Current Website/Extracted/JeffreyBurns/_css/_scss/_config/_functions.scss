@@ -1,0 +1,39 @@
+@function get-map-value($map, $key) {
+  @if map-has-key($map, $key) {
+    @return map-get($map, $key);
+  }
+
+  @warn "Unknown `#{$key}` in #{$map}";
+  @return null;
+}
+
+
+@function get-background-image($imagePath) {
+  @return "../_media/backgrounds/" + $imagePath;
+}
+
+@function get-part-background-image($imagePath) {
+  @return "../../_media/backgrounds/" + $imagePath;
+}
+
+@function get-letter-spacing($photoshopValue) {
+  @return $photoshopValue * 0.001 * 1em;
+}
+
+@mixin map-to-classes($list, $style) {
+  @each $name, $value in $list {
+    &-#{$name} {
+      #{$style}: $value;
+    }
+  }
+}
+
+@function reverse-list($list) {
+  $result: ();
+
+  @for $i from length($list)*-1 through -1 {
+    $result: append($result, nth($list, abs($i)));
+  }
+
+  @return $result;
+}

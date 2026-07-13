@@ -1,0 +1,70 @@
+$arrow_color: #fff;
+
+.sf-active {
+  /* --- Disable first level superfish arrows --- */
+  .sf-menu {
+    & > li > a.sf-with-ul:after {
+      border: none !important;
+    }
+
+    &.sf-arrows {
+      & > li > a {
+        padding-right: 0.75em;
+      }
+
+      ul {
+        a.sf-with-ul {
+          &:after {
+            content: '';
+            position: absolute;
+            right: 1em;
+            left: auto;
+            margin-left: -3px;
+            width: 0;
+            height: 0;
+            border-color: transparent;
+            border-left-color: rgba($arrow_color, .5);
+            transition: all .5s;
+          }
+
+          &:hover:after {
+            border-left-color: $arrow_color;
+            transition: all .5s;
+          }
+        }
+
+        /* hide arrows in third level because we're hiding fourth level */
+        ul.children {
+          a.sf-with-ul {
+            &:after {
+              display: none;
+            }
+
+            &:hover:after {
+              display: none;
+            }
+          }
+        }
+      }
+
+      /* styling for right-facing arrows */
+      .last {
+        ul {
+          .sf-with-ul:after {
+            margin-left: -3px;
+            right: auto;
+            left: 1em;
+            border-color: transparent;
+            border-right-color: rgba($arrow_color, .5);
+          }
+
+          li > .sf-with-ul:focus:after, li > .sf-with-ul:hover:after,
+          .sfHover > .sf-with-ul:after {
+            border-color: transparent;
+            border-right-color: $arrow_color;
+          }
+        }
+      }
+    }
+  }
+}

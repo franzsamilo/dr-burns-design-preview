@@ -1,0 +1,25 @@
+.ff {
+  @include map-to-classes($fontFamilies, 'font-family');
+}
+
+body .fs {
+  &-xs {
+    font-size: 1.6rem;
+  }
+
+  &-s {
+    font-size: 2.2rem;
+  }
+
+  &-m {
+    font-size: 2.8rem;
+  }
+
+  &-l {
+    font-size: 3.2rem;
+  }
+
+  &-xl {
+    font-size: 4rem;
+  }
+}

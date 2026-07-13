@@ -1,0 +1,190 @@
+/* --- Module, Image, Highlight and Well Styles --- */
+/*.image, .module, .highlight, .well {
+    color: #FFF;
+    background-color: #333;
+}*/
+.highlight.aligncenter, .highlight.alignnone,
+.well.aligncenter, .well.alignnone,
+.module.aligncenter, .module.alignnone,
+.image.aligncenter, .image.alignnone {
+  margin-top: 30px;
+}
+
+.image h2, .image .h2, .module h2, .module .h2, .highlight h2, .highlight .h2, .well h2, .well .h2,
+.image h3, .image .h3, .module h3, .module .h3, .highlight h3, .highlight .h3, .well h3, .well .h3,
+.image p, .module p, .highlight p, .well p,
+.image label, .module label, .highlight label, .well label,
+.image .btn, .module .btn, .highlight .btn, .well .btn,
+.image a, .module a, .highlight a, .well a {
+  color: inherit;
+}
+
+.image, .module, .highlight,
+.image h2, .image .h2, .module h2, .module .h2, .highlight h2, .highlight .h2,
+.image h3, .image .h3, .module h3, .module .h3, .highlight h3, .highlight .h3,
+.image p, .module p, .highlight p,
+.image label, .module label, .highlight label,
+.image .btn, .module .btn, .highlight .btn,
+.image a, .module a, .highlight a {
+  text-align: center;
+}
+
+.image label, .module label, .highlight label, .well label {
+  display: block;
+}
+
+.image a, .module a, .highlight a, .well a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.image a:hover, .module a:hover, .highlight a:hover, .well a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.image .btn, .module .btn, .highlight .btn, .well .btn {
+  text-decoration: none;
+}
+
+.image .btn:hover, .module .btn:hover, .highlight .btn:hover, .well .btn:hover {
+  opacity: 1;
+}
+
+.image > :first-child, .module > :first-child, .highlight > :first-child, .well > :first-child {
+  margin-top: 0;
+}
+
+.image {
+}
+
+.module {
+  padding: 30px;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid #75bdc2;
+  @include media-breakpoint-up(sm) {
+    &.alignleft, &.alignright {
+      width: 340px;
+    }
+  }
+  .ht-title{
+    font-weight: 400;
+    font-family: get-font('Amiri');
+    color: #3e3e3e;
+    font-size: 3rem;
+    line-height: 1.333;
+    padding: 0 20px;
+    position: relative;
+    &:before{
+      background-image: url(get-background-image('diamond-lines.png'));
+      height: 18px;
+      position: absolute;
+      bottom: -17px;
+      left: 20px;
+      content: '';
+      right: 20px;
+      background-position-x: center;
+    }
+    &:first-line {
+      font-family: get-font('default');
+      color: #74bdc2;
+      font-size: 1.6rem;
+      font-weight: 500;
+      font-style: italic;
+      line-height: 0.813;
+    }
+  }
+  p.ht-description{
+    margin-top: 3em !important;
+    color: #333333;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.385;
+    text-align: justify;
+  }
+  p.ht-image{
+    padding: 0;
+    img{
+      background-color: #fff;
+      padding: 4px;
+      border: 1px solid #c2c2c2;
+      border-radius: 0;
+    }
+  }
+}
+
+.well{
+  background-image: url(get-background-image('gray-bk-repeat.png'));
+  border: none;
+  border-radius: 0;
+  color: #fff;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+@include media-breakpoint-down(xs) {
+  .module, .highlight {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.wistia_embed {
+  button.w-big-play-button.w-css-reset-button-important.w-vulcan-v2-button {
+    background: transparent !important;
+    position: relative;
+
+    &:after {
+      content: '';
+      background-image: url(get-background-image('play-icon.png'));
+      width: 111px;
+      height: 126px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      filter: brightness(20);
+      transition: filter 0.2 ease-in;
+    }
+
+    svg {
+      display: none !important;
+    }
+  }
+
+  &:hover {
+    button.w-big-play-button.w-css-reset-button-important.w-vulcan-v2-button {
+      &:after {
+        filter: brightness(1);
+      }
+    }
+  }
+
+}
+
+.w-big-play-button div {
+  background-color: transparent !important;
+}
+
+.text-center{
+  p{
+    text-align: center;
+  }
+}
+
+p.text_center.procedural-description {
+  text-align: center;
+}

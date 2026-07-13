@@ -1,0 +1,256 @@
+[
+  {
+    "file": "assets/video/testimonial-1.mp4",
+    "type": "video",
+    "role": "testimonial",
+    "poster": "assets/poster/testimonial-1.jpg",
+    "quality": "high",
+    "wDescription": "Older woman in a teal top shares her experience with Dr. Burns in a warmly lit patient interview."
+  },
+  {
+    "file": "assets/video/testimonial-2.mp4",
+    "type": "video",
+    "role": "testimonial",
+    "poster": "assets/poster/testimonial-2.jpg",
+    "quality": "standard",
+    "wDescription": "A teenage patient and her mother talk together on a couch about their care at the practice."
+  },
+  {
+    "file": "assets/video/testimonial-3.mp4",
+    "type": "video",
+    "role": "testimonial",
+    "poster": "assets/poster/testimonial-3.jpg",
+    "quality": "high",
+    "wDescription": "Grey-haired man in glasses and a green shirt describes his treatment in a filmed interview."
+  },
+  {
+    "file": "assets/video/testimonial-4.mp4",
+    "type": "video",
+    "role": "testimonial",
+    "poster": "assets/poster/testimonial-4.jpg",
+    "quality": "high",
+    "wDescription": "Woman in glasses and a black top recounts her dental experience in a warmly lit interview."
+  },
+  {
+    "file": "assets/video/testimonial-5.mp4",
+    "type": "video",
+    "role": "testimonial",
+    "poster": "assets/poster/testimonial-5.jpg",
+    "quality": "high",
+    "wDescription": "Smiling bearded man in a blue shirt shares his results in a warmly lit patient interview."
+  },
+  {
+    "file": "assets/video/testimonial-6.mp4",
+    "type": "video",
+    "role": "testimonial",
+    "poster": "assets/poster/testimonial-6.jpg",
+    "quality": "high",
+    "wDescription": "Bearded man in a ball cap talks about his treatment at the practice."
+  },
+  {
+    "file": "assets/video/about-dr-burns.mp4",
+    "type": "video",
+    "role": "doctor",
+    "poster": "assets/poster/about-dr-burns.jpg",
+    "wDescription": "Dr. Jeffrey Burns introduces himself and his approach to dentistry on camera."
+  },
+  {
+    "file": "assets/video/dental-implants.mp4",
+    "type": "video",
+    "role": "doctor",
+    "poster": "assets/poster/dental-implants.jpg",
+    "wDescription": "Dr. Jeffrey Burns explains dental implant treatment, with footage of a digital scan in the operatory."
+  },
+  {
+    "file": "assets/video/crowns-and-bridges.mp4",
+    "type": "video",
+    "role": "doctor",
+    "poster": "assets/poster/crowns-and-bridges.jpg",
+    "wDescription": "Dr. Jeffrey Burns describes crown and bridge treatment on camera."
+  },
+  {
+    "file": "assets/video/practice-overview.mp4",
+    "type": "video",
+    "role": "doctor",
+    "poster": "assets/poster/practice-overview.jpg",
+    "wDescription": "Dr. Jeffrey Burns gives an overview of the practice and the care his team provides."
+  },
+  {
+    "file": "assets/video/office-tour.mp4",
+    "type": "video",
+    "role": "office",
+    "poster": "assets/poster/office-tour.jpg",
+    "wDescription": "Walkthrough of the practice, from the brick exterior to the reception lounge and treatment rooms."
+  },
+  {
+    "file": "assets/video/web-banner.mp4",
+    "type": "video",
+    "role": "banner",
+    "poster": "assets/poster/web-banner.jpg",
+    "wDescription": "Short montage of the practice for the homepage banner, opening on the reception desk."
+  },
+
+  {
+    "file": "assets/img/logo.png",
+    "type": "image",
+    "role": "logo",
+    "note": "Primary J. Burns practice logo. Use site-wide.",
+    "wDescription": "J. Burns wordmark, the Jeffrey S. Burns DDS practice logo in teal and grey."
+  },
+  {
+    "file": "assets/img/logo-white.png",
+    "type": "image",
+    "role": "logo",
+    "note": "Reverse J. Burns logo for dark backgrounds and footer.",
+    "wDescription": "J. Burns wordmark in white for use on dark backgrounds."
+  },
+  {
+    "file": "assets/img/dreamsmile-logo.png",
+    "type": "image",
+    "role": "logo",
+    "note": "DreamSmile brand mark. Use ONLY on pages the PAGE-TEMPLATE-MAP flags DreamSmile = Yes.",
+    "wDescription": "DreamSmile by Jeffrey S. Burns DDS logo, the full-arch implant program mark."
+  },
+
+  {
+    "file": "assets/img/hero-burns.jpg",
+    "type": "image",
+    "role": "hero",
+    "wDescription": "Dr. Jeffrey Burns greeting a smiling patient at the reception desk."
+  },
+  {
+    "file": "assets/img/dr-burns.jpg",
+    "type": "image",
+    "role": "doctor",
+    "wDescription": "Dr. Jeffrey Burns, professional headshot in a black polo shirt."
+  },
+  {
+    "file": "assets/img/burns-consult.jpg",
+    "type": "image",
+    "role": "doctor",
+    "wDescription": "Dr. Jeffrey Burns talking with a patient across his consultation desk."
+  },
+  {
+    "file": "assets/img/burns-team-coat.jpg",
+    "type": "image",
+    "role": "doctor",
+    "wDescription": "Dr. Jeffrey Burns in a white coat with five members of his team."
+  },
+  {
+    "file": "assets/img/team.jpg",
+    "type": "image",
+    "role": "doctor",
+    "wDescription": "The full practice team with Dr. Jeffrey Burns seated at the center."
+  },
+  {
+    "file": "assets/img/team-2026.jpg",
+    "type": "image",
+    "role": "doctor",
+    "wDescription": "Group photo of the practice team from the 2026 photoshoot."
+  },
+
+  {
+    "file": "assets/img/review1.jpg",
+    "type": "image",
+    "role": "patient",
+    "wDescription": "Older woman with a gentle smile, still from a patient interview."
+  },
+  {
+    "file": "assets/img/review2.jpg",
+    "type": "image",
+    "role": "patient",
+    "wDescription": "Young woman smiling on a leather couch, still from a patient interview."
+  },
+  {
+    "file": "assets/img/review3.jpg",
+    "type": "image",
+    "role": "patient",
+    "wDescription": "Grey-haired man in glasses and a green shirt mid-laugh, still from a patient interview."
+  },
+  {
+    "file": "assets/img/review5.jpg",
+    "type": "image",
+    "role": "patient",
+    "wDescription": "Man in a ball cap smiling, still from a patient interview."
+  },
+  {
+    "file": "assets/img/mike-2026.jpg",
+    "type": "image",
+    "role": "patient",
+    "wDescription": "Mike, seated portrait from the 2026 patient shoot, wearing a cap and plaid shirt."
+  },
+  {
+    "file": "assets/img/kelly-2026.jpg",
+    "type": "image",
+    "role": "patient",
+    "wDescription": "Kelly, close portrait from the 2026 patient shoot."
+  },
+  {
+    "file": "assets/img/kelly-2026b.jpg",
+    "type": "image",
+    "role": "patient",
+    "wDescription": "Kelly, wider seated portrait from the 2026 patient shoot."
+  },
+  {
+    "file": "assets/img/angela-2026.jpg",
+    "type": "image",
+    "role": "patient",
+    "wDescription": "Angela, seated portrait from the 2026 patient shoot."
+  },
+  {
+    "file": "assets/img/angela-2026b.jpg",
+    "type": "image",
+    "role": "patient",
+    "wDescription": "Angela in a green sweater, close portrait from the 2026 patient shoot."
+  },
+  {
+    "file": "assets/img/ron-2026.jpg",
+    "type": "image",
+    "role": "patient",
+    "wDescription": "Ron, an older man with white hair, close portrait from the 2026 patient shoot."
+  },
+  {
+    "file": "assets/img/danny-2026.jpg",
+    "type": "image",
+    "role": "patient",
+    "wDescription": "Danny, a younger bearded man smiling in the dental chair, from the 2026 patient shoot."
+  },
+  {
+    "file": "assets/img/bts-patient.jpg",
+    "type": "image",
+    "role": "patient",
+    "wDescription": "Older man seated in the interview chair under warm light."
+  },
+
+  {
+    "file": "assets/img/operatory.jpg",
+    "type": "image",
+    "role": "office",
+    "note": "Real practice image staged from the source library (_photos/photo1.jpg).",
+    "wDescription": "Treatment room with a dental chair and a large window looking out to the hills."
+  },
+  {
+    "file": "assets/img/clinic-op.jpg",
+    "type": "image",
+    "role": "office",
+    "wDescription": "Operatory with a view of the mountains through the window."
+  },
+  {
+    "file": "assets/img/clinic-lounge.jpg",
+    "type": "image",
+    "role": "office",
+    "wDescription": "Waiting lounge with a lit fireplace."
+  },
+  {
+    "file": "assets/img/lounge-fireplace.jpg",
+    "type": "image",
+    "role": "office",
+    "wDescription": "Practice lounge with a fireplace and no people."
+  },
+  {
+    "file": "assets/img/office.jpg",
+    "type": "image",
+    "role": "office",
+    "wDescription": "Practice building exterior, brick with an arched, columned entry."
+  }
+]

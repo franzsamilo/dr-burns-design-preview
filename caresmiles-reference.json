@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "source_url": "https://www.caresmiles.com/",
+    "purpose": "Reference template for Burn's dental implant website",
+    "business_name": "Care Dental Implant and Cosmetic Center",
+    "tagline": "Need a New Smile? You're in the Right Place.",
+    "locations": ["Meridian, ID", "Boise, ID"],
+    "hero_stat": "8,000+ dental implants placed"
+  },
+  "contact": {
+    "phone_current_patients": "+1 208-453-7221",
+    "phone_new_patients": "+1 208-607-3234",
+    "address": "1144 S Silverstone Way, Suite 140, Meridian, ID 83642",
+    "website": "caresmiles.com",
+    "social": {
+      "youtube": true,
+      "instagram": true,
+      "tiktok": true
+    }
+  },
+  "navigation": {
+    "primary": [
+      { "label": "About", "submenu": false },
+      { "label": "Meet Dr. Phillips", "submenu": false },
+      { "label": "Services", "submenu": true },
+      { "label": "Resources", "submenu": true },
+      { "label": "FAQ", "submenu": false },
+      { "label": "Contact", "submenu": false }
+    ]
+  },
+  "services": [
+    "Single Dental Implants",
+    "Implant-Supported Bridges",
+    "Implant-Supported Dentures",
+    "All-On-X",
+    "Zirconia Implants",
+    "Veneers",
+    "Tooth Extractions",
+    "Bone Grafting",
+    "Sinus Lifts"
+  ],
+  "sections": [
+    {
+      "order": 1,
+      "type": "hero",
+      "headline": "Need a New Smile? You're in the Right Place.",
+      "claims": [
+        "8,000+ implants placed",
+        "One doctor. One location. One solution.",
+        "New teeth in one day",
+        "Honest answers, real results"
+      ],
+      "cta": { "text": "Schedule My Free Consultation", "link": null }
+    },
+    {
+      "order": 2,
+      "type": "before_after_gallery",
+      "description": "Four before-and-after photo pairs of smile transformations",
+      "item_count": 4
+    },
+    {
+      "order": 3,
+      "type": "process_benefits",
+      "heading": "We Make It Easy to Permanent New Smile.",
+      "benefits": [
+        "Consultation, surgery, and new teeth — all in one convenient location",
+        "No running around or outside referrals",
+        "Expedited solutions — new teeth in just one visit",
+        "Go to sleep and wake up with all your dentistry done with IV sedation"
+      ]
+    },
+    {
+      "order": 4,
+      "type": "smile_reveal_tool",
+      "feature_name": "SmileReveal™",
+      "heading": "See Your New Smile Before You Ever Sit In The Chair",
+      "steps": [
+        "Upload Your Photo",
+        "Results In Under 60 Seconds",
+        "Share it with your friends and family"
+      ],
+      "copy": "Walk in knowing exactly what's possible. No guesswork, no hesitation.",
+      "cta": { "text": "GET STARTED", "link": null }
+    },
+    {
+      "order": 5,
+      "type": "lead_magnet",
+      "heading": "Want to learn more about your dental implant options?",
+      "offer": "Grab our FREE Dental Implant Guide",
+      "topics": [
+        "Differences between implants, bridges & dentures",
+        "Why All-on-X is the gold standard",
+        "What treatment really costs (and how people afford it)",
+        "How to claim your FREE consultation"
+      ],
+      "cta": { "text": "READ THE GUIDE", "link": "external form" }
+    },
+    {
+      "order": 6,
+      "type": "doctor_intro",
+      "heading": "The Experience You Want. The Care You Deserve.",
+      "doctor_name": "Dr. Drew Phillips",
+      "copy": "Dr. Drew Phillips has placed over 8,000 implants and is Idaho's most experienced All-On-X provider. Known for his calm, no-pressure approach, he takes time to listen, explain, and treat you like a human — not just a number.",
+      "cta": { "text": "Meet Dr. Phillips", "link": null }
+    },
+    {
+      "order": 7,
+      "type": "treatment_steps",
+      "heading": "From Pain to Peace of Mind - Here's How It All Happens",
+      "steps": [
+        { "number": 1, "title": "Free Consultation", "copy": "You talk, we listen. No pressure, no sales pitch." },
+        { "number": 2, "title": "Your Custom Plan", "copy": "A smile designed for your face, to look as natural as it functions." },
+        { "number": 3, "title": "New Smile Day", "copy": "Most patients leave with fixed teeth the same day as surgery." },
+        { "number": 4, "title": "Smile Refinement & Support", "copy": "We fine-tune your smile and support you every step after." }
+      ],
+      "cta": { "text": "Learn More About the Process", "link": null }
+    },
+    {
+      "order": 8,
+      "type": "testimonials_video",
+      "heading": "Hear From People Who've Been Where You Are",
+      "people": ["Sam", "Kat", "Cheryll", "Mark", "Care Clinic patient story"]
+    },
+    {
+      "order": 9,
+      "type": "pricing_transparency",
+      "heading": "We Believe in Telling You the Truth - Especially About Cost",
+      "copy": "You won't find bait-and-switch pricing here. Everything is clear, upfront, and designed to make your life easier — not harder.",
+      "promises": [
+        "No hidden fees",
+        "Flexible financing available",
+        "Help with pre-approval"
+      ],
+      "cta": { "text": "GET MY TREATMENT PLAN", "link": null }
+    },
+    {
+      "order": 10,
+      "type": "video_faq",
+      "heading": "Hear straight from Dr. Phillips - Honest answers to your biggest questions.",
+      "videos": [
+        { "title": "Are dental implants painful?", "topic": "Recovery and downtime expectations" },
+        { "title": "How much do implants cost?", "topic": "Cost overview" },
+        { "title": "What is a dental implant?", "topic": "Visual explanation" },
+        { "title": "How would we describe Dr. Phillips in just 3 words?", "topic": "Team testimonial" }
+      ]
+    },
+    {
+      "order": 11,
+      "type": "clinic_photos",
+      "description": "Gallery of clinic interior/exterior photos",
+      "image_count": 4
+    },
+    {
+      "order": 12,
+      "type": "final_cta",
+      "heading": "You Deserve to Feel Heard. And to Love Your Smile Again.",
+      "copy": "Take the first step today. No pressure. Just a simple conversation to explore what's possible — and whether it's right for you.",
+      "cta": { "text": "Call Us: +1 208-607-3234", "link": "tel:+12086073234" }
+    }
+  ],
+  "footer": {
+    "links": [
+      "About Care Dental",
+      "Meet Dr. Phillips",
+      "Dental Implants Services",
+      "Pricing & Financing",
+      "Patient Stories",
+      "FAQs",
+      "Blog",
+      "Schedule Consultation",
+      "Contact Us"
+    ],
+    "legal": [
+      "Copyright © 2026 Care Dental Implant and Cosmetic Center",
+      "Privacy Policy",
+      "Website Accessibility",
+      "Sitemap"
+    ]
+  },
+  "differentiators": [
+    "Single doctor practice",
+    "Same-day teeth placement",
+    "No external referrals required",
+    "IV sedation available",
+    "Free consultation process",
+    "Transparent pricing model",
+    "8,000+ implant track record"
+  ]
+}

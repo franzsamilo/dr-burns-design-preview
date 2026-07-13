@@ -1,0 +1,635 @@
+{
+  "results": [
+    {
+      "id": "color_light_grey_teal",
+      "claim": "Use bright white/light-grey/teal with #3e3e3e as deepest brand neutral; avoid black-led design.",
+      "verdict": "PASS_WITH_GREY_NUANCE",
+      "score": 84,
+      "must_patterns_matched": 3,
+      "must_patterns_total": 3,
+      "nice_patterns_matched": 1,
+      "evidence": [
+        {
+          "source": "Dr Burns Feedback",
+          "line": 1,
+          "quote": "(1) Too Much Black"
+        },
+        {
+          "source": "Dr Burns Feedback",
+          "line": 2,
+          "quote": "There's a LOT of black in the Mockup, their current website doesn't seem to have any black apart from their drop-down menus:"
+        },
+        {
+          "source": "Dr Burns Feedback",
+          "line": 5,
+          "quote": "The black is too dull and drags the design down and doesn't \"feel\" like them or their brand."
+        },
+        {
+          "source": "Dr Burns Feedback",
+          "line": 7,
+          "quote": "If you take a look at their website, their colors are grey, white, and teal: https://www.jeffreyburns.com/about-us/"
+        },
+        {
+          "source": "Dr Burns Feedback",
+          "line": 11,
+          "quote": "Let's make this middle CTA have a white background, and then grey on the other two (1st variation)."
+        },
+        {
+          "source": "Comments April 20",
+          "line": 143,
+          "quote": "The layout on this is very clean and pretty, however let\u2019s do the background in the dark color originally selected for this section as Dr. Burns wanted more greys on his website and not all light colors:"
+        }
+      ],
+      "risks": [
+        {
+          "source": "Comments April 20",
+          "line": 143,
+          "quote": "The layout on this is very clean and pretty, however let\u2019s do the background in the dark color originally selected for this section as Dr. Burns wanted more greys on his website and not all light colors:"
+        }
+      ]
+    },
+    {
+      "id": "older_reader_legibility",
+      "claim": "Design for older patients with larger text and high contrast.",
+      "verdict": "PASS",
+      "score": 87,
+      "must_patterns_matched": 1,
+      "must_patterns_total": 1,
+      "nice_patterns_matched": 1,
+      "evidence": [
+        {
+          "source": "Dr Burns Feedback",
+          "line": 17,
+          "quote": "(2) Low Contrast"
+        },
+        {
+          "source": "Dr Burns Feedback",
+          "line": 18,
+          "quote": "This section has very low contrast with grey boxes on a grey background. Additionally the \u201cred\u201d icons also have low contrast. The intent seems to look like the icons are glowing, however it looks dull. It may look brighter with a white icon base color under th"
+        },
+        {
+          "source": "Dr Burns Feedback",
+          "line": 34,
+          "quote": "(3) Very Low Contrast"
+        },
+        {
+          "source": "Dr Burns Feedback",
+          "line": 43,
+          "quote": "(5) Very Low Contrast - Black"
+        },
+        {
+          "source": "Dr Burns Feedback",
+          "line": 63,
+          "quote": "It\u2019s pretty hard to see the numbers against the dark background. It\u2019s also not that easy to read this section as the text is pretty small."
+        },
+        {
+          "source": "Comments June 23",
+          "line": 36,
+          "quote": "Find actual videos to go here. There\u2019s a bunch in this folder (that\u2019s linked to our drive): https://drive.google.com/drive/folders/1eY0NbJDYGTY9GislN8iYArmjrr2WVTdW?usp=drive_link"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 75,
+          "quote": "Make \u201cYOUR JOURNEY\u201d bigger so older people with bad eyesight can read it"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 90,
+          "quote": "The text is too small"
+        }
+      ],
+      "risks": []
+    },
+    {
+      "id": "compact_scroll",
+      "claim": "Reduce vertical gaps/section bloat; use compact bullet layouts so persuasion happens faster.",
+      "verdict": "PASS",
+      "score": 87,
+      "must_patterns_matched": 1,
+      "must_patterns_total": 1,
+      "nice_patterns_matched": 1,
+      "evidence": [
+        {
+          "source": "Comments April 20",
+          "line": 1,
+          "quote": "This is way too large. Based on the mockup and the references from https://www.nuviasmiles.com and https://www.caresmiles.com/, this takes up the whole screen, when it should take up half or less than half."
+        },
+        {
+          "source": "Comments April 20",
+          "line": 75,
+          "quote": "The gaps are too large\u2026.we don\u2019t want the leads to have to scroll down too much. And making this section too long is prolonging the time to show them more information and convince them that this is the practice they should visit."
+        },
+        {
+          "source": "Comments June 23",
+          "line": 10,
+          "quote": "Bullet Points:"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 41,
+          "quote": "I like this section but I don\u2019t like that we have to scroll so much. Can you do this as bullet points and let\u2019s select one image of an actual patient smiling (ideally let\u2019s put the Dream Smile logo as a watermark in the image)"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 73,
+          "quote": "Feels like a big margin between the top and \u201cYOUR JOURNEY\u201d...shorten it"
+        }
+      ],
+      "risks": []
+    },
+    {
+      "id": "outcome_not_clinical_imagery",
+      "claim": "Use full-face smiling patients, Dr. Burns smiling, diagrams/illustrations; avoid drills/scary clinical images.",
+      "verdict": "PASS",
+      "score": 87,
+      "must_patterns_matched": 1,
+      "must_patterns_total": 1,
+      "nice_patterns_matched": 1,
+      "evidence": [
+        {
+          "source": "Comments June 23",
+          "line": 12,
+          "quote": "Proprietary procedure with a 98%+ success rate"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 23,
+          "quote": "Use the stuff that TIE already created\u2026this is not his patient nor is it what the guide looks like. The right stuff is on his website:"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 41,
+          "quote": "I like this section but I don\u2019t like that we have to scroll so much. Can you do this as bullet points and let\u2019s select one image of an actual patient smiling (ideally let\u2019s put the Dream Smile logo as a watermark in the image)"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 78,
+          "quote": "Change photo to picture of him smiling, in his doctor attire."
+        },
+        {
+          "source": "Comments June 23",
+          "line": 269,
+          "quote": "Change this background image to perhaps a photo of someone smiling or a close up of their teeth, this image with the drill, is too cold and clinical and kind of scary. We want the photos to show the patients what they could achieve, focusing more on the result"
+        }
+      ],
+      "risks": []
+    },
+    {
+      "id": "dreamsmile_brand",
+      "claim": "Make DreamSmile\u2122 the hero product and use exact naming/logo consistently.",
+      "verdict": "PASS_WITH_NAMING_NUANCE",
+      "score": 84,
+      "must_patterns_matched": 1,
+      "must_patterns_total": 1,
+      "nice_patterns_matched": 1,
+      "evidence": [
+        {
+          "source": "Comments June 23",
+          "line": 2,
+          "quote": "Anywhere Dream Smile shows up combine the words like this: DreamSmile and add the \u2122 symbol."
+        },
+        {
+          "source": "Comments June 23",
+          "line": 8,
+          "quote": "Logo isn\u2019t right. Here\u2019s the accurate one:"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 9,
+          "quote": "Change \u201cA Dream Smile You Never Have to Hide\u201d to \u201cA DreamSmile\u2122 You\u2019ll Never Have to Hide\u201d"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 14,
+          "quote": "Backed by the DreamSmile\u2122 Lifetime Warranty*"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 32,
+          "quote": "Use the actual \u201cDream Smile\u201d logo here (maybe center \u2018Introducing\u2019 and put the logo below? Or keep the same but just use the Dream Smile logo)"
+        },
+        {
+          "source": "UVP Document",
+          "line": 15,
+          "quote": "The Dream Smile (The Dream Smile by Dr. Jeffrey S. Burns)"
+        },
+        {
+          "source": "UVP Document",
+          "line": 18,
+          "quote": "Created using the Burns Protocol, Dr. Burns\u2019s proprietary process for consistently and safely creating beautiful Dream Smiles"
+        },
+        {
+          "source": "UVP Document",
+          "line": 20,
+          "quote": "Backed up with a Dream Smile Warranty"
+        }
+      ],
+      "risks": [
+        {
+          "source": "Comments June 23",
+          "line": 55,
+          "quote": "Add a space between Dream and Smile and add \u2122"
+        }
+      ]
+    },
+    {
+      "id": "proof_substantiated",
+      "claim": "Lead with substantiated proof: 30+ years, 98%+, personal cell, teaches dentists, warranty, same-day teeth.",
+      "verdict": "PASS",
+      "score": 81,
+      "must_patterns_matched": 1,
+      "must_patterns_total": 1,
+      "nice_patterns_matched": 1,
+      "evidence": [
+        {
+          "source": "UVP Document",
+          "line": 5,
+          "quote": "Dr. Burns is a nationally recognized dentist who teaches other doctors across the United States his proprietary protocol"
+        },
+        {
+          "source": "UVP Document",
+          "line": 6,
+          "quote": "Get care from a nationally recognized dentist"
+        },
+        {
+          "source": "UVP Document",
+          "line": 7,
+          "quote": "Over 30 years of implant experience"
+        },
+        {
+          "source": "UVP Document",
+          "line": 8,
+          "quote": "Respected published author in multiple dental journals"
+        },
+        {
+          "source": "UVP Document",
+          "line": 11,
+          "quote": "One Stop Shop - \u201cSmiles Fully Restored in One Location\u201d - Restore your smile without having to go to multiple locations - saves time and money"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 12,
+          "quote": "Proprietary procedure with a 98%+ success rate"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 13,
+          "quote": "A doctor who truly cares\u2014gives you his personal cell number"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 14,
+          "quote": "Backed by the DreamSmile\u2122 Lifetime Warranty*"
+        }
+      ],
+      "risks": [
+        {
+          "source": "UVP Document",
+          "line": 304,
+          "quote": "NOT STRONG"
+        },
+        {
+          "source": "UVP Document",
+          "line": 305,
+          "quote": "Statements or claims that are difficult to measure or describe or that are generic"
+        }
+      ]
+    },
+    {
+      "id": "direct_response_pages",
+      "claim": "Every major page should behave like a landing page with phone/CTA/proof.",
+      "verdict": "PASS_WITH_SCOPE_NUANCE",
+      "score": 81,
+      "must_patterns_matched": 1,
+      "must_patterns_total": 1,
+      "nice_patterns_matched": 1,
+      "evidence": [
+        {
+          "source": "Updated Page List",
+          "line": 1,
+          "quote": "Every Page Should Be a Landing Page - (Except the blogs and certain pages)"
+        },
+        {
+          "source": "Updated Page List",
+          "line": 2,
+          "quote": "Every page should be a landing page and they don\u2019t have to have an opt-in, we can just have the phone number at the top, it should be direct response oriented."
+        },
+        {
+          "source": "Updated Page List",
+          "line": 44,
+          "quote": "Resources *These pages will not be a direct response, they are just extra information for the patients. They will be able to be accessed from the menu drop down."
+        },
+        {
+          "source": "Comments June 23",
+          "line": 16,
+          "quote": "Add phone number under \u201cSchedule Your Free Consultation\u201d"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 17,
+          "quote": "Add phone number in upper right corner"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 81,
+          "quote": "Remove \u201cSCHEDULE YOUR FREE ASSESSMENT\u201d on each of these except for right below the Dream Smile Assessment"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 110,
+          "quote": "Between system and he \u201ca proven multi-step system with a proven 98% success rate that he has taught to dentists\u201d, add beautiful smile/aesthetically pleasing/healthy, long lasting dreamsmile(S)."
+        },
+        {
+          "source": "Comments June 23",
+          "line": 129,
+          "quote": "Schedule to meet with dr Burns\u2026.CTA"
+        }
+      ],
+      "risks": [
+        {
+          "source": "Updated Page List",
+          "line": 1,
+          "quote": "Every Page Should Be a Landing Page - (Except the blogs and certain pages)"
+        },
+        {
+          "source": "Updated Page List",
+          "line": 44,
+          "quote": "Resources *These pages will not be a direct response, they are just extra information for the patients. They will be able to be accessed from the menu drop down."
+        }
+      ]
+    },
+    {
+      "id": "comparison_table",
+      "claim": "DreamSmile\u2122 vs Traditional Dental Implants comparison should be compact and make DreamSmile visually win.",
+      "verdict": "PASS",
+      "score": 87,
+      "must_patterns_matched": 1,
+      "must_patterns_total": 1,
+      "nice_patterns_matched": 1,
+      "evidence": [
+        {
+          "source": "Comments April 20",
+          "line": 170,
+          "quote": "Let\u2019s try to copy how the section looks in the mockup, as we want THE DREAM SMILE to stand out more\u2026.here it doesn\u2019t look like an obvious comparison. The Dream Smile Text in the comparison is very small and doesn\u2019t stand out."
+        },
+        {
+          "source": "Comments June 23",
+          "line": 2,
+          "quote": "Anywhere Dream Smile shows up combine the words like this: DreamSmile and add the \u2122 symbol."
+        },
+        {
+          "source": "Comments June 23",
+          "line": 8,
+          "quote": "Logo isn\u2019t right. Here\u2019s the accurate one:"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 9,
+          "quote": "Change \u201cA Dream Smile You Never Have to Hide\u201d to \u201cA DreamSmile\u2122 You\u2019ll Never Have to Hide\u201d"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 14,
+          "quote": "Backed by the DreamSmile\u2122 Lifetime Warranty*"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 32,
+          "quote": "Use the actual \u201cDream Smile\u201d logo here (maybe center \u2018Introducing\u2019 and put the logo below? Or keep the same but just use the Dream Smile logo)"
+        }
+      ],
+      "risks": []
+    },
+    {
+      "id": "journey_rebuild",
+      "claim": "Rebuild the patient journey: larger title, shorter margin, fewer CTAs, compact steps.",
+      "verdict": "PASS",
+      "score": 87,
+      "must_patterns_matched": 1,
+      "must_patterns_total": 1,
+      "nice_patterns_matched": 1,
+      "evidence": [
+        {
+          "source": "Comments June 23",
+          "line": 73,
+          "quote": "Feels like a big margin between the top and \u201cYOUR JOURNEY\u201d...shorten it"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 75,
+          "quote": "Make \u201cYOUR JOURNEY\u201d bigger so older people with bad eyesight can read it"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 81,
+          "quote": "Remove \u201cSCHEDULE YOUR FREE ASSESSMENT\u201d on each of these except for right below the Dream Smile Assessment"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 166,
+          "quote": "All little titles need to be bigger\u2026..and 95% success, needs to be 98%+"
+        },
+        {
+          "source": "UVP Document",
+          "line": 59,
+          "quote": "PATIENT JOURNEY / PATIENT PATHWAY"
+        },
+        {
+          "source": "UVP Document",
+          "line": 60,
+          "quote": "THE DREAM SMILE PATHWAY"
+        },
+        {
+          "source": "UVP Document",
+          "line": 61,
+          "quote": "Dream Smile Assessment"
+        },
+        {
+          "source": "UVP Document",
+          "line": 229,
+          "quote": "THE DREAM SMILE PATHWAY"
+        }
+      ],
+      "risks": []
+    },
+    {
+      "id": "asset_led_real_media",
+      "claim": "Use actual DreamSmile/TIE/patient media assets, not generic placeholders.",
+      "verdict": "PASS",
+      "score": 78,
+      "must_patterns_matched": 1,
+      "must_patterns_total": 1,
+      "nice_patterns_matched": 1,
+      "evidence": [
+        {
+          "source": "Comments June 23",
+          "line": 23,
+          "quote": "Use the stuff that TIE already created\u2026this is not his patient nor is it what the guide looks like. The right stuff is on his website:"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 32,
+          "quote": "Use the actual \u201cDream Smile\u201d logo here (maybe center \u2018Introducing\u2019 and put the logo below? Or keep the same but just use the Dream Smile logo)"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 36,
+          "quote": "Find actual videos to go here. There\u2019s a bunch in this folder (that\u2019s linked to our drive): https://drive.google.com/drive/folders/1eY0NbJDYGTY9GislN8iYArmjrr2WVTdW?usp=drive_link"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 41,
+          "quote": "I like this section but I don\u2019t like that we have to scroll so much. Can you do this as bullet points and let\u2019s select one image of an actual patient smiling (ideally let\u2019s put the Dream Smile logo as a watermark in the image)"
+        },
+        {
+          "source": "Comments June 23",
+          "line": 269,
+          "quote": "Change this background image to perhaps a photo of someone smiling or a close up of their teeth, this image with the drill, is too cold and clinical and kind of scary. We want the photos to show the patients what they could achieve, focusing more on the result"
+        },
+        {
+          "source": "Design Direction Brief",
+          "line": 8,
+          "quote": "Multi-agent synthesis of the Jeffrey Burns knowledge base, client/reviewer complaints, current website source, media library, wireframes, and prior design-direction analysis."
+        },
+        {
+          "source": "Design Direction Brief",
+          "line": 16,
+          "quote": "> **Bright premium confidence:** warm, readable, grey/white/teal, proof-heavy, locally trustworthy, and built to convert older dental implant patients into calls or consultations."
+        },
+        {
+          "source": "Design Direction Brief",
+          "line": 20,
+          "quote": "> Dark luxury, generic dental-template polish, clinical procedure imagery, low-contrast grey-on-grey sections, oversized scrolling layouts, or abstract \u201cpremium\u201d design that ignores the real DreamSmile\u2122 assets."
+        }
+      ],
+      "risks": [
+        {
+          "source": "Comments June 23",
+          "line": 23,
+          "quote": "Use the stuff that TIE already created\u2026this is not his patient nor is it what the guide looks like. The right stuff is on his website:"
+        },
+        {
+          "source": "Design Direction Brief",
+          "line": 20,
+          "quote": "> Dark luxury, generic dental-template polish, clinical procedure imagery, low-contrast grey-on-grey sections, oversized scrolling layouts, or abstract \u201cpremium\u201d design that ignores the real DreamSmile\u2122 assets."
+        },
+        {
+          "source": "Design Direction Brief",
+          "line": 28,
+          "quote": "| Imagery | Full-face smiling patients, Dr. Burns smiling in doctor attire, before/after proof, diagrams where needed | Drills, surgery, raw mouth/procedure shots, cold clinical chairs, generic stock |"
+        },
+        {
+          "source": "Design Direction Brief",
+          "line": 29,
+          "quote": "| Brand | DreamSmile\u2122 as named product, official DreamSmile\u2122 logo, Burns Protocol as mechanism | \u201cDream Smile\u201d inconsistency, generic dental implant language |"
+        }
+      ]
+    }
+  ],
+  "source_facts": {
+    "source_file_count": 188,
+    "has_teal_74bdc2": true,
+    "has_grey_3e3e3e": true,
+    "has_black_tokens": true,
+    "mp4_count": 18,
+    "image_count": 23
+  },
+  "media_facts": {
+    "media_file_count": 344,
+    "media_gb": 21.37,
+    "dreamsmile_logo_paths": [
+      "Media/Website Images - Dr. Jeff Burns/wp-content/uploads/2026/01/DREAM-SMILE-LOGO-1-copy.png"
+    ],
+    "testimonial_count": 39,
+    "dreamsmile_media_count": 7
+  },
+  "brief_checks": {
+    "DreamSmile\u2122": true,
+    "#74bdc2": true,
+    "#3e3e3e": true,
+    "98%": true,
+    "personal cell": true,
+    "Same Day Teeth": true,
+    "As Seen On": true,
+    "540-740-8937": true,
+    "Traditional Dental Implants": true,
+    "older": true
+  },
+  "nuances": [
+    {
+      "claim_id": "color_light_grey_teal",
+      "nuance": [
+        {
+          "source": "Comments April 20",
+          "line": 143,
+          "quote": "The layout on this is very clean and pretty, however let\u2019s do the background in the dark color originally selected for this section as Dr. Burns wanted more greys on his website and not all light colors:"
+        }
+      ]
+    },
+    {
+      "claim_id": "dreamsmile_brand",
+      "nuance": [
+        {
+          "source": "Comments June 23",
+          "line": 55,
+          "quote": "Add a space between Dream and Smile and add \u2122"
+        }
+      ]
+    },
+    {
+      "claim_id": "proof_substantiated",
+      "nuance": [
+        {
+          "source": "UVP Document",
+          "line": 304,
+          "quote": "NOT STRONG"
+        },
+        {
+          "source": "UVP Document",
+          "line": 305,
+          "quote": "Statements or claims that are difficult to measure or describe or that are generic"
+        }
+      ]
+    },
+    {
+      "claim_id": "direct_response_pages",
+      "nuance": [
+        {
+          "source": "Updated Page List",
+          "line": 1,
+          "quote": "Every Page Should Be a Landing Page - (Except the blogs and certain pages)"
+        },
+        {
+          "source": "Updated Page List",
+          "line": 44,
+          "quote": "Resources *These pages will not be a direct response, they are just extra information for the patients. They will be able to be accessed from the menu drop down."
+        }
+      ]
+    },
+    {
+      "claim_id": "asset_led_real_media",
+      "nuance": [
+        {
+          "source": "Comments June 23",
+          "line": 23,
+          "quote": "Use the stuff that TIE already created\u2026this is not his patient nor is it what the guide looks like. The right stuff is on his website:"
+        },
+        {
+          "source": "Design Direction Brief",
+          "line": 20,
+          "quote": "> Dark luxury, generic dental-template polish, clinical procedure imagery, low-contrast grey-on-grey sections, oversized scrolling layouts, or abstract \u201cpremium\u201d design that ignores the real DreamSmile\u2122 assets."
+        },
+        {
+          "source": "Design Direction Brief",
+          "line": 28,
+          "quote": "| Imagery | Full-face smiling patients, Dr. Burns smiling in doctor attire, before/after proof, diagrams where needed | Drills, surgery, raw mouth/procedure shots, cold clinical chairs, generic stock |"
+        },
+        {
+          "source": "Design Direction Brief",
+          "line": 29,
+          "quote": "| Brand | DreamSmile\u2122 as named product, official DreamSmile\u2122 logo, Burns Protocol as mechanism | \u201cDream Smile\u201d inconsistency, generic dental implant language |"
+        }
+      ]
+    }
+  ]
+}
