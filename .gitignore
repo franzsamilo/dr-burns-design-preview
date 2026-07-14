@@ -1,0 +1,13 @@
+# Claude Code personal/local overrides (machine-specific, not shared)
+.claude/settings.local.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+
+# Dependencies / build output
+node_modules/
+dist/
+build/
+.next/
