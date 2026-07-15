@@ -893,3 +893,22 @@ ol.steps li:hover .n{transform:scale(1.08)}
   .dsis-item.flip{flex-direction:column;text-align:center;align-items:center}
   .dsis-item.flip .dsis-tx{margin:0}
 }
+
+/* ---- Fix mobile horizontal overflow: the editorial directional slide uses
+   translateX, which pushes the full-width image past the viewport once the
+   blocks stack. Below the single-column breakpoint, rise vertically instead. */
+@media(max-width:960px){
+  .edit-block.reveal .edit-media,
+  .edit-block.flip.reveal .edit-media{transform:translateY(24px)}
+}
+
+/* ---- Fix narrow-phone (<=390px) header overflow: logo + CTA + burger were
+   wider than the viewport. Tighten them so everything fits down to 360px. */
+@media(max-width:560px){
+  .brand img{height:38px}
+  .nav-in{gap:10px}
+  .nav-cta-btn{padding:9px 13px;font-size:.68rem;letter-spacing:.05em}
+}
+@media(max-width:360px){
+  .nav-cta-btn{padding:9px 11px;font-size:.62rem}
+}
