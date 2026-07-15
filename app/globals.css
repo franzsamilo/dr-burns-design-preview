@@ -980,3 +980,39 @@ h2{font-size:clamp(1.95rem,4vw,3.2rem);letter-spacing:-.016em}
 .ba-handle:focus-visible{outline:3px solid var(--teal-brand);outline-offset:3px}
 .ba-handle svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
 .ba-note{text-align:center;color:var(--body);font-size:.82rem;margin:15px auto 0;max-width:46ch}
+
+/* ============================================================
+   NEW DIRECTION v2 — the "arch" design system + editorial index
+   Cascades across both pages. Same palette, same conversion.
+   ============================================================ */
+
+/* ---- Auto-numbered editorial section index (no markup needed) ---- */
+body{counter-reset:sec}
+.sec-head{counter-increment:sec}
+.sec-head::before{content:counter(sec,decimal-leading-zero);
+  display:block;font-family:'Amiri',Georgia,serif;font-weight:700;
+  font-size:clamp(2.4rem,5.5vw,4.2rem);line-height:.8;letter-spacing:.04em;
+  color:transparent;-webkit-text-stroke:1.4px var(--teal-brand);opacity:.38;margin-bottom:12px}
+.warranty .sec-head::before,.bandaid .sec-head::before{opacity:.5}
+
+/* ---- Section title accent: flat rule -> ARCH mark (the motif) ---- */
+.sec-head h2::after{width:54px;height:27px;margin-top:18px;border-radius:120px 120px 0 0;
+  background:transparent;border:3px solid var(--teal-brand);border-bottom:0}
+
+/* ---- Arch language across the card system ---- */
+.svc-card{border-radius:clamp(48px,5.5vw,90px) clamp(48px,5.5vw,90px) var(--radius) var(--radius)}
+.test-card{border-radius:clamp(42px,5vw,74px) clamp(42px,5vw,74px) var(--radius-sm) var(--radius-sm)}
+.statband{border-radius:clamp(54px,6.5vw,104px) clamp(54px,6.5vw,104px) var(--radius) var(--radius)}
+.smile-track figure{border-radius:clamp(48px,6vw,82px) clamp(48px,6vw,82px) 12px 12px}
+.ba-slider{border-radius:clamp(54px,6.5vw,96px) clamp(54px,6.5vw,96px) var(--radius) var(--radius)}
+.faces-grid figure:first-child{border-top-left-radius:clamp(48px,6vw,90px)}
+.faces-grid figure:last-child{border-top-right-radius:clamp(48px,6vw,90px)}
+.faces-grid{border-radius:clamp(48px,6vw,90px) clamp(48px,6vw,90px) var(--radius-sm) var(--radius-sm)}
+
+/* ---- Editorial heading wipe: title reveals under its arch on scroll ---- */
+.sec-head h2{clip-path:inset(0 0 0 0);transition:clip-path .8s var(--ease)}
+.sec-head.reveal h2{clip-path:inset(0 0 100% 0)}
+.sec-head.is-in h2{clip-path:inset(0 0 0 0)}
+@media(prefers-reduced-motion:reduce){
+  .sec-head.reveal h2,.sec-head h2{clip-path:none;transition:none}
+}
