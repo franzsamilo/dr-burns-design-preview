@@ -24,6 +24,40 @@ function Cross() {
     </svg>
   );
 }
+const CRED_ICONS: Record<string, React.ReactNode> = {
+  medal: (
+    <>
+      <circle cx="12" cy="8" r="5" />
+      <path d="M8.5 12.5L7 21l5-3 5 3-1.5-8.5" />
+    </>
+  ),
+  cert: (
+    <>
+      <path d="M12 3l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V6l7-3z" />
+      <path d="M9 11l2 2 4-4" />
+    </>
+  ),
+  globe: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18" />
+    </>
+  ),
+  trophy: (
+    <>
+      <path d="M7 4h10v4a5 5 0 01-10 0V4z" />
+      <path d="M7 6H4a3 3 0 003 3M17 6h3a3 3 0 01-3 3" />
+      <path d="M12 13v4M9 20h6M10 20l.5-3h3l.5 3" />
+    </>
+  ),
+  clock: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5l3.5 2" />
+    </>
+  ),
+};
+
 const LOCAL_BUSINESS = {
   "@context": "https://schema.org",
   "@type": "Dentist",
@@ -121,8 +155,9 @@ export default function HomePage() {
             <span className="hero-arch-deco" aria-hidden="true" />
             <div className="hero-media">
               <img
-                src="/assets/img/dr-burns-smile.jpg"
-                alt="Dr. Jeffrey Burns laughing warmly in black scrubs by a bright window at his New Market, VA practice"
+                src="/assets/img/burns-hero-v2.jpg"
+                alt="Dr. Jeffrey Burns standing beside a smiling patient with her new DreamSmile at his New Market, VA practice"
+                style={{ objectPosition: "60% center" }}
               />
             </div>
             <div className="hero-seal" aria-hidden="true">
@@ -347,19 +382,19 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="badge-row">
+          <div className="cred-row">
             {[
-              "AACD Cosmetic Dentistry Award Winner",
-              "Advanced Implant Certification",
-              "Trained with the World's Top Implant Teams",
-              "People's Choice Award Winner",
-              "30+ Years Clinical Experience",
-            ].map((b) => (
-              <div className="tbadge" key={b}>
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z" />
-                </svg>
-                <span>{b}</span>
+              { t: "AACD Cosmetic Dentistry Award Winner", i: "medal", award: true },
+              { t: "Advanced Implant Certification", i: "cert" },
+              { t: "Trained with the World's Top Implant Teams", i: "globe" },
+              { t: "People's Choice Award Winner", i: "trophy", award: true },
+              { t: "30+ Years Clinical Experience", i: "clock" },
+            ].map((c) => (
+              <div className={"cred" + (c.award ? " is-award" : "")} key={c.t}>
+                <span className="cred-ic">
+                  <svg viewBox="0 0 24 24">{CRED_ICONS[c.i]}</svg>
+                </span>
+                <span className="cred-lbl">{c.t}</span>
               </div>
             ))}
           </div>
