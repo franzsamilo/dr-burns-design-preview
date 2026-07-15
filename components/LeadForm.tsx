@@ -13,6 +13,7 @@ import { useState } from "react";
 export function LeadForm() {
   const [busy, setBusy] = useState(false);
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState("");
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -21,14 +22,22 @@ export function LeadForm() {
       return;
     }
     setBusy(true);
+    setError("");
     const payload = Object.fromEntries(new FormData(e.currentTarget).entries());
     try {
-      // TODO(launch): POST `payload` to the practice CRM / Formspree / /api/lead.
-      await new Promise((r) => setTimeout(r, 650));
-      void payload;
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error("request failed");
+      setSent(true);
+    } catch {
+      setError(
+        "Something went wrong sending that. Please call 540-740-8937 and we'll help right away."
+      );
     } finally {
       setBusy(false);
-      setSent(true);
     }
   }
 
@@ -84,6 +93,11 @@ export function LeadForm() {
       <button className="btn btn-teal lf-submit" type="submit" disabled={busy}>
         {busy ? "Sending…" : "Request My Free Consult"}
       </button>
+      {error && (
+        <p className="lf-error" role="alert">
+          {error}
+        </p>
+      )}
       <div className="lf-trust">
         <span className="stars">★★★★★</span> Rated 5.0 by patients ·{" "}
         <a href="tel:5407408937">or call 540-740-8937</a>

@@ -748,3 +748,28 @@ ul.hero-ticks li{font-size:.92rem}
   .sticky-cta{transition:none}
   .reveal{filter:none;transform:none}
 }
+
+/* ---- Propagation + polish: implants page + free-guide balance ---- */
+/* Light hero (implants): trust row needs dark text, not the dark-hero white */
+.implants .hero-trust p{color:var(--body)}
+.implants .hero-trust b{color:var(--ink)}
+.implants .ht-avatars img{border-color:#fff;box-shadow:0 6px 14px -6px rgba(18,37,44,.4)}
+
+/* Lead form dropped into the pale quiz container reads as a white card */
+.quiz .lc-form{background:#fff;border:1px solid #e2ebee;
+  box-shadow:0 22px 44px -28px rgba(18,37,44,.42)}
+.quiz{align-items:stretch}
+.quiz .qhead{align-self:center}
+
+/* Form error fallback */
+.lf-error{color:#b4232a;font-size:.85rem;font-weight:600;margin:-4px 0 0}
+
+/* Free-guide card: center its content so it doesn't dangle beside the taller
+   form card (was leaving a gap between bullets and the button) */
+.leadgrid > .lc:not(.lc-form){justify-content:center}
+.leadgrid > .lc:not(.lc-form) .lc-foot{margin-top:22px}
+
+/* implants hero: the trust row added height, so open up the bottom so it
+   clears the peeking form card (keep a ~50px peek, not a full overlap) */
+.implants .hero .hero-grid{padding-bottom:clamp(104px,10vw,140px)}
+.quizwrap{margin-top:clamp(-58px,-4.6vw,-44px)}

@@ -5,6 +5,8 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { StickyCta } from "@/components/StickyCta";
 import { VideoWell } from "@/components/VideoWell";
 import { Reveal } from "@/components/Reveal";
+import { LeadForm } from "@/components/LeadForm";
+import { StatCounter } from "@/components/StatCounter";
 
 export const metadata: Metadata = {
   title: "Dental Implants Near New Market, VA | DreamSmile by Dr. Jeffrey Burns",
@@ -90,6 +92,17 @@ export default function DentalImplantsPage() {
                   Call Him
                 </a>
               </div>
+              <div className="hero-trust">
+                <div className="ht-avatars">
+                  {["review1", "review2", "review3"].map((f) => (
+                    <img key={f} src={`/assets/img/${f}.jpg`} alt="" aria-hidden="true" />
+                  ))}
+                </div>
+                <p>
+                  <span className="stars">★★★★★</span>
+                  <b>Rated 5.0</b> by patients across the Shenandoah Valley
+                </p>
+              </div>
             </div>
             <div className="hero-media">
               <img
@@ -105,31 +118,46 @@ export default function DentalImplantsPage() {
         <div className="wrap quizwrap" id="quiz">
           <div className="quiz">
             <div className="qhead">
-              <span className="eyebrow">Find out if you&apos;re a</span>
-              <h2>Candidate for Dental Implants</h2>
+              <span className="eyebrow">Free consultation</span>
+              <h2>See if you&apos;re a Candidate for Implants</h2>
               <p>
-                Answer a few quick questions to see if you qualify, and get our
-                pricing and information guide. No phone call required.
+                Tell us where to reach you. Dr. Burns&apos;s team will call with
+                an honest answer about your options and cost, and send our
+                pricing &amp; information guide.
               </p>
               <div className="qoutcome">
                 <img src="/assets/img/kelly-2026b.jpg" alt="A DreamSmile patient smiling after treatment" />
               </div>
             </div>
-            <div className="quiz-card">
-              <div className="qbody">
-                <div className="qq">
-                  What best describes your current condition?
-                </div>
-                {["I'm missing one tooth", "I'm missing multiple teeth", "I'm missing all of my teeth", "My teeth are failing"].map((o) => (
-                  <div className="quiz-opt" key={o}>
-                    <i />
-                    {o}
-                  </div>
-                ))}
-              </div>
-              <a className="quiz-next" href="#consult">
-                <span>Next &rarr;</span>
-              </a>
+            <LeadForm />
+          </div>
+        </div>
+
+        {/* PROOF BAND */}
+        <div className="wrap">
+          <div className="statband">
+            <div className="stat">
+              <span className="stat-num">
+                <StatCounter to={30} suffix="+" />
+              </span>
+              <span className="stat-lbl">Years placing implants</span>
+            </div>
+            <div className="stat">
+              <span className="stat-num">
+                <StatCounter to={98} suffix="%" />
+              </span>
+              <span className="stat-lbl">Implant success rate</span>
+            </div>
+            <div className="stat">
+              <span className="stat-num">
+                <StatCounter to={5} decimals={1} />
+                <span className="stat-star">★</span>
+              </span>
+              <span className="stat-lbl">Rated by patients</span>
+            </div>
+            <div className="stat">
+              <span className="stat-num">1&#8209;Day</span>
+              <span className="stat-lbl">New teeth, often</span>
             </div>
           </div>
         </div>
