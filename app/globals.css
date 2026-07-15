@@ -850,3 +850,33 @@ ul.hero-ticks li{font-size:.92rem}
   .edit-block.reveal .edit-media,
   .edit-block.reveal > div:not(.edit-media){opacity:1;transform:none}
 }
+
+/* ============================================================
+   HOMEPAGE — bring the weaker mid-page sections up to bar
+   ============================================================ */
+
+/* ---- Primary Services: static cards -> interactive, with image zoom
+   and an animated underline on the explore link ---- */
+.svc-img img{transition:transform .65s var(--ease)}
+.svc-card:hover .svc-img img{transform:scale(1.06)}
+.svc-body a{position:relative;width:fit-content;transition:color .2s}
+.svc-body a::after{content:"";position:absolute;left:0;bottom:-3px;height:2px;width:100%;
+  background:var(--cyan);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.svc-card:hover .svc-body a{color:var(--cyan)}
+.svc-card:hover .svc-body a::after{transform:scaleX(1)}
+
+/* ---- Homepage Burns Protocol: outlined serif circles -> filled gradient
+   number badges (matches the elevated implants treatment) ---- */
+ol.steps .n{border:none;
+  background:linear-gradient(140deg,rgba(116,189,194,.95),var(--teal));
+  color:#fff;font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;
+  box-shadow:0 12px 22px -10px rgba(34,109,122,.7);transition:transform .3s var(--ease)}
+ol.steps li:hover .n{transform:scale(1.08)}
+
+/* ---- "The DreamSmile is..." rows: give them a touch of interactivity ---- */
+.dsis-item{transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.dsis-item:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+
+@media(prefers-reduced-motion:reduce){
+  .svc-card:hover .svc-img img,ol.steps li:hover .n,.dsis-item:hover{transform:none}
+}
