@@ -63,7 +63,7 @@ nav.menu a:hover{color:var(--cyan)}
 
 /* 1. T1 HERO, dark split: copy left, doctor + patient photo right */
 .hero{position:relative;background:linear-gradient(125deg,#10242b 0%,#183a44 58%,#0f2126 100%);color:#fff;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,64px);align-items:center;padding:clamp(44px,5vw,72px) 0 clamp(92px,9vw,128px)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,64px);align-items:center;padding-block:clamp(44px,5vw,72px) clamp(92px,9vw,128px)}
 .hero .eyebrow{color:var(--teal-brand)}
 .hero h1{color:#fff;max-width:15ch;margin:14px 0 8px}
 .hero h1 em{font-family:'Amiri',Georgia,serif;font-style:italic;font-weight:400;color:var(--teal-brand)}
@@ -249,7 +249,7 @@ ol.steps p{color:rgba(255,255,255,.76);font-size:.9rem;max-width:52ch}
 
 footer.ft{background:#0f2126;color:#fff;padding:66px 0 30px}
 .ft-top{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.2fr;gap:38px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.12)}
-.ft-brand img{height:42px;margin-bottom:16px}
+.ft-brand img{height:44px;width:auto;margin-bottom:16px;filter:brightness(0) invert(1);opacity:.92}
 .ft-brand p{color:rgba(255,255,255,.62);font-size:.9rem;max-width:34ch}
 .ft-social{display:flex;gap:12px;margin-top:20px}
 .ft-social a{display:grid;place-items:center;width:38px;height:38px;border-radius:999px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);transition:background .2s}
@@ -569,7 +569,7 @@ nav.menu{flex:1 1 auto;justify-content:center;gap:18px}
 /* Undo the viewport-height hero centering that created a big top gap */
 .hero{min-height:auto}
 .hero .hero-grid{min-height:auto;align-content:initial;
-  padding:clamp(30px,4vw,52px) 0 clamp(84px,8vw,116px)}
+  padding-block:clamp(30px,4vw,52px) clamp(84px,8vw,116px)}
 
 /* ---- nav overflow + hero top-gap refinements ---- */
 nav.menu{gap:clamp(12px,1.3vw,20px)}

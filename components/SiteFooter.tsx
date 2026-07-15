@@ -5,7 +5,7 @@ export function SiteFooter() {
       <div className="wrap">
         <div className="ft-top">
           <div className="ft-brand">
-            <img src="/assets/img/logo-white.png" alt="Jeffrey S. Burns DDS" />
+            <img src="/assets/img/logo.png" alt="Jeffrey S. Burns DDS" />
             <p>
               Full-arch dental implants and the DreamSmile&trade;, plus complete
               general and cosmetic care, serving New Market, Harrisonburg,
