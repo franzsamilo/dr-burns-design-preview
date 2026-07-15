@@ -584,3 +584,26 @@ nav.menu{gap:clamp(12px,1.3vw,20px)}
 
 /* settle: quiz sits just under the single-row CTAs and peeks ~70px */
 .quizwrap{margin-top:clamp(-60px,-4.6vw,-42px)}
+
+/* ============================================================
+   Intro / entrance animations
+   ============================================================ */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.is-in{opacity:1;transform:none}
+
+/* Hero load-in, staggered */
+@keyframes heroIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@keyframes heroMediaIn{from{opacity:0;transform:translateY(24px) scale(.985)}to{opacity:1;transform:none}}
+.hero-grid > div:first-child > *{animation:heroIn .7s var(--ease) both}
+.hero-grid > div:first-child > *:nth-child(1){animation-delay:.06s}
+.hero-grid > div:first-child > *:nth-child(2){animation-delay:.13s}
+.hero-grid > div:first-child > *:nth-child(3){animation-delay:.20s}
+.hero-grid > div:first-child > *:nth-child(4){animation-delay:.27s}
+.hero-grid > div:first-child > *:nth-child(5){animation-delay:.34s}
+.hero-grid > div:first-child > *:nth-child(6){animation-delay:.41s}
+.hero-media{animation:heroMediaIn .9s var(--ease) both;animation-delay:.18s}
+
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1 !important;transform:none !important;transition:none}
+  .hero-grid > div:first-child > *,.hero-media{animation:none}
+}

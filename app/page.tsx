@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { StickyCta } from "@/components/StickyCta";
 import { VideoWell } from "@/components/VideoWell";
+import { Reveal } from "@/components/Reveal";
 
 function Check() {
   return (
@@ -745,6 +746,7 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS) }}
       />
+      <Reveal />
     </>
   );
 }

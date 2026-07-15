@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { StickyCta } from "@/components/StickyCta";
 import { VideoWell } from "@/components/VideoWell";
+import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Dental Implants Near New Market, VA | DreamSmile by Dr. Jeffrey Burns",
@@ -432,6 +433,7 @@ export default function DentalImplantsPage() {
       </main>
       <SiteFooter />
       <StickyCta />
+      <Reveal />
     </>
   );
 }
