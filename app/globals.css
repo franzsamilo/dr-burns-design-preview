@@ -607,3 +607,25 @@ nav.menu{gap:clamp(12px,1.3vw,20px)}
   .reveal{opacity:1 !important;transform:none !important;transition:none}
   .hero-grid > div:first-child > *,.hero-media{animation:none}
 }
+
+/* ============================================================
+   Compact hero — was too tall; shrink so it fits the viewport and
+   the lead-card peek reliably shows on laptops.
+   ============================================================ */
+.hero h1{font-size:clamp(2rem,3.7vw,3.1rem);margin:10px 0 6px}
+.hero .sub{font-size:clamp(1.12rem,1.9vw,1.48rem);margin-bottom:9px}
+.hero .lede{font-size:1rem;margin-bottom:12px;max-width:44ch}
+ul.hero-ticks{margin:4px 0 18px;gap:7px}
+ul.hero-ticks li{font-size:.92rem}
+.hero .hero-grid{align-items:center;padding-top:clamp(18px,2.2vw,30px);padding-bottom:clamp(58px,5.4vw,82px);gap:clamp(26px,4vw,50px)}
+.hero-media{aspect-ratio:5/4}
+.leadwrap{margin-top:clamp(-96px,-8vw,-64px)}
+/* implant hero also compacts + keeps its quiz peek */
+.implants .hero .hero-grid{padding-bottom:clamp(40px,4.6vw,66px)}
+.quizwrap{margin-top:clamp(-84px,-6.6vw,-60px)}
+
+/* back off the overlap so peeking cards clear the hero CTAs */
+.leadwrap{margin-top:clamp(-72px,-5.6vw,-52px)}
+
+/* final: clear the CTAs with a comfortable gap, still peeks on laptops */
+.leadwrap{margin-top:clamp(-52px,-4.2vw,-38px)}
