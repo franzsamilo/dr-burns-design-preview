@@ -155,9 +155,8 @@ export default function HomePage() {
             <span className="hero-arch-deco" aria-hidden="true" />
             <div className="hero-media">
               <img
-                src="/assets/img/burns-hero-v2.jpg"
-                alt="Dr. Jeffrey Burns standing beside a smiling patient with her new DreamSmile at his New Market, VA practice"
-                style={{ objectPosition: "60% center" }}
+                src="/assets/img/dr-burns-smile.jpg"
+                alt="Dr. Jeffrey Burns laughing warmly in black scrubs at his New Market, VA practice"
               />
             </div>
             <div className="hero-seal" aria-hidden="true">
@@ -538,7 +537,7 @@ export default function HomePage() {
           <div className="dark-media">
             <VideoWell
               src="/assets/video/about-dr-burns.mp4"
-              poster="/assets/img/dr-burns-smile.jpg"
+              poster="/assets/img/hero-burns.jpg"
               alt="Meet Dr. Burns: the story behind the Burns Protocol"
               ratio="4/5"
             />

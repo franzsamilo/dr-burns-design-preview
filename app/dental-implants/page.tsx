@@ -265,7 +265,7 @@ export default function DentalImplantsPage() {
         <section className="protocol" id="protocol">
           <div className="wrap protocol-grid">
             <div className="protocol-media">
-              <img src="/assets/img/bts.jpg" alt="Dr. Burns at work during a dental implant procedure" />
+              <img src="/assets/img/burns-protocol-craft-1.jpg" alt="Dr. Burns hand-shading a dental restoration to match a natural smile" />
             </div>
             <div>
               <span className="eyebrow">The Burns Protocol</span>
