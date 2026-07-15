@@ -8,6 +8,8 @@ import { Reveal } from "@/components/Reveal";
 import { LeadForm } from "@/components/LeadForm";
 import { StatCounter } from "@/components/StatCounter";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
+import { CostSection } from "@/components/CostSection";
+import { ReviewsBand } from "@/components/ReviewsBand";
 
 export const metadata: Metadata = {
   title: "Dental Implants Near New Market, VA | DreamSmile by Dr. Jeffrey Burns",
@@ -310,10 +312,12 @@ export default function DentalImplantsPage() {
                 <h2>Implant solutions tailored to your mouth</h2>
                 <p>
                   One tooth, several teeth, or a full arch: there&apos;s no
-                  single answer for everyone. That&apos;s why every case starts
-                  with a 3D scan and an honest conversation. If a bridge or
-                  another option serves you better, Dr. Burns will tell you. After
-                  30+ years, he has nothing to prove and no quota to hit.
+                  single answer for everyone. For a whole jaw, <b>All-on-4</b>{" "}
+                  anchors a full set of fixed teeth on just four implants — often
+                  the same day. Every case starts with a 3D scan and an honest
+                  conversation. If a bridge or another option serves you better,
+                  Dr. Burns will tell you. After 30+ years, he has nothing to
+                  prove and no quota to hit.
                 </p>
               </div>
               <div className="edit-media">
@@ -383,62 +387,8 @@ export default function DentalImplantsPage() {
           </div>
         </section>
 
-        {/* COST / FINANCING — answers the #1 objection */}
-        <section id="cost">
-          <div className="wrap cost-grid">
-            <div className="cost-media">
-              <img
-                src="/assets/img/burns-consult.jpg"
-                alt="Dr. Burns talking a patient through implant cost and financing"
-              />
-            </div>
-            <div>
-              <span className="eyebrow">The cost conversation, handled</span>
-              <h2>Care that fits your budget, in writing</h2>
-              <p>
-                The price of implants shouldn&apos;t be a mystery. Dr. Burns
-                shows you the whole number before anything begins — then helps
-                you make it work.
-              </p>
-              <ul className="cost-list">
-                <li>
-                  <span className="ck">
-                    <Check />
-                  </span>
-                  <div>
-                    <b>Flexible financing.</b> Monthly plans so you can start now
-                    and pay over time.
-                  </div>
-                </li>
-                <li>
-                  <span className="ck">
-                    <Check />
-                  </span>
-                  <div>
-                    <b>Every cost up front.</b> A clear written quote at your free
-                    consult — no hidden fees, no surprise add-ons.
-                  </div>
-                </li>
-                <li>
-                  <span className="ck">
-                    <Check />
-                  </span>
-                  <div>
-                    <b>Insurance, decoded.</b> We help you get the most from the
-                    benefits you already have.
-                  </div>
-                </li>
-              </ul>
-              <div className="cost-note">
-                Individual implants from <b>$1,500</b> — your exact quote comes at
-                your free consultation.
-              </div>
-              <a className="btn btn-tan" href="#quiz">
-                Get My Written Quote
-              </a>
-            </div>
-          </div>
-        </section>
+        {/* COST / FINANCING */}
+        <CostSection />
 
         {/* MEET THE DOCTOR — dark */}
         <section className="biosec" id="doctor">
@@ -461,8 +411,11 @@ export default function DentalImplantsPage() {
                 who&apos;s holding the instruments. Dr. Burns has placed and
                 restored implants in the Shenandoah Valley for more than three
                 decades, developed The Burns Protocol that other doctors travel
-                to learn, and earned an AACD award along the way. What patients
-                mention most, though, isn&apos;t the resume. It&apos;s that he
+                to learn, trained at the Midwest Implant Institute, and took home
+                two golds, a silver, and the People&apos;s Choice Award at the
+                American Academy of Cosmetic Dentistry&apos;s 2006 conference.
+                What patients mention most, though, isn&apos;t the resume.
+                It&apos;s that he
                 listens first, explains everything in plain English, and hands
                 every DreamSmile&trade; patient his personal cell number.
               </p>
@@ -530,6 +483,9 @@ export default function DentalImplantsPage() {
             </div>
           </div>
         </section>
+
+        {/* PATIENT REVIEWS */}
+        <ReviewsBand />
 
         {/* FINAL CTA */}
         <section className="final" id="final">

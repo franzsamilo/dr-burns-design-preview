@@ -7,6 +7,8 @@ import { Reveal } from "@/components/Reveal";
 import { LeadForm } from "@/components/LeadForm";
 import { StatCounter } from "@/components/StatCounter";
 import { SmileMarquee } from "@/components/SmileMarquee";
+import { CostSection } from "@/components/CostSection";
+import { ReviewsBand } from "@/components/ReviewsBand";
 
 function Check() {
   return (
@@ -686,6 +688,9 @@ export default function HomePage() {
       {/* 13b. WALL OF SMILES */}
       <SmileMarquee />
 
+      {/* 13c. PATIENT REVIEWS */}
+      <ReviewsBand />
+
       {/* 14. MEET THE DOCTOR */}
       <section className="dark-feature bio" id="doctor">
         <div className="wrap dark-grid">
@@ -700,8 +705,10 @@ export default function HomePage() {
             <p>
               Dr. Burns has practiced in New Market for more than 30 years, with
               a passion for restoring smiles and the patience to explain every
-              step in plain English. He earned an AACD award along the way and
-              developed The Burns Protocol that other doctors travel to learn.
+              step in plain English. He trained at the Midwest Implant Institute
+              and won two golds, a silver, and the People&apos;s Choice Award at
+              the American Academy of Cosmetic Dentistry&apos;s 2006 conference,
+              and developed The Burns Protocol that other doctors travel to learn.
               What patients mention most, though, isn&apos;t the resume. It&apos;s
               that he listens first, tells you the truth about your options, and
               hands every DreamSmile&trade; patient his personal cell number.
@@ -744,6 +751,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <CostSection />
 
       {/* FAQ */}
       <section className="faq" id="faq">

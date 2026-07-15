@@ -1094,3 +1094,16 @@ body{counter-reset:sec}
   padding:13px 18px;color:var(--ink);font-size:.96rem;margin:4px 0 22px}
 .cost-note b{color:var(--teal);font-size:1.18rem;font-family:'Amiri',Georgia,serif}
 @media(max-width:960px){.cost-grid{grid-template-columns:1fr;gap:30px}}
+
+/* ---- Patient reviews band (real Google reviews) ---- */
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.rev-card{background:#fff;box-shadow:var(--shadow-card);padding:clamp(28px,3.5vw,44px);
+  border-radius:clamp(42px,5vw,74px) clamp(42px,5vw,74px) var(--radius) var(--radius);
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.rev-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.rev-card .stars{color:#f5b942;letter-spacing:2px;font-size:1.05rem}
+.rev-card p{font-family:'Amiri',Georgia,serif;font-size:clamp(1.15rem,1.7vw,1.42rem);color:var(--ink);
+  line-height:1.5;margin:14px 0 16px;max-width:none}
+.rev-card cite{font-style:normal;font-weight:800;font-size:.76rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--teal)}
+@media(max-width:700px){.rev-grid{grid-template-columns:1fr;gap:16px}}
