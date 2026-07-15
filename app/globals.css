@@ -549,3 +549,28 @@ h2{font-size:clamp(2.05rem,3.9vw,3.15rem);letter-spacing:-.013em}
   transition:opacity .45s var(--ease),transform .45s var(--ease)}
 .hero-peek.is-hidden{opacity:0;transform:translateX(-50%) translateY(26px);pointer-events:none;animation:none}
 @media(max-width:680px){.hero-peek{display:none}}
+
+/* ---- nav + hero spacing fixes ---- */
+/* Logo was collapsing to 0 width as a flex child — pin it */
+.brand{flex:none}
+.brand img{flex:none;width:auto;height:46px}
+.nav-in{gap:26px}
+nav.menu{flex:1 1 auto;justify-content:center;gap:18px}
+.nav-right{flex:none}
+
+/* Undo the viewport-height hero centering that created a big top gap */
+.hero{min-height:auto}
+.hero .hero-grid{min-height:auto;align-content:initial;
+  padding:clamp(30px,4vw,52px) 0 clamp(84px,8vw,116px)}
+
+/* ---- nav overflow + hero top-gap refinements ---- */
+nav.menu{gap:clamp(12px,1.3vw,20px)}
+.nav-in{gap:20px}
+.nav-cta-btn{padding:12px 20px}
+/* Top-align hero content so the headline sits just under the nav (kills dead space) */
+.hero .hero-grid{align-items:start;padding-top:clamp(26px,3vw,42px)}
+.hero .hero-grid > div:last-child{align-self:center}
+
+/* Hero is a <section>, so it was getting the global section padding PLUS the
+   hero-grid padding (double top gap). Let the grid own the spacing. */
+.hero{padding:0}

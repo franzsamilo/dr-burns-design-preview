@@ -32,7 +32,7 @@ export function SiteHeader() {
             540-740-8937
           </a>
           <a className="nav-cta-btn" href="#consult">
-            Schedule My Free Consultation
+            Free Consultation
           </a>
           <button
             className="burger"
