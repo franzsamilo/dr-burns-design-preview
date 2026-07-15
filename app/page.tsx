@@ -111,7 +111,7 @@ export default function HomePage() {
               </div>
               <p>
                 <span className="stars">★★★★★</span>
-                <b>Rated 5.0</b> by patients across the Shenandoah Valley
+                <b>Rated 5.0</b> from 260+ patient reviews
               </p>
             </div>
           </div>
@@ -187,7 +187,7 @@ export default function HomePage() {
               <StatCounter to={5} decimals={1} />
               <span className="stat-star">★</span>
             </span>
-            <span className="stat-lbl">Rated by patients</span>
+            <span className="stat-lbl">From 260+ reviews</span>
           </div>
           <div className="stat">
             <span className="stat-num">1&#8209;Day</span>
@@ -341,8 +341,7 @@ export default function HomePage() {
                 quota.
               </p>
               <div className="gbadge">
-                <span className="stars">★★★★★</span> Rated 5.0 by patients on
-                Google
+                <span className="stars">★★★★★</span> Rated 5.0 on Google, 260+ reviews
               </div>
             </div>
           </div>

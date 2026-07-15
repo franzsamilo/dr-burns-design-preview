@@ -101,7 +101,7 @@ export default function DentalImplantsPage() {
                 </div>
                 <p>
                   <span className="stars">★★★★★</span>
-                  <b>Rated 5.0</b> by patients across the Shenandoah Valley
+                  <b>Rated 5.0</b> from 260+ patient reviews
                 </p>
               </div>
             </div>
@@ -161,7 +161,7 @@ export default function DentalImplantsPage() {
                 <StatCounter to={5} decimals={1} />
                 <span className="stat-star">★</span>
               </span>
-              <span className="stat-lbl">Rated by patients</span>
+              <span className="stat-lbl">From 260+ reviews</span>
             </div>
             <div className="stat">
               <span className="stat-num">1&#8209;Day</span>
@@ -184,8 +184,7 @@ export default function DentalImplantsPage() {
                 <cite>Jill Bush &middot; DreamSmile&trade; patient</cite>
               </blockquote>
               <div className="gbadge">
-                <span className="stars">★★★★★</span> Rated 5.0 by patients on
-                Google
+                <span className="stars">★★★★★</span> Rated 5.0 on Google, 260+ reviews
               </div>
             </div>
             <div className="story-media">
@@ -379,6 +378,63 @@ export default function DentalImplantsPage() {
               <b>Get the full picture, including cost, in our free guide.</b>
               <a className="btn btn-teal" href="#quiz">
                 Get the Pricing &amp; Information Guide
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* COST / FINANCING — answers the #1 objection */}
+        <section id="cost">
+          <div className="wrap cost-grid">
+            <div className="cost-media">
+              <img
+                src="/assets/img/burns-consult.jpg"
+                alt="Dr. Burns talking a patient through implant cost and financing"
+              />
+            </div>
+            <div>
+              <span className="eyebrow">The cost conversation, handled</span>
+              <h2>Care that fits your budget, in writing</h2>
+              <p>
+                The price of implants shouldn&apos;t be a mystery. Dr. Burns
+                shows you the whole number before anything begins — then helps
+                you make it work.
+              </p>
+              <ul className="cost-list">
+                <li>
+                  <span className="ck">
+                    <Check />
+                  </span>
+                  <div>
+                    <b>Flexible financing.</b> Monthly plans so you can start now
+                    and pay over time.
+                  </div>
+                </li>
+                <li>
+                  <span className="ck">
+                    <Check />
+                  </span>
+                  <div>
+                    <b>Every cost up front.</b> A clear written quote at your free
+                    consult — no hidden fees, no surprise add-ons.
+                  </div>
+                </li>
+                <li>
+                  <span className="ck">
+                    <Check />
+                  </span>
+                  <div>
+                    <b>Insurance, decoded.</b> We help you get the most from the
+                    benefits you already have.
+                  </div>
+                </li>
+              </ul>
+              <div className="cost-note">
+                Individual implants from <b>$1,500</b> — your exact quote comes at
+                your free consultation.
+              </div>
+              <a className="btn btn-tan" href="#quiz">
+                Get My Written Quote
               </a>
             </div>
           </div>

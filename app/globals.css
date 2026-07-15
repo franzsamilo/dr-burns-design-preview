@@ -1078,3 +1078,19 @@ body{counter-reset:sec}
 
 /* mobile: drop the decorations, keep the portal image + clean stack */
 @media(max-width:900px){.hero-seal,.hero-arch-deco{display:none}}
+
+/* ---- Cost / financing section: answers the price objection ---- */
+.cost-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,4vw,58px);align-items:center}
+.cost-media{overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;
+  border-radius:clamp(90px,15vw,190px) clamp(90px,15vw,190px) var(--radius) var(--radius)}
+.cost-media img{width:100%;height:100%;object-fit:cover}
+.cost-list{list-style:none;margin:20px 0;display:flex;flex-direction:column;gap:15px}
+.cost-list li{display:flex;gap:13px;align-items:flex-start;color:var(--body);font-size:1rem}
+.cost-list .ck{flex:none;width:26px;height:26px;border-radius:999px;background:var(--pale);
+  display:grid;place-items:center;margin-top:1px}
+.cost-list .ck svg{width:15px;height:15px;stroke:var(--teal);fill:none;stroke-width:2.6}
+.cost-list b{color:var(--ink)}
+.cost-note{display:inline-block;background:var(--pale);border:1px solid var(--pale2);border-radius:14px;
+  padding:13px 18px;color:var(--ink);font-size:.96rem;margin:4px 0 22px}
+.cost-note b{color:var(--teal);font-size:1.18rem;font-family:'Amiri',Georgia,serif}
+@media(max-width:960px){.cost-grid{grid-template-columns:1fr;gap:30px}}
