@@ -476,7 +476,7 @@ export default function HomePage() {
           <div className="dark-media">
             <VideoWell
               src="/assets/video/about-dr-burns.mp4"
-              poster="/assets/img/burns-protocol-craft-1.jpg"
+              poster="/assets/img/dr-burns-smile.jpg"
               alt="Meet Dr. Burns: the story behind the Burns Protocol"
               ratio="4/5"
             />
@@ -581,7 +581,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="promise-media">
-            <img src="/assets/img/angela-2026b.jpg" alt="Angela, a smiling DreamSmile patient of Dr. Burns" />
+            <img src="/assets/img/dreamsmile-commercial.jpg" alt="A smiling DreamSmile patient, at home and confident" />
           </div>
         </div>
       </section>

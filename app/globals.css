@@ -459,3 +459,55 @@ nav.menu a:hover::after{transform:scaleX(1)}
   .jcap,.test-card,.vwell .play,nav.menu a::after{transition:none}
   .jcap:hover,.test-card:hover{transform:none}
 }
+
+/* ============================================================
+   v2 — differentiated typography, texture & depth (feedback pass)
+   ============================================================ */
+
+/* Layered light background: soft teal glow instead of a flat fill */
+body{
+  background:
+    radial-gradient(1100px 560px at 88% -8%, rgba(116,189,194,.18), transparent 60%),
+    radial-gradient(820px 460px at -12% 18%, rgba(116,189,194,.10), transparent 55%),
+    var(--bg);
+  background-attachment:fixed;
+}
+
+/* Differentiated eyebrow: editorial leading rule + tighter rhythm */
+.eyebrow{display:inline-flex;align-items:center;gap:12px}
+.eyebrow::before{content:'';width:26px;height:2px;background:currentColor;opacity:.65;border-radius:2px}
+.sec-head .eyebrow{justify-content:center}
+
+/* More confident heading scale + a signature accent under section titles */
+h1{font-size:clamp(2.5rem,5vw,4.1rem);letter-spacing:-.02em}
+h2{font-size:clamp(2.05rem,3.9vw,3.15rem);letter-spacing:-.013em}
+.sec-head h2{position:relative;display:inline-block}
+.sec-head h2::after{content:'';display:block;width:56px;height:3px;margin:16px auto 0;border-radius:3px;
+  background:linear-gradient(90deg,var(--teal-brand),var(--teal))}
+
+/* Bigger DreamSmile banner in the Introducing section */
+.introds .dslogo{height:clamp(88px,11vw,132px)}
+
+/* Depth: inner highlight + refined shadow on light cards */
+.lc,.svc-card,.war,.promise-card,.dsis-item,.ba,.faq-item,.quiz,.quiz-card,.jcap{
+  box-shadow:0 1px 0 rgba(255,255,255,.75) inset, var(--shadow-card);
+}
+
+/* "You Deserve Better" — dark, textured section (client: more greys, less flat) */
+.bandaid{background:linear-gradient(160deg,#10242b,#183a44);position:relative;overflow:hidden}
+.bandaid .sec-head h2,.bandaid .sec-head .eyebrow{color:#fff}
+.bandaid .sec-head p{color:rgba(255,255,255,.82)}
+.bandaid .ba{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);box-shadow:none}
+.bandaid .ba h3{color:#fff}
+.bandaid .ba p{color:rgba(255,255,255,.72)}
+.bandaid .ba-ic{background:rgba(116,189,194,.16)}
+.bandaid .ba-ic svg{stroke:var(--teal-brand)}
+/* faint smile-arc echo at the base of the dark section */
+.bandaid::after{content:'';position:absolute;left:50%;bottom:-46%;width:130%;height:82%;transform:translateX(-50%);
+  border-radius:50%;border-top:2px solid rgba(116,189,194,.16);pointer-events:none}
+
+/* Section rhythm: hairline separators between adjacent light sections */
+#services,#compare,#promise{border-top:1px solid rgba(18,37,44,.06)}
+
+/* Crisper logo rendering at small sizes */
+.brand img,.ft-brand img{image-rendering:auto}
