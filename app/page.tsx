@@ -2,6 +2,7 @@
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { StickyCta } from "@/components/StickyCta";
+import { VideoWell } from "@/components/VideoWell";
 
 function Check() {
   return (
@@ -17,27 +18,6 @@ function Cross() {
     </svg>
   );
 }
-function VideoPoster({
-  poster,
-  alt,
-  ratio,
-}: {
-  poster: string;
-  alt: string;
-  ratio?: string;
-}) {
-  return (
-    <div className="vwell" role="img" aria-label={alt} style={ratio ? { aspectRatio: ratio } : undefined}>
-      <img src={poster} alt={alt} />
-      <span className="play" aria-hidden>
-        <svg viewBox="0 0 24 24">
-          <path d="M8 5v14l11-7z" />
-        </svg>
-      </span>
-    </div>
-  );
-}
-
 const LOCAL_BUSINESS = {
   "@context": "https://schema.org",
   "@type": "Dentist",
@@ -318,9 +298,10 @@ export default function HomePage() {
         <div className="wrap">
           <div className="authority-grid">
             <div className="vidwell">
-              <VideoPoster
+              <VideoWell
+                src="/assets/video/practice-film.mp4"
                 poster="/assets/img/burns-consult.jpg"
-                alt="A short film tour of the practice"
+                alt="A short film tour of the Burns dental practice"
                 ratio="16/10"
               />
             </div>
@@ -493,9 +474,10 @@ export default function HomePage() {
       <section className="dark-feature" id="protocol">
         <div className="wrap dark-grid">
           <div className="dark-media">
-            <VideoPoster
+            <VideoWell
+              src="/assets/video/about-dr-burns.mp4"
               poster="/assets/img/burns-protocol-craft-1.jpg"
-              alt="The Quiet Difference film: Dr. Burns and his craftsmanship"
+              alt="Meet Dr. Burns: the story behind the Burns Protocol"
               ratio="4/5"
             />
           </div>
@@ -654,12 +636,17 @@ export default function HomePage() {
           </div>
           <div className="rr-grid">
             {[
-              ["mike-2026.jpg", "Mike, DreamSmile™ Patient", "Full-arch implants"],
-              ["kelly-2026.jpg", "Kelly, DreamSmile™ Patient", "A new smile in one day"],
-              ["angela-2026.jpg", "Angela, DreamSmile™ Patient", "Same-day teeth"],
-            ].map(([img, name, cap]) => (
+              ["testimonial-1.mp4", "mike-2026.jpg", "Mike, DreamSmile™ Patient", "Full-arch implants"],
+              ["testimonial-2.mp4", "kelly-2026.jpg", "Kelly, DreamSmile™ Patient", "A new smile in one day"],
+              ["testimonial-3.mp4", "angela-2026.jpg", "Angela, DreamSmile™ Patient", "Same-day teeth"],
+            ].map(([vid, img, name, cap]) => (
               <div className="rr-card" key={name}>
-                <VideoPoster poster={`/assets/img/${img}`} alt={`${name} tells their DreamSmile story`} ratio="4/5" />
+                <VideoWell
+                  src={`/assets/video/${vid}`}
+                  poster={`/assets/img/${img}`}
+                  alt={`${name} tells their DreamSmile story`}
+                  ratio="4/5"
+                />
                 <div className="rr-meta">
                   <span className="stars">★★★★★</span>
                   <b>{name}</b>

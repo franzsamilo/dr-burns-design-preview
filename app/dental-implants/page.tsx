@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { StickyCta } from "@/components/StickyCta";
+import { VideoWell } from "@/components/VideoWell";
 
 export const metadata: Metadata = {
   title: "Dental Implants Near New Market, VA | DreamSmile by Dr. Jeffrey Burns",
@@ -366,22 +367,24 @@ export default function DentalImplantsPage() {
             </div>
             <div className="test-grid">
               {[
-                ["wall-jill.jpg", "Jill Bush", "DreamSmile™ Patient"],
-                ["wall-joe.jpg", "Joe Vile", "DreamSmile™ Patient"],
-                ["wall-tammy.jpg", "Tammy", "DreamSmile™ Patient"],
-              ].map(([img, name, cap]) => (
+                ["testimonial-1.mp4", "wall-jill.jpg", "Jill Bush", "DreamSmile™ Patient"],
+                ["testimonial-2.mp4", "wall-joe.jpg", "Joe Vile", "DreamSmile™ Patient"],
+                ["testimonial-3.mp4", "wall-tammy.jpg", "Tammy", "DreamSmile™ Patient"],
+              ].map(([vid, img, name, cap]) => (
                 <div className="test-card" key={name}>
-                  <img src={`/assets/img/${img}`} alt={`${name}, dental implant patient testimonial`} />
-                  <span className="pl">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </span>
-                  <div className="ov">
-                    <span className="stars">★★★★★</span>
-                    <b>{name}</b>
-                    <small>{cap}</small>
-                  </div>
+                  <VideoWell
+                    src={`/assets/video/${vid}`}
+                    poster={`/assets/img/${img}`}
+                    alt={`${name}, dental implant patient testimonial`}
+                    ratio="9/13"
+                    overlay={
+                      <div className="ov">
+                        <span className="stars">★★★★★</span>
+                        <b>{name}</b>
+                        <small>{cap}</small>
+                      </div>
+                    }
+                  />
                 </div>
               ))}
             </div>
