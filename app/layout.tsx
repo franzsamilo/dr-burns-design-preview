@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ScrollProgress } from "@/components/ScrollProgress";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.jeffreyburns.com"),
@@ -39,7 +40,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <ScrollProgress />
+        {children}
+      </body>
     </html>
   );
 }

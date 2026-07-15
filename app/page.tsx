@@ -6,6 +6,7 @@ import { VideoWell } from "@/components/VideoWell";
 import { Reveal } from "@/components/Reveal";
 import { LeadForm } from "@/components/LeadForm";
 import { StatCounter } from "@/components/StatCounter";
+import { SmileMarquee } from "@/components/SmileMarquee";
 
 function Check() {
   return (
@@ -675,6 +676,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* 13b. WALL OF SMILES */}
+      <SmileMarquee />
 
       {/* 14. MEET THE DOCTOR */}
       <section className="dark-feature bio" id="doctor">

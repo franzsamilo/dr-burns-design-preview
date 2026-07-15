@@ -912,3 +912,30 @@ ol.steps li:hover .n{transform:scale(1.08)}
 @media(max-width:360px){
   .nav-cta-btn{padding:9px 11px;font-size:.62rem}
 }
+
+/* ============================================================
+   Signature touches: scroll progress + wall of smiles
+   ============================================================ */
+
+/* ---- Reading-progress bar (very top, above the sticky nav) ---- */
+.scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:80;
+  transform-origin:left;transform:scaleX(0);pointer-events:none;will-change:transform;
+  background:linear-gradient(90deg,var(--teal-brand),var(--cyan),var(--teal))}
+
+/* ---- Wall of smiles: continuous marquee of real patients ---- */
+.smilewall{overflow:hidden;background:linear-gradient(180deg,var(--bg),var(--bg2))}
+.smile-viewport{overflow:hidden;margin-top:clamp(26px,3.4vw,42px);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.smile-track{display:flex;gap:16px;width:max-content;animation:smileScroll 65s linear infinite}
+.smilewall:hover .smile-track{animation-play-state:paused}
+.smile-track figure{flex:none;width:clamp(148px,17vw,214px);aspect-ratio:4/5;
+  border-radius:16px;overflow:hidden;box-shadow:var(--shadow-card);background:#dfeaea;
+  transition:transform .35s var(--ease)}
+.smile-track figure:hover{transform:translateY(-6px) scale(1.02)}
+.smile-track img{width:100%;height:100%;object-fit:cover}
+@keyframes smileScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){
+  .smile-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}
+  .smile-viewport{-webkit-mask-image:none;mask-image:none}
+}
