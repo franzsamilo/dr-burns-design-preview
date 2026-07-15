@@ -310,3 +310,116 @@ footer.ft{background:#0f2126;color:#fff;padding:66px 0 30px}
   html{scroll-behavior:auto}
   .btn:hover{transform:none}
 }
+
+/* ============================================================
+   T2 SUBPAGE (service/treatment pages, e.g. Dental Implants)
+   Scoped under .implants so the light hero never collides with
+   the homepage's dark .hero.
+   ============================================================ */
+.implants .hero{background:linear-gradient(180deg,#ffffff 0%,var(--bg) 100%)}
+.implants .hero .eyebrow{color:var(--teal)}
+.implants .hero h1{color:var(--ink);max-width:17ch}
+.implants .hero .sub{color:var(--teal)}
+.implants .hero .lede{color:var(--body)}
+.implants .hero-ticks li{color:var(--ink)}
+.implants .hero-ticks svg{stroke:var(--teal)}
+
+/* qualification quiz */
+.quizwrap{margin-top:clamp(-70px,-6vw,-48px);position:relative;z-index:5}
+.quiz{background:var(--pale);border:1px solid var(--pale2);border-radius:var(--radius);box-shadow:var(--shadow);display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(24px,4vw,50px);padding:clamp(28px,4vw,52px);align-items:center}
+.quiz .qhead .eyebrow{color:var(--teal)}
+.quiz h2{color:var(--teal);margin:8px 0 14px}
+.quiz p{color:var(--graphite);max-width:42ch}
+.quiz .qoutcome{border-radius:var(--radius-sm);overflow:hidden;box-shadow:var(--shadow-card);margin-top:20px;max-width:340px;aspect-ratio:16/10}
+.quiz .qoutcome img{width:100%;height:100%;object-fit:cover}
+.quiz-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 20px 40px -24px rgba(0,0,0,.4)}
+.quiz-card .qbody{padding:26px 28px}
+.quiz-card .qq{font-weight:700;color:var(--ink);margin-bottom:16px;font-size:1rem}
+.quiz-opt{display:flex;align-items:center;gap:12px;padding:11px 0;color:var(--body);font-size:.96rem}
+.quiz-opt i{width:19px;height:19px;border-radius:999px;border:2px solid var(--pale2);flex:none;display:inline-block}
+.quiz-next{display:flex;justify-content:flex-end;background:var(--pale);padding:14px 22px}
+.quiz-next a{color:var(--tan-deep);font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem;display:inline-flex;gap:8px;align-items:center}
+
+/* dark patient story */
+.story{background:linear-gradient(120deg,#10242b,#183a44);color:#fff}
+.story-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,4vw,56px);align-items:center}
+.story h2{color:#fff}
+.story p{color:rgba(255,255,255,.88)}
+.story .mark{font-family:Georgia,serif;font-size:3.6rem;color:var(--pale2);line-height:.5;display:block;margin-bottom:16px}
+.story blockquote p{font-size:1.25rem;font-style:italic;font-weight:600;line-height:1.55;max-width:44ch;color:#fff}
+.story cite{display:block;margin-top:18px;font-style:normal;font-weight:700;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--pale2)}
+.story-media{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.story-media img{width:100%;height:100%;object-fit:cover}
+
+/* faces grid */
+.faces-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-bottom:34px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-card)}
+.faces-grid figure{overflow:hidden;aspect-ratio:3/4;background:#dfeaea}
+.faces-grid img{width:100%;height:100%;object-fit:cover}
+
+/* journey capsules */
+.journey-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.jcap{background:linear-gradient(180deg,#dcefef,#cfe8e9);border-radius:120px;padding:26px 16px 30px;text-align:center;color:var(--ink);box-shadow:var(--shadow-card)}
+.jcap .jn{font-family:'Amiri',Georgia,serif;font-size:2.6rem;font-weight:700;line-height:1;color:var(--teal)}
+.jcap .jic{width:58px;height:58px;border-radius:999px;background:#fff;box-shadow:0 10px 22px -12px rgba(18,37,44,.35);display:grid;place-items:center;margin:12px auto 12px}
+.jcap .jic svg{width:26px;height:26px;stroke:var(--teal);fill:none;stroke-width:1.9}
+.jcap h3{color:var(--ink);font-size:.9rem;text-transform:none}
+.jcap p{color:var(--body);font-size:.78rem;margin:5px auto 0;max-width:18ch}
+
+/* protocol dark */
+.protocol{background:linear-gradient(150deg,#0f2126,#183a44);color:#fff}
+.protocol-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,4vw,56px);align-items:center}
+.protocol h2{color:#fff}
+.protocol-media{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);align-self:stretch;aspect-ratio:4/5}
+.protocol-media img{width:100%;height:100%;object-fit:cover}
+.pstep{display:flex;gap:16px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.pstep:last-of-type{border-bottom:none}
+.pstep b{font-family:'Amiri',Georgia,serif;color:var(--pale2);font-size:1.5rem;line-height:1.2;flex:none;width:30px}
+.pstep h3{color:#fff;font-size:1rem;text-transform:none;margin-bottom:3px}
+.pstep p{color:rgba(255,255,255,.78);font-size:.92rem}
+
+/* editorial seo */
+.edit-block{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(26px,4vw,52px);align-items:center;padding:clamp(24px,3vw,40px) 0;border-bottom:1px solid var(--line)}
+.edit-block:last-of-type{border-bottom:none}
+.edit-block.flip .edit-media{order:-1}
+.edit-block h2{font-size:clamp(1.5rem,2.4vw,2.1rem);color:var(--teal);margin-bottom:12px}
+.edit-media{border-radius:var(--radius-sm);overflow:hidden;box-shadow:var(--shadow-card)}
+.edit-media img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/11}
+.cta-bar{background:var(--pale);border-radius:var(--radius-sm);padding:22px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin:clamp(24px,3vw,40px) 0}
+.cta-bar b{color:var(--ink);font-size:1.02rem}
+
+/* doctor bio dark (subpage) */
+.biosec{background:linear-gradient(120deg,#10242b,#183a44);color:#fff}
+.bio-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,4vw,56px);align-items:center}
+.biosec h2{color:#fff}
+.biosec p{color:rgba(255,255,255,.88)}
+.bio-media{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5}
+.bio-media img{width:100%;height:100%;object-fit:cover}
+.biosec .quote-strip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius-sm);padding:22px 26px;margin-top:26px;font-style:italic;color:rgba(255,255,255,.92)}
+.biosec .quote-strip cite{display:block;font-style:normal;margin-top:10px;font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--pale2)}
+
+/* testimonials (portrait cards) */
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.test-card{border-radius:var(--radius-sm);overflow:hidden;position:relative;aspect-ratio:9/13;background:#0d1519;box-shadow:var(--shadow-card)}
+.test-card img{width:100%;height:100%;object-fit:cover}
+.test-card .ov{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px 16px;background:linear-gradient(transparent 45%,rgba(0,0,0,.8))}
+.test-card .pl{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:999px;background:rgba(255,255,255,.2);backdrop-filter:blur(6px);display:grid;place-items:center;border:1px solid rgba(255,255,255,.35)}
+.test-card .pl svg{width:14px;height:14px;fill:#fff;margin-left:2px}
+.test-card b{color:#fff;font-size:.95rem;font-weight:700}
+.test-card small{color:rgba(255,255,255,.75);font-size:.76rem}
+.test-card .stars{color:#f5b942;letter-spacing:2px;font-size:.85rem}
+
+/* youtube facade + frame */
+.vwell.yt{width:100%;border:0;padding:0;background:none;cursor:pointer}
+.yt-frame{position:relative;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#000}
+.yt-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.story-media .yt-frame,.edit-media .yt-frame{aspect-ratio:16/10}
+
+@media(max-width:960px){
+  .quiz,.story-grid,.protocol-grid,.bio-grid,.edit-block{grid-template-columns:1fr;gap:30px}
+  .edit-block.flip .edit-media{order:0}
+  .faces-grid,.journey-grid{grid-template-columns:1fr 1fr}
+  .test-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .faces-grid,.journey-grid,.test-grid{grid-template-columns:1fr}
+}
