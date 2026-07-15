@@ -6,9 +6,16 @@
         "source": "github",
         "repo": "affaan-m/ecc"
       }
+    },
+    "impeccable": {
+      "source": {
+        "source": "github",
+        "repo": "pbakaus/impeccable"
+      }
     }
   },
   "enabledPlugins": {
-    "ecc@ecc": true
+    "ecc@ecc": true,
+    "impeccable@impeccable": true
   }
 }

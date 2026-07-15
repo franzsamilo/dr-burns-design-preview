@@ -20,27 +20,39 @@ pull visual/reference assets from the shared Google Drive folder.
 
 ## Skills & context (installed)
 
-This repo enables the **ECC** operator layer as a Claude Code plugin so that its
-skills, agents, hooks, and slash commands are available in every session opened
-on this repo (including Claude Code on the web).
+This repo enables two Claude Code plugins via [`.claude/settings.json`](.claude/settings.json)
+(`extraKnownMarketplaces` + `enabledPlugins`), so their skills, agents, hooks, and
+slash commands load in every session opened on this repo (including Claude Code on
+the web):
 
-- Marketplace + plugin are declared in [`.claude/settings.json`](.claude/settings.json)
-  via `extraKnownMarketplaces` and `enabledPlugins` (`ecc@ecc`).
-- Source: https://github.com/affaan-m/ecc — 67 agents, 278 skills, hooks, and
-  rules for TDD, planning, code review, and security workflows.
+- **ECC** (`ecc@ecc`) — source https://github.com/affaan-m/ecc — 67 agents, 278
+  skills, hooks, and rules for TDD, planning, code review, and security workflows.
+- **Impeccable** (`impeccable@impeccable`) — source https://github.com/pbakaus/impeccable
+  — design fluency for frontend: 1 skill with 23 `/impeccable *` commands (polish,
+  audit, critique, distill, animate, bolder, quieter, …) and curated anti-pattern
+  detection. This is the primary design-quality layer for the Dr. Burns build.
 
 ### First-time activation
 
 External-marketplace plugins load automatically **after** a one-time install on
-first trusting the repo. If the ECC skills/commands are not yet visible, run
-once per environment:
+first trusting the repo. If the skills/commands are not yet visible, run once per
+environment:
 
 ```
 /plugin marketplace add https://github.com/affaan-m/ecc
 /plugin install ecc@ecc
+/plugin marketplace add https://github.com/pbakaus/impeccable
+/plugin install impeccable@impeccable
 ```
 
-Thereafter the settings above activate the plugin automatically.
+Thereafter the settings above activate both plugins automatically.
+
+> **Impeccable — full CLI extras (optional).** The plugin above bundles the skill +
+> 23 commands over GitHub. Impeccable's *live* detector engine and real-browser
+> iteration (`npx impeccable install`, `/impeccable init`) additionally fetch from
+> `impeccable.style`, which is blocked under **Trusted** network access. To enable
+> those, set the environment's network access to **Full** (or **Custom** +
+> `impeccable.style`), start a fresh session, then run `npx impeccable install`.
 
 ### Key ECC commands
 
