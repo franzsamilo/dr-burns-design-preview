@@ -86,7 +86,7 @@ export default function DentalImplantsPage() {
                   Schedule My Free Consultation
                 </a>
                 <a className="btn btn-ghost-dark" href="tel:5407408937">
-                  Call Him: 540-740-8937
+                  Call Him
                 </a>
               </div>
             </div>

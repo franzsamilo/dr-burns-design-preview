@@ -574,3 +574,13 @@ nav.menu{gap:clamp(12px,1.3vw,20px)}
 /* Hero is a <section>, so it was getting the global section padding PLUS the
    hero-grid padding (double top gap). Let the grid own the spacing. */
 .hero{padding:0}
+
+/* Dental Implants hero: lift the quiz card so it peeks above the fold too */
+.implants .hero .hero-grid{padding-bottom:clamp(44px,5vw,74px)}
+.quizwrap{margin-top:clamp(-116px,-9.5vw,-76px)}
+
+/* fine-tune: quiz peeks below the now single-row CTAs */
+.quizwrap{margin-top:clamp(-100px,-8vw,-72px)}
+
+/* settle: quiz sits just under the single-row CTAs and peeks ~70px */
+.quizwrap{margin-top:clamp(-60px,-4.6vw,-42px)}

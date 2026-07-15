@@ -180,7 +180,7 @@ export default function HomePage() {
           <div>
             <img
               className="dslogo"
-              src="/assets/img/dreamsmile-logo.png"
+              src="/assets/img/dreamsmile-banner.png"
               alt="DreamSmile by Jeffrey S. Burns DDS"
             />
             <h2 style={{ margin: "8px 0 10px" }}>
@@ -194,16 +194,16 @@ export default function HomePage() {
           </div>
           <div className="faces-strip">
             <figure>
-              <img src="/assets/img/mike-2026.jpg" alt="Mike, a DreamSmile dental implant patient" />
+              <img src="/assets/img/smile-patient-3.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
             </figure>
             <figure>
-              <img src="/assets/img/kelly-2026.jpg" alt="Kelly, a DreamSmile patient of Dr. Burns" />
+              <img src="/assets/img/smile-patient-4.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
             </figure>
             <figure>
-              <img src="/assets/img/ron-2026.jpg" alt="Ron, a DreamSmile patient, smiling after his dental implants" />
+              <img src="/assets/img/smile-patient-6.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
             </figure>
             <figure>
-              <img src="/assets/img/angela-2026.jpg" alt="Angela, a DreamSmile patient of Dr. Burns" />
+              <img src="/assets/img/smile-patient-5.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
             </figure>
           </div>
         </div>
