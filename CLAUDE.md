@@ -20,7 +20,7 @@ pull visual/reference assets from the shared Google Drive folder.
 
 ## Skills & context (installed)
 
-This repo enables two Claude Code plugins via [`.claude/settings.json`](.claude/settings.json)
+This repo enables three Claude Code plugins via [`.claude/settings.json`](.claude/settings.json)
 (`extraKnownMarketplaces` + `enabledPlugins`), so their skills, agents, hooks, and
 slash commands load in every session opened on this repo (including Claude Code on
 the web):
@@ -30,7 +30,33 @@ the web):
 - **Impeccable** (`impeccable@impeccable`) — source https://github.com/pbakaus/impeccable
   — design fluency for frontend: 1 skill with 23 `/impeccable *` commands (polish,
   audit, critique, distill, animate, bolder, quieter, …) and curated anti-pattern
-  detection. This is the primary design-quality layer for the Dr. Burns build.
+  detection. The primary design-quality layer for the Dr. Burns build.
+- **Frontend Design** (`frontend-design@claude-code-plugins`) — source
+  https://github.com/anthropics/claude-code (`plugins/frontend-design`) —
+  Anthropic's official design skill that forces a distinct aesthetic commitment
+  (purpose / tone / constraints / differentiation) before writing CSS, so output
+  avoids generic "AI slop." Complements Impeccable.
+
+### Component & design MCP servers ([`.mcp.json`](.mcp.json))
+
+Project-scoped MCP servers load in every session (including web):
+
+- **shadcn** (`npx shadcn@latest mcp`) — lets the agent browse, search, and install
+  real shadcn/ui components/blocks from the registry instead of hallucinating
+  component APIs. The build stack is Next.js + Tailwind + shadcn/ui.
+
+> **MCP runtime needs network.** shadcn reaches its registry at call time; under
+> **Trusted** network access that host is blocked (the server still starts). Raise
+> the environment to **Full** (or **Custom** + the registry host) to fetch
+> components. `npx` itself works under Trusted (npm is allowlisted).
+
+**Optional — 21st.dev Magic MCP** (`/ui` prompt → shadcn/Tailwind React component).
+Needs an API key from <https://21st.dev/magic/console> and network. Add it
+**user-scoped** (keep the key out of git) rather than committing it:
+
+```
+claude mcp add magic --scope user --env API_KEY="<your-key>" -- npx -y @21st-dev/magic@latest
+```
 
 ### First-time activation
 
@@ -43,9 +69,11 @@ environment:
 /plugin install ecc@ecc
 /plugin marketplace add https://github.com/pbakaus/impeccable
 /plugin install impeccable@impeccable
+/plugin marketplace add anthropics/claude-code
+/plugin install frontend-design@claude-code-plugins
 ```
 
-Thereafter the settings above activate both plugins automatically.
+Thereafter the settings above activate all three plugins automatically.
 
 > **Impeccable — full CLI extras (optional).** The plugin above bundles the skill +
 > 23 commands over GitHub. Impeccable's *live* detector engine and real-browser
