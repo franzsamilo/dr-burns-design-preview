@@ -1048,3 +1048,33 @@ body{counter-reset:sec}
 /* keep the implants doctor VIDEO conforming to the arched bio frame */
 .bio-media{overflow:hidden}
 .bio-media .vidwell,.bio-media .vidwell > *{border-radius:inherit}
+
+/* ============================================================
+   HERO recomposition — arched PORTAL landing (both pages)
+   Keeps the split's conversion (CTAs, trust, peek) but the arch
+   now leads the first impression instead of a rounded rectangle.
+   ============================================================ */
+.hero-figure{position:relative}
+.hero-figure .hero-media{position:relative;z-index:1;margin:0}
+
+/* bigger, portal-like arch on the hero image */
+.hero-media{border-radius:clamp(140px,24vw,300px) clamp(140px,24vw,300px) var(--radius) var(--radius)}
+
+/* offset arch outline framing the portal (unclipped, sits behind) */
+.hero-arch-deco{position:absolute;z-index:0;inset:-20px -18px 24px -18px;pointer-events:none;
+  border:1.5px solid var(--teal-brand);opacity:.34;
+  border-radius:clamp(150px,26vw,320px) clamp(150px,26vw,320px) var(--radius) var(--radius)}
+.implants .hero-arch-deco{border-color:var(--teal);opacity:.3}
+
+/* floating credibility seal on the portal */
+.hero-seal{position:absolute;z-index:3;left:-14px;bottom:16px;background:var(--tan);color:#fff;
+  border-radius:18px;padding:13px 18px;display:flex;flex-direction:column;line-height:1;
+  box-shadow:0 22px 40px -16px rgba(0,0,0,.55);transform:rotate(-3deg)}
+.hero-seal .hs-num{font-family:'Amiri',Georgia,serif;font-weight:700;font-size:1.75rem;letter-spacing:-.01em}
+.hero-seal .hs-lbl{font-size:.63rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;margin-top:5px;opacity:.92}
+
+/* slightly bolder hero headline (still compact enough for the peek) */
+.hero h1{font-size:clamp(2.1rem,4vw,3.5rem)}
+
+/* mobile: drop the decorations, keep the portal image + clean stack */
+@media(max-width:900px){.hero-seal,.hero-arch-deco{display:none}}

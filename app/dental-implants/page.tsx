@@ -105,11 +105,18 @@ export default function DentalImplantsPage() {
                 </p>
               </div>
             </div>
-            <div className="hero-media">
-              <img
-                src="/assets/img/hero-burns.jpg"
-                alt="Dr. Jeffrey Burns welcoming a dental implant patient at his New Market office"
-              />
+            <div className="hero-figure">
+              <span className="hero-arch-deco" aria-hidden="true" />
+              <div className="hero-media">
+                <img
+                  src="/assets/img/hero-burns.jpg"
+                  alt="Dr. Jeffrey Burns welcoming a dental implant patient at his New Market office"
+                />
+              </div>
+              <div className="hero-seal" aria-hidden="true">
+                <span className="hs-num">1&#8209;Day</span>
+                <span className="hs-lbl">New teeth, often</span>
+              </div>
             </div>
           </div>
         </section>

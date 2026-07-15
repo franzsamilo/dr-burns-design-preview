@@ -115,11 +115,18 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-          <div className="hero-media">
-            <img
-              src="/assets/img/dr-burns-smile.jpg"
-              alt="Dr. Jeffrey Burns laughing warmly in black scrubs by a bright window at his New Market, VA practice"
-            />
+          <div className="hero-figure">
+            <span className="hero-arch-deco" aria-hidden="true" />
+            <div className="hero-media">
+              <img
+                src="/assets/img/dr-burns-smile.jpg"
+                alt="Dr. Jeffrey Burns laughing warmly in black scrubs by a bright window at his New Market, VA practice"
+              />
+            </div>
+            <div className="hero-seal" aria-hidden="true">
+              <span className="hs-num">30+</span>
+              <span className="hs-lbl">Years of new smiles</span>
+            </div>
           </div>
         </div>
       </section>
