@@ -511,3 +511,41 @@ h2{font-size:clamp(2.05rem,3.9vw,3.15rem);letter-spacing:-.013em}
 
 /* Crisper logo rendering at small sizes */
 .brand img,.ft-brand img{image-rendering:auto}
+
+/* ============================================================
+   Hero "peek" card — caresmiles-style scroll inducer + personality
+   ============================================================ */
+.hero-peek{
+  position:absolute;left:50%;bottom:clamp(104px,10vw,142px);transform:translateX(-50%);z-index:6;
+  display:inline-flex;align-items:center;gap:12px;padding:8px 14px 8px 10px;border-radius:999px;
+  background:rgba(255,255,255,.96);backdrop-filter:blur(10px);white-space:nowrap;color:var(--ink);
+  box-shadow:0 26px 54px -26px rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.8);
+  animation:peekfloat 2.8s ease-in-out infinite}
+.hero-peek:hover{color:var(--ink)}
+.hero-peek .pk-av{display:inline-flex}
+.hero-peek .pk-av img{width:34px;height:34px;border-radius:999px;object-fit:cover;border:2px solid #fff;margin-left:-11px}
+.hero-peek .pk-av img:first-child{margin-left:0}
+.hero-peek .pk-tx{display:flex;flex-direction:column;line-height:1.14;text-align:left}
+.hero-peek .pk-tx b{font-size:.84rem;font-weight:800;color:var(--ink)}
+.hero-peek .pk-tx small{font-size:.71rem;color:var(--body)}
+.hero-peek .pk-chev{display:grid;place-items:center;width:26px;height:26px;border-radius:999px;background:var(--teal-brand);flex:none}
+.hero-peek .pk-chev svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:2.6;animation:peekchev 1.5s ease-in-out infinite}
+@keyframes peekfloat{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-6px)}}
+@keyframes peekchev{0%,100%{transform:translateY(-1px)}50%{transform:translateY(3px)}}
+@media(max-width:680px){.hero-peek{display:none}}
+@media(prefers-reduced-motion:reduce){.hero-peek{animation:none}.hero-peek .pk-chev svg{animation:none}}
+
+/* Size the hero ~to the viewport so the peek card straddles the fold (caresmiles) */
+.hero{min-height:calc(100svh - 82px)}
+.hero .hero-grid{min-height:calc(100svh - 82px);align-content:center}
+.hero-peek{bottom:clamp(90px,9vw,118px)}
+@media(max-width:960px){
+  .hero{min-height:auto}
+  .hero .hero-grid{min-height:auto}
+}
+
+/* Peek card as a fixed scroll cue that fades out once the user scrolls */
+.hero-peek{position:fixed;left:50%;bottom:24px;top:auto;z-index:55;
+  transition:opacity .45s var(--ease),transform .45s var(--ease)}
+.hero-peek.is-hidden{opacity:0;transform:translateX(-50%) translateY(26px);pointer-events:none;animation:none}
+@media(max-width:680px){.hero-peek{display:none}}

@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { StickyCta } from "@/components/StickyCta";
 import { VideoWell } from "@/components/VideoWell";
+import { HeroPeek } from "@/components/HeroPeek";
 
 function Check() {
   return (
@@ -105,6 +106,7 @@ export default function HomePage() {
             />
           </div>
         </div>
+        <HeroPeek />
       </section>
 
       {/* 2. DUAL LEAD-CAPTURE CARDS */}
