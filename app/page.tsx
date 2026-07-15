@@ -712,6 +712,33 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 14b. MEET THE TEAM */}
+      <section id="team">
+        <div className="wrap">
+          <div className="sec-head">
+            <span className="eyebrow">The people behind your smile</span>
+            <h2>Meet the DreamSmile team</h2>
+            <p>
+              The faces you&apos;ll see at every visit — a steady team that
+              knows your name, not a rotating cast of strangers.
+            </p>
+          </div>
+          <div className="team-grid">
+            {Array.from({ length: 11 }, (_, i) =>
+              `staff-2026-gray-${String(i + 1).padStart(2, "0")}`
+            ).map((f) => (
+              <figure className="team-face" key={f}>
+                <img
+                  src={`/assets/img/${f}.jpg`}
+                  alt="A member of Dr. Burns's clinical team"
+                  loading="lazy"
+                />
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="faq" id="faq">
         <div className="wrap">

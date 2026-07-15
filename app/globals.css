@@ -1033,3 +1033,18 @@ body{counter-reset:sec}
   .sec-head::before{font-size:clamp(2.8rem,13vw,3.6rem)}
   .sec-head p{max-width:none}
 }
+
+/* ---- Meet the Team: arched staff portraits ---- */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(152px,1fr));gap:16px}
+.team-face{overflow:hidden;aspect-ratio:3/4;background:#dfeaea;box-shadow:var(--shadow-card);
+  border-radius:clamp(44px,6vw,80px) clamp(44px,6vw,80px) 12px 12px;
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.team-face img{width:100%;height:100%;object-fit:cover;object-position:center top;
+  transition:transform .5s var(--ease)}
+.team-face:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.team-face:hover img{transform:scale(1.04)}
+@media(max-width:600px){.team-grid{grid-template-columns:1fr 1fr;gap:12px}}
+
+/* keep the implants doctor VIDEO conforming to the arched bio frame */
+.bio-media{overflow:hidden}
+.bio-media .vidwell,.bio-media .vidwell > *{border-radius:inherit}
