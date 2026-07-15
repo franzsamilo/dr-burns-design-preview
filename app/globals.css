@@ -939,3 +939,44 @@ ol.steps li:hover .n{transform:scale(1.08)}
   .smile-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}
   .smile-viewport{-webkit-mask-image:none;mask-image:none}
 }
+
+/* ============================================================
+   NEW DIRECTION (form, not color): arch motif + editorial type
+   + interactive before/after. Brand teal palette unchanged.
+   ============================================================ */
+
+/* ---- Signature arch motif: architectural + a nod to the dental arch.
+   Rounds the TOP of key imagery so faces (centered) stay intact. ---- */
+.hero-media{
+  border-radius:clamp(110px,20vw,240px) clamp(110px,20vw,240px) var(--radius) var(--radius)}
+.bio-media,
+.dark-feature.bio .dark-media,
+.story-media{
+  border-radius:clamp(90px,15vw,190px) clamp(90px,15vw,190px) var(--radius) var(--radius)}
+
+/* ---- Editorial display type: bigger, tighter, more art-directed ---- */
+h1{font-size:clamp(2.4rem,5.4vw,4.4rem);letter-spacing:-.022em;line-height:1.06}
+h2{font-size:clamp(1.95rem,4vw,3.2rem);letter-spacing:-.016em}
+.hero h1{max-width:14ch}
+
+/* ---- Before/after slider ---- */
+.ba-frame{max-width:780px;margin:clamp(26px,3.4vw,46px) auto 0}
+.ba-slider{position:relative;aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);user-select:none;touch-action:pan-y;cursor:ew-resize;background:#0d1519}
+.ba-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba-before{clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0)}
+.ba-slider::after{content:"";position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;z-index:2;
+  background:rgba(255,255,255,.92);transform:translateX(-1px);pointer-events:none;box-shadow:0 0 14px rgba(0,0,0,.4)}
+.ba-chip{position:absolute;top:14px;z-index:2;font-family:'Montserrat',sans-serif;font-size:.66rem;
+  font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#fff;
+  background:rgba(12,21,25,.55);backdrop-filter:blur(6px);padding:6px 13px;border-radius:999px}
+.ba-chip-l{left:14px}
+.ba-chip-r{right:14px}
+.ba-handle{position:absolute;top:50%;left:var(--pos,50%);transform:translate(-50%,-50%);z-index:3;
+  width:48px;height:48px;border-radius:999px;border:2px solid #fff;background:var(--teal);
+  display:grid;place-items:center;cursor:ew-resize;touch-action:none;
+  box-shadow:0 10px 24px -6px rgba(0,0,0,.55);transition:transform .15s var(--ease)}
+.ba-handle:hover{transform:translate(-50%,-50%) scale(1.06)}
+.ba-handle:focus-visible{outline:3px solid var(--teal-brand);outline-offset:3px}
+.ba-handle svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.ba-note{text-align:center;color:var(--body);font-size:.82rem;margin:15px auto 0;max-width:46ch}

@@ -7,6 +7,7 @@ import { VideoWell } from "@/components/VideoWell";
 import { Reveal } from "@/components/Reveal";
 import { LeadForm } from "@/components/LeadForm";
 import { StatCounter } from "@/components/StatCounter";
+import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 
 export const metadata: Metadata = {
   title: "Dental Implants Near New Market, VA | DreamSmile by Dr. Jeffrey Burns",
@@ -204,6 +205,28 @@ export default function DentalImplantsPage() {
               <a className="btn btn-teal" href="#quiz">
                 See If You Qualify
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* SEE THE DIFFERENCE — before/after reveal */}
+        <section id="transformation">
+          <div className="wrap">
+            <div className="sec-head">
+              <span className="eyebrow">Drag to see the difference</span>
+              <h2>One day can change everything</h2>
+            </div>
+            <div className="ba-frame">
+              <BeforeAfterSlider
+                before="/assets/img/kelly-2026.jpg"
+                after="/assets/img/kelly-2026b.jpg"
+                beforeAlt="A DreamSmile patient before treatment"
+                afterAlt="The same patient after their DreamSmile"
+              />
+              <p className="ba-note">
+                Sample slider — real before/after photos from Dr. Burns&apos;s
+                patients drop in here before launch.
+              </p>
             </div>
           </div>
         </section>
