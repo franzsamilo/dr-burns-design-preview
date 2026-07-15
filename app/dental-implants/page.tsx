@@ -119,11 +119,11 @@ export default function DentalImplantsPage() {
           <div className="quiz">
             <div className="qhead">
               <span className="eyebrow">Free consultation</span>
-              <h2>See if you&apos;re a Candidate for Implants</h2>
+              <h2>Talk to the doctor who does this every day</h2>
               <p>
-                Tell us where to reach you. Dr. Burns&apos;s team will call with
-                an honest answer about your options and cost, and send our
-                pricing &amp; information guide.
+                No call center, no pressure. You&apos;ll get a straight answer
+                from the team that&apos;s placed implants across the Valley for
+                30+ years — plus our pricing &amp; information guide.
               </p>
               <div className="qoutcome">
                 <img src="/assets/img/kelly-2026b.jpg" alt="A DreamSmile patient smiling after treatment" />

@@ -880,3 +880,16 @@ ol.steps li:hover .n{transform:scale(1.08)}
 @media(prefers-reduced-motion:reduce){
   .svc-card:hover .svc-img img,ol.steps li:hover .n,.dsis-item:hover{transform:none}
 }
+
+/* ---- Mobile pass fixes ---- */
+@media(max-width:600px){
+  /* Journey: 8 stacked cards is an endless scroll — go 2-up on phones */
+  .journey-grid{grid-template-columns:1fr 1fr;gap:14px;row-gap:34px}
+  .jcap{padding:30px 12px 22px}
+  .jcap h3{font-size:.9rem}
+  .jcap p{font-size:.75rem;max-width:20ch}
+  /* "The DreamSmile is..." flip rows also collapse to centered (were staying
+     side-by-side while the odd rows centered — looked inconsistent) */
+  .dsis-item.flip{flex-direction:column;text-align:center;align-items:center}
+  .dsis-item.flip .dsis-tx{margin:0}
+}
