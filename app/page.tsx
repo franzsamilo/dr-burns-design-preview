@@ -4,6 +4,8 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { StickyCta } from "@/components/StickyCta";
 import { VideoWell } from "@/components/VideoWell";
 import { Reveal } from "@/components/Reveal";
+import { LeadForm } from "@/components/LeadForm";
+import { StatCounter } from "@/components/StatCounter";
 
 function Check() {
   return (
@@ -98,6 +100,19 @@ export default function HomePage() {
                 Call: 540-740-8937
               </a>
             </div>
+            <div className="hero-trust">
+              <div className="ht-avatars">
+                {["smile-patient-3", "smile-patient-4", "smile-patient-5"].map(
+                  (f) => (
+                    <img key={f} src={`/assets/img/${f}.jpg`} alt="" aria-hidden="true" />
+                  )
+                )}
+              </div>
+              <p>
+                <span className="stars">★★★★★</span>
+                <b>Rated 5.0</b> by patients across the Shenandoah Valley
+              </p>
+            </div>
           </div>
           <div className="hero-media">
             <img
@@ -111,38 +126,7 @@ export default function HomePage() {
       {/* 2. DUAL LEAD-CAPTURE CARDS */}
       <div className="wrap leadwrap" id="consult">
         <div className="leadgrid">
-          <div className="lc pale">
-            <span className="eyebrow">60-second checklist quiz</span>
-            <h3>Candidate for Dental Implants</h3>
-            <p>
-              Answer a few quick questions and find out if implants make sense
-              for you. No phone call, no pressure, no waiting room.
-            </p>
-            <ul className="lc-ticks">
-              <li>
-                <Check />
-                Missing, loose, or failing teeth
-              </li>
-              <li>
-                <Check />
-                Dentures you&apos;re tired of managing
-              </li>
-              <li>
-                <Check />A bridge on its second or third replacement
-              </li>
-            </ul>
-            <div className="lc-foot">
-              <a className="btn btn-teal" href="#consult">
-                Take the Quiz
-              </a>
-              <a
-                href="tel:5407408937"
-                style={{ color: "var(--teal)", fontWeight: 800, fontSize: ".85rem" }}
-              >
-                or call 540-740-8937
-              </a>
-            </div>
-          </div>
+          <LeadForm />
           <div className="lc">
             <span className="eyebrow">Free download</span>
             <h3>The Complete Guide to Dental Implants</h3>
@@ -171,6 +155,35 @@ export default function HomePage() {
                 Get the Free Guide
               </a>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 2b. PROOF BAND */}
+      <div className="wrap">
+        <div className="statband">
+          <div className="stat">
+            <span className="stat-num">
+              <StatCounter to={30} suffix="+" />
+            </span>
+            <span className="stat-lbl">Years placing implants</span>
+          </div>
+          <div className="stat">
+            <span className="stat-num">
+              <StatCounter to={98} suffix="%" />
+            </span>
+            <span className="stat-lbl">Implant success rate</span>
+          </div>
+          <div className="stat">
+            <span className="stat-num">
+              <StatCounter to={5} decimals={1} />
+              <span className="stat-star">★</span>
+            </span>
+            <span className="stat-lbl">Rated by patients</span>
+          </div>
+          <div className="stat">
+            <span className="stat-num">1&#8209;Day</span>
+            <span className="stat-lbl">New teeth, often</span>
           </div>
         </div>
       </div>

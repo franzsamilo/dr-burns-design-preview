@@ -647,3 +647,104 @@ ul.hero-ticks li{font-size:.92rem}
   box-shadow:0 24px 46px -20px rgba(18,37,44,.55);transform:rotate(-3deg);
   transition:transform .35s var(--ease)}
 .lc:hover .lc-ebook img{transform:rotate(0) scale(1.04)}
+
+/* ============================================================
+   2026 CONVERSION + PREMIUM-FEEL UPGRADE
+   ============================================================ */
+
+/* ---- Hero: signature animated aurora (behind content) ---- */
+.hero::before{content:"";position:absolute;inset:-25% -12% -25% -12%;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(42% 55% at 80% 16%, rgba(116,189,194,.30), transparent 70%),
+    radial-gradient(40% 52% at 10% 84%, rgba(34,184,209,.22), transparent 72%),
+    radial-gradient(34% 42% at 52% 50%, rgba(116,189,194,.12), transparent 75%);
+  animation:auroraDrift 20s ease-in-out infinite alternate;will-change:transform}
+@keyframes auroraDrift{
+  from{transform:translate3d(-2%,-1%,0) scale(1)}
+  to{transform:translate3d(3%,2%,0) scale(1.1)}}
+.hero .hero-grid{position:relative;z-index:1}
+
+/* ---- Hero trust row (stars + patient avatars, high on the page) ---- */
+.hero-trust{display:flex;align-items:center;gap:14px;margin-top:22px;flex-wrap:wrap}
+.ht-avatars{display:inline-flex}
+.ht-avatars img{width:38px;height:38px;border-radius:999px;object-fit:cover;
+  border:2px solid rgba(255,255,255,.85);margin-left:-12px;box-shadow:0 6px 14px -6px rgba(0,0,0,.6)}
+.ht-avatars img:first-child{margin-left:0}
+.hero-trust p{margin:0;color:rgba(255,255,255,.9);font-size:.9rem;max-width:none;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.hero-trust .stars{color:#f5b942;letter-spacing:2px;font-size:.95rem}
+.hero-trust b{color:#fff;font-weight:800}
+
+/* ---- Inline lead-capture form ---- */
+.lc-form{gap:14px}
+.lc-form .eyebrow{color:var(--teal)}
+.lc-form h3{color:var(--ink);font-size:1.34rem;text-transform:none;letter-spacing:-.01em}
+.lc-form p{color:var(--body);font-size:.95rem;max-width:42ch}
+.lf-fields{display:flex;flex-direction:column;gap:11px;margin-top:2px}
+.lf-field{display:flex;flex-direction:column;gap:5px}
+.lf-field span{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
+.lf-field input,.lf-field select{font-family:'Montserrat',Arial,sans-serif;font-size:.98rem;color:var(--ink);
+  background:#fff;border:1.5px solid #cfe4ea;border-radius:11px;padding:13px 15px;transition:border-color .2s,box-shadow .2s}
+.lf-field input::placeholder{color:#9db3bb}
+.lf-field input:focus,.lf-field select:focus{outline:none;border-color:var(--teal-brand);
+  box-shadow:0 0 0 4px rgba(116,189,194,.22)}
+.lf-submit{width:100%;justify-content:center;margin-top:4px;font-size:.86rem}
+.lf-trust{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.82rem;color:var(--body);font-weight:600}
+.lf-trust .stars{color:#f5b942;letter-spacing:1.5px}
+.lf-trust a{color:var(--teal);font-weight:800}
+.lf-trust a:hover{text-decoration:underline}
+/* success state */
+.lc-form.is-sent{align-items:flex-start;justify-content:center;text-align:left}
+.lf-badge{width:52px;height:52px;border-radius:999px;background:var(--teal);display:grid;place-items:center;margin-bottom:4px;
+  animation:popIn .5s var(--ease) both}
+.lf-badge svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+@keyframes popIn{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
+
+/* ---- Proof / stat band ---- */
+.statband{margin-top:clamp(30px,4vw,50px);display:grid;grid-template-columns:repeat(4,1fr);gap:16px;
+  background:linear-gradient(135deg,#12252c,#1c414c);border-radius:var(--radius);
+  padding:clamp(26px,3.4vw,40px) clamp(20px,3vw,44px);box-shadow:var(--shadow);position:relative;overflow:hidden}
+.statband::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(60% 120% at 85% 0%, rgba(116,189,194,.18), transparent 60%)}
+.statband .stat{position:relative;z-index:1;text-align:center;padding:4px 8px}
+.statband .stat + .stat{border-left:1px solid rgba(255,255,255,.12)}
+.stat-num{display:block;font-family:'Amiri',Georgia,serif;font-weight:700;color:#fff;
+  font-size:clamp(2rem,4vw,3rem);line-height:1;letter-spacing:-.01em}
+.stat-star{color:#f5b942;font-family:'Montserrat';font-size:.62em;margin-left:2px}
+.stat-lbl{display:block;margin-top:9px;font-size:.76rem;font-weight:700;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--teal-brand)}
+
+/* ---- Scroll-aware booking bar (desktop pill + mobile bar) ---- */
+.sticky-cta{position:fixed;left:50%;bottom:20px;z-index:70;display:flex;align-items:center;gap:14px;
+  width:min(940px,calc(100% - 32px));background:rgba(255,255,255,.97);backdrop-filter:blur(10px);
+  border:1px solid var(--line);border-radius:16px;box-shadow:0 26px 60px -28px rgba(18,37,44,.55);
+  padding:12px 14px 12px 22px;transform:translate(-50%,150%);transition:transform .5s var(--ease);will-change:transform}
+.sticky-cta.is-visible{transform:translate(-50%,0)}
+.sc-info{display:flex;flex-direction:column;line-height:1.25;margin-right:auto}
+.sc-info strong{font-size:.92rem;color:var(--ink);font-weight:800}
+.sc-info span{font-size:.78rem;color:var(--body)}
+.sticky-cta .btn{padding:13px 22px;font-size:.74rem;white-space:nowrap}
+
+@media(max-width:768px){
+  .sticky-cta{left:0;right:0;bottom:0;width:auto;border-radius:0;border-left:0;border-right:0;border-bottom:0;
+    padding:10px 14px;gap:10px;transform:translateY(130%)}
+  .sticky-cta.is-visible{transform:translateY(0)}
+  .sc-info{display:none}
+  .sticky-cta .btn{flex:1 1 auto;justify-content:center;padding:13px 10px;font-size:.72rem;letter-spacing:.05em}
+}
+@media(max-width:600px){
+  .statband{grid-template-columns:1fr 1fr;gap:10px;row-gap:22px}
+  .statband .stat:nth-child(odd){border-left:0}
+  .statband .stat:nth-child(3),.statband .stat:nth-child(4){border-top:1px solid rgba(255,255,255,.12);padding-top:20px}
+}
+
+/* ---- Richer reveal: subtle scale + blur-in for a crafted feel ---- */
+.reveal{transform:translateY(26px) scale(.986);filter:blur(6px)}
+.reveal.is-in{transform:none;filter:blur(0)}
+.reveal{transition:opacity .75s var(--ease),transform .85s var(--ease),filter .7s ease}
+
+@media(prefers-reduced-motion:reduce){
+  .hero::before{animation:none}
+  .lf-badge{animation:none}
+  .sticky-cta{transition:none}
+  .reveal{filter:none;transform:none}
+}

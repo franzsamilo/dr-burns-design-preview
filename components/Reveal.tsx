@@ -33,6 +33,7 @@ const SELECTOR = [
   ".cta-bar",
   ".auth-team",
   ".final-media",
+  ".statband",
 ].join(",");
 
 export function Reveal() {
