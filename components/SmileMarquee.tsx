@@ -6,23 +6,24 @@
  * you can feel, and it's the kind of moment a stock template never ships.
  * Pure CSS animation (paused on hover, stilled under reduced-motion).
  */
+// Real patients only (testimonial / candid stills) — never staff headshots.
 const SMILES = [
-  "smile-patient-1",
-  "review1",
   "wall-jill",
-  "smile-patient-3",
+  "review1",
+  "wall-tammy",
   "kelly-2026",
   "review2",
-  "wall-tammy",
-  "smile-patient-4",
+  "wall-diane",
   "review3",
   "wall-joe",
-  "smile-patient-5",
-  "kelly-2026b",
+  "angela-2026",
   "review4",
-  "wall-diane",
-  "smile-patient-6",
+  "wall-fran",
+  "mike-2026",
   "review5",
+  "ron-2026",
+  "kelly-2026b",
+  "danny-2026",
 ];
 
 export function SmileMarquee() {

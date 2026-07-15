@@ -103,7 +103,7 @@ export default function HomePage() {
             </div>
             <div className="hero-trust">
               <div className="ht-avatars">
-                {["smile-patient-3", "smile-patient-4", "smile-patient-5"].map(
+                {["wall-tammy", "wall-diane", "wall-jill"].map(
                   (f) => (
                     <img key={f} src={`/assets/img/${f}.jpg`} alt="" aria-hidden="true" />
                   )
@@ -209,16 +209,16 @@ export default function HomePage() {
           </div>
           <div className="faces-strip">
             <figure>
-              <img src="/assets/img/smile-patient-3.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
+              <img src="/assets/img/wall-tammy.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
             </figure>
             <figure>
-              <img src="/assets/img/smile-patient-4.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
+              <img src="/assets/img/wall-jill.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
             </figure>
             <figure>
-              <img src="/assets/img/smile-patient-6.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
+              <img src="/assets/img/wall-diane.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
             </figure>
             <figure>
-              <img src="/assets/img/smile-patient-5.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
+              <img src="/assets/img/wall-fran.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
             </figure>
           </div>
         </div>
