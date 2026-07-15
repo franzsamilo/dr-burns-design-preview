@@ -346,6 +346,10 @@ export default function HomePage() {
               src="/assets/img/burns-team-coat.jpg"
               alt="Dr. Jeffrey Burns in a white coat with five members of his clinical team"
             />
+            <div className="auth-cap">
+              The team who will take care of you
+              <small>Dr. Burns and the clinicians you&apos;ll meet in New Market</small>
+            </div>
           </div>
         </div>
       </section>

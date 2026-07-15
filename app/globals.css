@@ -264,8 +264,16 @@ footer.ft{background:#0f2126;color:#fff;padding:66px 0 30px}
 .ft-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:22px;font-size:.8rem;color:rgba(255,255,255,.5)}
 .ft-bottom a{color:rgba(255,255,255,.5)}
 
-.auth-team{margin-top:26px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
-.auth-team img{width:100%;aspect-ratio:21/8;object-fit:cover}
+.auth-team{position:relative;margin-top:clamp(30px,4vw,46px);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#0f2126}
+.auth-team img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 20%;display:block}
+/* readable caption band so the full team photo reads as an intentional feature */
+.auth-team::after{content:"";position:absolute;left:0;right:0;bottom:0;height:42%;
+  background:linear-gradient(to top,rgba(10,22,26,.82),rgba(10,22,26,0));pointer-events:none}
+.auth-cap{position:absolute;left:clamp(20px,4vw,40px);bottom:clamp(18px,3vw,28px);z-index:1;
+  color:#fff;font-weight:600;font-size:clamp(1rem,1.6vw,1.28rem);letter-spacing:.01em;
+  text-shadow:0 2px 16px rgba(0,0,0,.5);max-width:78%}
+.auth-cap small{display:block;font-weight:400;font-size:.72em;color:rgba(255,255,255,.82);margin-top:3px}
+@media (max-width:640px){.auth-team img{aspect-ratio:4/5;object-position:50% 15%}}
 .final-media{max-width:620px;margin:34px auto 0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
 .final-media img{width:100%;aspect-ratio:16/8;object-fit:cover}
 .ft-map{width:100%;max-width:230px;border-radius:var(--radius-sm);margin-top:10px}
@@ -629,3 +637,13 @@ ul.hero-ticks li{font-size:.92rem}
 
 /* final: clear the CTAs with a comfortable gap, still peeks on laptops */
 .leadwrap{margin-top:clamp(-52px,-4.2vw,-38px)}
+
+/* ---- DreamSmile banner: blend opaque white bg into the light section ---- */
+.introds .dslogo{mix-blend-mode:multiply}
+
+/* ---- Free-guide ebook cover: give it real presence (was underutilized) ---- */
+.lc-ebook{align-items:center;gap:22px}
+.lc-ebook img{width:clamp(118px,12vw,150px);border-radius:10px;
+  box-shadow:0 24px 46px -20px rgba(18,37,44,.55);transform:rotate(-3deg);
+  transition:transform .35s var(--ease)}
+.lc:hover .lc-ebook img{transform:rotate(0) scale(1.04)}
