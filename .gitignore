@@ -11,3 +11,7 @@ node_modules/
 dist/
 build/
 .next/
+
+# Next.js
+/.next/
+next-env.d.ts
