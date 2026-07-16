@@ -1236,6 +1236,6 @@ body{counter-reset:sec}
   /* a touch taller image so the hero reads full, not letterboxed */
   .hero-figure .hero-media{aspect-ratio:5/4.7}
   /* peek: a clear straddle layered on top of the tall hero */
-  .leadwrap{margin-top:clamp(-92px,-8.5vh,-58px)}
-  .quizwrap{margin-top:clamp(-96px,-9vh,-60px)}
+  .leadwrap{margin-top:calc(clamp(-92px,-8.5vh,-58px) - 16px)}
+  .quizwrap{margin-top:calc(clamp(-96px,-9vh,-60px) - 16px)}
 }
