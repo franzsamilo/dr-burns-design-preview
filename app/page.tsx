@@ -762,19 +762,39 @@ export default function HomePage() {
               knows your name, not a rotating cast of strangers.
             </p>
           </div>
-          <div className="team-grid">
-            {Array.from({ length: 11 }, (_, i) =>
+          {(() => {
+            const team = Array.from({ length: 11 }, (_, i) =>
               `staff-2026-gray-${String(i + 1).padStart(2, "0")}`
-            ).map((f) => (
-              <figure className="team-face" key={f}>
+            );
+            const upper = team.slice(0, 6);
+            const lower = team.slice(6); // 5, centered under the 6
+            // translateY offsets (px, downward) tracing a shallow ∪ smile curve
+            const upOff = [0, 14, 21, 21, 14, 0];
+            const lowOff = [0, 17, 22, 17, 0];
+            const Tooth = (f: string, y: number, isLower: boolean) => (
+              <figure
+                className={"tooth" + (isLower ? " tooth-lower" : "")}
+                key={f}
+                style={{ ["--y" as string]: `${y}px` }}
+              >
                 <img
                   src={`/assets/img/${f}.jpg`}
                   alt="A member of Dr. Burns's clinical team"
                   loading="lazy"
                 />
               </figure>
-            ))}
-          </div>
+            );
+            return (
+              <div className="team-mouth" aria-label="The DreamSmile team">
+                <div className="team-arch team-upper">
+                  {upper.map((f, i) => Tooth(f, upOff[i], false))}
+                </div>
+                <div className="team-arch team-lower">
+                  {lower.map((f, i) => Tooth(f, lowOff[i], true))}
+                </div>
+              </div>
+            );
+          })()}
         </div>
       </section>
 
