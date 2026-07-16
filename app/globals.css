@@ -1219,3 +1219,23 @@ body{counter-reset:sec}
 @media(prefers-reduced-motion:reduce){
   .jnode-card{opacity:1;transform:none}.jflow-fill{transition:none}
 }
+
+/* ============================================================
+   Hero owns the first screen; the lead/quiz card floats over its
+   bottom edge (position:relative + z-index), so it straddles the
+   fold without the hero having to shrink to make room.
+   ============================================================ */
+@media(min-width:961px){
+  .hero .hero-grid{
+    min-height:calc(100svh - 84px);
+    align-items:center;      /* center each column's content */
+    align-content:center;    /* center the whole block in the tall hero */
+    padding-top:clamp(28px,4vh,56px);
+    padding-bottom:clamp(96px,9vh,150px);
+  }
+  /* a touch taller image so the hero reads full, not letterboxed */
+  .hero-figure .hero-media{aspect-ratio:5/4.7}
+  /* peek: a clear straddle layered on top of the tall hero */
+  .leadwrap{margin-top:clamp(-92px,-8.5vh,-58px)}
+  .quizwrap{margin-top:clamp(-96px,-9vh,-60px)}
+}
