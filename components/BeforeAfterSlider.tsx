@@ -63,6 +63,7 @@ export function BeforeAfterSlider({
       <img className="ba-img ba-before" src={before} alt={beforeAlt} draggable={false} />
       <span className="ba-chip ba-chip-l">Before</span>
       <span className="ba-chip ba-chip-r">After</span>
+      <span className="ba-hint" aria-hidden="true">&#8592; Drag &#8594;</span>
       <button
         type="button"
         className="ba-handle"

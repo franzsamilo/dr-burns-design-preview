@@ -1130,3 +1130,31 @@ body{counter-reset:sec}
 /* ---- Meet the Doctor (implants): clean rectangle, no arch/curve
    (was an arched video that read as skewed) ---- */
 .bio-media{border-radius:var(--radius)}
+
+/* ============================================================
+   Feedback pass: less curve where it read "not premium",
+   clearer before/after affordance
+   ============================================================ */
+
+/* Hero: swap the big dome arch for a clean, premium rounded rectangle,
+   and drop the decorative arch outline (the "why is this curved" bit) */
+.hero-media{border-radius:20px}
+.hero-arch-deco{display:none}
+
+/* Authority credentials: clean cards, not domed (felt un-premium) */
+.cred{border-radius:16px}
+
+/* Before/after: make the drag obvious — pulsing handle + a "drag" hint */
+.ba-handle{animation:baPulse 2.4s ease-in-out infinite}
+@keyframes baPulse{
+  0%,100%{box-shadow:0 10px 24px -6px rgba(0,0,0,.55),0 0 0 0 rgba(255,255,255,.5)}
+  50%{box-shadow:0 10px 24px -6px rgba(0,0,0,.55),0 0 0 12px rgba(255,255,255,0)}
+}
+.ba-hint{position:absolute;left:var(--pos,50%);top:calc(50% + 40px);transform:translateX(-50%);z-index:3;
+  background:rgba(12,21,25,.72);color:#fff;font-family:'Montserrat',sans-serif;font-size:.66rem;font-weight:800;
+  letter-spacing:.12em;text-transform:uppercase;padding:5px 11px;border-radius:999px;white-space:nowrap;
+  backdrop-filter:blur(6px);pointer-events:none;animation:baHintFloat 2.4s ease-in-out infinite}
+@keyframes baHintFloat{0%,100%{transform:translateX(-50%)}50%{transform:translateX(-50%) translateY(3px)}}
+@media(prefers-reduced-motion:reduce){
+  .ba-handle{animation:none}.ba-hint{animation:none}
+}

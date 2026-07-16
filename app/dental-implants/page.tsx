@@ -2,7 +2,6 @@
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { StickyCta } from "@/components/StickyCta";
 import { VideoWell } from "@/components/VideoWell";
 import { Reveal } from "@/components/Reveal";
 import { LeadForm } from "@/components/LeadForm";
@@ -211,7 +210,7 @@ export default function DentalImplantsPage() {
             </div>
             <div style={{ textAlign: "center" }}>
               <a className="btn btn-teal" href="#quiz">
-                See If You Qualify
+                Book My Free Consultation
               </a>
             </div>
           </div>
@@ -265,7 +264,7 @@ export default function DentalImplantsPage() {
         <section className="protocol" id="protocol">
           <div className="wrap protocol-grid">
             <div className="protocol-media">
-              <img src="/assets/img/burns-protocol-craft-1.jpg" alt="Dr. Burns hand-shading a dental restoration to match a natural smile" />
+              <img src="/assets/img/dr-burns-smile.jpg" alt="Dr. Jeffrey Burns, the one doctor who handles your case start to finish" />
             </div>
             <div>
               <span className="eyebrow">The Burns Protocol</span>
@@ -435,9 +434,9 @@ export default function DentalImplantsPage() {
             </div>
             <div className="test-grid">
               {[
-                ["testimonial-1.mp4", "wall-jill.jpg", "Jill Bush", "DreamSmile™ Patient"],
-                ["testimonial-2.mp4", "wall-joe.jpg", "Joe Vile", "DreamSmile™ Patient"],
-                ["testimonial-3.mp4", "wall-tammy.jpg", "Tammy", "DreamSmile™ Patient"],
+                ["testimonial-1.mp4", "wall-jill.jpg", "Jill Bush", "Her new smile, in one day"],
+                ["testimonial-2.mp4", "wall-joe.jpg", "Joe Vile", "Eating everything again"],
+                ["testimonial-3.mp4", "wall-tammy.jpg", "Tammy", "Confident to smile again"],
               ].map(([vid, img, name, cap]) => (
                 <div className="test-card" key={name}>
                   <VideoWell
@@ -502,7 +501,6 @@ export default function DentalImplantsPage() {
         </section>
       </main>
       <SiteFooter />
-      <StickyCta />
       <Reveal />
     </>
   );

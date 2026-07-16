@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { StickyCta } from "@/components/StickyCta";
 import { VideoWell } from "@/components/VideoWell";
 import { Reveal } from "@/components/Reveal";
 import { LeadForm } from "@/components/LeadForm";
@@ -838,7 +837,6 @@ export default function HomePage() {
       </section>
 
       <SiteFooter />
-      <StickyCta />
 
       <script
         type="application/ld+json"
