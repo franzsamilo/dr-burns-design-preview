@@ -72,6 +72,9 @@ export default function DentalImplantsPage() {
                 Serving New Market, Harrisonburg &amp; the Shenandoah Valley
               </span>
               <h1>Dental Implants Near Harrisonburg, VA</h1>
+              <svg className="smile-mark" viewBox="0 0 120 22" aria-hidden="true">
+                <path d="M5,5 Q60,27 115,5" />
+              </svg>
               <div className="sub">
                 Your DreamSmile<sup className="tm">&trade;</sup> is here.
               </div>

@@ -112,6 +112,9 @@ export default function HomePage() {
             <h1>
               A Dream Smile You Never Have to <em>Hide</em>
             </h1>
+            <svg className="smile-mark" viewBox="0 0 120 22" aria-hidden="true">
+              <path d="M5,5 Q60,27 115,5" />
+            </svg>
             <div className="sub">
               DreamSmile<sup className="tm">&trade;</sup> by Dr. Jeffrey Burns.
             </div>

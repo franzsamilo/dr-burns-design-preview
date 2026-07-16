@@ -1246,3 +1246,23 @@ body{counter-reset:sec}
   .leadwrap{margin-top:calc(clamp(-92px,-8.5vh,-58px) - 16px)}
   .quizwrap{margin-top:calc(clamp(-96px,-9vh,-60px) - 16px)}
 }
+
+/* ============================================================
+   Hero soul: the signature DreamSmile arch, echoed from the team mouth.
+   The hero photo is the first "tooth" (an arch crown), and a smile-curve
+   draws in under the headline — the same ∪ that runs the team section.
+   ============================================================ */
+/* signature smile stroke under the headline */
+.smile-mark{display:block;width:clamp(118px,13vw,178px);height:auto;overflow:visible;
+  margin:6px 0 12px}
+.smile-mark path{fill:none;stroke:var(--tan);stroke-width:4;stroke-linecap:round;
+  stroke-dasharray:170;stroke-dashoffset:170;animation:smileDraw 1s var(--ease) .5s forwards}
+.implants .smile-mark path{stroke:var(--teal-brand)}
+@keyframes smileDraw{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.smile-mark path{animation:none;stroke-dashoffset:0}}
+
+/* the hero photo as a DreamSmile tooth-crown arch (deliberate motif, not a
+   decorative dome): tall image, rounded crown on top, near-flat bite at the
+   bottom — the same silhouette as the upper teeth in the team mouth */
+.hero-media{border-radius:clamp(104px,13vw,196px) clamp(104px,13vw,196px) 22px 22px}
+@media(max-width:600px){.hero-media{border-radius:64px 64px 16px 16px}}
