@@ -631,18 +631,21 @@ nav.menu{gap:clamp(12px,1.3vw,20px)}
 .hero .lede{font-size:1rem;margin-bottom:12px;max-width:44ch}
 ul.hero-ticks{margin:4px 0 18px;gap:7px}
 ul.hero-ticks li{font-size:.92rem}
-.hero .hero-grid{align-items:center;padding-top:clamp(18px,2.2vw,30px);padding-bottom:clamp(58px,5.4vw,82px);gap:clamp(26px,4vw,50px)}
+.hero .hero-grid{align-items:center;padding-top:clamp(18px,2.2vw,30px);padding-bottom:clamp(74px,6.6vw,106px);gap:clamp(26px,4vw,50px)}
 .hero-media{aspect-ratio:5/4}
 .leadwrap{margin-top:clamp(-96px,-8vw,-64px)}
 /* implant hero also compacts + keeps its quiz peek */
-.implants .hero .hero-grid{padding-bottom:clamp(40px,4.6vw,66px)}
+.implants .hero .hero-grid{padding-bottom:clamp(56px,5.6vw,86px)}
 .quizwrap{margin-top:clamp(-84px,-6.6vw,-60px)}
 
 /* back off the overlap so peeking cards clear the hero CTAs */
 .leadwrap{margin-top:clamp(-72px,-5.6vw,-52px)}
 
-/* final: clear the CTAs with a comfortable gap, still peeks on laptops */
-.leadwrap{margin-top:clamp(-52px,-4.2vw,-38px)}
+/* Now that the hero copy is compact, the old deep overlap let the heavy
+   lead/quiz cards eat the hero. Tame the peek to a subtle straddle so the
+   hero owns the first screen and the cards read as the next beat. */
+.leadwrap{margin-top:clamp(-30px,-2.4vw,-20px)}
+.quizwrap{margin-top:clamp(-32px,-2.6vw,-22px)}
 
 /* ---- DreamSmile banner: blend opaque white bg into the light section ---- */
 .introds .dslogo{mix-blend-mode:multiply}
