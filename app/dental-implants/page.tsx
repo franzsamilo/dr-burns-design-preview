@@ -394,12 +394,7 @@ export default function DentalImplantsPage() {
         <section className="biosec" id="doctor">
           <div className="wrap bio-grid">
             <div className="bio-media">
-              <VideoWell
-                src="/assets/video/about-dr-burns.mp4"
-                poster="/assets/img/dr-burns.jpg"
-                alt="Meet Dr. Jeffrey S. Burns, DDS"
-                ratio="4/5"
-              />
+              <img src="/assets/img/dr-burns.jpg" alt="Dr. Jeffrey S. Burns, DDS" />
             </div>
             <div>
               <span className="eyebrow" style={{ color: "var(--teal-brand)" }}>

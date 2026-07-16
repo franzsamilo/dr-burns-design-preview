@@ -1126,3 +1126,7 @@ body{counter-reset:sec}
   color:rgba(255,255,255,.85);line-height:1.5}
 @media(max-width:960px){.cred-row{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:600px){.cred-row{grid-template-columns:1fr 1fr}}
+
+/* ---- Meet the Doctor (implants): clean rectangle, no arch/curve
+   (was an arched video that read as skewed) ---- */
+.bio-media{border-radius:var(--radius)}
