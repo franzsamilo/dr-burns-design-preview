@@ -1044,8 +1044,9 @@ body{counter-reset:sec}
 }
 
 /* ---- Meet the Team: arched staff portraits ---- */
-/* The team as a mouth: an upper arch of tooth-shaped cards over a flipped
-   lower arch, both riding a shallow ∪ smile curve and meeting at a bite line. */
+/* The team as a mouth: an upper row of teeth whose crowns curve DOWN over a
+   lower row whose crowns curve UP — the rounded biting edges meet at a central
+   bite line, like real teeth. Both ride a shallow ∪ smile curve. */
 .team-mouth{margin-top:clamp(26px,4vw,44px);display:flex;flex-direction:column;
   align-items:center;padding:28px 0 36px}
 .team-arch{display:flex;justify-content:center;gap:clamp(8px,1.1vw,16px);width:100%}
@@ -1053,11 +1054,13 @@ body{counter-reset:sec}
 .tooth{flex:0 0 clamp(92px,calc((100% - 5*16px)/6),200px);aspect-ratio:3/4;
   overflow:hidden;background:#dfeaea;box-shadow:var(--shadow-card);
   transform:translateY(var(--y,0));
-  border-radius:clamp(46px,6vw,92px) clamp(46px,6vw,92px) 10px 10px;
+  /* upper teeth: flat gum line at top, rounded crown at the bottom (bite line) */
+  border-radius:10px 10px clamp(46px,6vw,92px) clamp(46px,6vw,92px);
   transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
 .tooth img{width:100%;height:100%;object-fit:cover;object-position:center top;
   transition:transform .5s var(--ease)}
-.tooth-lower{border-radius:10px 10px clamp(46px,6vw,92px) clamp(46px,6vw,92px)}
+/* lower teeth: rounded crown at the top (bite line), flat gum line at bottom */
+.tooth-lower{border-radius:clamp(46px,6vw,92px) clamp(46px,6vw,92px) 10px 10px}
 .tooth:hover{transform:translateY(calc(var(--y,0px) - 6px));box-shadow:var(--shadow);
   position:relative;z-index:2}
 .tooth:hover img{transform:scale(1.05)}
