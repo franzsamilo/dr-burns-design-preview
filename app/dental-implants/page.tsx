@@ -25,6 +25,13 @@ function Check() {
     </svg>
   );
 }
+function Phone() {
+  return (
+    <svg viewBox="0 0 24 24">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z" />
+    </svg>
+  );
+}
 
 const JOURNEY: [string, string, React.ReactNode][] = [
   ["DreamSmile™ Assessment", "Meet the team, talk options", <><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M8 3v4M16 3v4M3 10h18" /></>],
@@ -69,30 +76,16 @@ export default function DentalImplantsPage() {
                 Your DreamSmile<sup className="tm">&trade;</sup> is here.
               </div>
               <p className="lede">
-                Replace one tooth, several teeth, or a whole smile, close to
-                home, with a doctor who does this every day.
+                One tooth, several, or a whole arch &mdash; replaced close to
+                home by a doctor who does this every day. Often in a single day.
               </p>
-              <ul className="hero-ticks">
-                <li>
-                  <Check />
-                  30+ years of implant experience, 98%+ success rate
-                </li>
-                <li>
-                  <Check />
-                  Same Day Teeth: walk out with a temporary smile the day of
-                  surgery
-                </li>
-                <li>
-                  <Check />
-                  Backed by the DreamSmile&trade; Lifetime Warranty
-                </li>
-              </ul>
               <div className="hero-actions">
                 <a className="btn btn-tan" href="#quiz">
                   Schedule My Free Consultation
                 </a>
-                <a className="btn btn-ghost-dark" href="tel:5407408937">
-                  Call Him
+                <a className="hero-call" href="tel:5407408937">
+                  <Phone />
+                  or call 540-740-8937
                 </a>
               </div>
               <div className="hero-trust">

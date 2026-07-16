@@ -23,6 +23,13 @@ function Cross() {
     </svg>
   );
 }
+function Phone() {
+  return (
+    <svg viewBox="0 0 24 24">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z" />
+    </svg>
+  );
+}
 const CRED_ICONS: Record<string, React.ReactNode> = {
   medal: (
     <>
@@ -109,31 +116,16 @@ export default function HomePage() {
               DreamSmile<sup className="tm">&trade;</sup> by Dr. Jeffrey Burns.
             </div>
             <p className="lede">
-              Replace one tooth, several teeth, or a whole smile close to home,
-              with one doctor who&apos;s done this for more than 30 years. New
-              teeth, often in a single day.
+              New teeth &mdash; often in a single day &mdash; from one doctor
+              who&apos;s cared for Valley smiles for more than 30 years.
             </p>
-            <ul className="hero-ticks">
-              <li>
-                <Check />
-                30+ years placing implants, 98%+ success rate
-              </li>
-              <li>
-                <Check />
-                Sedation with a physician anesthesiologist, so fear never gets a
-                vote
-              </li>
-              <li>
-                <Check />
-                Backed by the DreamSmile&trade; Lifetime Warranty
-              </li>
-            </ul>
             <div className="hero-actions">
               <a className="btn btn-tan" href="#consult">
                 Schedule My Free Consultation
               </a>
-              <a className="btn btn-ghost" href="tel:5407408937">
-                Call: 540-740-8937
+              <a className="hero-call" href="tel:5407408937">
+                <Phone />
+                or call 540-740-8937
               </a>
             </div>
             <div className="hero-trust">

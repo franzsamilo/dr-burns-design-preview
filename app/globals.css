@@ -72,7 +72,13 @@ nav.menu a:hover{color:var(--cyan)}
 ul.hero-ticks{list-style:none;margin:8px 0 26px;display:flex;flex-direction:column;gap:9px}
 ul.hero-ticks li{display:flex;gap:11px;color:#fff;font-weight:600;font-size:.98rem}
 ul.hero-ticks svg{flex:none;width:20px;height:20px;stroke:var(--teal-brand);fill:none;stroke-width:2.4;margin-top:4px}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-actions{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.hero-call{display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,.82);font-weight:600;font-size:.95rem;transition:color .2s}
+.hero-call:hover{color:#fff}
+.hero-call svg{width:17px;height:17px;stroke:var(--teal-brand);fill:none;stroke-width:2;flex:none}
+.implants .hero-call{color:var(--body)}
+.implants .hero-call:hover{color:var(--ink)}
+.implants .hero-call svg{stroke:var(--teal)}
 .hero-media{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:5/4.4;background:#183a44}
 .hero-media img{width:100%;height:100%;object-fit:cover}
 
