@@ -9,6 +9,7 @@ import { StatCounter } from "@/components/StatCounter";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { CostSection } from "@/components/CostSection";
 import { ReviewsBand } from "@/components/ReviewsBand";
+import { JourneyFlow } from "@/components/JourneyFlow";
 
 export const metadata: Metadata = {
   title: "Dental Implants Near New Market, VA | DreamSmile by Dr. Jeffrey Burns",
@@ -110,8 +111,9 @@ export default function DentalImplantsPage() {
               <span className="hero-arch-deco" aria-hidden="true" />
               <div className="hero-media">
                 <img
-                  src="/assets/img/hero-burns.jpg"
-                  alt="Dr. Jeffrey Burns welcoming a dental implant patient at his New Market office"
+                  src="/assets/img/topic-senior-implant-trust.jpg"
+                  alt="A happy dental implant patient in the chair with her friendly Burns clinician"
+                  style={{ objectPosition: "70% center" }}
                 />
               </div>
               <div className="hero-seal" aria-hidden="true">
@@ -245,18 +247,7 @@ export default function DentalImplantsPage() {
               <span className="eyebrow">Your DreamSmile&trade; Journey</span>
               <h2>Eight simple steps, one team, zero guesswork</h2>
             </div>
-            <div className="journey-grid">
-              {JOURNEY.map(([h, p, icon], i) => (
-                <div className="jcap" key={h}>
-                  <div className="jn">{i + 1}</div>
-                  <div className="jic">
-                    <svg viewBox="0 0 24 24">{icon}</svg>
-                  </div>
-                  <h3>{h}</h3>
-                  <p>{p}</p>
-                </div>
-              ))}
-            </div>
+            <JourneyFlow steps={JOURNEY} />
           </div>
         </section>
 
@@ -292,13 +283,18 @@ export default function DentalImplantsPage() {
           <div className="wrap">
             <div className="edit-block">
               <div>
-                <h2>Missing teeth affect more than your smile</h2>
+                <h2>Missing teeth take more than a tooth</h2>
                 <p>
-                  A gap in your smile changes how you eat, how you speak, and how
-                  often you let people take your picture. Left alone, missing
-                  teeth also let your jawbone shrink, which ages your face years
-                  ahead of schedule. An implant stops that process because it
-                  works like a natural tooth root.
+                  It&apos;s the photos you dodge. The steak you don&apos;t order.
+                  The laugh you cover with your hand. Missing or failing teeth
+                  quietly chip away at your confidence, your comfort, and the
+                  food you love — and left alone, the jawbone shrinks, aging your
+                  face years ahead of schedule.
+                </p>
+                <p>
+                  A DreamSmile&trade; gives it back: teeth that look natural,
+                  chew like your own, and finally let you stop thinking about
+                  your mouth.
                 </p>
               </div>
               <div className="edit-media">

@@ -154,8 +154,9 @@ export default function HomePage() {
             <span className="hero-arch-deco" aria-hidden="true" />
             <div className="hero-media">
               <img
-                src="/assets/img/dr-burns-smile.jpg"
-                alt="Dr. Jeffrey Burns laughing warmly in black scrubs at his New Market, VA practice"
+                src="/assets/img/topic-full-arch-senior.jpg"
+                alt="A DreamSmile patient laughing with delight at his new smile in the mirror"
+                style={{ objectPosition: "60% center" }}
               />
             </div>
             <div className="hero-seal" aria-hidden="true">

@@ -1158,3 +1158,38 @@ body{counter-reset:sec}
 @media(prefers-reduced-motion:reduce){
   .ba-handle{animation:none}.ba-hint{animation:none}
 }
+
+/* ============================================================
+   Journey FLOWCHART — connected spine that fills as you scroll
+   ============================================================ */
+.jflow{position:relative;max-width:640px;margin:clamp(30px,4vw,52px) auto 0;padding-left:78px}
+.jflow-spine{position:absolute;left:28px;top:26px;bottom:26px;width:3px;border-radius:3px;
+  background:rgba(116,189,194,.22)}
+.jflow-fill{position:absolute;left:0;top:0;width:100%;border-radius:3px;
+  background:linear-gradient(var(--teal-brand),var(--teal));transition:height .15s linear}
+.jnode{position:relative;margin-bottom:clamp(14px,1.8vw,22px)}
+.jnode:last-child{margin-bottom:0}
+.jnode-dot{position:absolute;left:-78px;top:8px;width:58px;height:58px;border-radius:999px;z-index:1;
+  display:grid;place-items:center;background:#fff;border:3px solid rgba(116,189,194,.3);
+  font-family:'Amiri',Georgia,serif;font-size:1.5rem;font-weight:700;color:var(--slate);
+  transition:transform .4s var(--ease),background .4s var(--ease),border-color .4s var(--ease),color .4s var(--ease),box-shadow .4s var(--ease)}
+.jnode.is-on .jnode-dot{background:linear-gradient(140deg,var(--teal-brand),var(--teal));
+  border-color:transparent;color:#fff;transform:scale(1.06);box-shadow:0 12px 26px -8px rgba(34,109,122,.6)}
+.jnode-card{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);
+  border-radius:16px;box-shadow:0 20px 40px -30px rgba(18,37,44,.4);padding:18px 22px;
+  opacity:.5;transform:translateX(10px);transition:opacity .5s var(--ease),transform .5s var(--ease),box-shadow .4s var(--ease)}
+.jnode.is-on .jnode-card{opacity:1;transform:none;box-shadow:0 26px 50px -34px rgba(18,37,44,.5)}
+.jnode-ic{flex:none;width:48px;height:48px;border-radius:13px;background:var(--pale);display:grid;place-items:center}
+.jnode-ic svg{width:24px;height:24px;stroke:var(--teal);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.jnode-card h3{color:var(--ink);font-size:1.02rem;text-transform:none;margin-bottom:2px}
+.jnode-card p{color:var(--body);font-size:.9rem;max-width:none}
+@media(max-width:560px){
+  .jflow{padding-left:60px}
+  .jnode-dot{left:-60px;width:46px;height:46px;font-size:1.2rem;top:10px}
+  .jflow-spine{left:22px}
+  .jnode-card{padding:15px 16px;gap:12px}
+  .jnode-ic{width:40px;height:40px}
+}
+@media(prefers-reduced-motion:reduce){
+  .jnode-card{opacity:1;transform:none}.jflow-fill{transition:none}
+}
