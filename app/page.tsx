@@ -258,59 +258,47 @@ export default function HomePage() {
             <span className="eyebrow">More than teeth</span>
             <h2>The DreamSmile is...</h2>
           </div>
-          <div className="dsis-list">
-            <div className="dsis-item">
-              <img src="/assets/img/review4.jpg" alt="A Dr. Burns patient living without daily tooth pain" />
-              <div className="dsis-tx">
-                <h3>Getting Rid of Pain</h3>
-                <p>
-                  No more aching, loose, or infected teeth deciding how your day
-                  goes. Fixed implants settle the problem for good.
-                </p>
+          <div className="dsis-grid">
+            {[
+              [
+                "Getting rid of the pain",
+                "No more aching, loose, or infected teeth deciding how your day goes. Fixed implants settle it for good.",
+                <>
+                  <path d="M12 3l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-3z" />
+                  <path d="M9 12l2 2 4-4" />
+                </>,
+              ],
+              [
+                "Eating what you love",
+                "Steak, corn on the cob, an apple you just bite into. Implants bring back most of your natural chewing strength.",
+                <>
+                  <path d="M12 8c.5-2.5 2.2-4 4.5-4 .3 1.8-.6 3.4-2 4.2" />
+                  <path d="M8.5 8C6 8 4 10.2 4 13.2 4 17 7 21 9.4 21c1 0 1.4-.5 2.6-.5s1.6.5 2.6.5C17 21 20 16 20 13.2 20 10.2 18 8 15.5 8c-1.6 0-2.3.8-3.5.8S10.1 8 8.5 8z" />
+                </>,
+              ],
+              [
+                "Speaking naturally",
+                "No clicking, no slipping, no covering your mouth mid-sentence. Your teeth stay right where they belong.",
+                <path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12z" />,
+              ],
+              [
+                "Smiling with confidence",
+                "The moment you stop editing yourself out of photos — the one patients talk about most.",
+                <>
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M8 14s1.5 2.2 4 2.2 4-2.2 4-2.2" />
+                  <path d="M9 9.5h.01M15 9.5h.01" />
+                </>,
+              ],
+            ].map(([title, desc, icon]) => (
+              <div className="dsis-card" key={title as string}>
+                <div className="dsis-ic">
+                  <svg viewBox="0 0 24 24">{icon}</svg>
+                </div>
+                <h3>{title}</h3>
+                <p>{desc}</p>
               </div>
-              <span className="dsis-ck">
-                <Check />
-              </span>
-            </div>
-            <div className="dsis-item flip">
-              <img src="/assets/img/mike-2026.jpg" alt="Patient eating the foods he loves again" />
-              <div className="dsis-tx">
-                <h3>Eating the Foods That You Love</h3>
-                <p>
-                  Steak, corn on the cob, an apple you just bite into. Implants
-                  bring back most of your natural chewing strength.
-                </p>
-              </div>
-              <span className="dsis-ck">
-                <Check />
-              </span>
-            </div>
-            <div className="dsis-item">
-              <img src="/assets/img/kelly-2026.jpg" alt="Patient speaking clearly and naturally" />
-              <div className="dsis-tx">
-                <h3>Speaking Naturally</h3>
-                <p>
-                  No clicking, no slipping, no covering your mouth mid-sentence.
-                  Your teeth stay where they belong.
-                </p>
-              </div>
-              <span className="dsis-ck">
-                <Check />
-              </span>
-            </div>
-            <div className="dsis-item flip">
-              <img src="/assets/img/angela-2026.jpg" alt="Patient smiling with confidence again" />
-              <div className="dsis-tx">
-                <h3>Confidently Smiling Again</h3>
-                <p>
-                  The moment you stop editing yourself out of photos. That&apos;s
-                  the one patients talk about most.
-                </p>
-              </div>
-              <span className="dsis-ck">
-                <Check />
-              </span>
-            </div>
+            ))}
           </div>
         </div>
       </section>

@@ -5,11 +5,10 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { Reveal } from "@/components/Reveal";
 import { SurveyForm } from "@/components/SurveyForm";
 import { ScrollVideo } from "@/components/ScrollVideo";
-import { VideoChooser } from "@/components/VideoChooser";
+import { VideoWell } from "@/components/VideoWell";
 import { StatCounter } from "@/components/StatCounter";
 import { CostSection } from "@/components/CostSection";
 import { ReviewsBand } from "@/components/ReviewsBand";
-import { JourneyFlow } from "@/components/JourneyFlow";
 
 export const metadata: Metadata = {
   title: "Dental Implants Near New Market, VA | DreamSmile by Dr. Jeffrey Burns",
@@ -188,36 +187,44 @@ export default function DentalImplantsPage() {
           </div>
         </section>
 
-        {/* REAL PATIENT FACES */}
+        {/* REAL PATIENTS — video proof */}
         <section id="patients">
           <div className="wrap">
             <div className="sec-head">
               <span className="eyebrow">His patients. His work.</span>
               <h2>Real people from right here in the Valley</h2>
+              <p>
+                No actors, no stock footage &mdash; neighbors telling their own
+                story, filmed the day their new teeth went in.
+              </p>
             </div>
-            <VideoChooser
-              clips={[
-                {
-                  src: "/assets/video/testimonial-1.mp4",
-                  poster: "/assets/img/wall-jill.jpg",
-                  name: "Jill Bush",
-                  caption: "Her new smile, in one day",
-                },
-                {
-                  src: "/assets/video/testimonial-2.mp4",
-                  poster: "/assets/img/wall-joe.jpg",
-                  name: "Joe Vile",
-                  caption: "Eating everything again",
-                },
-                {
-                  src: "/assets/video/testimonial-3.mp4",
-                  poster: "/assets/img/wall-tammy.jpg",
-                  name: "Tammy",
-                  caption: "Confident to smile again",
-                },
-              ]}
-            />
-            <div style={{ textAlign: "center", marginTop: "clamp(28px,4vw,44px)" }}>
+            <div className="pv-grid">
+              {[
+                ["testimonial-2.mp4", "wall-joe.jpg", "Joe Vile", "Eating everything again — no more soft foods"],
+                ["testimonial-3.mp4", "wall-tammy.jpg", "Tammy", "Confident to smile in photos again"],
+              ].map(([vid, img, name, cap]) => (
+                <div className="pv-card" key={name}>
+                  <VideoWell
+                    src={`/assets/video/${vid}`}
+                    poster={`/assets/img/${img}`}
+                    alt={`${name}, dental implant patient of Dr. Burns`}
+                    ratio="5/6"
+                    overlay={
+                      <div className="pv-ov">
+                        <span className="stars">★★★★★</span>
+                        <b>{name}</b>
+                        <small>{cap}</small>
+                      </div>
+                    }
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="pv-cta">
+              <div className="pv-rating">
+                <span className="stars">★★★★★</span>
+                <b>5.0</b> from 260+ Google reviews
+              </div>
               <a className="btn btn-teal" href="#quiz">
                 Book My Free Consultation
               </a>
@@ -229,8 +236,8 @@ export default function DentalImplantsPage() {
         <section className="oneday" id="transformation">
           <img
             className="oneday-bg"
-            src="/assets/img/topic-full-arch-senior.jpg"
-            alt="A DreamSmile patient delighted with his new smile in the mirror"
+            src="/assets/img/topic-whitening-mirror.jpg"
+            alt="A DreamSmile patient lighting up at her new smile in the mirror"
           />
           <span className="oneday-scrim" aria-hidden="true" />
           <div className="wrap oneday-in">
@@ -259,7 +266,20 @@ export default function DentalImplantsPage() {
               <span className="eyebrow">Your DreamSmile&trade; Journey</span>
               <h2>Four simple steps, one team, zero guesswork</h2>
             </div>
-            <JourneyFlow steps={JOURNEY} />
+            <div className="stepflow">
+              {JOURNEY.map(([title, sub, icon], i) => (
+                <div className="stepflow-item" key={title}>
+                  <span className="stepflow-num">{i + 1}</span>
+                  <div className="stepflow-body">
+                    <div className="stepflow-ic">
+                      <svg viewBox="0 0 24 24">{icon}</svg>
+                    </div>
+                    <h3>{title}</h3>
+                    <p>{sub}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
