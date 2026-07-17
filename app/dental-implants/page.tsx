@@ -2,11 +2,11 @@
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { VideoWell } from "@/components/VideoWell";
 import { Reveal } from "@/components/Reveal";
-import { LeadForm } from "@/components/LeadForm";
+import { SurveyForm } from "@/components/SurveyForm";
+import { ScrollVideo } from "@/components/ScrollVideo";
+import { VideoChooser } from "@/components/VideoChooser";
 import { StatCounter } from "@/components/StatCounter";
-import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { CostSection } from "@/components/CostSection";
 import { ReviewsBand } from "@/components/ReviewsBand";
 import { JourneyFlow } from "@/components/JourneyFlow";
@@ -34,14 +34,10 @@ function Phone() {
 }
 
 const JOURNEY: [string, string, React.ReactNode][] = [
-  ["DreamSmile™ Assessment", "Meet the team, talk options", <><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M8 3v4M16 3v4M3 10h18" /></>],
-  ["3D Image Scan", "See exactly what's possible", <><circle cx="12" cy="12" r="8" /><path d="M12 4v16M4 12h16" /></>],
-  ["Smile Design Day", "A smile shaped to your face", <><rect x="3" y="4" width="18" height="13" rx="2" /><path d="M8 21h8M12 17v4" /></>],
-  ["Smile Creation Day", "Surgery and same-day teeth", <path d="M7 3h10l2 7c0 6-4 11-7 11S5 16 5 10l2-7z" />],
-  ["Smile Refinement", "Fine-tuned fit and bite", <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></>],
-  ["DreamSmile™ Reveal", "Your final smile goes in", <path d="M12 21s-7-5.686-7-11a7 7 0 1114 0c0 5.314-7 11-7 11z" />],
-  ["Lifetime Care", "Maintenance and check-ins", <path d="M20 6L9 17l-5-5" />],
-  ["Warranty Protection", "Covered for the long run", <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" />],
+  ["Assessment & 3D Scan", "Meet the team and see exactly what's possible", <><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M8 3v4M16 3v4M3 10h18" /></>],
+  ["Smile Design", "A new smile, shaped to your face", <><rect x="3" y="4" width="18" height="13" rx="2" /><path d="M8 21h8M12 17v4" /></>],
+  ["Smile Creation Day", "Implants placed and new teeth — often the same day", <path d="M7 3h10l2 7c0 6-4 11-7 11S5 16 5 10l2-7z" />],
+  ["Lifetime Care & Warranty", "Fine-tuning, check-ins, and coverage for the long run", <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" />],
 ];
 
 const PROTOCOL: [string, string][] = [
@@ -122,10 +118,14 @@ export default function DentalImplantsPage() {
                 30+ years — plus our pricing &amp; information guide.
               </p>
               <div className="qoutcome">
-                <img src="/assets/img/kelly-2026b.jpg" alt="A DreamSmile patient smiling after treatment" />
+                <img src="/assets/img/dr-burns-smile.jpg" alt="Dr. Jeffrey Burns, who personally handles every case" />
+                <span className="qoutcome-tag">
+                  <b>Dr. Jeffrey Burns</b>
+                  <small>Answers you personally</small>
+                </span>
               </div>
             </div>
-            <LeadForm />
+            <SurveyForm />
           </div>
         </div>
 
@@ -176,7 +176,14 @@ export default function DentalImplantsPage() {
               </div>
             </div>
             <div className="story-media">
-              <img src="/assets/img/wall-jill.jpg" alt="Jill Bush, a dental implant patient of Dr. Burns, smiling" />
+              <ScrollVideo
+                src="/assets/video/testimonial-1.mp4"
+                poster="/assets/img/wall-jill.jpg"
+                caption="Jill Bush"
+                sub="Full-arch implants, in one day"
+                alt="Jill Bush tells her DreamSmile story"
+                ratio="4/5"
+              />
             </div>
           </div>
         </section>
@@ -188,14 +195,29 @@ export default function DentalImplantsPage() {
               <span className="eyebrow">His patients. His work.</span>
               <h2>Real people from right here in the Valley</h2>
             </div>
-            <div className="faces-grid">
-              {["review1.jpg", "review2.jpg", "review3.jpg", "review4.jpg"].map((f) => (
-                <figure key={f}>
-                  <img src={`/assets/img/${f}`} alt="A smiling dental implant patient of Dr. Burns" />
-                </figure>
-              ))}
-            </div>
-            <div style={{ textAlign: "center" }}>
+            <VideoChooser
+              clips={[
+                {
+                  src: "/assets/video/testimonial-1.mp4",
+                  poster: "/assets/img/wall-jill.jpg",
+                  name: "Jill Bush",
+                  caption: "Her new smile, in one day",
+                },
+                {
+                  src: "/assets/video/testimonial-2.mp4",
+                  poster: "/assets/img/wall-joe.jpg",
+                  name: "Joe Vile",
+                  caption: "Eating everything again",
+                },
+                {
+                  src: "/assets/video/testimonial-3.mp4",
+                  poster: "/assets/img/wall-tammy.jpg",
+                  name: "Tammy",
+                  caption: "Confident to smile again",
+                },
+              ]}
+            />
+            <div style={{ textAlign: "center", marginTop: "clamp(28px,4vw,44px)" }}>
               <a className="btn btn-teal" href="#quiz">
                 Book My Free Consultation
               </a>
@@ -203,24 +225,29 @@ export default function DentalImplantsPage() {
           </div>
         </section>
 
-        {/* SEE THE DIFFERENCE — before/after reveal */}
-        <section id="transformation">
-          <div className="wrap">
-            <div className="sec-head">
-              <span className="eyebrow">Drag to see the difference</span>
+        {/* ONE DAY — emotional outcome + prompt */}
+        <section className="oneday" id="transformation">
+          <img
+            className="oneday-bg"
+            src="/assets/img/topic-full-arch-senior.jpg"
+            alt="A DreamSmile patient delighted with his new smile in the mirror"
+          />
+          <span className="oneday-scrim" aria-hidden="true" />
+          <div className="wrap oneday-in">
+            <div className="oneday-copy">
+              <span className="eyebrow">The DreamSmile&trade; difference</span>
               <h2>One day can change everything</h2>
-            </div>
-            <div className="ba-frame">
-              <BeforeAfterSlider
-                before="/assets/img/kelly-2026.jpg"
-                after="/assets/img/kelly-2026b.jpg"
-                beforeAlt="A DreamSmile patient before treatment"
-                afterAlt="The same patient after their DreamSmile"
-              />
-              <p className="ba-note">
-                Sample slider — real before/after photos from Dr. Burns&apos;s
-                patients drop in here before launch.
+              <p>
+                Walk in hiding your smile. Walk out with new teeth that look,
+                feel, and work like your own &mdash; steady enough to bite into
+                anything, often the very same day.
               </p>
+              <a className="btn btn-tan" href="#quiz">
+                Start My One Day
+              </a>
+              <span className="oneday-prompt">
+                Free consultation &middot; honest quote &middot; no pressure
+              </span>
             </div>
           </div>
         </section>
@@ -230,7 +257,7 @@ export default function DentalImplantsPage() {
           <div className="wrap">
             <div className="sec-head">
               <span className="eyebrow">Your DreamSmile&trade; Journey</span>
-              <h2>Eight simple steps, one team, zero guesswork</h2>
+              <h2>Four simple steps, one team, zero guesswork</h2>
             </div>
             <JourneyFlow steps={JOURNEY} />
           </div>
@@ -402,39 +429,6 @@ export default function DentalImplantsPage() {
               <a className="btn btn-tan" href="#quiz" style={{ marginTop: 26 }}>
                 Meet With Dr. Burns
               </a>
-            </div>
-          </div>
-        </section>
-
-        {/* REAL RESULTS */}
-        <section id="stories">
-          <div className="wrap">
-            <div className="sec-head">
-              <span className="eyebrow">Real Results. Real Patients.</span>
-              <h2>Filmed the day their new smiles went in</h2>
-            </div>
-            <div className="test-grid">
-              {[
-                ["testimonial-1.mp4", "wall-jill.jpg", "Jill Bush", "Her new smile, in one day"],
-                ["testimonial-2.mp4", "wall-joe.jpg", "Joe Vile", "Eating everything again"],
-                ["testimonial-3.mp4", "wall-tammy.jpg", "Tammy", "Confident to smile again"],
-              ].map(([vid, img, name, cap]) => (
-                <div className="test-card" key={name}>
-                  <VideoWell
-                    src={`/assets/video/${vid}`}
-                    poster={`/assets/img/${img}`}
-                    alt={`${name}, dental implant patient testimonial`}
-                    ratio="9/13"
-                    overlay={
-                      <div className="ov">
-                        <span className="stars">★★★★★</span>
-                        <b>{name}</b>
-                        <small>{cap}</small>
-                      </div>
-                    }
-                  />
-                </div>
-              ))}
             </div>
           </div>
         </section>

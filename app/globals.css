@@ -1327,3 +1327,111 @@ body{counter-reset:sec}
 
 /* Marquee tiles: center on faces (sources vary in framing) */
 .smile-track img{object-position:center 30%}
+
+/* ============================================================
+   Implants page rework: survey, scroll-video, video chooser, one-day CTA
+   ============================================================ */
+
+/* Dr. Burns tag on the quiz supporting image */
+.quiz .qoutcome{position:relative}
+.qoutcome-tag{position:absolute;left:14px;bottom:14px;display:flex;flex-direction:column;
+  background:rgba(9,22,26,.62);backdrop-filter:blur(6px);color:#fff;padding:8px 15px;border-radius:12px}
+.qoutcome-tag b{font-size:.94rem;font-weight:800}
+.qoutcome-tag small{font-size:.72rem;opacity:.85}
+
+/* Multi-step qualification survey */
+.survey{background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:clamp(24px,3vw,36px);display:flex;flex-direction:column}
+.survey-top{margin-bottom:22px}
+.survey-bar{height:7px;border-radius:999px;background:var(--pale);overflow:hidden;margin:10px 0 7px}
+.survey-bar span{display:block;height:100%;background:var(--teal-brand);border-radius:999px;
+  transition:width .45s var(--ease)}
+.survey-step{font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--body)}
+.survey-q h3{font-size:clamp(1.2rem,1.7vw,1.42rem);color:var(--ink);text-transform:none;margin-bottom:16px}
+.survey-opts{display:flex;flex-direction:column;gap:11px}
+.survey-opt{display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;
+  padding:16px 18px;border:2px solid var(--line);border-radius:13px;background:#fff;font-family:inherit;
+  font-size:1rem;font-weight:600;color:var(--ink);cursor:pointer;transition:border-color .2s,background .2s,transform .2s}
+.survey-opt:hover{border-color:var(--teal-brand);background:var(--pale);transform:translateY(-2px)}
+.survey-opt.is-on{border-color:var(--teal);background:var(--pale)}
+.survey-opt svg{width:20px;height:20px;stroke:var(--teal-brand);fill:none;stroke-width:2.4;flex:none}
+.survey-back{align-self:flex-start;background:none;border:none;color:var(--body);font-weight:700;
+  font-size:.85rem;cursor:pointer;margin-bottom:14px;padding:0}
+.survey-back:hover{color:var(--teal)}
+.survey-sub{color:var(--body);font-size:.95rem;margin-bottom:16px}
+.survey.is-sent{text-align:center;align-items:center;justify-content:center}
+@keyframes surveyIn{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
+.survey-q{animation:surveyIn .35s var(--ease) both}
+
+/* Scroll-autoplay patient story video */
+.scrollvid{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+  background:#0f2126;height:100%}
+.scrollvid video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.sv-cap{position:absolute;left:18px;right:18px;bottom:18px;z-index:2;color:#fff;display:flex;
+  flex-direction:column;text-shadow:0 2px 14px rgba(0,0,0,.6);pointer-events:none}
+.sv-cap .stars{color:#f5b942;letter-spacing:2px;font-size:.82rem}
+.sv-cap b{font-size:1.1rem;font-weight:800}
+.sv-cap small{font-size:.84rem;opacity:.92}
+.sv-sound{position:absolute;top:14px;right:14px;z-index:3;display:inline-flex;align-items:center;gap:7px;
+  background:rgba(9,22,26,.55);backdrop-filter:blur(6px);color:#fff;border:1px solid rgba(255,255,255,.28);
+  border-radius:999px;padding:7px 14px;font-size:.72rem;font-weight:800;letter-spacing:.02em;cursor:pointer;transition:background .2s}
+.sv-sound:hover{background:rgba(9,22,26,.78)}
+.sv-sound.is-on{background:var(--teal);border-color:var(--teal)}
+.sv-sound svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:2;flex:none}
+.story-media .scrollvid{box-shadow:none}
+
+/* Video chooser: featured player + rail of patients */
+.vchooser{display:grid;grid-template-columns:1.65fr .95fr;gap:clamp(16px,2vw,26px);align-items:stretch;
+  margin-top:clamp(28px,3.6vw,44px)}
+.vc-stage{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+  aspect-ratio:16/10;background:#0f2126}
+.vc-play{position:absolute;inset:0;width:100%;height:100%;border:none;padding:0;cursor:pointer;background:#0f2126}
+.vc-play img,.vc-video{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block}
+.vc-video{position:absolute;inset:0;object-position:center}
+.vc-play::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(0deg,rgba(9,22,26,.66),transparent 46%)}
+.vc-playbtn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;width:74px;height:74px;
+  border-radius:999px;background:rgba(255,255,255,.94);display:grid;place-items:center;box-shadow:var(--shadow);
+  transition:transform .3s var(--ease)}
+.vc-play:hover .vc-playbtn{transform:translate(-50%,-50%) scale(1.09)}
+.vc-playbtn svg{width:30px;height:30px;fill:var(--teal);margin-left:4px}
+.vc-stagecap{position:absolute;left:22px;bottom:20px;z-index:2;display:flex;flex-direction:column;
+  color:#fff;text-align:left;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.vc-stagecap .stars{color:#f5b942;letter-spacing:2px;font-size:.84rem}
+.vc-stagecap b{font-size:1.25rem;font-weight:800}
+.vc-stagecap small{font-size:.92rem;opacity:.94}
+.vc-rail{display:flex;flex-direction:column;gap:12px}
+.vc-thumb{display:flex;align-items:center;gap:14px;text-align:left;padding:11px;border:2px solid var(--line);
+  border-radius:15px;background:#fff;cursor:pointer;transition:border-color .2s,background .2s,transform .2s;font-family:inherit;flex:1}
+.vc-thumb:hover{border-color:var(--teal-brand);transform:translateX(3px)}
+.vc-thumb.is-on{border-color:var(--teal);background:var(--pale)}
+.vc-thumb img{width:66px;height:66px;border-radius:11px;object-fit:cover;object-position:center 22%;flex:none}
+.vc-thumb b{display:block;color:var(--ink);font-size:1rem;font-weight:800}
+.vc-thumb small{color:var(--body);font-size:.83rem}
+@media(max-width:760px){
+  .vchooser{grid-template-columns:1fr}
+  .vc-rail{flex-direction:row;overflow-x:auto;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+  .vc-thumb{flex:0 0 82%;scroll-snap-align:start}
+}
+
+/* One-day emotional CTA band (replaces the placeholder before/after) */
+.oneday{position:relative;overflow:hidden;padding:clamp(64px,10vw,132px) 0}
+.oneday-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% center;z-index:0}
+.oneday-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(95deg,rgba(9,22,26,.93) 0%,rgba(9,22,26,.8) 34%,rgba(9,22,26,.34) 60%,rgba(9,22,26,0) 82%)}
+.oneday-in{position:relative;z-index:2}
+.oneday-copy{max-width:min(560px,92%)}
+.oneday-copy .eyebrow{color:var(--teal-brand)}
+.oneday-copy h2{color:#fff;margin:6px 0 14px}
+.oneday-copy p{color:rgba(255,255,255,.9);margin-bottom:26px;max-width:46ch}
+.oneday-prompt{display:block;margin-top:15px;color:rgba(255,255,255,.72);font-size:.8rem;font-weight:800;
+  letter-spacing:.08em;text-transform:uppercase}
+@media(max-width:700px){
+  .oneday-scrim{background:linear-gradient(180deg,rgba(9,22,26,.82),rgba(9,22,26,.62))}
+  .oneday-bg{object-position:70% center}
+}
+
+/* Videos read best as clean rectangles (arched video corners clip controls and
+   were flagged before) — drop the arch motif when a media well holds a video. */
+.story-media:has(.scrollvid){border-radius:var(--radius)}
+.story-media:has(.scrollvid) .scrollvid{border-radius:var(--radius)}
