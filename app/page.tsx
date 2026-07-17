@@ -112,6 +112,14 @@ export default function HomePage() {
         <span className="hero-scrim" aria-hidden="true" />
         <div className="wrap hero-bleed-in">
           <div className="hero-copy">
+            <div className="hero-doc">
+              <img src="/assets/img/dr-burns.jpg" alt="Dr. Jeffrey Burns" />
+              <span>
+                Every smile personally by
+                <b>Dr. Jeffrey Burns</b>
+                <i>One doctor &middot; 30+ years</i>
+              </span>
+            </div>
             <h1>
               A Dream Smile You Never Have to <em>Hide</em>
             </h1>

@@ -1295,3 +1295,26 @@ body{counter-reset:sec}
     linear-gradient(180deg, rgba(9,22,26,.72) 0%, rgba(9,22,26,.5) 40%,
       rgba(9,22,26,.66) 100%)}
 }
+
+/* Doctor presence in the full-bleed hero: a glass chip with Dr. Burns'
+   portrait — the "one doctor" promise, without cluttering the reveal. */
+.hero-doc{display:inline-flex;align-items:center;gap:12px;
+  background:rgba(9,22,26,.4);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);
+  border:1px solid rgba(255,255,255,.2);border-radius:999px;
+  padding:6px 20px 6px 6px;margin-bottom:22px}
+.hero-doc img{width:48px;height:48px;border-radius:999px;object-fit:cover;
+  object-position:center 22%;border:2px solid rgba(255,255,255,.75);flex:none}
+.hero-doc span{display:flex;flex-direction:column;line-height:1.2;
+  color:rgba(255,255,255,.82);font-size:.72rem;font-weight:600;letter-spacing:.02em}
+.hero-doc b{color:#fff;font-size:1rem;font-weight:800;font-family:'Amiri',Georgia,serif}
+.hero-doc i{color:var(--tan);font-style:normal;font-size:.66rem;font-weight:800;
+  letter-spacing:.09em;text-transform:uppercase;margin-top:2px}
+
+/* Implants hero goes full-bleed too — force white copy over the dark scrim,
+   overriding the page's light-theme hero rules. */
+.implants .hero-bleed h1{color:#fff;max-width:16ch}
+.implants .hero-bleed .hero-oneline{color:rgba(255,255,255,.92)}
+.implants .hero-bleed .smile-mark path{stroke:var(--teal-brand)}
+.hero-bleed .hero-trust p,.hero-bleed .hero-trust b{color:#fff}
+.hero-bleed .hero-bg{object-position:64% center}
+@media(max-width:600px){.hero-doc b{font-size:.94rem}.hero-doc{padding-right:16px}}

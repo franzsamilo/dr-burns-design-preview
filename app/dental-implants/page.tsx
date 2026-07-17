@@ -65,30 +65,33 @@ export default function DentalImplantsPage() {
       <SiteHeader />
       <main className="implants">
         {/* HERO — light split, local SEO */}
-        <section className="hero" id="top">
-          <div className="wrap hero-grid">
-            <div>
-              <span className="eyebrow">
-                Serving New Market, Harrisonburg &amp; the Shenandoah Valley
-              </span>
+        <section className="hero hero-bleed" id="top">
+          <img
+            className="hero-bg"
+            src="/assets/img/topic-senior-implant-trust.jpg"
+            alt="A happy dental implant patient in the chair with her friendly Burns clinician"
+          />
+          <span className="hero-scrim" aria-hidden="true" />
+          <div className="wrap hero-bleed-in">
+            <div className="hero-copy">
+              <div className="hero-doc">
+                <img src="/assets/img/dr-burns.jpg" alt="Dr. Jeffrey Burns" />
+                <span>
+                  Every case personally by
+                  <b>Dr. Jeffrey Burns</b>
+                  <i>One doctor &middot; 30+ years</i>
+                </span>
+              </div>
               <h1>Dental Implants Near Harrisonburg, VA</h1>
               <svg className="smile-mark" viewBox="0 0 120 22" aria-hidden="true">
                 <path d="M5,5 Q60,27 115,5" />
               </svg>
-              <div className="sub">
-                Your DreamSmile<sup className="tm">&trade;</sup> is here.
-              </div>
-              <p className="lede">
-                One tooth, several, or a whole arch &mdash; replaced close to
-                home by a doctor who does this every day. Often in a single day.
+              <p className="hero-oneline">
+                A whole new smile &mdash; often in a single day.
               </p>
               <div className="hero-actions">
                 <a className="btn btn-tan" href="#quiz">
                   Schedule My Free Consultation
-                </a>
-                <a className="hero-call" href="tel:5407408937">
-                  <Phone />
-                  or call 540-740-8937
                 </a>
               </div>
               <div className="hero-trust">
@@ -101,20 +104,6 @@ export default function DentalImplantsPage() {
                   <span className="stars">★★★★★</span>
                   <b>Rated 5.0</b> from 260+ patient reviews
                 </p>
-              </div>
-            </div>
-            <div className="hero-figure">
-              <span className="hero-arch-deco" aria-hidden="true" />
-              <div className="hero-media">
-                <img
-                  src="/assets/img/topic-senior-implant-trust.jpg"
-                  alt="A happy dental implant patient in the chair with her friendly Burns clinician"
-                  style={{ objectPosition: "70% center" }}
-                />
-              </div>
-              <div className="hero-seal" aria-hidden="true">
-                <span className="hs-num">1&#8209;Day</span>
-                <span className="hs-lbl">New teeth, often</span>
               </div>
             </div>
           </div>
