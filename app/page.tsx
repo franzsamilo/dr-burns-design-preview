@@ -103,60 +103,39 @@ export default function HomePage() {
       <SiteHeader />
 
       {/* 1. HERO */}
-      <section className="hero" id="top">
-        <div className="wrap hero-grid">
-          <div>
-            <span className="eyebrow">
-              Dental implants in New Market &amp; the Shenandoah Valley
-            </span>
+      <section className="hero hero-bleed" id="top">
+        <img
+          className="hero-bg"
+          src="/assets/img/topic-full-arch-senior.jpg"
+          alt="A DreamSmile patient laughing with delight at his new smile in the mirror"
+        />
+        <span className="hero-scrim" aria-hidden="true" />
+        <div className="wrap hero-bleed-in">
+          <div className="hero-copy">
             <h1>
               A Dream Smile You Never Have to <em>Hide</em>
             </h1>
             <svg className="smile-mark" viewBox="0 0 120 22" aria-hidden="true">
               <path d="M5,5 Q60,27 115,5" />
             </svg>
-            <div className="sub">
-              DreamSmile<sup className="tm">&trade;</sup> by Dr. Jeffrey Burns.
-            </div>
-            <p className="lede">
-              New teeth &mdash; often in a single day &mdash; from one doctor
-              who&apos;s cared for Valley smiles for more than 30 years.
+            <p className="hero-oneline">
+              New teeth &mdash; often in a single day.
             </p>
             <div className="hero-actions">
               <a className="btn btn-tan" href="#consult">
                 Schedule My Free Consultation
               </a>
-              <a className="hero-call" href="tel:5407408937">
-                <Phone />
-                or call 540-740-8937
-              </a>
             </div>
             <div className="hero-trust">
               <div className="ht-avatars">
-                {["wall-tammy", "wall-diane", "wall-jill"].map(
-                  (f) => (
-                    <img key={f} src={`/assets/img/${f}.jpg`} alt="" aria-hidden="true" />
-                  )
-                )}
+                {["wall-tammy", "wall-diane", "wall-jill"].map((f) => (
+                  <img key={f} src={`/assets/img/${f}.jpg`} alt="" aria-hidden="true" />
+                ))}
               </div>
               <p>
                 <span className="stars">★★★★★</span>
                 <b>Rated 5.0</b> from 260+ patient reviews
               </p>
-            </div>
-          </div>
-          <div className="hero-figure">
-            <span className="hero-arch-deco" aria-hidden="true" />
-            <div className="hero-media">
-              <img
-                src="/assets/img/topic-full-arch-senior.jpg"
-                alt="A DreamSmile patient laughing with delight at his new smile in the mirror"
-                style={{ objectPosition: "60% center" }}
-              />
-            </div>
-            <div className="hero-seal" aria-hidden="true">
-              <span className="hs-num">30+</span>
-              <span className="hs-lbl">Years of new smiles</span>
             </div>
           </div>
         </div>

@@ -1266,3 +1266,32 @@ body{counter-reset:sec}
    bottom — the same silhouette as the upper teeth in the team mouth */
 .hero-media{border-radius:clamp(104px,13vw,196px) clamp(104px,13vw,196px) 22px 22px}
 @media(max-width:600px){.hero-media{border-radius:64px 64px 16px 16px}}
+
+/* ============================================================
+   Full-bleed hero: the reveal photo IS the hero. Copy stripped to the
+   hook, sitting over a directional scrim. (homepage)
+   ============================================================ */
+.hero-bleed{position:relative;display:flex;align-items:center;overflow:hidden;
+  min-height:calc(100svh - 84px);padding:0}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  object-position:66% center;z-index:0}
+.hero-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:
+    linear-gradient(96deg, rgba(9,22,26,.95) 0%, rgba(9,22,26,.86) 26%,
+      rgba(9,22,26,.55) 46%, rgba(9,22,26,.12) 66%, rgba(9,22,26,0) 82%),
+    linear-gradient(0deg, rgba(9,22,26,.55) 0%, rgba(9,22,26,0) 28%)}
+.hero-bleed-in{position:relative;z-index:2;width:100%}
+.hero-copy{max-width:min(560px,92%)}
+.hero-bleed h1{color:#fff;max-width:16ch;margin:0 0 4px;
+  text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.hero-oneline{color:rgba(255,255,255,.92);font-weight:500;
+  font-size:clamp(1.08rem,1.5vw,1.34rem);margin:8px 0 26px;max-width:30ch;
+  text-shadow:0 1px 16px rgba(0,0,0,.3)}
+.hero-bleed .hero-trust{margin-top:26px}
+@media(max-width:960px){
+  .hero-bleed{min-height:auto;padding:clamp(40px,12vw,80px) 0 clamp(72px,16vw,110px)}
+  .hero-bg{object-position:72% center}
+  .hero-scrim{background:
+    linear-gradient(180deg, rgba(9,22,26,.72) 0%, rgba(9,22,26,.5) 40%,
+      rgba(9,22,26,.66) 100%)}
+}
