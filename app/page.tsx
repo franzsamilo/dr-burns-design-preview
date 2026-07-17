@@ -233,18 +233,20 @@ export default function HomePage() {
             </p>
           </div>
           <div className="faces-strip">
-            <figure>
-              <img src="/assets/img/wall-tammy.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
-            </figure>
-            <figure>
-              <img src="/assets/img/wall-jill.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
-            </figure>
-            <figure>
-              <img src="/assets/img/wall-diane.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
-            </figure>
-            <figure>
-              <img src="/assets/img/wall-fran.jpg" alt="A smiling DreamSmile patient of Dr. Burns" />
-            </figure>
+            {[
+              ["wall-tammy", "42% 42%", 1.16],
+              ["wall-diane", "50% 44%", 1.07],
+              ["wall-joe", "50% 42%", 1.1],
+              ["wall-fran", "57% 44%", 1.16],
+            ].map(([f, origin, z]) => (
+              <figure key={f as string}>
+                <img
+                  src={`/assets/img/${f}.jpg`}
+                  alt="A smiling DreamSmile patient of Dr. Burns"
+                  style={{ ["--o" as string]: origin, ["--z" as string]: z }}
+                />
+              </figure>
+            ))}
           </div>
         </div>
       </section>

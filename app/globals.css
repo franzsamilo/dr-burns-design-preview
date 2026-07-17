@@ -1318,3 +1318,12 @@ body{counter-reset:sec}
 .hero-bleed .hero-trust p,.hero-bleed .hero-trust b{color:#fff}
 .hero-bleed .hero-bg{object-position:64% center}
 @media(max-width:600px){.hero-doc b{font-size:.94rem}.hero-doc{padding-right:16px}}
+
+/* Social-proof faces strip: the source stills are pillarboxed (black bars),
+   so zoom-crop each to the subject via a per-image scale + origin, killing
+   the bars and normalising the framing. */
+.faces-strip img{transform:scale(var(--z,1.44));transform-origin:var(--o,50% 30%)}
+.faces-strip figure:hover img{transform:scale(calc(var(--z,1.44) + .05))}
+
+/* Marquee tiles: center on faces (sources vary in framing) */
+.smile-track img{object-position:center 30%}

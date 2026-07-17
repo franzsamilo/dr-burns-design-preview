@@ -6,24 +6,15 @@
  * you can feel, and it's the kind of moment a stock template never ships.
  * Pure CSS animation (paused on hover, stilled under reduced-motion).
  */
-// Real patients only (testimonial / candid stills) — never staff headshots.
+// Real patients only, and only clean SMILING frames — no mid-sentence video
+// stills, no one looking away. Quality over volume; the loop fills the wall.
 const SMILES = [
-  "wall-jill",
-  "review1",
   "wall-tammy",
-  "kelly-2026",
-  "review2",
-  "wall-diane",
   "review3",
+  "wall-diane",
   "wall-joe",
-  "angela-2026",
   "review4",
   "wall-fran",
-  "mike-2026",
-  "review5",
-  "ron-2026",
-  "kelly-2026b",
-  "danny-2026",
 ];
 
 export function SmileMarquee() {
