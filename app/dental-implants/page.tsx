@@ -310,7 +310,7 @@ export default function DentalImplantsPage() {
                 </p>
               </div>
               <div className="edit-media">
-                <img src="/assets/img/topic-implant-explainer.jpg" alt="Dr. Burns explaining what a dental implant is" />
+                <img src="/assets/img/topic-extraction.jpg" alt="A woman holding a tooth she has lost, her hand to her cheek" />
               </div>
             </div>
 
@@ -328,7 +328,7 @@ export default function DentalImplantsPage() {
                 </p>
               </div>
               <div className="edit-media">
-                <img src="/assets/img/burns-protocol-craft-2.jpg" alt="The Burns Protocol treatment planning" />
+                <img src="/assets/img/topic-implant-explainer.jpg" alt="Dr. Burns showing a patient how a dental implant works" />
               </div>
             </div>
 
@@ -366,7 +366,7 @@ export default function DentalImplantsPage() {
                 </p>
               </div>
               <div className="edit-media">
-                <img src="/assets/img/clinic-op.jpg" alt="Comfort-focused sedation dentistry" />
+                <img src="/assets/img/topic-rootcanal-senior.jpg" alt="A relaxed, comfortable patient resting in the chair" />
               </div>
             </div>
 
@@ -381,7 +381,7 @@ export default function DentalImplantsPage() {
                 </p>
               </div>
               <div className="edit-media">
-                <img src="/assets/img/burns-consult.jpg" alt="Dr. Burns talking honestly about implant cost" />
+                <img src="/assets/img/topic-implant-model.jpg" alt="A dental implant, engineered to last for decades" />
               </div>
             </div>
 

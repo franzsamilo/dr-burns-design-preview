@@ -423,7 +423,7 @@ export default function HomePage() {
             </article>
             <article className="svc-card">
               <div className="svc-img">
-                <img src="/assets/img/team-2026-full.jpg" alt="Dr. Burns seated with his full 2026 team" />
+                <img src="/assets/img/topic-filling-mirror.jpg" alt="A patient happy with her routine dental care" />
               </div>
               <div className="svc-body">
                 <h3>General Dentistry</h3>
@@ -437,7 +437,7 @@ export default function HomePage() {
             </article>
             <article className="svc-card">
               <div className="svc-img">
-                <img src="/assets/img/kelly-2026.jpg" alt="A patient with a bright cosmetic smile" />
+                <img src="/assets/img/topic-cosmetic-smile.jpg" alt="A bright, natural cosmetic smile" />
               </div>
               <div className="svc-body">
                 <h3>Cosmetic Dentistry</h3>
