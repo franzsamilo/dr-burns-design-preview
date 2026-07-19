@@ -3,7 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { VideoWell } from "@/components/VideoWell";
 import { Reveal } from "@/components/Reveal";
-import { LeadForm } from "@/components/LeadForm";
+import { SurveyForm } from "@/components/SurveyForm";
 import { StatCounter } from "@/components/StatCounter";
 import { SmileMarquee } from "@/components/SmileMarquee";
 import { CostSection } from "@/components/CostSection";
@@ -151,7 +151,7 @@ export default function HomePage() {
       {/* 2. DUAL LEAD-CAPTURE CARDS */}
       <div className="wrap leadwrap" id="consult">
         <div className="leadgrid">
-          <LeadForm />
+          <SurveyForm source="home-survey" />
           <div className="lc">
             <span className="eyebrow">Free download</span>
             <h3>The Complete Guide to Dental Implants</h3>

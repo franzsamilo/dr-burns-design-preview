@@ -22,7 +22,7 @@ const Q2 = [
   ["explore", "Just exploring for now"],
 ] as const;
 
-export function SurveyForm() {
+export function SurveyForm({ source = "implants-survey" }: { source?: string }) {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<{ replace?: string; timing?: string }>({});
   const [busy, setBusy] = useState(false);
@@ -47,7 +47,7 @@ export function SurveyForm() {
       const res = await fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...answers, ...contact, source: "implants-survey" }),
+        body: JSON.stringify({ ...answers, ...contact, source }),
       });
       if (!res.ok) throw new Error("request failed");
       setSent(true);
