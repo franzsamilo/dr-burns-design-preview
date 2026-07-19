@@ -203,6 +203,8 @@ export default function DentalImplantsPage() {
               {[
                 ["testimonial-2.mp4", "wall-joe.jpg", "Joe Vile", "Eating everything again — no more soft foods"],
                 ["testimonial-3.mp4", "wall-tammy.jpg", "Tammy", "Confident to smile in photos again"],
+                ["testimonial-4.mp4", "wall-christa.jpg", "Christa", "From 3D scan to a brand-new smile"],
+                ["testimonial-6.mp4", "wall-steve.jpg", "Steve", "His DreamSmile™, in his own words"],
               ].map(([vid, img, name, cap]) => (
                 <div className="pv-card" key={name}>
                   <VideoWell
@@ -222,7 +224,7 @@ export default function DentalImplantsPage() {
               ))}
             </div>
             <div className="pv-faces" aria-label="More DreamSmile patients">
-              {["wall-diane", "review3", "wall-fran", "review4"].map((f) => (
+              {["wall-diane", "review2", "wall-fran", "review4"].map((f) => (
                 <figure key={f}>
                   <img
                     src={`/assets/img/${f}.jpg`}
