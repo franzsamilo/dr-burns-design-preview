@@ -1496,3 +1496,26 @@ body{counter-reset:sec}
 .pv-rating .stars{color:#f5b942;letter-spacing:2px}
 .pv-rating b{font-weight:800}
 @media(max-width:560px){.pv-grid{grid-template-columns:1fr;max-width:360px}}
+
+/* ============================================================
+   Craft pass: coherent signature + honest crops
+   ============================================================ */
+
+/* The under-heading accent was an upward arch outline that clipped against
+   left-aligned headings and read as a broken circle. Replace it with the
+   signature SMILE curve — the same stroke as the hero smile-mark — so every
+   section carries the one motif, complete and unambiguous. */
+.sec-head h2::after{
+  width:66px;height:24px;margin-top:14px;background:transparent;
+  border:3px solid transparent;border-bottom-color:var(--teal-brand);
+  border-radius:50%}
+.warranty .sec-head h2::after,.bandaid .sec-head h2::after{border-bottom-color:var(--tan)}
+
+/* Authority team photo: the 16/9 crop at 20% beheaded the whole team.
+   Sit the crop lower so every face is in frame. */
+.auth-team img{object-position:50% 30%}
+@media (max-width:640px){.auth-team img{object-position:50% 28%}}
+
+/* Testimonial posters are pillarboxed stills — bias the crop below the
+   baked-in top bar. */
+.rr-card .vwell img{object-position:center 32%}

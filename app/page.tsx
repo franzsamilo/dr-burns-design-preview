@@ -614,7 +614,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="promise-media">
-            <img src="/assets/img/dreamsmile-commercial.jpg" alt="A smiling DreamSmile patient, at home and confident" />
+            <img src="/assets/img/team-2026.jpg" alt="Dr. Burns and the whole DreamSmile team — the people who stand behind the promise" />
           </div>
         </div>
       </section>
@@ -669,9 +669,9 @@ export default function HomePage() {
           </div>
           <div className="rr-grid">
             {[
-              ["testimonial-1.mp4", "mike-2026.jpg", "Mike, DreamSmile™ Patient", "Full-arch implants"],
-              ["testimonial-2.mp4", "kelly-2026.jpg", "Kelly, DreamSmile™ Patient", "A new smile in one day"],
-              ["testimonial-3.mp4", "angela-2026.jpg", "Angela, DreamSmile™ Patient", "Same-day teeth"],
+              ["testimonial-1.mp4", "wall-jill.jpg", "Jill Bush, DreamSmile™ Patient", "Her new smile, in one day"],
+              ["testimonial-2.mp4", "wall-joe.jpg", "Joe Vile, DreamSmile™ Patient", "Eating everything again"],
+              ["testimonial-3.mp4", "wall-tammy.jpg", "Tammy, DreamSmile™ Patient", "Confident to smile again"],
             ].map(([vid, img, name, cap]) => (
               <div className="rr-card" key={name}>
                 <VideoWell
@@ -822,9 +822,6 @@ export default function HomePage() {
             <a className="btn btn-ghost" href="tel:5407408937">
               Call: 540-740-8937
             </a>
-          </div>
-          <div className="final-media">
-            <img src="/assets/img/lounge-fireplace.jpg" alt="The quiet patient lounge with a fireplace at Jeffrey S. Burns DDS" />
           </div>
         </div>
       </section>
