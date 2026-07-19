@@ -106,17 +106,16 @@ export default function HomePage() {
       <section className="hero hero-bleed" id="top">
         <img
           className="hero-bg"
-          src="/assets/img/topic-full-arch-senior.jpg"
-          alt="A DreamSmile patient laughing with delight at his new smile in the mirror"
+          src="/assets/img/dr-burns-hero.jpg"
+          alt="Dr. Jeffrey Burns smiling in the hallway of his New Market practice"
         />
         <span className="hero-scrim" aria-hidden="true" />
         <div className="wrap hero-bleed-in">
           <div className="hero-copy">
-            <div className="hero-doc">
-              <img src="/assets/img/dr-burns.jpg" alt="Dr. Jeffrey Burns" />
+            <div className="hero-doc hero-doc-plain">
               <span>
                 Every smile personally by
-                <b>Dr. Jeffrey Burns</b>
+                <b>Dr. Jeffrey Burns, DDS</b>
                 <i>One doctor &middot; 30+ years</i>
               </span>
             </div>

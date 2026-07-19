@@ -1519,3 +1519,17 @@ body{counter-reset:sec}
 /* Testimonial posters are pillarboxed stills — bias the crop below the
    baked-in top bar. */
 .rr-card .vwell img{object-position:center 32%}
+
+/* Doctor-led hero (caresmiles hierarchy): Dr. Burns IS the hero image, so the
+   credential chip drops his mini-portrait and reads as a clean caption. */
+.hero-doc-plain{padding:10px 22px}
+/* keep his face bright where the scrim tapers */
+.hero-bleed .hero-bg{object-position:62% 30%}
+
+/* Mobile doctor-hero: darker veil so copy reads over the portrait */
+@media(max-width:680px){
+  .hero-bleed .hero-bg{object-position:38% center}
+  .hero-scrim{background:
+    linear-gradient(180deg, rgba(9,22,26,.82) 0%, rgba(9,22,26,.62) 46%,
+      rgba(9,22,26,.72) 100%)}
+}
