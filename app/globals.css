@@ -1593,3 +1593,10 @@ body{counter-reset:sec}
   transition:transform .5s var(--ease)}
 .pv-faces figure:hover img{transform:scale(1.05)}
 @media(max-width:560px){.pv-faces{grid-template-columns:repeat(2,1fr);max-width:360px}}
+
+/* Implants hero: real Dr. Burns + patient consult frame — its own crop
+   (faces sit upper-center-right), separate from the homepage portrait. */
+.implants .hero-bleed .hero-bg{object-position:50% 20%}
+@media(max-width:680px){
+  .implants .hero-bleed .hero-bg{object-position:62% center}
+}

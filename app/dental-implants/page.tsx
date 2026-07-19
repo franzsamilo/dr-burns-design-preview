@@ -64,8 +64,8 @@ export default function DentalImplantsPage() {
         <section className="hero hero-bleed" id="top">
           <img
             className="hero-bg"
-            src="/assets/img/topic-senior-implant-trust.jpg"
-            alt="A happy dental implant patient in the chair with her friendly Burns clinician"
+            src="/assets/img/di-hero-consult.jpg"
+            alt="Dr. Jeffrey Burns sitting with a dental implant patient, talking through her scan"
           />
           <span className="hero-scrim" aria-hidden="true" />
           <div className="wrap hero-bleed-in">
