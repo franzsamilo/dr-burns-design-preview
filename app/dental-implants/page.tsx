@@ -117,7 +117,7 @@ export default function DentalImplantsPage() {
                 30+ years — plus our pricing &amp; information guide.
               </p>
               <div className="qoutcome">
-                <img src="/assets/img/dr-burns-smile.jpg" alt="Dr. Jeffrey Burns, who personally handles every case" />
+                <img src="/assets/img/dr-burns-warm.jpg" alt="Dr. Jeffrey Burns, who personally handles every case" />
                 <span className="qoutcome-tag">
                   <b>Dr. Jeffrey Burns</b>
                   <small>Answers you personally</small>
@@ -287,7 +287,7 @@ export default function DentalImplantsPage() {
         <section className="protocol" id="protocol">
           <div className="wrap protocol-grid">
             <div className="protocol-media">
-              <img src="/assets/img/dr-burns-smile.jpg" alt="Dr. Jeffrey Burns, the one doctor who handles your case start to finish" />
+              <img src="/assets/img/di-surgery.jpg" alt="Dr. Burns placing implants with his surgical team, in his own operatory" />
             </div>
             <div>
               <span className="eyebrow">The Burns Protocol</span>
@@ -348,7 +348,7 @@ export default function DentalImplantsPage() {
                 </p>
               </div>
               <div className="edit-media">
-                <img src="/assets/img/topic-implant-explainer.jpg" alt="Dr. Burns showing a patient how a dental implant works" />
+                <img src="/assets/img/di-model.jpg" alt="Dr. Burns's hands holding a full-arch implant model, showing how four implants carry a whole row of teeth" />
               </div>
             </div>
 
@@ -371,7 +371,7 @@ export default function DentalImplantsPage() {
                 </p>
               </div>
               <div className="edit-media">
-                <img src="/assets/img/topic-implant-xray.jpg" alt="Advanced implant technology at Jeffrey S. Burns DDS" />
+                <img src="/assets/img/di-scan.jpg" alt="A patient in the practice's 3D cone-beam scanner in New Market" />
               </div>
             </div>
 

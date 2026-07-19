@@ -19,8 +19,8 @@ export function CostSection() {
       <div className="wrap cost-grid">
         <div className="cost-media">
           <img
-            src="/assets/img/topic-bridge-consult.jpg"
-            alt="A clinician talking a patient through his options, one on one"
+            src="/assets/img/di-consult.jpg"
+            alt="Dr. Burns walking a patient through her scan, chairside and unhurried"
           />
         </div>
         <div>

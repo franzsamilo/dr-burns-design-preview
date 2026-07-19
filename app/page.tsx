@@ -508,7 +508,7 @@ export default function HomePage() {
           <div className="dark-media">
             <VideoWell
               src="/assets/video/about-dr-burns.mp4"
-              poster="/assets/img/hero-burns.jpg"
+              poster="/assets/img/dr-burns-warm.jpg"
               alt="Meet Dr. Burns: the story behind the Burns Protocol"
               ratio="4/5"
             />
