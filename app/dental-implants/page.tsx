@@ -2,10 +2,8 @@
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { Reveal } from "@/components/Reveal";
 import { SurveyForm } from "@/components/SurveyForm";
 import { ScrollVideo } from "@/components/ScrollVideo";
-import { StepFlow } from "@/components/StepFlow";
 import { VideoWell } from "@/components/VideoWell";
 import { StatCounter } from "@/components/StatCounter";
 import { CostSection } from "@/components/CostSection";
@@ -269,7 +267,20 @@ export default function DentalImplantsPage() {
               <span className="eyebrow">Your DreamSmile&trade; Journey</span>
               <h2>Four simple steps, one team, zero guesswork</h2>
             </div>
-            <StepFlow steps={JOURNEY} />
+            <div className="stepflow">
+              {JOURNEY.map(([title, sub, icon], i) => (
+                <div className="stepflow-item" key={title}>
+                  <span className="stepflow-num">{i + 1}</span>
+                  <div className="stepflow-body">
+                    <div className="stepflow-ic">
+                      <svg viewBox="0 0 24 24">{icon}</svg>
+                    </div>
+                    <h3>{title}</h3>
+                    <p>{sub}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -486,7 +497,6 @@ export default function DentalImplantsPage() {
         </section>
       </main>
       <SiteFooter />
-      <Reveal />
     </>
   );
 }

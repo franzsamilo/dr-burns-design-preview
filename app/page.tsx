@@ -2,7 +2,6 @@
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { VideoWell } from "@/components/VideoWell";
-import { Reveal } from "@/components/Reveal";
 import { SurveyForm } from "@/components/SurveyForm";
 import { StatCounter } from "@/components/StatCounter";
 import { SmileMarquee } from "@/components/SmileMarquee";
@@ -831,7 +830,6 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS) }}
       />
-      <Reveal />
     </>
   );
 }
