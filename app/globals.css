@@ -296,10 +296,12 @@ footer.ft{background:#0f2126;color:#fff;padding:66px 0 30px}
 
 .rv{opacity:1;transform:none}
 
-@media(max-width:960px){
+@media(max-width:1020px){
   nav.menu,.nav-phone{display:none}
   .burger{display:flex}
   nav.menu.open{display:flex;position:absolute;flex-direction:column;top:82px;right:18px;background:#fff;padding:18px 22px;border-radius:14px;box-shadow:var(--shadow-card);gap:14px}
+}
+@media(max-width:960px){
   .hero-grid,.leadgrid,.authority-grid,.cmp-grid,.promise-grid,.dark-grid{grid-template-columns:1fr;gap:30px}
   .svc-grid,.war-grid,.ba-grid,.rr-grid,.ft-top{grid-template-columns:1fr 1fr}
   .badge-row{grid-template-columns:repeat(3,1fr)}
@@ -1546,3 +1548,15 @@ body{counter-reset:sec}
 /* Reserve more floor in the full-bleed hero than the peeking card can cover,
    so it only ever straddles the image — never the copy/trust row. */
 .hero-bleed{padding-bottom:clamp(100px,13vh,170px)}
+
+/* Tablet-landscape nav (961-1300px): the full desktop nav overflowed the
+   viewport. Drop the phone number and tighten spacing so everything fits;
+   the number still lives in the CTA path and footer. */
+@media(min-width:1021px) and (max-width:1300px){
+  .nav-phone{display:none}
+  .nav-in{gap:14px}
+  nav.menu{gap:clamp(8px,1vw,14px)}
+  nav.menu a{font-size:.7rem}
+  .nav-cta-btn{padding:11px 16px;font-size:.7rem}
+  .brand img{height:40px}
+}
