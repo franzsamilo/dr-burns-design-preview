@@ -223,17 +223,6 @@ export default function DentalImplantsPage() {
                 </div>
               ))}
             </div>
-            <div className="pv-faces" aria-label="More DreamSmile patients">
-              {["wall-diane", "review2", "wall-fran", "review4"].map((f) => (
-                <figure key={f}>
-                  <img
-                    src={`/assets/img/${f}.jpg`}
-                    alt="A smiling dental implant patient of Dr. Burns"
-                    loading="lazy"
-                  />
-                </figure>
-              ))}
-            </div>
             <div className="pv-cta">
               <div className="pv-rating">
                 <span className="stars">★★★★★</span>
