@@ -395,7 +395,7 @@ export default function HomePage() {
           <div className="svc-grid">
             <article className="svc-card">
               <div className="svc-img">
-                <img src="/assets/img/topic-implant-model.jpg" alt="Dental implant treatment planned with a 3D scan" />
+                <img src="/assets/img/di-model-hands.jpg" alt="Dr. Burns showing a patient how an implant works, using a model" />
               </div>
               <div className="svc-body">
                 <h3>Dental Implants</h3>
@@ -409,7 +409,7 @@ export default function HomePage() {
             </article>
             <article className="svc-card">
               <div className="svc-img">
-                <img src="/assets/img/topic-filling-mirror.jpg" alt="A patient happy with her routine dental care" />
+                <img src="/assets/img/pf-operatory.jpg" alt="A treatment room at the practice, looking out over the Shenandoah Valley" />
               </div>
               <div className="svc-body">
                 <h3>General Dentistry</h3>
@@ -423,7 +423,7 @@ export default function HomePage() {
             </article>
             <article className="svc-card">
               <div className="svc-img">
-                <img src="/assets/img/topic-cosmetic-smile.jpg" alt="A bright, natural cosmetic smile" />
+                <img src="/assets/img/wall-fran.jpg" alt="A DreamSmile patient with a bright, natural smile" />
               </div>
               <div className="svc-body">
                 <h3>Cosmetic Dentistry</h3>

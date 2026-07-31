@@ -387,7 +387,7 @@ export default function DentalImplantsPage() {
                 </p>
               </div>
               <div className="edit-media">
-                <img src="/assets/img/topic-rootcanal-senior.jpg" alt="A relaxed, comfortable patient resting in the chair" />
+                <img src="/assets/img/di-chairside.jpg" alt="Dr. Burns and his assistant treating a patient in their own operatory" />
               </div>
             </div>
 
@@ -402,7 +402,7 @@ export default function DentalImplantsPage() {
                 </p>
               </div>
               <div className="edit-media">
-                <img src="/assets/img/topic-implant-model.jpg" alt="A dental implant, engineered to last for decades" />
+                <img src="/assets/img/di-model.jpg" alt="A full-arch implant model in Dr. Burns's hands — built to last decades" />
               </div>
             </div>
 
