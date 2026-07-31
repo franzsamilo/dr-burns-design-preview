@@ -8,6 +8,9 @@ import { VideoWell } from "@/components/VideoWell";
 import { StatCounter } from "@/components/StatCounter";
 import { CostSection } from "@/components/CostSection";
 import { ReviewsBand } from "@/components/ReviewsBand";
+import { OptionsCompare } from "@/components/OptionsCompare";
+import { Financing } from "@/components/Financing";
+import { AwardsBand } from "@/components/AwardsBand";
 
 export const metadata: Metadata = {
   title: "Dental Implants Near New Market, VA | DreamSmile by Dr. Jeffrey Burns",
@@ -233,6 +236,8 @@ export default function DentalImplantsPage() {
           </div>
         </section>
 
+        <OptionsCompare />
+
         {/* ONE DAY — emotional outcome + prompt */}
         <section className="oneday" id="transformation">
           <img
@@ -453,6 +458,9 @@ export default function DentalImplantsPage() {
             </div>
           </div>
         </section>
+
+        <AwardsBand />
+        <Financing />
 
         {/* FAQ */}
         <section className="faq" id="faq">
